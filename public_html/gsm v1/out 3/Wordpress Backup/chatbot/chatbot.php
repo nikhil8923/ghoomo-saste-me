@@ -1,4 +1,6 @@
-<!-- https://platform.openai.com/account/api-keys -->
+
+
+<?php
 
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
@@ -17,7 +19,6 @@ $data = [
     "temperature" => 0.7
 ];
 
-$ch = curl_init("https://api.openai.com/v1/chat/completions");
 curl_setopt_array($ch, [
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_HTTPHEADER => [
@@ -45,6 +46,4 @@ if (isset($result['choices'][0]['message']['content'])) {
 } else {
     // 🔍 Show raw response for debugging
     echo "⚠️ API Error: " . ($result['error']['message'] ?? 'Invalid response from OpenAI');
-    // Optional: log to a file for debugging
-    // file_put_contents("log.txt", $response);
-}
+
