@@ -1,28 +1,29 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const categoryData = [
   {
-    id: 1,
+    id:'backpacking',
     title: 'Backpacking Trips',
     image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
   },
   {
-    id: 2,
+    id: 'weekend',
     title: 'Weekend Getaways',
     image: 'https://images.unsplash.com/photo-1542259009477-d625272157b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
   },
   {
-    id: 3,
+    id: 'adventure',
     title: 'Adventure Treks',
     image: 'https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
   },
   {
-    id: 4,
+    id: 'honeymoon',
     title: 'Honeymoon Trips',
     image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
   },
   {
-    id: 5,
+    id: 'corporate',
     title: 'Corporate Trips',
     image: 'https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
   },
@@ -33,18 +34,19 @@ const Categories = () => {
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4 max-w-7xl">
         
-        {/* Section Heading */}
+      
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-extrabold text-[#1a2b4c] mb-3">
             Explore Destinations By Category
           </h2>
           <div className="w-24 h-1 bg-blue-600 mx-auto rounded-full"></div>
         </div>
+       
 
         {/* Categories Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+      <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
           {categoryData.map((category) => (
-            <div 
+            <Link 
               key={category.id} 
               className="relative h-72 rounded-2xl overflow-hidden group cursor-pointer shadow-lg"
             >
@@ -64,7 +66,7 @@ const Categories = () => {
                   {category.title}
                 </h3>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
         

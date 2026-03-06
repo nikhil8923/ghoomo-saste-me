@@ -1,5 +1,6 @@
 import React from 'react';
-import { Facebook, Instagram, Linkedin, Youtube, MessageCircle } from 'lucide-react';
+import { Link } from 'react-router-dom'; // Added for proper navigation
+import { Facebook, Instagram, Linkedin, Youtube, MessageCircle, CreditCard } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -13,8 +14,8 @@ const Footer = () => {
           <div>
             <h3 className="text-white text-lg font-bold mb-4 uppercase tracking-wider">Company</h3>
             <ul className="space-y-2">
-              <li><a href="#about" className="hover:text-yellow-400 transition">About Us</a></li>
-              <li><a href="#contact" className="hover:text-yellow-400 transition">Contact Us</a></li>
+              <li><Link to="/about" className="hover:text-yellow-400 transition">About Us</Link></li>
+              <li><Link to="/contact" className="hover:text-yellow-400 transition">Contact Us</Link></li>
               <li><a href="#career" className="hover:text-yellow-400 transition">Career With Us</a></li>
               <li><a href="#blogs" className="hover:text-yellow-400 transition">Our Blogs</a></li>
             </ul>
@@ -37,7 +38,18 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><a href="#privacy" className="hover:text-yellow-400 transition">Privacy Policy</a></li>
               <li><a href="#terms" className="hover:text-yellow-400 transition">Terms & Conditions</a></li>
-              <li><a href="#refund" className="hover:text-yellow-400 transition">Cancellation & Refund Policy</a></li>
+              
+              {/* --- ADDED PAYMENTS LINK HERE --- */}
+              <li>
+                <Link 
+                  to="/payments" 
+                  onClick={() => window.scrollTo(0, 0)} 
+                  className="hover:text-yellow-400 transition flex items-center justify-center md:justify-start gap-2"
+                >
+                  <CreditCard size={14} /> Cancellation & Refund Policy
+                </Link>
+              </li>
+              
               <li><a href="#sitemap" className="hover:text-yellow-400 transition">Sitemap</a></li>
             </ul>
           </div>
@@ -47,8 +59,7 @@ const Footer = () => {
         {/* Middle Section: Company Info & Socials */}
         <div className="border-t border-gray-700 pt-10 pb-8 text-center flex flex-col items-center">
           
-          {/* UPDATED BRANDING HERE */}
-          <h2 className="text-white text-2xl font-black tracking-widest mb-3">GHOOMO SASTE ME</h2>
+          <h2 className="text-white text-2xl font-black tracking-widest mb-3 uppercase">GHOOMO SASTE ME</h2>
           <p className="text-sm text-gray-400 max-w-2xl mb-6">
             Travel more, spend less, and create real memories. India's trusted platform for budget-friendly adventures.
           </p>
@@ -56,7 +67,7 @@ const Footer = () => {
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 justify-center items-center text-sm font-semibold text-white mb-8">
             <a href="mailto:hello@ghoomosasteme.com" className="hover:text-yellow-400 transition">hello@ghoomosasteme.com</a>
             <span className="hidden sm:inline">|</span>
-            <a href="tel:+919090403075" className="hover:text-yellow-400 transition">+91-9090403075</a>
+            <a href="tel:+918923172497" className="hover:text-yellow-400 transition">+91-9090403075</a>
             <span className="hidden sm:inline">|</span>
             <a href="https://www.ghoomosasteme.com" target="_blank" rel="noreferrer" className="hover:text-yellow-400 transition">www.ghoomosasteme.com</a>
           </div>
@@ -89,7 +100,7 @@ const Footer = () => {
 
       {/* Floating WhatsApp Button */}
       <a 
-        href="https://wa.me/919090403075" 
+        href="https://wa.me/918923172497" 
         target="_blank" 
         rel="noreferrer"
         className="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 hover:scale-110 transition-all duration-300 z-50 flex items-center justify-center"
