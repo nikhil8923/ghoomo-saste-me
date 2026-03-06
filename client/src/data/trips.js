@@ -190,7 +190,7 @@ export const tripsData = [
     originalPrice: '3,500',
     rating: '4.8',
     reviews: 420,
-    image: 'https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1200&q=80',
+    image: '/Rishikesh.jpg',
     description: 'Experience the ultimate adrenaline rush with white water rafting on the Ganges, followed by riverside beach camping, bonfires, and acoustic music under the stars.',
     inclusions: ['1 Night Riverside Camp Stay', '16km River Rafting', 'All 3 Meals', 'Cliff Jumping & Body Surfing'],
     exclusions: ['Travel to Rishikesh', 'Personal Expenses'],
@@ -209,7 +209,7 @@ export const tripsData = [
     originalPrice: '10,500',
     rating: '4.9',
     reviews: 550,
-    image: 'https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=1200&q=80',
+    image: '/kedarnathyatra.jpg',
     description: 'A deeply spiritual and physically rewarding journey to the majestic Kedarnath Temple. Trek through the breathtaking Garhwal Himalayas to seek the blessings of Lord Shiva.',
     inclusions: ['3 Nights Accommodation', 'Transport from Haridwar/Rishikesh', 'Breakfast & Dinner', 'Experienced Trek Guide'],
     exclusions: ['Helicopter/Mule/Pony charges', 'VIP Darshan Tickets', 'Lunch'],
@@ -230,7 +230,7 @@ export const tripsData = [
     originalPrice: '12,000',
     rating: '4.8',
     reviews: 215,
-    image: 'https://images.unsplash.com/photo-1548058209-663806aeb9dc?auto=format&fit=crop&w=1200&q=80',
+    image: '/Auli.jpg',
     description: 'Visit the premier skiing capital of India. Ride Asia\'s longest cable car, walk through frozen landscapes, and witness 360-degree panoramic views of the Nanda Devi peak.',
     inclusions: ['3 Nights Stay (Joshimath/Auli)', 'Breakfast & Dinner', 'Transport from Rishikesh'],
     exclusions: ['Skiing Equipment/Lessons', 'Auli Cable Car Tickets (approx ₹1000)'],
@@ -251,7 +251,7 @@ export const tripsData = [
     originalPrice: '6,800',
     rating: '4.9',
     reviews: 180,
-    image: 'https://images.unsplash.com/photo-1626082929543-690240d944c6?auto=format&fit=crop&w=1200&q=80',
+    image: '/Chopta.jpg',
     description: 'Known as the "Mini Switzerland of India", Chopta offers lush meadows and a relatively easy trek to Tungnath, the highest Shiva temple in the world, and further to the Chandrashila peak.',
     inclusions: ['2 Nights Swiss Camp Stay', 'All Meals during Trek', 'Trek Leader', 'Forest Permits'],
     exclusions: ['Travel to Basecamp (Chopta)', 'Personal Porter'],
@@ -328,11 +328,11 @@ export const tripsData = [
     title: 'Chakrata Hidden Gem',
     location: 'Uttarakhand, India',
     duration: '3 Days / 2 Nights',
-    price: '5,200',
+    price: '5000',
     originalPrice: '6,500',
     rating: '4.8',
     reviews: 145,
-    image: 'https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=1200&q=80',
+    image: '/chakrata.jpg',
     description: 'Tired of crowded hill stations? Escape to the secluded cantonment town of Chakrata. Trek to massive hidden waterfalls and camp in raw, untouched alpine meadows.',
     inclusions: ['2 Nights Camp/Homestay', 'Breakfast & Dinner', 'Tiger Falls Trek Guide'],
     exclusions: ['Travel to Base', 'Personal Expenses'],
@@ -349,11 +349,11 @@ export const tripsData = [
     title: 'Lansdowne Cantonment Retreat',
     location: 'Uttarakhand, India',
     duration: '3 Days / 2 Nights',
-    price: '4,200',
+    price: '5000',
     originalPrice: '5,200',
     rating: '4.7',
     reviews: 95,
-    image: 'https://images.unsplash.com/photo-1626621333912-32a82649a4f4?auto=format&fit=crop&w=1200&q=80',
+    image: '/landsdown.jpg',
     description: 'One of the quietest hill stations in India. Explore the clean, pine-covered hills of this military cantonment, visit the Tip-in-Top viewpoint, and enjoy the serene Bhulla Lake.',
     inclusions: ['2 Nights Hotel Stay', 'Breakfast & Dinner', 'Visit to Army Museum'],
     exclusions: ['Travel to Lansdowne', 'Boating fees'],
@@ -368,12 +368,12 @@ export const tripsData = [
     stateId: 'uttarakhand',
     title: 'Harsil: The Mini Switzerland',
     location: 'Uttarakhand, India',
-    duration: '4 Days / 3 Nights',
-    price: '8,800',
+    duration: '3 Days / 2 Nights',
+    price: '5000',
     originalPrice: '11,000',
     rating: '4.9',
     reviews: 64,
-    image: 'https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=1200&q=80',
+    image: '/Harsil.jpg',
     description: 'An untouched paradise on the banks of the Bhagirathi river. Famous for its apple orchards and dense deodar forests, Harsil is the perfect getaway for peace seekers.',
     inclusions: ['3 Nights Riverside Stay', 'All Meals', 'Guided Village Walk', 'Gartang Gali Visit'],
     exclusions: ['Travel to Harsil', 'Personal Expenses'],
@@ -389,12 +389,12 @@ export const tripsData = [
     stateId: 'uttarakhand',
     title: 'Do Dham: Kedarnath & Badrinath',
     location: 'Uttarakhand, India',
-    duration: '6 Days / 5 Nights',
-    price: '14,500',
+    duration: '3 Days / 2 Nights',
+    price: '5000',
     originalPrice: '17,500',
     rating: '5.0',
     reviews: 210,
-    image: 'https://images.unsplash.com/photo-1626082929543-690240d944c6?auto=format&fit=crop&w=1200&q=80',
+    image: '/dham.jpg',
     description: 'A complete spiritual circuit covering two of the most significant shrines in the Himalayas. Journey through the high-altitude landscapes of Kedarnath and the divine architecture of Badrinath.',
     inclusions: ['5 Nights Accommodation', 'Haridwar to Haridwar Transport', 'Breakfast & Dinner', 'Registration Assistance'],
     exclusions: ['Helicopter/Mule charges', 'VIP Darshan', 'Lunch'],
@@ -417,7 +417,7 @@ export const tripsData = [
     originalPrice: '28,500',
     rating: '5.0',
     reviews: 430,
-    image: 'https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1200&q=80',
+    image: '/chardham.jpg',
     description: 'The most sacred pilgrimage in India. Visit Yamunotri, Gangotri, Kedarnath, and Badrinath in one life-changing expedition through the Himalayas.',
     inclusions: ['9 Nights Standard Hotel Stay', 'Tempo Traveller/Bus Transport', 'Breakfast & Dinner', 'Experienced Yatra Captain'],
     exclusions: ['Pony/Palki charges', 'Aarti Tickets', 'Personal Medical Kit'],
@@ -584,7 +584,7 @@ export const tripsData = [
     location: "Sankri, Uttarakhand", 
     duration: "5 Days / 4 Nights", 
     logo: "/logo.png", // Ensure your logo file is in the public folder
-    image: "https://images.unsplash.com/photo-1591122948563-54832527845f",
+    image: "/Kedarkantha.png",
     itinerary: [
       { 
         day: 1, 
@@ -629,9 +629,10 @@ export const tripsData = [
   id: "himachal-backpacking", // MUST match the URL: /trip/himachal-backpacking
   category: "backpacking",
   title: "Ultimate Himachal Backpacking",
-  desc: "A 10-day journey through Spiti, Jibhi, and Kasol designed for students.",
-  price: "18,500",
-  duration: "9N/10D",
+  desc: "A 3 Days journey through Spiti, Jibhi, and Kasol designed for students.",
+  price: "5000",
+  duration: "2 Nights / 3 Days",
+   image: "/himachalbackpacking.jpg",
   
   // TRIP GALLERY (Using your traveler photos)
   gallery: [
@@ -655,6 +656,69 @@ export const tripsData = [
       image: "manali-local.png"
     }
   ]
-}
+},
+{
+  id: "chopta-tungnath-rishikesh",
+  category: "himachal-backpacking", // Matches your Category Link
+  title: "Chopta Tungnath & Rishikesh Adventure",
+  duration: "3 Days / 2 Nights",
+  price: "5000",
+  image: "/choptarishikesh.jpg",
+  location: "Uttarakhand",
+  
+  // Photo Gallery - Ensure these images are in your /public folder
+  gallery: [
+    { src: "/images/chopta-main.jpg", alt: "Chopta Valley" },
+    { src: "/images/tungnath-temple.jpg", alt: "Tungnath Temple" },
+    { src: "/images/rishikesh-rafting.jpg", alt: "Rafting in Rishikesh" }
+  ],
+
+  itinerary: [
+    {
+      day: "Day 0",
+      title: "Departure from Delhi/Dehradun",
+      description: "Meet the team and start the overnight journey to the mountains."
+    },
+    {
+      day: "Day 1",
+      title: "Arrival in Chopta & Acclimatization",
+      description: "Check into the campsites. Enjoy a short trek to Deoriatal Lake. Overnight stay in camps with bonfire."
+    },
+    {
+      day: "Day 2",
+      title: "Tungnath & Chandrashila Summit",
+      description: "Early morning trek to Tungnath (highest Shiva temple) and further to Chandrashila Peak for a 360-degree Himalayan view."
+    },
+    {
+      day: "Day 3",
+      title: "Rishikesh Exploration & Departure",
+      description: "Drive to Rishikesh. Experience white water rafting and the evening Ganga Aarti before heading back home."
+    }
+  ]
+},
+{
+    id: "rishikesh-mussoorie",
+    category: "backpacking",
+    title: "Rishikesh & Mussoorie: The Queen of Hills",
+    location: "Uttarakhand",
+    duration: "3 Days / 2 Nights",
+    price: "5000",
+    image: "/Rishikesh.jpg",
+    inclusions: [
+      "AC Transportation (Delhi to Delhi)",
+      "Stay: 3-Star Hotels/Camps (Triple Sharing)",
+      "Meals: 3 Breakfasts & 3 Dinners",
+      "River Rafting (12 KM)",
+      "Guided Sightseeing in Mussoorie",
+      "Ganga Aarti Experience",
+      "Professional Trip Coordinator"
+    ],
+    itinerary: [
+      { day: 1, title: "Arrival & Camping", desc: "Riverside camping and bonfire.", image: "https://images.unsplash.com/photo-1590766940554-634a7ed41450" },
+      { day: 2, title: "Rafting & Aarti", desc: "12km rafting and Ganga Aarti.", image: "https://images.unsplash.com/photo-1597034442534-7164923f03b8" },
+      // ... add the rest of the days here ...
+    ]
+  },
+
 ];
   
