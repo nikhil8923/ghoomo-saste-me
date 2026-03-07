@@ -7,6 +7,7 @@ import UpcomingTrips from '../components/UpcomingTrips';
 import Reels from '../components/Reels';
 import Reviews from '../components/Reviews';
 import FAQ from '../components/FAQ';
+import ImageGallery from '../components/ImageGallery';
 
 const Home = () => {
   const [openFaq, setOpenFaq] = React.useState(null);
@@ -154,12 +155,13 @@ const handleSearch = (e) => {
             </Link>
 
             {/* 4. KASHMIR CARD */}
-            <Link to={`/state/kashmir`} className="group relative h-80 rounded-2xl overflow-hidden shadow-lg">
+            <Link to="/trip/kashmir-volvo-special" className="group relative h-80 rounded-[32px] overflow-hidden shadow-2xl block"
+>
               <img src="/kashmir.png" alt="Kashmir" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
               <div className="absolute bottom-0 left-0 w-full p-6 text-white">
                 <h3 className="text-2xl font-bold mb-1">Kashmir</h3>
-                <p className="text-sm text-gray-200 mb-4">6+ Trips Available</p>
+                <p className="text-sm text-gray-200 mb-4">2+ Trips Available</p>
                 <span className="inline-block bg-white text-black text-xs font-bold px-4 py-2 rounded-full uppercase tracking-wide">
                   Explore Now
                 </span>
@@ -168,9 +170,7 @@ const handleSearch = (e) => {
     
 
 {/* --- 2. ADVENTURE TREKS CARD --- */}
-<Link 
-  to="/category/adventure" 
-  className="relative group h-80 rounded-[32px] overflow-hidden shadow-xl block transition-transform hover:-translate-y-2"
+<Link to="/category/adventure" className="relative group h-80 rounded-[32px] overflow-hidden shadow-xl block transition-transform hover:-translate-y-2"
 >
   <img 
     src="/AdventureTrek.png" 

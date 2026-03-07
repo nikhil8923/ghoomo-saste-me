@@ -28,7 +28,7 @@ const StateTrips = () => {
 
   // WhatsApp Lead Generation Logic
   const handleNotifyMe = () => {
-    const phoneNumber = "91"; // Your WhatsApp number
+    const phoneNumber = "918265877349"; 
     const message = `Hi Ghoomo Saste Me! I'm interested in the upcoming trips for ${formatStateName(stateId)}. Please notify me when they are live!`;
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');

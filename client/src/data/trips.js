@@ -1,35 +1,105 @@
 export const tripsData = [
-  {
-    id: 'manali-kasol',
-    stateId: 'himachal',
-    title: 'Manali & Kasol Backpacking',
-    location: 'Himachal Pradesh, India',
-    duration: '3 Days / 2 Nights',
-    price: '6,500',
-    originalPrice: '8,000',
-    rating: '4.8',
-    reviews: 142,
-    image: 'https://images.unsplash.com/photo-1605649487212-4d43bf8a77cd?auto=format&fit=crop&w=1200&q=80',
-    description: 'Experience the perfect blend of adventure and peace. Explore the snowy peaks of Manali and the hippie cafe culture of Kasol in one unforgettable trip.',
-    inclusions: ['2 Nights Accommodation', '4 Meals (Breakfast & Dinner)', 'Trip Captain', 'Local Sightseeing'],
-    exclusions: ['Travel to Basecamp', 'Personal Expenses', 'Lunch'],
-    itinerary: [
-      { day: 1, title: 'Arrival in Manali & Sightseeing', description: 'Reach Manali in the morning. Check into your hotel, freshen up, and visit Hadimba Temple, Mall Road, and Old Manali.' },
-      { day: 2, title: 'Drive to Kasol & Cafe Hopping', description: 'After breakfast, drive to the beautiful Parvati Valley. Check into your Kasol camps, relax by the river, and explore the local cafes.' },
-      { day: 3, title: 'Manikaran Sahib & Departure', description: 'Visit the holy Manikaran Sahib Gurudwara and take a dip in the hot springs before departing for your home journey.' }
-    ]
+   // src/data/trips.js
+{
+  id: "himachal-backpacking",
+  title: "Manali & Kasol Backpacking",
+  duration: "3 Days / 2 Nights",
+  pickup: "Delhi to Delhi",
+  price: 6499,
+  
+  // FIX: This object was not closed properly in your screenshot
+  occupancy: {
+    quad: 5000,
+    triple: 5500,
+    double: 6000
   },
+  weather: {
+    temp: "8°C",
+    condition: "Snowy",
+    pack: "Heavy Woolens"
+  },
+
+  // FIX: Move these OUTSIDE of the occupancy object
+  batches: [
+    "14th Mar - 17th Mar",
+    "21st Mar - 24th Mar",
+    "28th Mar - 31st Mar"
+  ],
+
+  highlights: [
+    { icon: "Hotel", text: "3-Star Stay" },
+    { icon: "Utensils", text: "MAP Meals" },
+    { icon: "Bus", text: "AC Volvo" },
+    { icon: "Camera", text: "Sightseeing" }
+  ],
+
+
+  itinerary: [
+    {
+      day: 0,
+      title: "Departure from Delhi",
+      desc: "Gather at the meeting point in Delhi by 6:00 PM. Board the AC Volvo for an overnight journey to Manali.",
+      image: "/delhi-bus.jpg"
+    },
+  {
+    day: 1,
+    title: "Manali Arrival & Local Exploration",
+    desc: "Reach Manali in the morning. Check-in to your hotel and freshen up. Visit the iconic Hadimba Devi Temple, Vashisht Temple, and spend your evening strolling through the vibrant Mall Road.",
+    image: "/k-s1.jpg"
+  },
+  {
+    day: 2,
+    title: "Solang Valley & Rohtang Pass",
+    desc: "After breakfast, head towards Solang Valley for adventure sports like paragliding and zorbing. If weather permits, we'll head to Rohtang Pass for an unforgettable snow experience.",
+    image: "/snow-valley.jpg"
+  },
+  {
+    day: 3,
+    title: "Kasol Sightseeing & Manikaran Sahib",
+    desc: "Drive to the 'Mini Israel of India' - Kasol. Visit the Manikaran Sahib Gurudwara and take a dip in the natural hot springs. Explore the riverside cafes before boarding the evening bus back to Delhi.",
+    image: "/kasol-river.jpg"
+  },
+    // ... rest of your itinerary days
+  ],
+  reviews: [
+    {
+      name: "Tripti Singh",
+      rating: 5,
+      comment: "Best weekend ever! Day 0 bus was so energetic. Hadimba temple and Kasol cafes are highly recommended.",
+      image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2", // Student photo
+      date: "Mar 2024"
+    },
+    {
+      name: "Rahul Mehra",
+      rating: 4,
+      comment: "Great experience for students. The trip captain was super helpful. Snow in Solang Valley was amazing!",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d",
+      date: "Feb 2024"
+    }
+  ],
+  image: "/k-s8.jpg",
+  gallery: [
+      { src: "/k-s5.jpg", alt: "Manali Group" }, // Looks for public/m1.jpg
+      { src: "/k-s3.jpg", alt: "Kasol Cafe" },
+      { src: "/k-s4.jpg", alt: "Mountain View" },
+      { src: "/k-s2.jpg", alt: "Mountain View" }
+    ]
+},
+  
+
+
+  
   {
     id: 'mcleodganj-dharamshala',
     stateId: 'himachal',
     title: 'McLeodganj & Dharamshala',
     location: 'Himachal Pradesh, India',
     duration: '3 Days / 2 Nights',
-    price: '5,999',
+    price: '5,000',
     originalPrice: '7,500',
     rating: '4.7',
     reviews: 98,
-    image: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=1200&q=80',
+    image: '/Mcleod Ganj.jpg',
     description: 'Immerse yourself in Tibetan culture, beautiful monasteries, and stunning views of the Dhauladhar mountain range.',
     inclusions: ['2 Nights Accommodation', 'Meals as per itinerary', 'Local Guide', 'First Aid'],
     exclusions: ['Transport to Dharamshala', 'Entry fees to monuments'],
@@ -45,11 +115,11 @@ export const tripsData = [
     title: 'Shimla & Kufri Getaway',
     location: 'Himachal Pradesh, India',
     duration: '3 Days / 2 Nights',
-    price: '6,200',
+    price: '5,000',
     originalPrice: '7,800',
     rating: '4.6',
     reviews: 115,
-    image: 'https://images.unsplash.com/photo-1525875975471-999f65706a10?auto=format&fit=crop&w=1200&q=80',
+    image: '/Shimla.jpg',
     description: 'A classic Himalayan retreat. Enjoy the colonial charm of Shimla and the exciting adventure activities in Kufri.',
     inclusions: ['2 Nights Hotel Stay', 'Breakfast & Dinner', 'Sightseeing Transfers'],
     exclusions: ['Adventure activity tickets in Kufri', 'Personal shopping'],
@@ -65,11 +135,11 @@ export const tripsData = [
     title: 'Kasol & Kheerganga Trek',
     location: 'Himachal Pradesh, India',
     duration: '3 Days / 2 Nights',
-    price: '6,499',
+    price: '5,000',
     originalPrice: '8,000',
     rating: '4.9',
     reviews: 210,
-    image: 'https://images.unsplash.com/photo-1594056285491-1fa14f6b0b53?auto=format&fit=crop&w=1200&q=80',
+    image: '/Kheer Ganga.jpg',
     description: 'Trek through lush green pine forests, soak in the natural hot springs of Kheerganga, and camp under a sky full of stars.',
     inclusions: ['2 Nights Camp Stay', 'Trekking Guide', 'Meals during trek', 'Permits'],
     exclusions: ['Porter for personal bags', 'Transport to Kasol'],
@@ -85,11 +155,11 @@ export const tripsData = [
     title: 'Jibhi & Tirthan Valley',
     location: 'Himachal Pradesh, India',
     duration: '3 Days / 2 Nights',
-    price: '6,800',
+    price: '5,000',
     originalPrice: '8,500',
     rating: '4.8',
     reviews: 134,
-    image: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1200&q=80',
+    image: '/Jibhi.jpg',
     description: 'Escape the crowds in this offbeat Himalayan paradise. Crystal clear rivers, wooden homestays, and untouched nature.',
     inclusions: ['2 Nights Homestay', 'Home-cooked Meals', 'Trip Captain'],
     exclusions: ['Travel to Jibhi', 'Personal expenses'],
@@ -106,11 +176,11 @@ export const tripsData = [
     title: 'Kasol & Tosh Cafe Hopping',
     location: 'Himachal Pradesh, India',
     duration: '3 Days / 2 Nights',
-    price: '6,200',
+    price: '5,000',
     originalPrice: '7,500',
     rating: '4.8',
     reviews: 156,
-    image: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=1200&q=80',
+    image: '/tosh.jpg',
     description: 'A chill backpacker vibe trip. Explore the famous cafes of Kasol, walk along the Parvati River, and hike up to the beautiful, remote village of Tosh for epic mountain views.',
     inclusions: ['2 Nights Accommodation (Camp/Homestay)', 'Breakfast & Dinner', 'Trip Captain', 'Local Transfers'],
     exclusions: ['Travel to Basecamp', 'Personal Expenses', 'Lunch'],
@@ -130,7 +200,7 @@ export const tripsData = [
     originalPrice: '7,000',
     rating: '4.9',
     reviews: 245,
-    image: 'https://images.unsplash.com/photo-1594056285491-1fa14f6b0b53?auto=format&fit=crop&w=1200&q=80',
+    image: '/triund.jpg',
     description: 'The perfect beginner trek! Hike up to the famous Triund ridge, camp directly under the stars, and wake up to the massive Dhauladhar mountains right in your face.',
     inclusions: ['1 Night Hotel, 1 Night Dome Camp', 'Trekking Guide', 'Meals during trek', 'Sleeping Bags'],
     exclusions: ['Transport to Dharamshala', 'Personal Porter'],
@@ -146,11 +216,11 @@ export const tripsData = [
     title: 'Bir Billing Paragliding',
     location: 'Himachal Pradesh, India',
     duration: '3 Days / 2 Nights',
-    price: '7,500',
+    price: '5,000',
     originalPrice: '9,000',
     rating: '4.9',
     reviews: 312,
-    image: 'https://images.unsplash.com/photo-1525875975471-999f65706a10?auto=format&fit=crop&w=1200&q=80',
+    image: '/billing.jpg',
     description: 'Calling all adrenaline junkies! Experience the thrill of flying at Asia\'s highest paragliding site, explore ancient monasteries, and enjoy spectacular sunsets.',
     inclusions: ['2 Nights Stay', 'Paragliding Flight (15-20 mins)', 'GoPro Video of Flight', 'Breakfast & Dinner'],
     exclusions: ['Travel to Bir', 'Extra adventure activities'],
@@ -165,12 +235,12 @@ export const tripsData = [
     stateId: 'himachal',
     title: 'Sethan Igloo Village',
     location: 'Himachal Pradesh, India',
-    duration: '2 Days / 1 Night',
-    price: '5000',
-    originalPrice: '6500',
+    duration: '3 Days / 2 Night',
+    price: '5,000',
+    originalPrice: '6,500',
     rating: '4.7',
     reviews: 88,
-    image: 'https://images.unsplash.com/photo-1605649487212-4d43bf8a77cd?auto=format&fit=crop&w=1200&q=80',
+    image: '/Tirthan.jpg',
     description: 'An offbeat winter wonderland just above Manali. Experience staying in a snowy paradise away from the crowded tourist spots.',
     inclusions: ['1 Night Stay in Sethan', 'Breakfast & Dinner', 'Snow Activities (Seasonal)'],
     exclusions: ['Travel to Manali', 'Heater charges (if applicable)'],
@@ -185,9 +255,9 @@ export const tripsData = [
     stateId: 'uttarakhand',
     title: 'Rishikesh Rafting & Camping',
     location: 'Uttarakhand, India',
-    duration: '2 Days / 1 Night',
-    price: '2,499',
-    originalPrice: '3,500',
+    duration: '3 Days / 2 Night',
+    price: '5,000',
+    originalPrice: '5,500',
     rating: '4.8',
     reviews: 420,
     image: '/Rishikesh.jpg',
@@ -205,7 +275,7 @@ export const tripsData = [
     title: 'Kedarnath Yatra Trek',
     location: 'Uttarakhand, India',
     duration: '3 Days / 2 Nights',
-    price: '5000',
+    price: '5,000',
     originalPrice: '10,500',
     rating: '4.9',
     reviews: 550,
@@ -226,7 +296,7 @@ export const tripsData = [
     title: 'Auli Snow Expedition',
     location: 'Uttarakhand, India',
     duration: '3 Days / 2 Nights',
-    price: '5000',
+    price: '5,000',
     originalPrice: '12,000',
     rating: '4.8',
     reviews: 215,
@@ -247,7 +317,7 @@ export const tripsData = [
     title: 'Chopta & Tungnath Trek',
     location: 'Uttarakhand, India',
     duration: '3 Days / 2 Nights',
-    price: '5000',
+    price: '5,000',
     originalPrice: '6,800',
     rating: '4.9',
     reviews: 180,
@@ -268,11 +338,11 @@ export const tripsData = [
     title: 'Nainital Lake City Weekend',
     location: 'Uttarakhand, India',
     duration: '3 Days / 2 Nights',
-    price: '4,500',
+    price: '5,000',
     originalPrice: '5,500',
     rating: '4.7',
     reviews: 310,
-    image: 'https://images.unsplash.com/photo-1593693397690-362cb9666cb2?auto=format&fit=crop&w=1200&q=80',
+    image: '/Discover Nainital.jpg',
     description: 'Escape to the breathtaking "Lake District of India". Enjoy boating on the Naini Lake, explore the vibrant Mall Road, and witness spectacular Himalayan viewpoints.',
     inclusions: ['2 Nights Hotel Stay', 'Breakfast & Dinner', 'Local Sightseeing Cab'],
     exclusions: ['Boating/Cable Car Tickets', 'Travel to Nainital', 'Lunch'],
@@ -292,7 +362,7 @@ export const tripsData = [
     originalPrice: '6,200',
     rating: '4.8',
     reviews: 425,
-    image: 'https://images.unsplash.com/photo-1622308644420-b20140dfb92c?auto=format&fit=crop&w=1200&q=80',
+    image: '/Mussoorie.jpg',
     description: 'Experience the colonial charm of Mussoorie. Walk through misty pine forests, visit cascading waterfalls, and enjoy panoramic views of the Doon Valley.',
     inclusions: ['2 Nights Premium Stay', 'Breakfast & Dinner', 'Kempty Fall Visit'],
     exclusions: ['Travel to Dehradun/Mussoorie', 'Entry fees to tourist spots'],
@@ -308,11 +378,11 @@ export const tripsData = [
     title: 'Jim Corbett Wildlife Safari',
     location: 'Uttarakhand, India',
     duration: '3 Days / 2 Nights',
-    price: '5,500',
+    price: '5,000',
     originalPrice: '7,000',
     rating: '4.9',
     reviews: 280,
-    image: 'https://images.unsplash.com/photo-1588824300302-690240d944c6?auto=format&fit=crop&w=1200&q=80', // Royal Bengal Tiger
+    image: '/JimCorbett.jpg', // Royal Bengal Tiger
     description: 'Dive deep into the wilderness of India\'s oldest national park. Stay in luxury jungle resorts and embark on an open jeep safari to spot the majestic Royal Bengal Tiger.',
     inclusions: ['2 Nights Resort Stay', 'All 3 Meals', '1 Open Jeep Safari', 'Resort Pool & Activities'],
     exclusions: ['Travel to Ramnagar', 'Extra Safari zones'],
@@ -328,7 +398,7 @@ export const tripsData = [
     title: 'Chakrata Hidden Gem',
     location: 'Uttarakhand, India',
     duration: '3 Days / 2 Nights',
-    price: '5000',
+    price: '5,000',
     originalPrice: '6,500',
     rating: '4.8',
     reviews: 145,
@@ -349,7 +419,7 @@ export const tripsData = [
     title: 'Lansdowne Cantonment Retreat',
     location: 'Uttarakhand, India',
     duration: '3 Days / 2 Nights',
-    price: '5000',
+    price: '5,000',
     originalPrice: '5,200',
     rating: '4.7',
     reviews: 95,
@@ -369,7 +439,7 @@ export const tripsData = [
     title: 'Harsil: The Mini Switzerland',
     location: 'Uttarakhand, India',
     duration: '3 Days / 2 Nights',
-    price: '5000',
+    price: '5,000',
     originalPrice: '11,000',
     rating: '4.9',
     reviews: 64,
@@ -390,7 +460,7 @@ export const tripsData = [
     title: 'Do Dham: Kedarnath & Badrinath',
     location: 'Uttarakhand, India',
     duration: '3 Days / 2 Nights',
-    price: '5000',
+    price: '5,000',
     originalPrice: '17,500',
     rating: '5.0',
     reviews: 210,
@@ -441,11 +511,11 @@ export const tripsData = [
     title: 'Udaipur: City of Lakes',
     location: 'Rajasthan, India',
     duration: '3 Days / 2 Nights',
-    price: '5,800',
+    price: '5000',
     originalPrice: '7,200',
     rating: '4.9',
     reviews: 215,
-    image: 'https://images.unsplash.com/photo-1591461939109-b44e06828906?auto=format&fit=crop&w=1200&q=80',
+    image: '/Udaipur.jpg',
     description: 'The Venice of the East. Experience the royal grandeur of City Palace, peaceful boat rides on Lake Pichola, and the beautiful architecture of Jag Mandir.',
     inclusions: ['2 Nights Heritage Hotel Stay', 'Breakfast & Dinner', 'Boat Ride on Lake Pichola', 'Guided City Tour'],
     exclusions: ['Travel to Udaipur', 'Entry tickets to Palaces', 'Lunch'],
@@ -465,7 +535,7 @@ export const tripsData = [
     originalPrice: '6,500',
     rating: '4.8',
     reviews: 380,
-    image: 'https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=1200&q=80',
+    image: '/Jaipur.jpg',
     description: 'A journey through the royal history of the Rajputs. From the iconic Hawa Mahal to the majestic Amer Fort, experience the vibrant culture and colors of Jaipur.',
     inclusions: ['2 Nights Stay', 'Breakfast & Dinner', 'Private AC Cab for Sightseeing'],
     exclusions: ['Travel to Jaipur', 'Elephant/Jeep ride at Amer Fort'],
@@ -485,7 +555,7 @@ export const tripsData = [
     originalPrice: '8,000',
     rating: '4.9',
     reviews: 290,
-    image: 'https://images.unsplash.com/photo-1545051905-391d50c2573d?auto=format&fit=crop&w=1200&q=80',
+    image: '/The Golden City -Jaisalmer.jpg',
     description: 'Explore the living fort of Jaisalmer and head deep into the Thar Desert for a night under the stars in traditional luxury camps.',
     inclusions: ['1 Night Hotel, 1 Night Desert Camp', 'Camel Safari & Jeep Dune Bashing', 'Traditional Rajasthani Folk Music', 'All Meals in Desert'],
     exclusions: ['Travel to Jaisalmer', 'Personal Tips'],
@@ -502,11 +572,11 @@ export const tripsData = [
     title: 'Jodhpur: The Blue City',
     location: 'Rajasthan, India',
     duration: '3 Days / 2 Nights',
-    price: '4,800',
+    price: '4,999',
     originalPrice: '6,000',
     rating: '4.8',
     reviews: 195,
-    image: 'https://images.unsplash.com/photo-1590403323719-2169560f4e15?auto=format&fit=crop&w=1200&q=80',
+    image: '/Jodhpur.jpg',
     description: 'Dominated by the massive Mehrangarh Fort, explore the sea of blue houses in the old city and the magnificent Umaid Bhawan Palace.',
     inclusions: ['2 Nights Boutique Stay', 'Breakfast & Dinner', 'Guided Walk in Blue City'],
     exclusions: ['Travel to Jodhpur', 'Zipline (Flying Fox) at Fort'],
@@ -526,7 +596,7 @@ export const tripsData = [
     originalPrice: '3,800',
     rating: '4.7',
     reviews: 150,
-    image: 'https://images.unsplash.com/photo-1621360143875-e99d45e0569f?auto=format&fit=crop&w=1200&q=80',
+    image: '/Pushkar.jpg',
     description: 'Visit the only Brahma Temple in the world and experience the magical evening Aarti at the Pushkar Ghats.',
     inclusions: ['1 Night Stay', 'Breakfast & Dinner', 'Desert Camel Ride'],
     exclusions: ['Travel to Pushkar', 'Personal Shopping'],
@@ -541,11 +611,11 @@ export const tripsData = [
     title: 'Jawai: The Leopard Hills',
     location: 'Rajasthan, India',
     duration: '3 Days / 2 Nights',
-    price: '11,500',
+    price: '5000',
     originalPrice: '14,000',
     rating: '4.9',
     reviews: 82,
-    image: 'https://images.unsplash.com/photo-1620296766462-8e7c1f1ec717?auto=format&fit=crop&w=1200&q=80',
+    image: '/Jawai.jpg',
     description: 'Witness the unique harmony between leopards and the local Rabari tribe in the rocky granite landscapes of Jawai.',
     inclusions: ['2 Nights Luxury Tent Stay', 'All Meals', '2 Private Jeep Safaris', 'Crocodile Sighting'],
     exclusions: ['Travel to Jawai', 'Alcoholic Beverages'],
@@ -565,7 +635,7 @@ export const tripsData = [
     originalPrice: '9,500',
     rating: '4.8',
     reviews: 310,
-    image: 'https://images.unsplash.com/photo-1581012733671-91e0bc624c34?auto=format&fit=crop&w=1200&q=80',
+    image: '/download.jpg',
     description: 'A former royal hunting ground, Ranthambore is now one of the best places in India to spot tigers in the wild.',
     inclusions: ['2 Nights Resort Stay', 'Breakfast & Dinner', '1 Canter/Jeep Safari'],
     exclusions: ['Travel to Sawai Madhopur', 'National Park Entry Fees'],
@@ -577,13 +647,13 @@ export const tripsData = [
   },
 // MUST START WITH 'export'
   {
-    id: "kedarkantha", // Must match URL: /trip/kedarkantha
+    id: "kedarkantha", 
     stateId: "uttarakhand",
     title: "Kedarkantha Snow Trek",
     price: "5000", // [cite: 5, 62]
     location: "Sankri, Uttarakhand", 
     duration: "5 Days / 4 Nights", 
-    logo: "/logo.png", // Ensure your logo file is in the public folder
+    logo: "/logo.png",
     image: "/Kedarkantha.png",
     itinerary: [
       { 
@@ -719,6 +789,72 @@ export const tripsData = [
       // ... add the rest of the days here ...
     ]
   },
-
+  {
+  id: "kashmir-volvo-special",
+  category: "kashmir",
+  title: "Srinagar & Gulmarg: Magic of Kashmir",
+  location: "Delhi - Srinagar - Gulmarg",
+  duration: "4 Nights / 5 Days",
+  price: "8,999", // Adjusted to a typical Volvo budget price, feel free to change
+  image: "/kashmir-volvo.png", 
+  inclusions: [
+    "Volvo Semi-Sleeper (Delhi–Srinagar–Delhi)",
+    "2 Nights Stay in Srinagar (Hotel)",
+    "2 Breakfasts & 2 Dinners",
+    "Private Vehicle for Sightseeing",
+    "Driver Allowance, Tolls & Parking"
+  ],
+  itinerary: [
+    {
+      day: 1,
+      title: "Delhi to Srinagar (The Journey Begins)",
+      desc: "Evening departure from Delhi by Volvo Semi-Sleeper Bus. Enjoy an overnight journey towards the majestic mountains of Kashmir.",
+      image: "/New Delhi Travel Guide.jpg"
+    },
+    {
+      day: 2,
+      title: "Arrival in Srinagar & Hotel Check-in",
+      desc: "Evening arrival at Srinagar. Meet our representative and transfer to your hotel. Freshen up and enjoy a warm Kashmiri dinner at the hotel.",
+      image: "/Dal Lake, Srinagar_.jpg"
+    },
+    {
+      day: 3,
+      title: "Gulmarg Meadows & Gondola Ride",
+      desc: "Morning drive to Gulmarg (The Meadow of Flowers). Explore the lush greenery or snow paradise. Optional: Ride the world’s highest Gondola or enjoy seasonal snow biking.",
+      image: "/GULMARG.jpg"
+    },
+    {
+      day: 4,
+      title: "Srinagar Sightseeing & Volvo Departure",
+      desc: "Visit Mughal Gardens (Nishat & Shalimar), Shankaracharya Temple, and Lal Chowk for shopping. Optional Shikara ride on Dal Lake before departing for Delhi by Volvo in the evening.",
+      image: "/kashmir1.jpg"
+    },
+    {
+      day: 5,
+      title: "Arrival back in Delhi",
+      desc: "Morning arrival back in Delhi. The tour ends with unforgettable memories of the 'Paradise on Earth'.",
+      image: "/ddl.jpg"
+    }
+  ]
+}
 ];
-  
+// ... after closing the tripsData array with ];
+
+// FLAT ARRAY FOR KASHMIR
+export const realTripGallery = [
+  { src: "/k4.jpg", alt: "Srinagar Lake" },
+  { src: "/k2.jpg", alt: "Group Photo" },
+  { src: "/k3.jpg", alt: "Gulmarg Snow" },
+  { src: "/k8.jpg", alt: "Pahalgam" },
+  { src: "/k6.jpg", alt: "Mountain View" }
+];
+
+// FLAT ARRAY FOR MANALI-KASOL
+export const manaliKasolGallery = [
+  { src: "/k-s1.jpg"  },
+  { src: "/k-s3.jpg"},
+  { src: "/k-s4.jpg"},
+  { src: "/k-s5.jpg"},
+];
+
+

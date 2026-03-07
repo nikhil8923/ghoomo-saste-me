@@ -1,75 +1,55 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const categoryData = [
+const categories = [
   {
-    id:'backpacking',
+    id: 'backpacking',
     title: 'Backpacking Trips',
-    image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+    image: '/backpacking.jpg',
+    path: '/category/backpacking'
   },
   {
-    id: 'weekend',
-    title: 'Weekend Getaways',
-    image: 'https://images.unsplash.com/photo-1542259009477-d625272157b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+    id: 'kashmir-volvo-special',
+    title: 'Kashmir Special',
+    image: '/kashmir-main.jpg',
+    path: '/trip/kashmir-volvo-special' 
   },
   {
-    id: 'adventure',
-    title: 'Adventure Treks',
-    image: 'https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-  },
-  {
-    id: 'honeymoon',
-    title: 'Honeymoon Trips',
-    image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-  },
-  {
-    id: 'corporate',
-    title: 'Corporate Trips',
-    image: 'https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-  },
+    id: 'uttarakhand',
+    title: 'Uttarakhand Trek',
+    image: '/uttarakhand.jpg',
+    path: '/category/uttarakhand'
+  }
 ];
 
 const Categories = () => {
   return (
-    <section className="py-16 bg-white">
-      <div className="container mx-auto px-4 max-w-7xl">
+    <section className="py-20 bg-white">
+      <div className="container mx-auto px-4">
+        <h2 className="text-4xl font-black italic uppercase text-[#1a2b4c] mb-12 border-l-8 border-blue-600 pl-6">
+          Explore Categories
+        </h2>
         
-      
-        <div className="text-center mb-10">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-[#1a2b4c] mb-3">
-            Explore Destinations By Category
-          </h2>
-          <div className="w-24 h-1 bg-blue-600 mx-auto rounded-full"></div>
-        </div>
-       
-
-        {/* Categories Grid */}
-      <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-          {categoryData.map((category) => (
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {categories.map((cat) => (
             <Link 
-              key={category.id} 
-              className="relative h-72 rounded-2xl overflow-hidden group cursor-pointer shadow-lg"
+              key={cat.id} 
+              to={cat.path} 
+              className="group relative h-[400px] rounded-[40px] overflow-hidden shadow-2xl block"
             >
-              {/* Background Image */}
               <img 
-                src={category.image} 
-                alt={category.title} 
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                src={cat.image} 
+                alt={cat.title} 
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
               />
-              
-              {/* Dark Gradient Overlay for readability */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-              
-              {/* Text */}
-              <div className="absolute bottom-0 left-0 w-full p-5 transition-transform duration-300 group-hover:-translate-y-2">
-                <h3 className="text-white font-bold text-xl tracking-wide">
-                  {category.title}
-                </h3>
+              <div className="absolute inset-0 bg-gradient-to-t from-[#1a2b4c] to-transparent opacity-70" />
+              <div className="absolute bottom-10 left-10">
+                <h3 className="text-3xl font-black text-white uppercase italic">{cat.title}</h3>
+                <p className="text-yellow-400 font-bold uppercase tracking-widest text-xs mt-2 italic">View Packages →</p>
               </div>
             </Link>
           ))}
         </div>
-        
       </div>
     </section>
   );
