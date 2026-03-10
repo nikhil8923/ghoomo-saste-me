@@ -18,3 +18,15 @@ display:none;
 -ms-overflow-style:none;
 scrollbar-width:none;
 }
+html {
+scroll-behavior: smooth;
+}
+/* Hide horizontal scrollbar for gallery slider */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

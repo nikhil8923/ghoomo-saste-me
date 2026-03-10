@@ -17,10 +17,7 @@ const { id } = useParams();
 
 const [currentTrip, setCurrentTrip] = useState(null);
 const [activeTab, setActiveTab] = useState("itinerary");
-const [selectedSharing, setSelectedSharing] = useState("triple");
 const [isModalOpen, setIsModalOpen] = useState(false);
-
-/* ===== GALLERY STATES ===== */
 
 const [galleryOpen, setGalleryOpen] = useState(false);
 const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -35,18 +32,15 @@ window.scrollTo(0,0);
 
 if (!currentTrip) {
 return (
-
 <div className="h-screen flex items-center justify-center">
 Loading Trip...
 </div>
 );
 }
 
-const currentPrice = currentTrip.occupancy
-? currentTrip.occupancy[selectedSharing]
-: currentTrip.price;
+/* FORCE PRICE */
 
-/* SAFE IMAGE ARRAY */
+const currentPrice = 5000;
 
 const images = [
 {src: currentTrip.image},
@@ -55,15 +49,13 @@ const images = [
 
 return (
 
-<main className="pt-32 pb-20 bg-[#f4f7f6] min-h-screen">
+<main className="pt-32 pb-40 md:pb-20 bg-[#f4f7f6] min-h-screen">
 
 <div className="max-w-7xl mx-auto px-4">
 
-{/* ===== IMAGE GALLERY ===== */}
+{/* IMAGE GALLERY */}
 
 <div className="mt-10 mb-12 grid grid-cols-1 md:grid-cols-12 gap-4 h-[420px] md:h-[520px]">
-
-{/* BIG IMAGE */}
 
 <div className="md:col-span-7 rounded-[30px] overflow-hidden">
 
@@ -74,8 +66,6 @@ alt=""
 />
 
 </div>
-
-{/* RIGHT GRID */}
 
 <div className="md:col-span-5 grid grid-cols-2 grid-rows-2 gap-4">
 
@@ -90,8 +80,6 @@ alt=""
 
 ))}
 
-{/* VIEW MORE */}
-
 <div
 onClick={()=>{
 
@@ -101,7 +89,6 @@ document.body.style.overflow="hidden";
 
 }}
 className="relative cursor-pointer rounded-[20px] overflow-hidden"
-
 >
 
 <img
@@ -124,7 +111,7 @@ View More
 
 </div>
 
-{/* ===== MAIN CONTENT ===== */}
+{/* MAIN CONTENT */}
 
 <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
 
@@ -159,10 +146,11 @@ key={tab}
 onClick={()=>setActiveTab(tab)}
 className={`flex-1 py-3 rounded-lg text-sm font-bold uppercase
 ${activeTab===tab ? "bg-blue-600 text-white":"text-slate-400"}`}
-
 >
 
-{tab} </button>
+{tab}
+
+</button>
 
 ))}
 
@@ -217,11 +205,8 @@ D{day.day}
 {currentTrip.inclusions?.map((item,i)=>(
 
 <div key={i} className="flex gap-3">
-
 <CheckCircle className="text-green-500"/>
-
 {item}
-
 </div>
 
 ))}
@@ -237,11 +222,8 @@ D{day.day}
 {currentTrip.exclusions?.map((item,i)=>(
 
 <div key={i} className="flex gap-3">
-
 <XCircle className="text-red-500"/>
-
 {item}
-
 </div>
 
 ))}
@@ -254,9 +236,9 @@ D{day.day}
 
 </div>
 
-{/* SIDEBAR */}
+{/* DESKTOP SIDEBAR */}
 
-<div className="lg:col-span-4">
+<div className="lg:col-span-4 hidden md:block">
 
 <div className="bg-[#0f172a] text-white p-10 rounded-[40px] sticky top-24">
 
@@ -271,10 +253,11 @@ Starting Price
 <button
 onClick={()=>setIsModalOpen(true)}
 className="w-full bg-blue-600 py-4 rounded-xl font-bold uppercase"
-
 >
 
-Send Query Now </button>
+Send Query Now
+
+</button>
 
 </div>
 
@@ -284,87 +267,7 @@ Send Query Now </button>
 
 </div>
 
-{/* ===== FULLSCREEN GALLERY ===== */}
 
-{galleryOpen && (
-
-<div className="fixed inset-0 bg-black/95 z-[99999] flex flex-col items-center justify-center">
-
-{/* CLOSE BUTTON */}
-
-<button
-onClick={()=>{
-
-setGalleryOpen(false);
-document.body.style.overflow="auto";
-
-}}
-className="absolute top-6 right-8 text-white text-4xl hover:text-red-400"
-
->
-
-× </button>
-
-{/* IMAGE COUNTER */}
-
-<div className="text-white mb-4 text-sm">
-{currentImageIndex+1} / {images.length}
-</div>
-
-{/* LEFT ARROW */}
-
-<button
-onClick={()=>setCurrentImageIndex(
-(prev)=>(prev-1+images.length)%images.length
-)}
-className="absolute left-10 top-1/2 -translate-y-1/2 text-white text-4xl"
-
->
-
-‹ </button>
-
-{/* IMAGE */}
-
-<img
-src={images[currentImageIndex]?.src}
-className="max-h-[70vh] max-w-[85vw] object-contain rounded-xl"
-alt=""
-/>
-
-{/* RIGHT ARROW */}
-
-<button
-onClick={()=>setCurrentImageIndex(
-(prev)=>(prev+1)%images.length
-)}
-className="absolute right-10 top-1/2 -translate-y-1/2 text-white text-4xl"
-
->
-
-› </button>
-
-{/* THUMBNAILS */}
-
-<div className="flex gap-3 mt-6 overflow-x-auto px-6">
-
-{images.map((img,i)=>(
-
-<img
-key={i}
-onClick={()=>setCurrentImageIndex(i)}
-src={img?.src}
-className={`h-16 w-24 object-cover rounded-lg cursor-pointer
-${currentImageIndex===i ? "border-2 border-white":""}`}
-alt=""
-/>
-
-))}
-
-</div>
-
-</div>
-
-)}
 
 <BookingModal
 isOpen={isModalOpen}

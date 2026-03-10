@@ -2,7 +2,7 @@ import React from 'react';
 import { Mail, Phone, MapPin, MessageCircle, Send } from 'lucide-react';
 
 const Contact = () => {
-  const whatsappNumber = "919090403075"; // Based on your header
+  const whatsappNumber = "917827372844"; 
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hi Ghoomo Saste Me! I want to inquire about a trip.`;
 
   return (
@@ -31,7 +31,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-xs font-bold text-gray-400 uppercase">WhatsApp Support</p>
-                    <p className="font-bold text-[#1a2b4c]">+91 9090403075</p>
+                    <p className="font-bold text-[#1a2b4c]">+91 7827372844</p>
                   </div>
                 </a>
 
@@ -41,7 +41,9 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-xs font-bold text-gray-400 uppercase">Email Us</p>
-                    <p className="font-bold text-[#1a2b4c]">hello@ghoomosasteme.com</p>
+                    <p className="font-bold text-[#1a2b4c]">gmsindiaproject@gmail.com</p>
+                    <p className="font-bold text-[#1a2b4c]">support@ghoomosasteme.com</p>
+                    
                   </div>
                 </div>
 
@@ -51,7 +53,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-xs font-bold text-gray-400 uppercase">Our Base</p>
-                    <p className="font-bold text-[#1a2b4c]">Dehradun, Uttarakhand (DIT University)</p>
+                    <p className="font-bold text-[#1a2b4c]">Dehradun, Uttarakhand </p>
                   </div>
                 </div>
               </div>

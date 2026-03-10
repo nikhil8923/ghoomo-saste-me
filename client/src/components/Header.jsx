@@ -77,7 +77,7 @@ className="hidden md:flex items-center gap-2 border-2 border-blue-600 text-blue-
 
 >
 
-<MessageCircle size={16}/>
+<MessageCircle size={12}/>
 +91 7827372844
 
 </a>
@@ -145,15 +145,19 @@ WhatsApp
 
 <div className="flex gap-8 overflow-x-auto whitespace-nowrap py-3 px-1 text-white font-medium text-sm no-scrollbar lg:justify-center">
 
-<Link
-to="/upcoming"
+{/* Upcoming */}
+
+<a
+href="/#upcoming-trips"
 className="flex items-center gap-2 hover:text-yellow-300 transition-colors"
 >
 
 <CalendarDays size={20} className="text-yellow-400"/>
 Upcoming Trips
 
-</Link>
+</a>
+
+{/* Domestic */}
 
 <Link
 to="/state/himachal"
@@ -165,8 +169,10 @@ Domestic Trips
 
 </Link>
 
+{/* Weekend */}
+
 <Link
-to="/weekend"
+to="/category/weekend"
 className="flex items-center gap-2 hover:text-yellow-300 transition-colors"
 >
 
@@ -175,8 +181,10 @@ Weekend Trips
 
 </Link>
 
+{/* Backpacking */}
+
 <Link
-to="/backpacking"
+to="/category/backpacking"
 className="flex items-center gap-2 hover:text-yellow-300 transition-colors"
 >
 
@@ -185,8 +193,10 @@ Backpacking Trips
 
 </Link>
 
+{/* Corporate */}
+
 <Link
-to="/corporate"
+to="/category/corporate"
 className="flex items-center gap-2 hover:text-yellow-300 transition-colors"
 >
 
