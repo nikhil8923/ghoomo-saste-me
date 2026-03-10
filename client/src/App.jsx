@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import MobileBottomNav from "./components/MobileBottomNav";
 
 // Pages
 import Home from './pages/Home';
@@ -31,10 +32,13 @@ export default function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/payments" element={<Payments />} />
             <Route path="/category/:categoryId" element={<CategoryPage />} />
+            
           </Routes>
+          <MobileBottomNav />
         </main>
         <Footer />
       </div>
+      
     </Router>
   );
 }

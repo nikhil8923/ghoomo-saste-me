@@ -89,26 +89,86 @@ export const tripsData = [
 
 
   
-  {
-    id: 'mcleodganj-dharamshala',
-    stateId: 'himachal',
-    title: 'McLeodganj & Dharamshala',
-    location: 'Himachal Pradesh, India',
-    duration: '3 Days / 2 Nights',
-    price: '5,000',
-    originalPrice: '7,500',
-    rating: '4.7',
-    reviews: 98,
-    image: '/Mcleod Ganj.jpg',
-    description: 'Immerse yourself in Tibetan culture, beautiful monasteries, and stunning views of the Dhauladhar mountain range.',
-    inclusions: ['2 Nights Accommodation', 'Meals as per itinerary', 'Local Guide', 'First Aid'],
-    exclusions: ['Transport to Dharamshala', 'Entry fees to monuments'],
-    itinerary: [
-      { day: 1, title: 'Arrival in Dharamshala & Stadium Visit', description: 'Arrive in Dharamshala, visit the famous HPCA Cricket Stadium, and explore the local tea gardens.' },
-      { day: 2, title: 'McLeodganj Exploration', description: 'Head up to McLeodganj. Visit the Dalai Lama Temple, Bhagsu Waterfall, and enjoy the vibrant Tibetan market.' },
-      { day: 3, title: 'Naddi View Point & Departure', description: 'Catch a mesmerizing sunrise at Naddi Village, enjoy breakfast, and begin your return journey.' }
-    ]
-  },
+ {
+  id: 'mcleodganj-dharamshala',
+  stateId: 'himachal',
+  title: 'McLeodganj & Triund Trek',
+  location: 'Himachal Pradesh, India',
+  duration: '5 Days / 4 Nights',
+  price: '5000',
+  originalPrice: '7500',
+  rating: '4.7',
+  reviews: 98,
+  image: '/McleodGanj.jpg',
+
+  description:
+    'Experience the beauty of McLeodganj and the famous Triund Trek. Explore Tibetan monasteries, vibrant cafes, Bhagsu waterfalls, and enjoy breathtaking views of the Dhauladhar mountain range. Perfect for adventure lovers and nature seekers.',
+
+  inclusions: [
+    'Delhi to McLeodganj and return transport via Volvo / Tempo Traveller',
+    '1 Night Hotel stay in McLeodganj',
+    '1 Night camping stay at Triund',
+    '2 Breakfasts and 2 Dinners',
+    'Guided Triund Trek',
+    'Local sightseeing in McLeodganj',
+    'Trip Captain / Tour Coordinator',
+    'Bonfire & group activities (subject to weather)'
+  ],
+
+  exclusions: [
+    'Lunch during the trip',
+    'Personal expenses (shopping, cafe bills, etc.)',
+    'Porter or horse charges during the trek',
+    'Taxi from McLeodganj to Dharamkot trek base',
+    'Adventure activities not mentioned in itinerary',
+    'Travel insurance',
+    'Anything not mentioned in inclusions'
+  ],
+
+  itinerary: [
+    {
+      day: 1,
+      title: 'Departure from Delhi',
+      description:
+        'Meet the group and trip captain at the Delhi boarding point in the evening. Start your overnight journey towards McLeodganj in a comfortable Volvo or Tempo Traveller. Enjoy music, games, and group interaction during the journey.'
+    },
+
+    {
+      day: 2,
+      title: 'Arrival in McLeodganj & Local Sightseeing',
+      description:
+        'Arrive in McLeodganj in the morning and check into your hotel. After freshening up, explore local attractions like Bhagsu Nag Temple, Bhagsu Waterfall, and Dharamkot village. Enjoy cafe hopping and explore the vibrant Tibetan markets of McLeodganj. Dinner and overnight stay at the hotel.'
+    },
+
+    {
+      day: 3,
+      title: 'Triund Trek & Camping',
+      description:
+        'After breakfast, start the famous Triund Trek (approx. 9 km). The trek passes through beautiful forests and scenic mountain trails. Reach Triund by afternoon and enjoy stunning sunset views of the Dhauladhar range. Spend the night camping under the stars at Triund campsite.'
+    },
+
+    {
+      day: 4,
+      title: 'Sunrise at Triund & Return to McLeodganj',
+      description:
+        'Wake up early to witness a breathtaking Himalayan sunrise. After breakfast, trek down from Triund to McLeodganj. Spend some free time exploring cafes or shopping before departing for Delhi in the evening.'
+    },
+
+    {
+      day: 5,
+      title: 'Arrival in Delhi',
+      description:
+        'Reach Delhi in the morning with unforgettable memories of mountains, trekking adventures, and amazing group experiences.'
+    }
+  ],
+
+  gallery: [
+    '/gallery/mcleodganj1.jpg',
+    '/gallery/mcleodganj2.jpg',
+    '/gallery/mcleodganj3.jpg',
+    '/gallery/mcleodganj4.jpg'
+  ]
+},
   {
     id: 'shimla-kufri',
     stateId: 'himachal',
@@ -284,11 +344,34 @@ export const tripsData = [
     inclusions: ['3 Nights Accommodation', 'Transport from Haridwar/Rishikesh', 'Breakfast & Dinner', 'Experienced Trek Guide'],
     exclusions: ['Helicopter/Mule/Pony charges', 'VIP Darshan Tickets', 'Lunch'],
     itinerary: [
-      { day: 1, title: 'Haridwar to Guptkashi', description: 'Meet the group in Haridwar and drive along the Mandakini river to reach Guptkashi. Check in and rest for the trek.' },
-      { day: 2, title: 'Trek to Kedarnath', description: 'Early morning drive to Sonprayag/Gaurikund. Begin the 16km steep trek to the Kedarnath shrine. Attend the mesmerizing evening Aarti and stay overnight near the temple.' },
-      { day: 3, title: 'Morning Darshan & Descent', description: 'Wake up early for the main Darshan. Feel the spiritual energy, then trek back down to Gaurikund and drive to your hotel in Guptkashi.' },
-      { day: 4, title: 'Return to Haridwar', description: 'After breakfast, begin the scenic drive back to Haridwar, carrying unforgettable memories and blessings.' }
-    ]
+  {
+    day: 1,
+    title: "Haridwar to Guptkashi",
+    description:
+      "Arrive at Haridwar and begin the scenic drive towards Guptkashi. Enjoy beautiful views of the Alaknanda river and surrounding Himalayan landscapes. Overnight stay at Guptkashi."
+  },
+
+  {
+    day: 2,
+    title: "Trek to Kedarnath",
+    description:
+      "After breakfast drive to Sonprayag and start the Kedarnath trek. The trek passes through beautiful valleys, waterfalls, and mountain views. Reach Kedarnath temple area by evening."
+  },
+
+  {
+    day: 3,
+    title: "Morning Darshan & Descent",
+    description:
+      "Attend early morning Kedarnath temple darshan. After blessings from Lord Shiva begin the trek back to Sonprayag and return to the hotel for overnight stay."
+  },
+
+  {
+    day: 4,
+    title: "Return to Haridwar",
+    description:
+      "After breakfast drive back to Haridwar. The trip ends with divine blessings and unforgettable Himalayan memories."
+  }
+]
   },
   {
     id: 'auli-snow',
@@ -792,6 +875,7 @@ export const tripsData = [
   {
   id: "kashmir-volvo-special",
   category: "kashmir",
+  type: "domestic",
   title: "Srinagar & Gulmarg: Magic of Kashmir",
   location: "Delhi - Srinagar - Gulmarg",
   duration: "4 Nights / 5 Days",

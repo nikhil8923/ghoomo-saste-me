@@ -69,7 +69,7 @@ const Reviews = () => {
               </div>
 
               {/* Review Text */}
-              <p className="text-gray-600 text-sm mb-6 flex-grow italic">
+              <p className="text-gray-600 text-sm mb-6 flex-grow">
                 "{review.text}"
               </p>
 
