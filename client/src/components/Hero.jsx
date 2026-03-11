@@ -11,11 +11,32 @@ const Hero = () => {
     const query = searchQuery.toLowerCase().trim();
     if (!query) return;
 
-    if (query.includes("himachal")) navigate("/state/himachal");
-    else if (query.includes("uttarakhand") || query.includes("uk")) navigate("/state/uttarakhand");
-    else if (query.includes("rajasthan")) navigate("/state/rajasthan");
-    else if (query.includes("kashmir")) navigate("/state/kashmir");
-    else if (query.includes("goa")) navigate("/state/goa");
+    // --- OPERATIONAL SEARCH LOGIC ---
+    if (query.includes("himachal") || query.includes("manali") || query.includes("shimla") || query.includes("jibhi")) {
+      navigate("/state/himachal");
+    } 
+    else if (query.includes("kashmir") || query.includes("srinagar") || query.includes("gulmarg")) {
+      navigate("/state/kashmir");
+    } 
+    else if (query.includes("uttarakhand") || query.includes("uk") || query.includes("kedarnath") || query.includes("rishikesh") || query.includes("chopta")) {
+      navigate("/state/uttarakhand");
+    } 
+    else if (query.includes("rajasthan") || query.includes("jaipur") || query.includes("udaipur") || query.includes("jaisalmer")) {
+      navigate("/state/rajasthan");
+    } 
+    else if (query.includes("spiti") || query.includes("kaza")) {
+      navigate("/trip/spiti-valley");
+    } 
+    else if (query.includes("ladakh") || query.includes("leh")) {
+      navigate("/trip/leh-ladakh");
+    }
+    else if (query.includes("goa")) {
+      navigate("/state/goa");
+    }
+    else {
+      // Fallback if no specific destination is found
+      alert("No trips found for this search. Try searching for 'Himachal', 'Kashmir' or 'Spiti'.");
+    }
   };
 
   return (

@@ -1529,12 +1529,19 @@ export const manaliKasolGallery = [
 export const realTripGallery = [
   { src: "/backpack.jpg" },
   { src: "/adventure.jpg" },
-  { src: "/AdventureTrek.jpg" },
   { src: "/billing.jpg" },
-  { src: "/chakrata.jpg" },
-  { src: "/goa-banner.jpg" },
-  { src: "/fri.jpg" },
-  { src: "/corporate.jpg" }
+  { src: "/goa-banner.jpg" }, { src: "/corporate.jpg" }, { src: "/CD1.jpg" },{ src: "/CD2.jpg" },{ src: "/CD3.jpg" },{ src: "/CD4.jpg" },{ src: "/CD5.jpg" },
+  { src: "/CD6.jpg" }, { src: "/CD8.jpg" }, { src: "/CD11.jpg" }, { src: "/CD12.jpg" }, { src: "/CD13.jpg" }, { src: "/CD14.jpg" },
+  { src: "/CD15.jpg" }, { src: "/CD16.jpg" }, { src: "/CD17.jpg" }, { src: "/CD18.jpg" }, { src: "/CD19.jpg" }, { src: "/CD20.jpg" },
+  { src: "/CD21.jpg" }, { src: "/CD22.jpg" }, { src: "/CD23.jpg" }, { src: "/CD24.jpg" }, { src: "/CD25.jpg" }, { src: "/CD26.jpg" },
+  { src: "/CD27.jpg" },{ src: "/CD28.jpg" },{ src: "/CD29.jpg" },{ src: "/CD30.JPG" },{ src: "/CD31.JPG" },{ src: "/CD32.JPG" },
+  { src: "/CD33.JPG" }, { src: "/CD34.JPG" }, { src: "/CD35.JPG" }, { src: "/CD36.jpg" }, { src: "/CD37.jpg" }, { src: "/CD38.jpg" }, { src: "/CD39.jpg" },
+  { src: "/CD40.jpg" }, { src: "/CD41.JPG" }, { src: "/CD43.JPG" }
+ 
+  
+ 
+ 
+ 
 ];
 
 
