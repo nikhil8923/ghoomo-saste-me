@@ -7,40 +7,21 @@ const [isVisible, setIsVisible] = useState(false);
 
 useEffect(() => {
 
-const lastClosed = localStorage.getItem("offerPopupClosed");
-
-if (!lastClosed) {
 setTimeout(() => {
 setIsVisible(true);
 }, 1200);
-return;
-}
-
-const now = new Date().getTime();
-const diff = now - parseInt(lastClosed);
-
-const hours24 = 24 * 60 * 60 * 1000;
-
-if (diff > hours24) {
-setTimeout(() => {
-setIsVisible(true);
-}, 1200);
-}
 
 }, []);
 
 const closePopup = () => {
-
-localStorage.setItem("offerPopupClosed", new Date().getTime());
 setIsVisible(false);
-
 };
 
 if (!isVisible) return null;
 
 return (
 
-<div className="fixed bottom-4 left-4 z-[9999] w-[170px] md:w-[250px] animate-in fade-in slide-in-from-bottom-5 duration-500">
+<div className="fixed bottom-[110px] md:bottom-4 left-4 z-[9999] w-[170px] md:w-[250px] animate-in fade-in slide-in-from-bottom-5 duration-500">
 
 <div className="animate-shake-infinite">
 
@@ -49,9 +30,7 @@ return (
 <button
 onClick={closePopup}
 className="absolute top-1 right-1 bg-black/40 hover:bg-black/60 text-[#ffcc00] p-1 rounded-full transition-colors z-20"
-
 >
-
 <X size={12}/>
 </button>
 
@@ -85,10 +64,11 @@ href="https://wa.me/917827372844"
 target="_blank"
 rel="noreferrer"
 className="flex items-center justify-between w-full bg-[#ffcc00] text-[#1e52bc] hover:bg-black hover:text-[#ffcc00] transition-all group px-3 py-1.5 md:px-4 md:py-2.5 rounded-full font-black text-[10px] md:text-[15px] uppercase italic tracking-tighter"
-
 >
 
-Book Now <ExternalLink size={14} className="group-hover:translate-x-0.5 transition-transform"/> </a>
+Book Now <ExternalLink size={14} className="group-hover:translate-x-0.5 transition-transform"/>
+
+</a>
 
 </div>
 

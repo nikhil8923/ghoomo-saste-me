@@ -49,7 +49,7 @@ alert("Searching for: " + searchQuery);
 
 return (
 
-<main className="pt-[115px] flex-grow">
+<main className="pt-[120px] flex-grow">
 
 <Hero />
 

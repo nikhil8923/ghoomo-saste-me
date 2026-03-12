@@ -3,7 +3,7 @@ import React from "react";
 const RefundPolicy = () => {
 return ( <div className="pt-[120px] min-h-screen max-w-5xl mx-auto px-4 pb-16">
 
-```
+
   <h1 className="text-4xl font-bold text-[#1a2b4c] mb-6">
     Cancellation & Refund Policy
   </h1>

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import {
 Zap,
 MessageCircle,
@@ -147,16 +148,16 @@ WhatsApp
 
 {/* Upcoming */}
 
-<a
-href="/#upcoming-trips"
+<HashLink
+smooth
+to="/#upcoming-trips"
 className="flex items-center gap-2 hover:text-yellow-300 transition-colors"
 >
 
-<CalendarDays size={20} className="text-yellow-400"/>
+<CalendarDays size={20} className="text-yellow-400" />
 Upcoming Trips
 
-</a>
-
+</HashLink>
 {/* Domestic */}
 
 <Link

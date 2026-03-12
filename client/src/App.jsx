@@ -30,6 +30,7 @@ export default function App() {
 
       <Header />
       <OfferPopup />
+        <ScrollToTop />
 
       <main className="min-h-screen flex flex-col">
 
@@ -66,6 +67,7 @@ export default function App() {
         </Routes>
 
         <MobileBottomNav />
+       
 
       </main>
 

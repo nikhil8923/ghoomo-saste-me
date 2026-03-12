@@ -4,7 +4,6 @@ const Career = () => {
 return ( <div className="pt-[120px] min-h-screen max-w-5xl mx-auto px-4 pb-16 text-center"> <h1 className="text-4xl font-bold text-[#1a2b4c] mb-6">
 Career With Us </h1>
 
-```
   <p className="text-gray-600 mb-6">
     We are always looking for passionate travelers and talented
     individuals who want to build amazing travel experiences.

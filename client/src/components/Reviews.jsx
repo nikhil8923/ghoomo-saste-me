@@ -32,13 +32,13 @@ const reviewsData = [
     initial: 'L',
     location: 'Andaman',
     text: 'Had a wonderful experience during my weekend Manali-Sissu trip. Food, accommodation and travel throughout the journey was great.',
-    image: 'https://images.unsplash.com/photo-1517627043994-b991cbfa2fa6?auto=format&fit=crop&w=600&q=80',
+    image: 'sissu.jpg',
   }
 ];
 
 const Reviews = () => {
   return (
-    <section className="py-20 bg-white">
+    <section className="min-w-[280px] md:min-w-0 bg-white p-5 rounded-2xl shadow-md hover:shadow-xl transition">
       <div className="container mx-auto px-4 max-w-7xl">
         
         {/* Section Heading */}
@@ -50,7 +50,7 @@ const Reviews = () => {
         </div>
 
         {/* Reviews Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="flex md:grid md:grid-cols-2 lg:grid-cols-4 gap-5 overflow-x-auto md:overflow-visible pb-4 scrollbar-hide">
           {reviewsData.map((review) => (
             <div key={review.id} className="bg-gray-50 rounded-2xl p-6 shadow-sm hover:shadow-xl transition-shadow duration-300 border border-gray-100 flex flex-col h-full">
               
@@ -69,7 +69,7 @@ const Reviews = () => {
               </div>
 
               {/* Review Text */}
-              <p className="text-gray-600 text-sm mb-6 flex-grow">
+              <p className="min-w-[280px] md:min-w-0 bg-white p-5 rounded-2xl shadow-md hover:shadow-xl transition">
                 "{review.text}"
               </p>
 
