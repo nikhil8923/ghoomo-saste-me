@@ -223,14 +223,15 @@ return ( <footer className="bg-[#111827] text-gray-300 pt-14 font-sans relative"
 
   {/* WHATSAPP FLOAT */}
   <a
-    href="https://wa.me/917827372844"
-    target="_blank"
-    rel="noreferrer"
-    className="fixed bottom-[90px] right-6 bg-green-500 text-white p-4 rounded-full shadow-xl hover:bg-green-600 transition z-[9999]"
-  >
-    <MessageCircle size={26} fill="currentColor" />
-  </a>
+href="https://wa.me/917827372844"
+target="_blank"
+rel="noreferrer"
+className="hidden md:flex fixed bottom-6 right-6 z-[9999] bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-xl transition duration-300 items-center justify-center"
+>
 
+<MessageCircle size={26} />
+
+</a>
 </footer>
 
 

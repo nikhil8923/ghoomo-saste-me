@@ -89,7 +89,7 @@ export const tripsData = [
   stateId: 'himachal',
   title: 'McLeodganj & Triund Trek',
   location: 'Himachal Pradesh, India',
-  duration: '5 Days / 4 Nights',
+  duration: '3 Days / 2 Nights',
   price: '5000',
   originalPrice: '7500',
   rating: '4.7',
@@ -122,17 +122,17 @@ export const tripsData = [
   batches: [
 {
 date: "14 Mar 2026",
-price: 6999,
+price: 5000,
 seats: 6
 },
 {
 date: "21 Mar 2026",
-price: 6999,
+price: 5000,
 seats: 4
 },
 {
 date: "28 Mar 2026",
-price: 7499,
+price: 5500,
 seats: 8
 }
 ],
@@ -198,17 +198,17 @@ seats: 8
     batches: [
 {
 date: "14 Mar 2026",
-price: 6999,
+price: 5000,
 seats: 6
 },
 {
 date: "21 Mar 2026",
-price: 6999,
+price: 5500,
 seats: 4
 },
 {
 date: "28 Mar 2026",
-price: 7499,
+price: 6000,
 seats: 8
 }
 ],
@@ -237,17 +237,17 @@ seats: 8
     batches: [
 {
 date: "14 Mar 2026",
-price: 6999,
+price: 5000,
 seats: 6
 },
 {
 date: "21 Mar 2026",
-price: 6999,
+price: 5500,
 seats: 4
 },
 {
 date: "28 Mar 2026",
-price: 7499,
+price: 6000,
 seats: 8
 }
 ],
@@ -274,17 +274,17 @@ seats: 8
     batches: [
 {
 date: "14 Mar 2026",
-price: 6999,
+price: 5000,
 seats: 6
 },
 {
 date: "21 Mar 2026",
-price: 6999,
+price: 5500,
 seats: 4
 },
 {
 date: "28 Mar 2026",
-price: 7499,
+price: 6000,
 seats: 8
 }
 ],
@@ -312,17 +312,17 @@ seats: 8
     batches: [
 {
 date: "14 Mar 2026",
-price: 6999,
+price: 5000,
 seats: 6
 },
 {
 date: "21 Mar 2026",
-price: 6999,
+price: 5300,
 seats: 4
 },
 {
 date: "28 Mar 2026",
-price: 7499,
+price: 5800,
 seats: 8
 }
 ],
@@ -350,17 +350,17 @@ seats: 8
     batches: [
 {
 date: "14 Mar 2026",
-price: 6999,
+price: 5000,
 seats: 6
 },
 {
 date: "21 Mar 2026",
-price: 6999,
+price: 5500,
 seats: 4
 },
 {
 date: "28 Mar 2026",
-price: 7499,
+price: 6000,
 seats: 8
 }
 ],
@@ -387,17 +387,17 @@ seats: 8
     batches: [
 {
 date: "14 Mar 2026",
-price: 6999,
+price: 5000,
 seats: 6
 },
 {
 date: "21 Mar 2026",
-price: 6999,
+price: 5500,
 seats: 4
 },
 {
 date: "28 Mar 2026",
-price: 7499,
+price: 6000,
 seats: 8
 }
 ],
@@ -424,17 +424,17 @@ seats: 8
     batches: [
 {
 date: "14 Mar 2026",
-price: 6999,
+price: 5000,
 seats: 6
 },
 {
 date: "21 Mar 2026",
-price: 6999,
+price: 5500,
 seats: 4
 },
 {
 date: "28 Mar 2026",
-price: 7499,
+price: 6500,
 seats: 8
 }
 ],
@@ -462,17 +462,17 @@ seats: 8
     batches: [
 {
 date: "14 Mar 2026",
-price: 6999,
+price: 5000,
 seats: 6
 },
 {
 date: "21 Mar 2026",
-price: 6999,
+price: 5500,
 seats: 4
 },
 {
 date: "28 Mar 2026",
-price: 7499,
+price: 6000,
 seats: 8
 }
 ],
@@ -499,17 +499,17 @@ seats: 8
     batches: [
 {
 date: "14 Mar 2026",
-price: 6999,
+price: 5000,
 seats: 6
 },
 {
 date: "21 Mar 2026",
-price: 6999,
+price: 5500,
 seats: 4
 },
 {
 date: "28 Mar 2026",
-price: 7499,
+price: 6000,
 seats: 8
 }
 ],
@@ -538,17 +538,17 @@ seats: 8
     batches: [
 {
 date: "14 Mar 2026",
-price: 6999,
+price: 5000,
 seats: 6
 },
 {
 date: "21 Mar 2026",
-price: 6999,
+price: 5500,
 seats: 4
 },
 {
 date: "28 Mar 2026",
-price: 7499,
+price: 6000,
 seats: 8
 }
 ],
@@ -577,17 +577,17 @@ seats: 8
     batches: [
 {
 date: "14 Mar 2026",
-price: 6999,
+price: 5000,
 seats: 6
 },
 {
 date: "21 Mar 2026",
-price: 6999,
+price: 5500,
 seats: 4
 },
 {
 date: "28 Mar 2026",
-price: 7499,
+price: 6000,
 seats: 8
 }
 ],
@@ -616,17 +616,17 @@ seats: 8
     batches: [
 {
 date: "14 Mar 2026",
-price: 6999,
+price: 5000,
 seats: 6
 },
 {
 date: "21 Mar 2026",
-price: 6999,
+price: 5500,
 seats: 4
 },
 {
 date: "28 Mar 2026",
-price: 7499,
+price: 6000,
 seats: 8
 }
 ],
@@ -653,18 +653,18 @@ seats: 8
     exclusions: ['Travel to Dehradun/Mussoorie', 'Entry fees to tourist spots'],
     batches: [
 {
-date: "14 Mar 2026",
-price: 6999,
+date: "18 Mar 2026",
+price: 4900,
 seats: 6
 },
 {
 date: "21 Mar 2026",
-price: 6999,
+price: 4900,
 seats: 4
 },
 {
 date: "28 Mar 2026",
-price: 7499,
+price: 4900,
 seats: 8
 }
 ],
@@ -691,18 +691,18 @@ seats: 8
     exclusions: ['Travel to Ramnagar', 'Extra Safari zones'],
     batches: [
 {
-date: "14 Mar 2026",
-price: 6999,
+date: "18 Mar 2026",
+price: 5000,
 seats: 6
 },
 {
 date: "21 Mar 2026",
-price: 6999,
+price: 5500,
 seats: 4
 },
 {
 date: "28 Mar 2026",
-price: 7499,
+price: 5800,
 seats: 8
 }
 ],
@@ -729,18 +729,18 @@ seats: 8
     exclusions: ['Travel to Base', 'Personal Expenses'],
     batches: [
 {
-date: "14 Mar 2026",
-price: 6999,
+date: "18 Mar 2026",
+price: 5000,
 seats: 6
 },
 {
 date: "21 Mar 2026",
-price: 6999,
+price: 5000,
 seats: 4
 },
 {
 date: "28 Mar 2026",
-price: 7499,
+price: 5500,
 seats: 8
 }
 ],
@@ -769,17 +769,17 @@ seats: 8
     batches: [
 {
 date: "14 Mar 2026",
-price: 6999,
+price: 5000,
 seats: 6
 },
 {
 date: "21 Mar 2026",
-price: 6999,
+price: 5000,
 seats: 4
 },
 {
 date: "28 Mar 2026",
-price: 7499,
+price: 5000,
 seats: 8
 }
 ],
@@ -807,17 +807,17 @@ seats: 8
     batches: [
 {
 date: "14 Mar 2026",
-price: 6999,
+price: 5000,
 seats: 6
 },
 {
 date: "21 Mar 2026",
-price: 6999,
+price: 5000,
 seats: 4
 },
 {
 date: "28 Mar 2026",
-price: 7499,
+price: 5500,
 seats: 8
 }
 ],
@@ -844,18 +844,18 @@ seats: 8
     exclusions: ['Helicopter/Mule charges', 'VIP Darshan', 'Lunch'],
     batches: [
 {
-date: "14 Mar 2026",
-price: 6999,
+date: "18 Mar 2026",
+price: 5000,
 seats: 6
 },
 {
 date: "21 Mar 2026",
-price: 6999,
+price: 5500,
 seats: 4
 },
 {
 date: "28 Mar 2026",
-price: 7499,
+price: 5000,
 seats: 8
 }
 ],
@@ -884,18 +884,18 @@ seats: 8
     exclusions: ['Pony/Palki charges', 'Aarti Tickets', 'Personal Medical Kit'],
     batches: [
 {
-date: "14 Mar 2026",
-price: 6999,
+date: "18 Mar 2026",
+price: 24000,
 seats: 6
 },
 {
 date: "21 Mar 2026",
-price: 6999,
+price: 24500,
 seats: 4
 },
 {
 date: "28 Mar 2026",
-price: 7499,
+price: 25000,
 seats: 8
 }
 ],
@@ -930,18 +930,18 @@ seats: 8
     exclusions: ['Travel to Udaipur', 'Entry tickets to Palaces', 'Lunch'],
     batches: [
 {
-date: "14 Mar 2026",
-price: 6999,
+date: "18 Mar 2026",
+price: 5000,
 seats: 6
 },
 {
 date: "21 Mar 2026",
-price: 6999,
+price: 5000,
 seats: 4
 },
 {
 date: "28 Mar 2026",
-price: 7499,
+price: 5000,
 seats: 8
 }
 ],
@@ -967,18 +967,18 @@ seats: 8
     exclusions: ['Travel to Jaipur', 'Elephant/Jeep ride at Amer Fort'],
     batches: [
 {
-date: "14 Mar 2026",
-price: 6999,
+date: "18 Mar 2026",
+price: 5000,
 seats: 6
 },
 {
 date: "21 Mar 2026",
-price: 6999,
+price: 5000,
 seats: 4
 },
 {
 date: "28 Mar 2026",
-price: 7499,
+price: 5000,
 seats: 8
 }
 ],
@@ -994,7 +994,7 @@ seats: 8
     title: 'Jaisalmer: Golden City & Desert',
     location: 'Rajasthan, India',
     duration: '3 Days / 2 Nights',
-    price: '6,500',
+    price: '5000',
     originalPrice: '8,000',
     rating: '4.9',
     reviews: 290,
@@ -1004,18 +1004,18 @@ seats: 8
     exclusions: ['Travel to Jaisalmer', 'Personal Tips'],
     batches: [
 {
-date: "14 Mar 2026",
-price: 6999,
+date: "18 Mar 2026",
+price: 5000,
 seats: 6
 },
 {
 date: "21 Mar 2026",
-price: 6999,
+price: 5000,
 seats: 4
 },
 {
 date: "28 Mar 2026",
-price: 7499,
+price: 5000,
 seats: 8
 }
 ],
@@ -1043,17 +1043,17 @@ seats: 8
     batches: [
 {
 date: "14 Mar 2026",
-price: 6999,
+price: 5000,
 seats: 6
 },
 {
 date: "21 Mar 2026",
-price: 6999,
+price: 5000,
 seats: 4
 },
 {
 date: "28 Mar 2026",
-price: 7499,
+price: 5500,
 seats: 8
 }
 ],
@@ -1069,7 +1069,7 @@ seats: 8
     title: 'Pushkar: Spiritual & Vibrant',
     location: 'Rajasthan, India',
     duration: '2 Days / 1 Night',
-    price: '2,999',
+    price: '5000',
     originalPrice: '3,800',
     rating: '4.7',
     reviews: 150,
@@ -1079,18 +1079,18 @@ seats: 8
     exclusions: ['Travel to Pushkar', 'Personal Shopping'],
     batches: [
 {
-date: "14 Mar 2026",
-price: 6999,
+date: "19 Mar 2026",
+price: 5000,
 seats: 6
 },
 {
-date: "21 Mar 2026",
-price: 6999,
+date: "24 Mar 2026",
+price: 5000,
 seats: 4
 },
 {
-date: "28 Mar 2026",
-price: 7499,
+date: "30 Mar 2026",
+price: 5500,
 seats: 8
 }
 ],
@@ -1115,18 +1115,18 @@ seats: 8
     exclusions: ['Travel to Jawai', 'Alcoholic Beverages'],
     batches: [
 {
-date: "14 Mar 2026",
-price: 6999,
+date: "19 Mar 2026",
+price: 5000,
 seats: 6
 },
 {
-date: "21 Mar 2026",
-price: 6999,
+date: "25 Mar 2026",
+price: 5000,
 seats: 4
 },
 {
-date: "28 Mar 2026",
-price: 7499,
+date: "30 Mar 2026",
+price: 5000,
 seats: 8
 }
 ],
@@ -1143,7 +1143,7 @@ seats: 8
     category: "weekend",
     location: 'Rajasthan, India',
     duration: '3 Days / 2 Nights',
-    price: '7,999',
+    price: '5000',
     originalPrice: '9,500',
     rating: '4.8',
     reviews: 310,
@@ -1153,18 +1153,18 @@ seats: 8
     exclusions: ['Travel to Sawai Madhopur', 'National Park Entry Fees'],
     batches: [
 {
-date: "14 Mar 2026",
-price: 6999,
+date: "19 Mar 2026",
+price: 5000,
 seats: 6
 },
 {
-date: "21 Mar 2026",
-price: 6999,
+date: "25 Mar 2026",
+price: 5000,
 seats: 4
 },
 {
-date: "28 Mar 2026",
-price: 7499,
+date: "30 Mar 2026",
+price: 5000,
 seats: 8
 }
 ],
@@ -1186,18 +1186,18 @@ seats: 8
     image: "/Kedarkantha.png",
     batches: [
 {
-date: "14 Mar 2026",
-price: 6999,
+date: "18 Mar 2026",
+price: 5000,
 seats: 6
 },
 {
-date: "21 Mar 2026",
-price: 6999,
+date: "24 Mar 2026",
+price: 5200,
 seats: 4
 },
 {
 date: "28 Mar 2026",
-price: 7499,
+price: 5000 ,
 seats: 8
 }
 ],
@@ -1258,18 +1258,18 @@ seats: 8
   ],
   batches: [
 {
-date: "14 Mar 2026",
-price: 6999,
+date: "18 Mar 2026",
+price: 5000,
 seats: 6
 },
 {
-date: "21 Mar 2026",
-price: 6999,
+date: "25 Mar 2026",
+price: 5500,
 seats: 4
 },
 {
 date: "28 Mar 2026",
-price: 7499,
+price: 5400,
 seats: 8
 }
 ],
@@ -1307,18 +1307,18 @@ seats: 8
   ],
   batches: [
 {
-date: "14 Mar 2026",
-price: 6999,
+date: "18 Mar 2026",
+price: 5000,
 seats: 6
 },
 {
-date: "21 Mar 2026",
-price: 6999,
+date: "25 Mar 2026",
+price: 5000,
 seats: 4
 },
 {
 date: "28 Mar 2026",
-price: 7499,
+price: 5500,
 seats: 8
 }
 ],
@@ -1365,18 +1365,18 @@ seats: 8
     ],
     batches: [
 {
-date: "14 Mar 2026",
-price: 6999,
+date: "21 Mar 2026",
+price: 5000,
 seats: 6
 },
 {
-date: "21 Mar 2026",
-price: 6999,
+date: "24 Mar 2026",
+price: 5000,
 seats: 4
 },
 {
 date: "28 Mar 2026",
-price: 7499,
+price: 5000,
 seats: 8
 }
 ],
@@ -1392,25 +1392,25 @@ seats: 8
   title: "Srinagar & Gulmarg Budget Trip",
   location: "Srinagar – Gulmarg – Srinagar",
   duration: "4 Nights / 5 Days",
-  price: "6999",
+  price: "5000",
   originalPrice: "9999",
   rating: "4.8",
   reviews: 95,
   image: "/kashmir1.jpg",
   batches: [
 {
-date: "14 Mar 2026",
-price: 6999,
+date: "21 Mar 2026",
+price: 5000,
 seats: 6
 },
 {
-date: "21 Mar 2026",
-price: 6999,
+date: "26 Mar 2026",
+price: 5000,
 seats: 4
 },
 {
-date: "28 Mar 2026",
-price: 7499,
+date: "30 Mar 2026",
+price: 5500,
 seats: 8
 }
 ],
@@ -1455,7 +1455,7 @@ seats: 8
   title: "Delhi to Kashmir Volvo Trip",
   location: "Delhi – Srinagar – Gulmarg – Delhi",
   duration: "5 Nights / 6 Days",
-  price: 8999,
+  price: 5000,
   originalPrice: 11999,
 
   image: "/kashmir1.jpg",
@@ -1469,18 +1469,18 @@ seats: 8
   ],
   batches: [
 {
-date: "14 Mar 2026",
-price: 6999,
+date: "18 Mar 2026",
+price: 5000,
 seats: 6
 },
 {
-date: "21 Mar 2026",
-price: 6999,
+date: "25 Mar 2026",
+price: 5000,
 seats: 4
 },
 {
-date: "28 Mar 2026",
-price: 7499,
+date: "30 Mar 2026",
+price: 5500,
 seats: 8
 }
 ],

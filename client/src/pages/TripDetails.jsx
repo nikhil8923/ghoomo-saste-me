@@ -5,7 +5,9 @@ MapPin,
 Clock,
 CheckCircle,
 XCircle,
-ChevronRight
+ChevronRight,
+ChevronLeft,
+X
 } from "lucide-react";
 
 import { tripsData } from "../data/trips";
@@ -18,6 +20,7 @@ const { id } = useParams();
 const [currentTrip, setCurrentTrip] = useState(null);
 const [activeTab, setActiveTab] = useState("itinerary");
 const [isModalOpen, setIsModalOpen] = useState(false);
+const [selectedBatch, setSelectedBatch] = useState(null);
 
 const [galleryOpen, setGalleryOpen] = useState(false);
 const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -26,26 +29,40 @@ useEffect(() => {
 
 const foundTrip = tripsData.find((t) => t && t.id === id);
 setCurrentTrip(foundTrip);
-window.scrollTo(0,0);
+window.scrollTo({ top: 0, behavior: "smooth" });
 
-},[id]);
+}, [id]);
 
 if (!currentTrip) {
 return (
+
 <div className="h-screen flex items-center justify-center">
 Loading Trip...
 </div>
 );
 }
 
-/* FORCE PRICE */
-
-const currentPrice = 5000;
+const currentPrice =
+selectedBatch?.price ||
+currentTrip?.batches?.[0]?.price ||
+currentTrip.price;
 
 const images = [
-{src: currentTrip.image},
+{ src: currentTrip.image },
 ...(currentTrip.gallery || [])
 ];
+
+const nextImage = () => {
+setCurrentImageIndex((prev) =>
+prev === images.length - 1 ? 0 : prev + 1
+);
+};
+
+const prevImage = () => {
+setCurrentImageIndex((prev) =>
+prev === 0 ? images.length - 1 : prev - 1
+);
+};
 
 return (
 
@@ -53,40 +70,57 @@ return (
 
 <div className="max-w-7xl mx-auto px-4">
 
-{/* IMAGE GALLERY */}
+{/* ================= GALLERY ================= */}
 
-<div className="mt-10 mb-12 grid grid-cols-1 md:grid-cols-12 gap-4 h-[420px] md:h-[520px]">
+<div className="mt-10 mb-24 grid grid-cols-1 md:grid-cols-12 gap-4">
 
-<div className="md:col-span-7 rounded-[30px] overflow-hidden">
+<div className="md:col-span-7 h-[420px] rounded-[30px] overflow-hidden">
 
 <img
 src={images[0]?.src}
-className="w-full h-full object-cover hover:scale-105 transition"
+className="w-full h-full object-cover"
 alt=""
 />
 
 </div>
 
-<div className="md:col-span-5 grid grid-cols-2 grid-rows-2 gap-4">
+<div className="md:col-span-5 grid grid-cols-2 grid-rows-2 gap-4 h-[420px]">
 
-{images.slice(1,4).map((img,i)=>(
+{[0,1,2].map((i)=>{
+
+const img = images[i+1];
+
+return (
+
+<div key={i} className="rounded-[20px] overflow-hidden bg-gray-200">
+
+{img ? (
 
 <img
-key={i}
-src={img?.src}
-className="w-full h-full object-cover rounded-[20px]"
+src={img.src}
+className="w-full h-full object-cover"
 alt=""
 />
 
-))}
+) : (
+
+<div className="w-full h-full flex items-center justify-center text-gray-400 text-sm">
+No Image
+</div>
+
+)}
+
+</div>
+
+);
+
+})}
 
 <div
 onClick={()=>{
-
 setGalleryOpen(true);
 setCurrentImageIndex(0);
 document.body.style.overflow="hidden";
-
 }}
 className="relative cursor-pointer rounded-[20px] overflow-hidden"
 >
@@ -111,22 +145,20 @@ View More
 
 </div>
 
-{/* MAIN CONTENT */}
+{/* ================= MAIN CONTENT ================= */}
 
 <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
 
-{/* LEFT */}
-
 <div className="lg:col-span-8">
 
-<h1 className="text-4xl md:text-5xl font-black uppercase italic mb-6">
+<h1 className="text-4xl md:text-5xl font-black tracking-tight text-slate-900 mb-6 leading-tight">
 {currentTrip.title}
 </h1>
 
-<div className="flex gap-6 text-slate-400 mb-8">
+<div className="flex gap-8 text-slate-500 font-medium mb-10 items-center">
 
 <span className="flex gap-2 items-center">
-<MapPin size={16}/> {currentTrip.pickup}
+<MapPin size={16}/> {currentTrip.pickup || currentTrip.location}
 </span>
 
 <span className="flex gap-2 items-center">
@@ -146,6 +178,7 @@ key={tab}
 onClick={()=>setActiveTab(tab)}
 className={`flex-1 py-3 rounded-lg text-sm font-bold uppercase
 ${activeTab===tab ? "bg-blue-600 text-white":"text-slate-400"}`}
+
 >
 
 {tab}
@@ -166,7 +199,11 @@ ${activeTab===tab ? "bg-blue-600 text-white":"text-slate-400"}`}
 
 {currentTrip.itinerary?.map((day,i)=>(
 
-<details key={i} open={i===0} className="bg-slate-50 rounded-xl">
+<details
+key={i}
+open={i===0}
+className="bg-slate-50 rounded-xl border border-slate-200"
+>
 
 <summary className="flex justify-between p-5 cursor-pointer">
 
@@ -236,11 +273,11 @@ D{day.day}
 
 </div>
 
-{/* DESKTOP SIDEBAR */}
+{/* ================= SIDEBAR ================= */}
 
-<div className="lg:col-span-4 hidden md:block">
+<div className="lg:col-span-4 hidden md:block mt-6">
 
-<div className="bg-[#0f172a] text-white p-10 rounded-[40px] sticky top-24">
+<div className="bg-[#0f172a] text-white p-10 rounded-[40px] sticky top-[180px] h-fit">
 
 <p className="text-xs uppercase mb-3 text-blue-400">
 Starting Price
@@ -250,9 +287,53 @@ Starting Price
 ₹{currentPrice}
 </h2>
 
+{currentTrip.batches && (
+
+<div className="mb-6">
+
+<p className="text-xs uppercase text-blue-400 mb-3">
+Select Batch
+</p>
+
+<div className="space-y-2">
+
+{currentTrip.batches.map((batch,i)=>{
+
+const active =
+selectedBatch?.date === batch.date ||
+(!selectedBatch && i === 0);
+
+return (
+
+<button
+key={i}
+onClick={()=>setSelectedBatch(batch)}
+className={`w-full flex justify-between items-center px-4 py-3 rounded-lg text-sm transition
+${active
+? "bg-blue-600 text-white"
+: "bg-slate-800 hover:bg-slate-700 text-slate-200"
+}`}
+
+>
+
+<span>{batch.date}</span> <span>₹{batch.price}</span>
+
+</button>
+
+);
+
+})}
+
+</div>
+
+</div>
+
+)}
+
 <button
 onClick={()=>setIsModalOpen(true)}
 className="w-full bg-blue-600 py-4 rounded-xl font-bold uppercase"
+
 >
 
 Send Query Now
@@ -267,13 +348,111 @@ Send Query Now
 
 </div>
 
+{/* ================= GALLERY MODAL ================= */}
 
+{galleryOpen && (
+
+<div className="fixed inset-0 bg-black/90 z-[99999] flex items-center justify-center">
+
+<button
+onClick={()=>{
+setGalleryOpen(false);
+document.body.style.overflow="auto";
+}}
+className="absolute top-6 right-6 text-white"
+
+>
+
+<X size={32}/>
+</button>
+
+<button
+onClick={prevImage}
+className="absolute left-6 text-white"
+
+>
+
+<ChevronLeft size={40}/>
+</button>
+
+<img
+src={images[currentImageIndex]?.src}
+className="max-h-[80vh] rounded-xl"
+/>
+
+<button
+onClick={nextImage}
+className="absolute right-6 text-white"
+
+>
+
+<ChevronRight size={40}/>
+</button>
+
+</div>
+
+)}
+
+{/* ================= MOBILE BOOKING BAR ================= */}
+
+<div className="md:hidden fixed bottom-16 left-0 w-full bg-white border-t shadow-xl z-[9999] px-4 py-3">
+
+<div className="flex items-center justify-between gap-3">
+
+<div>
+
+<p className="text-xs text-gray-500">Starting From</p>
+
+<p className="font-bold text-lg text-slate-900">
+₹{currentPrice}
+</p>
+
+</div>
+
+<select
+className="flex-1 border rounded-lg px-2 py-2 text-sm"
+onChange={(e)=>{
+
+const batch = currentTrip.batches?.find(
+b => b.date === e.target.value
+);
+
+setSelectedBatch(batch);
+
+}}
+
+>
+
+{currentTrip.batches?.map((batch,i)=>(
+
+<option key={i} value={batch.date}>
+{batch.date}
+</option>
+
+))}
+
+</select>
+
+<button
+onClick={()=>setIsModalOpen(true)}
+className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-bold"
+
+>
+
+Book Now
+
+</button>
+
+</div>
+
+</div>
 
 <BookingModal
 isOpen={isModalOpen}
 onClose={()=>setIsModalOpen(false)}
 tripTitle={currentTrip.title}
 selectedPrice={currentPrice}
+selectedBatch={selectedBatch}
 />
 
 </main>
