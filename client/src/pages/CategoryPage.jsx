@@ -8,7 +8,7 @@ const CategoryPage = () => {
 
   return (
     <div className="pt-40 pb-20 container mx-auto px-4 min-h-screen">
-      <h1 className="text-5xl font-black italic uppercase text-[#1a2b4c] mb-12 border-l-8 border-blue-600 pl-6">
+     <h1 className="text-3xl sm:text-5xl md:text-6xl font-black uppercase leading-tight">
         {categoryId} <span className="text-blue-600">Exploration</span>
       </h1>
       
@@ -20,7 +20,7 @@ const CategoryPage = () => {
               <div className="absolute top-4 right-4 bg-yellow-400 px-4 py-1 rounded-full font-black italic text-sm">₹{trip.price}</div>
             </div>
             <div className="p-8">
-              <h3 className="text-2xl font-black italic uppercase text-[#1a2b4c]">{trip.title}</h3>
+              <h3 className="text-2xl font-black uppercase text-[#1a2b4c]">{trip.title}</h3>
               <p className="text-blue-600 font-bold mt-2">{trip.duration} Batch 2026</p>
             </div>
           </Link>

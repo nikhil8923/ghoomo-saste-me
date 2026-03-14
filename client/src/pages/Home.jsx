@@ -223,7 +223,7 @@ className="w-full h-full object-cover group-hover:scale-110 transition duration-
 
 {/* KASHMIR */}
 
-<Link to="/trip/kashmir-volvo-special"
+<Link to="/state/kashmir"
 className="group min-w-[75%] sm:min-w-[300px] relative h-72 rounded-2xl overflow-hidden shadow-lg block">
 
 <img src="/kashmir.png"

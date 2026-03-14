@@ -74,7 +74,7 @@ const Contact = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-xs font-black uppercase text-gray-400 mb-2">Full Name</label>
-                  <input type="text" className="w-full bg-gray-50 border-none rounded-xl p-4 focus:ring-2 focus:ring-blue-500 outline-none" placeholder="Nikhil Chaudhary" />
+                  <input type="text" className="w-full bg-gray-50 border-none rounded-xl p-4 focus:ring-2 focus:ring-blue-500 outline-none" placeholder="Enter Your Name" />
                 </div>
                 <div>
                   <label className="block text-xs font-black uppercase text-gray-400 mb-2">Phone Number</label>

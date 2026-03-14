@@ -12,9 +12,9 @@ const reviewsData = [
   },
   {
     id: 2,
-    name: 'Alisha',
+    name: 'Lavish',
     initial: 'T',
-    location: 'Tehri',
+    location: 'Delhi',
     text: 'The Kasol-Kheerganga trek by Ghoomosasteme was conducted exceptionally well. Special thanks to our team leader (group captain) Nikhil Chaudhary.',
     image: 'https://images.unsplash.com/photo-1516738901171-8eb4fc13bd20?auto=format&fit=crop&w=600&q=80',
   },
@@ -39,8 +39,9 @@ const reviewsData = [
 const Reviews = () => {
   return (
     <section className="min-w-[280px] md:min-w-0 bg-white p-5 rounded-2xl shadow-md hover:shadow-xl transition">
+      
       <div className="container mx-auto px-4 max-w-7xl">
-        
+
         {/* Section Heading */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-extrabold text-[#1a2b4c] mb-4">
@@ -51,16 +52,24 @@ const Reviews = () => {
 
         {/* Reviews Grid */}
         <div className="flex md:grid md:grid-cols-2 lg:grid-cols-4 gap-5 overflow-x-auto md:overflow-visible pb-4 scrollbar-hide">
+
           {reviewsData.map((review) => (
-            <div key={review.id} className="bg-gray-50 rounded-2xl p-6 shadow-sm hover:shadow-xl transition-shadow duration-300 border border-gray-100 flex flex-col h-full">
-              
+            <div
+              key={review.id}
+              className="bg-gray-50 rounded-2xl p-6 shadow-sm hover:shadow-xl transition-shadow duration-300 border border-gray-100 flex flex-col h-full justify-between min-w-[280px] md:min-w-0"
+            >
+
               {/* User Info */}
               <div className="flex items-center gap-4 mb-4">
                 <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center font-bold text-xl text-[#1a2b4c]">
                   {review.initial}
                 </div>
+
                 <div>
-                  <h3 className="font-bold text-gray-800">{review.name}</h3>
+                  <h3 className="font-bold text-gray-800">
+                    {review.name}
+                  </h3>
+
                   <div className="flex items-center text-xs text-blue-600 font-semibold mt-1">
                     <MapPin size={12} className="mr-1" />
                     {review.location}
@@ -69,24 +78,26 @@ const Reviews = () => {
               </div>
 
               {/* Review Text */}
-              <p className="min-w-[280px] md:min-w-0 bg-white p-5 rounded-2xl shadow-md hover:shadow-xl transition">
+              <p className="bg-white p-5 rounded-2xl shadow-md hover:shadow-xl transition flex-grow min-h-[120px]">
                 "{review.text}"
               </p>
 
               {/* Memory Image */}
-              <div className="w-full h-40 rounded-xl overflow-hidden mt-auto">
-                <img 
-                  src={review.image} 
-                  alt={`${review.location} trip memory`} 
+              <div className="w-full h-40 rounded-xl overflow-hidden mt-4">
+                <img
+                  src={review.image}
+                  alt={`${review.location} trip memory`}
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                 />
               </div>
-              
+
             </div>
           ))}
+
         </div>
 
       </div>
+
     </section>
   );
 };
