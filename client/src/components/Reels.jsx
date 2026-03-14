@@ -12,7 +12,6 @@ const reelsData = [
   {
     id: 2,
     title: "Corporate Offsite",
-    subtitle: "by Go4Explore",
     image:
       "https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=800&q=80",
     link: "/category/corporate",

@@ -124,6 +124,7 @@ return ( <header className="fixed w-full top-0 z-[9999] font-sans bg-white/95 ba
       </div>
     </div>
   )}
+  
 
   {/* ================= BLUE CATEGORY BAR ================= */}
   <div className="bg-[#1e52bc]">

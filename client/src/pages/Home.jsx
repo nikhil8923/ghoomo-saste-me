@@ -195,7 +195,7 @@ className="w-full h-full object-cover group-hover:scale-110 transition duration-
 <div className="absolute bottom-0 left-0 w-full p-5 text-white">
 
 <h3 className="text-xl md:text-2xl font-semibold">Uttarakhand</h3>
-<p className="text-sm text-gray-200">Opening Soon</p>
+<p className="text-sm text-gray-200">6+ Trips Available</p>
 
 </div>
 
