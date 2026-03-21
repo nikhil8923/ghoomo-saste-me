@@ -1,0 +1,7 @@
+# Ignore the folder containing the secret keys
+public_html/gsm v1/out 3/Wordpress Backup/
+
+# Standard MERN ignores
+node_modules/
+.env
+*.log

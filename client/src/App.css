@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&family=Inter:wght@400;500;700;800&display=swap');
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.font-branding {
+  font-family: 'Montserrat', sans-serif;
+}
+.trip-title{
+font-family: 'Poppins', sans-serif;
+font-weight: 800;
+letter-spacing:-1px;
+}
+body{
+  font-family: 'Inter', sans-serif;
+}
+
+h1,h2,h3,h4{
+  font-family: 'Poppins', sans-serif;
+}
+body{
+padding-bottom:70px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
