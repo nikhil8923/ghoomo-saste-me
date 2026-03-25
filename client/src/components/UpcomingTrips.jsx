@@ -14,24 +14,24 @@ const scroll = (direction) => {
 const container = scrollRef.current;
 
 if(direction === "left"){
-container.scrollBy({ left: -320, behavior: "smooth" });
+container.scrollBy({ left: -260, behavior: "smooth" });
 }else{
-container.scrollBy({ left: 320, behavior: "smooth" });
+container.scrollBy({ left: 260, behavior: "smooth" });
 }
 
 };
 
 return (
 
-<section id="upcoming-trips" className="py-16 bg-[#f7f9fc]">
+<section id="upcoming-trips" className="py-10 md:py-16 bg-[#f7f9fc]">
 
-<div className="max-w-7xl mx-auto px-4">
+<div className="max-w-7xl mx-auto px-3 md:px-4">
 
 {/* HEADER */}
 
-<div className="flex justify-between items-center mb-10">
+<div className="flex justify-between items-center mb-6 md:mb-10">
 
-<h2 className="text-3xl md:text-4xl font-extrabold text-[#1a2b4c]">
+<h2 className="text-2xl md:text-4xl font-extrabold text-[#1a2b4c]">
 Upcoming Trips
 </h2>
 
@@ -59,19 +59,19 @@ className="w-10 h-10 rounded-full border flex items-center justify-center hover:
 
 <div
 ref={scrollRef}
-className="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-6 hide-scrollbar"
+className="flex gap-3 md:gap-5 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-4 md:pb-6 hide-scrollbar"
 >
 
 {featuredTrips.map((trip)=> (
 
 <div
 key={trip.id}
-className="min-w-[280px] md:min-w-[320px] bg-white rounded-2xl shadow-md hover:shadow-xl transition snap-start overflow-hidden flex flex-col"
+className="min-w-[200px] md:min-w-[260px] bg-white rounded-xl md:rounded-2xl shadow-md hover:shadow-xl transition snap-start overflow-hidden flex flex-col"
 >
 
 {/* IMAGE */}
 
-<div className="relative h-52 overflow-hidden">
+<div className="relative h-28 md:h-40 overflow-hidden">
 
 <img
 src={trip.image}
@@ -81,7 +81,7 @@ className="w-full h-full object-cover"
 
 {/* BADGE */}
 
-<div className="absolute top-3 left-3 bg-yellow-400 text-black text-xs font-bold px-3 py-1 rounded-full">
+<div className="absolute top-2 left-2 bg-yellow-400 text-black text-[9px] md:text-[10px] font-bold px-2 py-1 rounded-full">
 Trending
 </div>
 
@@ -89,17 +89,17 @@ Trending
 
 {/* CONTENT */}
 
-<div className="p-5 flex flex-col flex-grow">
+<div className="p-3 md:p-4 flex flex-col flex-grow">
 
-<h3 className="text-lg font-bold text-[#1a2b4c] mb-1 line-clamp-1">
+<h3 className="text-[13px] md:text-base font-bold text-[#1a2b4c] mb-1 line-clamp-1">
 {trip.title}
 </h3>
 
-<div className="text-sm text-gray-500 mb-3">
+<div className="text-[11px] md:text-xs text-gray-500 mb-1">
 {trip.duration}
 </div>
 
-<p className="text-sm text-gray-500 line-clamp-2 mb-4">
+<p className="text-[11px] md:text-xs text-gray-500 line-clamp-2 mb-2">
 {trip.description}
 </p>
 
@@ -107,11 +107,11 @@ Trending
 
 <div>
 
-<span className="text-xs text-gray-400 line-through block">
+<span className="text-[9px] md:text-[10px] text-gray-400 line-through block">
 ₹{trip.originalPrice}
 </span>
 
-<span className="text-lg font-extrabold text-gray-900">
+<span className="text-[14px] md:text-base font-extrabold text-gray-900">
 ₹{trip.price}
 </span>
 
@@ -119,11 +119,9 @@ Trending
 
 <Link
 to={`/trip/${trip.id}`}
-className="bg-[#1a2b4c] text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-blue-700"
+className="bg-[#1a2b4c] text-white px-2 py-1 md:px-3 md:py-1.5 rounded-lg text-[11px] md:text-xs font-semibold hover:bg-blue-700"
 >
-
 View Trip
-
 </Link>
 
 </div>
@@ -138,15 +136,13 @@ View Trip
 
 {/* VIEW ALL */}
 
-<div className="text-center mt-8">
+<div className="text-center mt-6 md:mt-8">
 
 <Link
 to="/trips"
-className="inline-block bg-yellow-400 hover:bg-yellow-500 px-6 py-3 rounded-xl font-bold"
+className="inline-block bg-yellow-400 hover:bg-yellow-500 px-5 py-2 md:px-6 md:py-3 rounded-xl font-bold text-sm md:text-base"
 >
-
 View All Trips
-
 </Link>
 
 </div>
@@ -158,6 +154,5 @@ View All Trips
 );
 
 };
-
 
 export default UpcomingTrips;

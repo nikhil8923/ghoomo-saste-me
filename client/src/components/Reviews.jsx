@@ -38,52 +38,52 @@ const reviewsData = [
 
 const Reviews = () => {
   return (
-    <section className="min-w-[280px] md:min-w-0 bg-white p-5 rounded-2xl shadow-md hover:shadow-xl transition">
+    <section className="bg-white p-4 md:p-6 rounded-2xl shadow-md">
       
-      <div className="container mx-auto px-4 max-w-7xl">
+      <div className="container mx-auto px-3 max-w-7xl">
 
         {/* Section Heading */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-extrabold text-[#1a2b4c] mb-4">
+        <div className="text-center mb-10">
+          <h2 className="text-2xl md:text-4xl font-extrabold text-[#1a2b4c] mb-3">
             Happy Faces & Stories
           </h2>
-          <div className="w-24 h-1.5 bg-yellow-400 mx-auto rounded-full"></div>
+          <div className="w-20 h-1 bg-yellow-400 mx-auto rounded-full"></div>
         </div>
 
         {/* Reviews Grid */}
-        <div className="flex md:grid md:grid-cols-2 lg:grid-cols-4 gap-5 overflow-x-auto md:overflow-visible pb-4 scrollbar-hide">
+        <div className="flex md:grid md:grid-cols-2 lg:grid-cols-4 gap-4 overflow-x-auto md:overflow-visible pb-4 scrollbar-hide">
 
           {reviewsData.map((review) => (
             <div
               key={review.id}
-              className="bg-gray-50 rounded-2xl p-6 shadow-sm hover:shadow-xl transition-shadow duration-300 border border-gray-100 flex flex-col h-full justify-between min-w-[280px] md:min-w-0"
+              className="bg-gray-50 rounded-xl p-4 shadow-sm hover:shadow-lg transition border border-gray-100 flex flex-col justify-between min-w-[220px] md:min-w-0"
             >
 
               {/* User Info */}
-              <div className="flex items-center gap-4 mb-4">
-                <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center font-bold text-xl text-[#1a2b4c]">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center font-bold text-sm text-[#1a2b4c]">
                   {review.initial}
                 </div>
 
                 <div>
-                  <h3 className="font-bold text-gray-800">
+                  <h3 className="font-bold text-sm text-gray-800">
                     {review.name}
                   </h3>
 
-                  <div className="flex items-center text-xs text-blue-600 font-semibold mt-1">
-                    <MapPin size={12} className="mr-1" />
+                  <div className="flex items-center text-[11px] text-blue-600 font-semibold mt-1">
+                    <MapPin size={11} className="mr-1" />
                     {review.location}
                   </div>
                 </div>
               </div>
 
               {/* Review Text */}
-              <p className="bg-white p-5 rounded-2xl shadow-md hover:shadow-xl transition flex-grow min-h-[120px]">
+              <p className="bg-white p-3 text-xs rounded-xl shadow-sm flex-grow min-h-[90px]">
                 "{review.text}"
               </p>
 
               {/* Memory Image */}
-              <div className="w-full h-40 rounded-xl overflow-hidden mt-4">
+              <div className="w-full h-28 rounded-lg overflow-hidden mt-3">
                 <img
                   src={review.image}
                   alt={`${review.location} trip memory`}

@@ -27,13 +27,13 @@ return ( <footer className="bg-[#111827] text-gray-300 pt-14 font-sans relative"
         <ul className="space-y-2">
 
           <li>
-            <Link to="/about" onClick={scrollTop} className="hover:text-yellow-400">
+            <Link to="/aboutus" onClick={scrollTop} className="hover:text-yellow-400">
               About Us
             </Link>
           </li>
 
           <li>
-            <Link to="/contact" onClick={scrollTop} className="hover:text-yellow-400">
+            <Link to="/contactus" onClick={scrollTop} className="hover:text-yellow-400">
               Contact Us
             </Link>
           </li>

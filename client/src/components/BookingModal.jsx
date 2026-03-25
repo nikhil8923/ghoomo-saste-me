@@ -17,19 +17,55 @@ const BookingModal = ({ isOpen, onClose, tripTitle }) => {
 
   if (!isOpen) return null;
 
+  // ✅ Updated handleChange with restrictions
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    let { name, value } = e.target;
+
+    if (name === "name") {
+      value = value.replace(/[^A-Za-z ]/g, "");
+    }
+
+    if (name === "phone") {
+      value = value.replace(/[^0-9]/g, "").slice(0, 10);
+    }
+
+    setFormData({ ...formData, [name]: value });
+  };
+
+  // ✅ Email validation
+  const isValidEmail = (email) => {
+    return /^\S+@\S+\.\S+$/.test(email);
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (isSubmitting) return;
 
+    // ✅ Validation before submit
+    if (formData.name.trim().length < 3) {
+      alert("Please enter a valid name");
+      return;
+    }
+
+    if (formData.phone.length !== 10) {
+      alert("Please enter a valid 10 digit WhatsApp number");
+      return;
+    }
+
+    if (!isValidEmail(formData.email)) {
+      alert("Please enter a valid email address");
+      return;
+    }
+
+    if (!formData.travelDate) {
+      alert("Please select travel date");
+      return;
+    }
+
     setIsSubmitting(true);
 
     try {
 
-      // ✅ Budget Mapping
       let budgetMap = {
         double: 7000,
         triple: 6000,
@@ -51,12 +87,10 @@ const BookingModal = ({ isOpen, onClose, tripTitle }) => {
 
       console.log("📤 Sending data:", payload);
 
-      // ✅ Timeout controller (important for mobile)
       const controller = new AbortController();
       const timeout = setTimeout(() => controller.abort(), 10000);
 
-
-      const response = await fetch("https://ghoomo-saste-me.onrender.com/api/send-lead",  {
+      const response = await fetch("https://api.ghoomosasteme.com/api/send-lead",  {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -67,7 +101,6 @@ const BookingModal = ({ isOpen, onClose, tripTitle }) => {
 
       clearTimeout(timeout);
 
-      // ✅ Ensure response is handled
       const data = await response.json();
       console.log("✅ Response:", data);
 
@@ -90,16 +123,13 @@ const BookingModal = ({ isOpen, onClose, tripTitle }) => {
 
     <div className="fixed inset-0 z-[999999] flex items-center justify-center p-4">
 
-      {/* BACKDROP */}
       <div
         className="absolute inset-0 bg-black/60 backdrop-blur-sm"
         onClick={onClose}
       />
 
-      {/* MODAL */}
       <div className="relative bg-white w-full max-w-lg rounded-3xl shadow-2xl overflow-hidden max-h-[90vh] flex flex-col">
 
-        {/* CLOSE */}
         <button
           onClick={onClose}
           className="absolute right-5 top-5 text-gray-400 hover:text-black"
@@ -107,14 +137,12 @@ const BookingModal = ({ isOpen, onClose, tripTitle }) => {
           <X size={24} />
         </button>
 
-        {/* CONTENT */}
         <div className="overflow-y-auto p-6 md:p-10">
 
           {!isSuccess ? (
 
             <form onSubmit={handleSubmit}>
 
-              {/* TITLE */}
               <div className="mb-6">
                 <p className="text-xs font-bold uppercase text-blue-600 mb-1">
                   Confirm Your Slot
@@ -125,7 +153,6 @@ const BookingModal = ({ isOpen, onClose, tripTitle }) => {
                 </h2>
               </div>
 
-              {/* FORM */}
               <div className="space-y-4">
 
                 {/* NAME */}
@@ -134,6 +161,7 @@ const BookingModal = ({ isOpen, onClose, tripTitle }) => {
                   <input
                     required
                     name="name"
+                    value={formData.name}
                     onChange={handleChange}
                     placeholder="Full Name"
                     className="w-full border rounded-xl py-3 pl-11 pr-4 outline-none focus:border-blue-600"
@@ -146,6 +174,7 @@ const BookingModal = ({ isOpen, onClose, tripTitle }) => {
                   <input
                     required
                     name="phone"
+                    value={formData.phone}
                     onChange={handleChange}
                     placeholder="WhatsApp Number"
                     className="w-full border rounded-xl py-3 pl-11 pr-4 outline-none focus:border-blue-600"
@@ -158,6 +187,7 @@ const BookingModal = ({ isOpen, onClose, tripTitle }) => {
                   <input
                     required
                     name="email"
+                    value={formData.email}
                     onChange={handleChange}
                     placeholder="Email Address"
                     className="w-full border rounded-xl py-3 pl-11 pr-4 outline-none focus:border-blue-600"
@@ -171,6 +201,7 @@ const BookingModal = ({ isOpen, onClose, tripTitle }) => {
                     required
                     type="date"
                     name="travelDate"
+                    value={formData.travelDate}
                     onChange={handleChange}
                     className="w-full border rounded-xl py-3 pl-11 pr-4 outline-none focus:border-blue-600"
                   />
@@ -211,7 +242,6 @@ const BookingModal = ({ isOpen, onClose, tripTitle }) => {
 
               </div>
 
-              {/* SUBMIT */}
               <button
                 type="submit"
                 disabled={isSubmitting}

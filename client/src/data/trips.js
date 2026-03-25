@@ -1,5 +1,5 @@
 export const tripsData = [
-   // src/data/trips.js
+  
 
  {
   id: "himachal-backpacking",

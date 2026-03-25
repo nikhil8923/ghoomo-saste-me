@@ -41,6 +41,7 @@ export default function App() {
 
           {/* ABOUT */}
           <Route path="/about" element={<About />} />
+          <Route path="/aboutus" element={<About />} />
 
           {/* TRIP DETAILS */}
           <Route path="/trip/:id" element={<TripDetails />} />
@@ -52,7 +53,7 @@ export default function App() {
           <Route path="/category/:categoryId" element={<CategoryPage />} />
 
           {/* CONTACT */}
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/contactus" element={<Contact />} />
 
           {/* PAYMENTS */}
           <Route path="/payments" element={<Payments />} />

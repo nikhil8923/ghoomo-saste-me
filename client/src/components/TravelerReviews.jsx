@@ -5,7 +5,7 @@ const reviews = [
   {
     name: "Rahul Sharma",
     trip: "Kashmir Winter Trip",
-    image: "/review1.jpg",
+    image: "/review1.JPG",
     review:
       "This was one of the best trips of my life. Everything from stay to trip captain was perfectly organized!"
   },
@@ -19,7 +19,7 @@ const reviews = [
   {
     name: "Aman Gupta",
     trip: "Manali & Solang Valley",
-    image: "/review3.jpg",
+    image: "/review3.JPG",
     review:
       "Very budget friendly and well managed. Perfect for students and first time travelers."
   },
