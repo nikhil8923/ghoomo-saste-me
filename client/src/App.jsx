@@ -54,6 +54,7 @@ export default function App() {
 
           {/* CONTACT */}
           <Route path="/contactus" element={<Contact />} />
+          <Route path="/contact" element={<Contact />} />
 
           {/* PAYMENTS */}
           <Route path="/payments" element={<Payments />} />

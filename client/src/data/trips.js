@@ -15,7 +15,11 @@ export const tripsData = [
   reviews: 420,
   image: "/k-s8.jpg",
   description: 'An action-packed group getaway exploring the best of Himachal. From the snowy landscapes of Sissu and Solang Valley to the spiritual vibes of Manikaran Sahib and the riverside cafes of Kasol.',
-  
+   occupancy: {
+    quad: 5000,
+    triple: 6000,
+    double: 7000
+  },
   inclusions: [
     "Transfers Delhi – Manali – Kasol by AC Volvo/Traveller",
     "2 Nights Stay in Manali (sharing basis)",
@@ -1058,23 +1062,12 @@ Trip ends.
     description: 'An offbeat winter wonderland just above Manali. Experience staying in a snowy paradise away from the crowded tourist spots.',
     inclusions: ['1 Night Stay in Sethan', 'Breakfast & Dinner', 'Snow Activities (Seasonal)'],
     exclusions: ['Travel to Manali', 'Heater charges (if applicable)'],
-    batches: [
-{
-date: "14 Mar 2026",
-price: 5000,
-seats: 6
-},
-{
-date: "21 Mar 2026",
-price: 5500,
-seats: 4
-},
-{
-date: "28 Mar 2026",
-price: 6500,
-seats: 8
-}
-],
+     occupancy: {
+    quad: 5000,
+    triple: 6000,
+    double: 7000
+  },
+   
     itinerary: [
       { day: 1, title: 'Arrival in Sethan', description: 'Reach Manali and take a specialized 4x4 vehicle up the snowy roads to Sethan Village. Enjoy snowboarding/skiing (seasonal) and a cozy bonfire night.' },
       { day: 2, title: 'Snow Trek & Departure', description: 'Go for a morning snow walk with majestic views of the Kullu valley. Head back down to Manali for your onward journey.' }
@@ -1243,6 +1236,11 @@ Trip ends with high-energy memories of the Ganges.
     reviews: 550,
     image: '/kedarnathyatra.jpg',
     description: 'A deeply spiritual and physically rewarding journey to the majestic Kedarnath Temple. Trek through the breathtaking Garhwal Himalayas to seek the blessings of Lord Shiva.',
+     occupancy: {
+    quad: 5000,
+    triple: 6000,
+    double: 7000
+  },
     inclusions: [
 "Surface transport: Haridwar – Sonprayag – Haridwar",
 "1 Night hotel/homestay at Sonprayag",
@@ -1803,9 +1801,9 @@ Breakfast
   description: 'Experience the colonial charm of Mussoorie, the "Queen of Hills". Walk through misty pine forests, visit cascading waterfalls, and enjoy breathtaking panoramic views of the Doon Valley and the snow-capped Himalayas.',
   
   occupancy: {
-    quad: 4999,
-    triple: 5800,
-    double: 6500
+    quad: 5000,
+    triple: 6000,
+    double: 7000
   },
 
   inclusions: [
@@ -1937,8 +1935,8 @@ Breakfast
   
   occupancy: {
     quad: 5000,
-    triple: 5800,
-    double: 6800
+    triple: 6000,
+    double: 7000
   },
 
   inclusions: [
@@ -2217,8 +2215,8 @@ Trip ends with memories of the hidden Himalayan gem.
   
   occupancy: {
     quad: 5000,
-    triple: 5800,
-    double: 6500
+    triple: 6000,
+    double: 7000
   },
 
   inclusions: [
@@ -2350,8 +2348,8 @@ Breakfast
   
   occupancy: {
     quad: 5000,
-    triple: 6200,
-    double: 7500
+    triple: 6000,
+    double: 7000
   },
 
   inclusions: [
@@ -2494,7 +2492,7 @@ Trip ends with peaceful and holy memories of the Harsil Valley.
   category: "spiritual",
   location: 'Uttarakhand, India',
   duration: '5 Days / 4 Nights',
-  price: '5,000',
+  price: '10,000',
   originalPrice: '17,500',
   rating: '5.0',
   reviews: 210,
@@ -2502,9 +2500,9 @@ Trip ends with peaceful and holy memories of the Harsil Valley.
   description: 'A complete spiritual circuit covering two of the most significant shrines in the Himalayas. Journey through the high-altitude landscapes of Kedarnath and the divine architecture of Badrinath ji.',
   
   occupancy: {
-    quad: 5000,
-    triple: 6500,
-    double: 8000
+    quad: 10000,
+    triple: 12000,
+    double: 14000
   },
 
   inclusions: [
@@ -2645,7 +2643,7 @@ Breakfast
   category: "spiritual",
   location: 'Uttarakhand, India',
   duration: '9 Days / 8 Nights',
-  price: '24,000',
+  price: '20,000',
   originalPrice: '28,500',
   rating: '5.0',
   reviews: 430,
@@ -2653,9 +2651,9 @@ Breakfast
   description: 'The most sacred pilgrimage in India. Visit Yamunotri, Gangotri, Kedarnath, and Badrinath in one life-changing expedition. Experience the divine energy of the Himalayas and the origin of India’s holiest rivers.',
   
   occupancy: {
-    quad: 24000,
-    triple: 26500,
-    double: 29000
+    quad: 20000,
+    triple: 25000,
+    double: 30000
   },
 
   inclusions: [
@@ -3148,9 +3146,9 @@ Trip ends with royal memories.
     
     occupancy: {
       quad: 5000,
-      triple: 5800,
-      double: 6500
-    },
+      triple: 6000,
+      double: 7000
+      },
 
     inclusions: [
       "Transport: Delhi – Jaisalmer – Delhi via AC Volvo/Traveller",
@@ -3280,8 +3278,8 @@ Breakfast
     
     occupancy: {
       quad: 4999,
-      triple: 5800,
-      double: 6800
+      triple: 6000,
+      double: 7000
     },
 
     inclusions: [
@@ -3411,8 +3409,8 @@ Breakfast
     
     occupancy: {
       quad: 5000,
-      triple: 5500,
-      double: 6200
+      triple: 6000,
+      double: 7000
     },
 
     inclusions: [
@@ -3526,8 +3524,8 @@ Breakfast
     
     occupancy: {
       quad: 5000,
-      triple: 7000,
-      double: 9000
+      triple: 6000,
+      double: 7000
     },
 
     inclusions: [
@@ -3656,8 +3654,8 @@ Breakfast
     
     occupancy: {
       quad: 5000,
-      triple: 5800,
-      double: 6800
+      triple: 6000,
+      double: 7000
     },
 
     inclusions: [
@@ -3937,7 +3935,7 @@ Breakfast
   occupancy: {
     quad: 5000,
     triple: 6000,
-    double: 7500
+    double: 7000
   },
 
   inclusions: [
@@ -4055,62 +4053,7 @@ Meals Included: Breakfast & Lunch.
     "Personal first-aid kit and power bank"
   ]
 },
-{
-  id: "chopta-tungnath-rishikesh",
-  category: "himachal-backpacking", // Matches your Category Link
-  title: "Chopta Tungnath & Rishikesh Adventure",
-  duration: "3 Days / 2 Nights",
-  price: "5000",
-  image: "/choptarishikesh.jpg",
-  location: "Uttarakhand",
-  
-  // Photo Gallery - Ensure these images are in your /public folder
-  gallery: [
-    { src: "/images/chopta-main.jpg", alt: "Chopta Valley" },
-    { src: "/images/tungnath-temple.jpg", alt: "Tungnath Temple" },
-    { src: "/images/rishikesh-rafting.jpg", alt: "Rafting in Rishikesh" }
-  ],
-  batches: [
-{
-date: "18 Mar 2026",
-price: 5000,
-seats: 6
-},
-{
-date: "25 Mar 2026",
-price: 5000,
-seats: 4
-},
-{
-date: "28 Mar 2026",
-price: 5500,
-seats: 8
-}
-],
 
-  itinerary: [
-    {
-      day: "Day 0",
-      title: "Departure from Delhi/Dehradun",
-      description: "Meet the team and start the overnight journey to the mountains."
-    },
-    {
-      day: "Day 1",
-      title: "Arrival in Chopta & Acclimatization",
-      description: "Check into the campsites. Enjoy a short trek to Deoriatal Lake. Overnight stay in camps with bonfire."
-    },
-    {
-      day: "Day 2",
-      title: "Tungnath & Chandrashila Summit",
-      description: "Early morning trek to Tungnath (highest Shiva temple) and further to Chandrashila Peak for a 360-degree Himalayan view."
-    },
-    {
-      day: "Day 3",
-      title: "Rishikesh Exploration & Departure",
-      description: "Drive to Rishikesh. Experience white water rafting and the evening Ganga Aarti before heading back home."
-    }
-  ]
-},
 {
     id: "rishikesh-mussoorie",
     category: "backpacking",
@@ -4128,23 +4071,11 @@ seats: 8
       "Ganga Aarti Experience",
       "Professional Trip Coordinator"
     ],
-    batches: [
-{
-date: "21 Mar 2026",
-price: 5000,
-seats: 6
-},
-{
-date: "24 Mar 2026",
-price: 5000,
-seats: 4
-},
-{
-date: "28 Mar 2026",
-price: 5000,
-seats: 8
-}
-],
+  occupancy: {
+    quad: 5000,
+    triple: 6000,
+    double: 7000
+  },
     itinerary: [
       { day: 1, title: "Arrival & Camping", desc: "Riverside camping and bonfire.", image: "https://images.unsplash.com/photo-1590766940554-634a7ed41450" },
       { day: 2, title: "Rafting & Aarti", desc: "12km rafting and Ganga Aarti.", image: "https://images.unsplash.com/photo-1597034442534-7164923f03b8" },
@@ -4158,7 +4089,7 @@ seats: 8
   itineraryPdf: "/itineraries/7 Days Delhi – Srinagar – Sonmarg – Gulmarg – Pahalgam – Srinagar – Delhi (1).pdf",
   category: "weekend",
   location: "Srinagar – Sonmarg – Gulmarg – Pahalgam",
-  duration: "7 Days / 6 Nights",
+  duration: "5 Days / 4 Nights",
   price: "5,000",
   originalPrice: "9,999",
   rating: "4.8",
@@ -4168,8 +4099,8 @@ seats: 8
   
   occupancy: {
     quad: 5000,
-    triple: 6500,
-    double: 8000
+    triple: 6000,
+    double: 7000
   },
 
   inclusions: [
@@ -4219,42 +4150,29 @@ seats: 8
   ],
 
   itineraryBrief: [
-    "Day 1: Delhi to Srinagar (Volvo Journey)",
-    "Day 2: Arrival in Srinagar & Houseboat Stay",
-    "Day 3: Sonmarg: The Meadow of Gold",
-    "Day 4: Gulmarg: The Meadow of Flowers",
-    "Day 5: Pahalgam: The Valley of Shepherds",
-    "Day 6: Srinagar Sightseeing & Departure",
-    "Day 7: Arrival in Delhi"
+    
+    "Day 1: Arrival in Srinagar & Houseboat Stay",
+    "Day 2: Sonmarg: The Meadow of Gold",
+    "Day 3: Gulmarg: The Meadow of Flowers",
+    "Day 4: Pahalgam: The Valley of Shepherds",
+    "Day 5: Srinagar Sightseeing & Departure",
+    
   ],
 
   itinerary: [
     {
       day: 1,
-      title: "Delhi to Srinagar (Volvo Journey)",
+      title: "Meet us at Srinagar ",
       description: `
-• Evening departure from Delhi by Volvo Semi-Sleeper Bus.
+• Evening departure from Srinagar by Volvo Semi-Sleeper Bus.
 • Overnight comfortable journey towards the valley of Kashmir.
 • Enjoy the changing landscapes as you head towards the mountains.
       `
     },
+    
+
     {
       day: 2,
-      title: "Arrival in Srinagar | Houseboat Experience",
-      description: `
-• Arrival in Srinagar and meet our representative.
-• Transfer to a traditional Kashmiri Houseboat on Dal Lake.
-• Highlights:
-  - Experience a relaxing Shikara Ride on Dal Lake.
-  - Explore the floating markets and gardens.
-• Dinner and overnight stay in Houseboat.
-
-Meals Included:
-Dinner
-      `
-    },
-    {
-      day: 3,
       title: "Sonmarg Excursion | The Meadow of Gold",
       description: `
 • Post breakfast, drive to Sonmarg (~80 km).
@@ -4269,7 +4187,7 @@ Breakfast & Dinner
       `
     },
     {
-      day: 4,
+      day: 3,
       title: "Gulmarg Adventure | The Snow Paradise",
       description: `
 • Post breakfast, head to Gulmarg (~50 km).
@@ -4284,7 +4202,7 @@ Breakfast & Dinner
       `
     },
     {
-      day: 5,
+      day: 4,
       title: "Pahalgam Trip | The Valley of Shepherds",
       description: `
 • After breakfast, drive to the scenic Pahalgam (~95 km).
@@ -4299,7 +4217,7 @@ Breakfast & Dinner
       `
     },
     {
-      day: 6,
+      day: 5,
       title: "Srinagar Sightseeing & Departure",
       description: `
 • Breakfast and check-out from hotel.
@@ -4313,14 +4231,8 @@ Meals Included:
 Breakfast
       `
     },
-    {
-      day: 7,
-      title: "Arrival in Delhi",
-      description: `
-• Early morning arrival back in Delhi.
-• Trip ends with magical memories of the Paradise on Earth.
-      `
-    }
+    
+
   ],
 
   thingsToCarry: [
@@ -4339,7 +4251,7 @@ Breakfast
   itineraryPdf: "/itineraries/Delhi – Srinagar – Gulmarg – Srinagar – Delhi.pdf",
   category: "weekend",
   location: "Delhi – Srinagar – Gulmarg – Srinagar – Delhi",
-  duration: "5 Days / 4 Nights",
+  duration: "3 Days / 2 Nights",
   price: 5000,
   originalPrice: 11999,
   rating: "4.9",
@@ -4348,8 +4260,8 @@ Breakfast
 
   occupancy: {
     quad: 5000,
-    triple: 6500,
-    double: 8000
+    triple: 6000,
+    double: 7000
   },
 
   inclusions: [
@@ -4398,39 +4310,26 @@ Breakfast
   ],
 
   itineraryBrief: [
-    "Day 1: Evening Departure from Delhi (Volvo)",
-    "Day 2: Arrival in Srinagar & Hotel Check-in",
-    "Day 3: Srinagar to Gulmarg Day Trip",
-    "Day 4: Srinagar Sightseeing & Return Journey",
-    "Day 5: Morning Arrival in Delhi"
+    "Day 1: Arrival in Srinagar & Hotel Check-in",
+    "Day 2: Srinagar to Gulmarg Day Trip",
+    "Day 3: Srinagar Sightseeing & Return Journey",
+   
   ],
 
   itinerary: [
     {
       day: 1,
-      title: "Delhi to Srinagar (Volvo Journey)",
+      title: " Srinagar (Volvo Journey)",
       description: `
-• Evening departure from Delhi by Volvo Semi-Sleeper Bus.
+• Evening departure from Srinagar by Volvo Semi-Sleeper Bus.
 • Overnight journey towards the beautiful valley of Kashmir.
 • Enjoy a comfortable ride with stops for dinner (self-expense).
       `
     },
+    
+    
     {
       day: 2,
-      title: "Arrival in Srinagar | Hotel Check-in",
-      description: `
-• Evening arrival at Srinagar Volvo stand.
-• Meet & greet by Ghoomo Saste Me representative.
-• Transfer to your hotel or traditional houseboat.
-• Check-in, freshen up and relax after the long journey.
-• Enjoy a warm Kashmiri dinner.
-
-Meals Included:
-Dinner
-      `
-    },
-    {
-      day: 3,
       title: "Srinagar to Gulmarg Day Trip",
       description: `
 • Post breakfast, drive to Gulmarg (The Meadow of Flowers).
@@ -4446,7 +4345,7 @@ Breakfast & Dinner
       `
     },
     {
-      day: 4,
+      day: 3,
       title: "Srinagar Sightseeing & Departure",
       description: `
 • Breakfast at the hotel followed by check-out.
@@ -4459,15 +4358,8 @@ Breakfast & Dinner
 Meals Included:
 Breakfast
       `
-    },
-    {
-      day: 5,
-      title: "Arrival in Delhi",
-      description: `
-• Morning arrival back in Delhi.
-• Trip ends with magical memories of Paradise on Earth.
-      `
     }
+ 
   ],
 
   thingsToCarry: [

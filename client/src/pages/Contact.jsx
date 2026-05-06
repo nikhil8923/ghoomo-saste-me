@@ -1,9 +1,52 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Mail, Phone, MapPin, MessageCircle, Send } from 'lucide-react';
 
 const Contact = () => {
   const whatsappNumber = "917827372844"; 
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hi Ghoomo Saste Me! I want to inquire about a trip.`;
+
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    message: ""
+  });
+
+  const handleChange = (e) => {
+    let { name, value } = e.target;
+
+    // Only alphabets for name
+    if (name === "name") {
+      value = value.replace(/[^A-Za-z ]/g, "");
+    }
+
+    // Only numbers for phone (max 10 digits)
+    if (name === "phone") {
+      value = value.replace(/[^0-9]/g, "").slice(0, 10);
+    }
+
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (formData.name.trim().length < 3) {
+      alert("Enter valid name");
+      return;
+    }
+
+    if (formData.phone.length !== 10) {
+      alert("Enter valid 10 digit phone number");
+      return;
+    }
+
+    if (formData.message.trim().length < 10) {
+      alert("Message must be at least 10 characters");
+      return;
+    }
+
+    alert("Message sent successfully!");
+  };
 
   return (
     <main className="pt-[130px] pb-20 bg-gray-50">
@@ -70,20 +113,41 @@ const Contact = () => {
 
           {/* --- CONTACT FORM --- */}
           <div className="bg-white p-8 md:p-10 rounded-3xl shadow-xl border border-gray-100">
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-xs font-black uppercase text-gray-400 mb-2">Full Name</label>
-                  <input type="text" className="w-full bg-gray-50 border-none rounded-xl p-4 focus:ring-2 focus:ring-blue-500 outline-none" placeholder="Enter Your Name" />
+                  <input 
+                    type="text"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    className="w-full bg-gray-50 border-none rounded-xl p-4 focus:ring-2 focus:ring-blue-500 outline-none" 
+                    placeholder="Enter Your Name" 
+                  />
                 </div>
                 <div>
                   <label className="block text-xs font-black uppercase text-gray-400 mb-2">Phone Number</label>
-                  <input type="text" className="w-full bg-gray-50 border-none rounded-xl p-4 focus:ring-2 focus:ring-blue-500 outline-none" placeholder="+91 ..." />
+                  <input 
+                    type="text"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    className="w-full bg-gray-50 border-none rounded-xl p-4 focus:ring-2 focus:ring-blue-500 outline-none" 
+                    placeholder="+91 ..." 
+                  />
                 </div>
               </div>
               <div>
                 <label className="block text-xs font-black uppercase text-gray-400 mb-2">Message</label>
-                <textarea rows="4" className="w-full bg-gray-50 border-none rounded-xl p-4 focus:ring-2 focus:ring-blue-500 outline-none" placeholder="Tell us about your dream trip..."></textarea>
+                <textarea 
+                  rows="4"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  className="w-full bg-gray-50 border-none rounded-xl p-4 focus:ring-2 focus:ring-blue-500 outline-none" 
+                  placeholder="Tell us about your dream trip..."
+                ></textarea>
               </div>
               <button className="w-full bg-[#1a2b4c] text-white py-5 rounded-2xl font-black uppercase italic tracking-widest flex items-center justify-center gap-2 hover:bg-blue-600 transition-all">
                 Send Message <Send size={18} />

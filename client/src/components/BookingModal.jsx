@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { X, User, Phone, Mail, Calendar, Users, ShieldCheck, Send } from "lucide-react";
 
-const BookingModal = ({ isOpen, onClose, tripTitle }) => {
+const BookingModal = ({ isOpen, onClose, tripTitle, price, occupancy }) => {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
@@ -10,10 +10,23 @@ const BookingModal = ({ isOpen, onClose, tripTitle }) => {
     name: "",
     phone: "",
     email: "",
-    travelDate: "",
+    date: "",
     travelers: "1",
     sharing: "double"
   });
+  useEffect(() => {
+  if (!occupancy) return;
+
+  if (formData.sharing === "double") {
+    setFormData(prev => ({ ...prev, amount: occupancy.double }));
+  }
+  if (formData.sharing === "triple") {
+    setFormData(prev => ({ ...prev, amount: occupancy.triple }));
+  }
+  if (formData.sharing === "quad") {
+    setFormData(prev => ({ ...prev, amount: occupancy.quad }));
+  }
+}, [formData.sharing, occupancy]);
 
   if (!isOpen) return null;
 
@@ -82,7 +95,7 @@ const BookingModal = ({ isOpen, onClose, tripTitle }) => {
         date: formData.travelDate,
         travelers: formData.travelers,
         sharing: formData.sharing,
-        budget: budget
+        budget: formData.amount
       };
 
       console.log("📤 Sending data:", payload);
@@ -226,19 +239,25 @@ const BookingModal = ({ isOpen, onClose, tripTitle }) => {
                   </select>
                 </div>
 
-                {/* SHARING */}
-                <div className="relative">
-                  <select
-                    name="sharing"
-                    value={formData.sharing}
-                    onChange={handleChange}
-                    className="w-full border rounded-xl py-3 px-4 outline-none focus:border-blue-600"
-                  >
-                    <option value="double">Double Sharing (₹7000)</option>
-                    <option value="triple">Triple Sharing (₹6000)</option>
-                    <option value="quad">Quad Sharing (₹5000)</option>
-                  </select>
-                </div>
+               {/* SHARING */}
+<div className="relative">
+  <select
+    name="sharing"
+    value={formData.sharing}
+    onChange={handleChange}
+    className="w-full border rounded-xl py-3 px-4 outline-none focus:border-blue-600"
+  >
+    <option value="double">
+      Double Sharing (₹{occupancy?.double || price})
+    </option>
+    <option value="triple">
+      Triple Sharing (₹{occupancy?.triple || price})
+    </option>
+    <option value="quad">
+      Quad Sharing (₹{occupancy?.quad || price})
+    </option>
+  </select>
+</div>
 
               </div>
 
