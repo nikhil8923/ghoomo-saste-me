@@ -1,128 +1,366 @@
 import React, { useState } from "react";
 import { realTripGallery } from "../data/trips";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, X, Camera, Plus } from "lucide-react";
+
+const INITIAL_COUNT = 4;
 
 const ImageGallery = () => {
+  const [previewIndex, setPreviewIndex] = useState(null);
+  const [expanded, setExpanded] = useState(false);
 
-const [previewIndex,setPreviewIndex] = useState(null);
+  const visibleImages = expanded ? realTripGallery : realTripGallery.slice(0, INITIAL_COUNT);
 
-const nextImage = () => {
-setPreviewIndex((prev) => (prev + 1) % realTripGallery.length);
-};
+  const nextImage = () =>
+    setPreviewIndex((prev) => (prev + 1) % realTripGallery.length);
 
-const prevImage = () => {
-setPreviewIndex((prev) =>
-prev === 0 ? realTripGallery.length - 1 : prev - 1
-);
-};
+  const prevImage = () =>
+    setPreviewIndex((prev) =>
+      prev === 0 ? realTripGallery.length - 1 : prev - 1
+    );
 
-return (
+  React.useEffect(() => {
+    const handleKey = (e) => {
+      if (previewIndex === null) return;
+      if (e.key === "ArrowRight") nextImage();
+      if (e.key === "ArrowLeft") prevImage();
+      if (e.key === "Escape") setPreviewIndex(null);
+    };
+    window.addEventListener("keydown", handleKey);
+    return () => window.removeEventListener("keydown", handleKey);
+  }, [previewIndex]);
 
-<section className="py-20 bg-[#f8fafc]">
+  return (
+    <>
+      <style>{`
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&family=Montserrat:wght@300;400;500&display=swap');
 
-<div className="max-w-7xl mx-auto px-4">
+        .gal-section {
+          background: #0c0c0c;
+          padding: 48px 0 40px;
+        }
 
-{/* TITLE */}
+        .gal-eyebrow {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 0.58rem;
+          font-weight: 500;
+          letter-spacing: 0.38em;
+          text-transform: uppercase;
+          color: #b49146;
+        }
 
-<div className="text-center mb-12">
+        .gal-rule {
+          display: inline-block;
+          width: 28px;
+          height: 1px;
+          background: linear-gradient(90deg, transparent, #b49146, transparent);
+          vertical-align: middle;
+          margin: 0 8px;
+        }
 
-<h2 className="text-4xl md:text-5xl font-extrabold text-[#1a2b4c]">
-Our Community Gallery
-</h2>
+        .gal-heading {
+          font-family: 'Cormorant Garamond', serif;
+          font-weight: 300;
+          font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+          line-height: 1.15;
+          color: #f0ede6;
+          margin: 6px 0 4px;
+        }
 
-<p className="text-gray-500 mt-3">
-Real moments captured by our travelers
-</p>
+        .gal-heading em {
+          font-style: italic;
+          color: #b49146;
+        }
 
-</div>
+        .gal-sub {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 0.65rem;
+          font-weight: 300;
+          letter-spacing: 0.1em;
+          color: rgba(240,237,230,0.35);
+        }
 
-{/* SLIDER */}
+        .gal-grid {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 8px;
+        }
 
-<div className="flex gap-5 overflow-x-auto pb-6 scrollbar-hide">
+        @media (max-width: 640px) {
+          .gal-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5px;
+          }
+          .gal-section {
+            padding: 36px 0 32px;
+          }
+        }
 
-{realTripGallery.map((img,index)=>(
-  
-<div
-key={index}
-onClick={()=>setPreviewIndex(index)}
-className="min-w-[260px] md:min-w-[340px] h-[230px] rounded-2xl overflow-hidden shadow-md cursor-pointer group"
->
+        .gal-item {
+          position: relative;
+          overflow: hidden;
+          border-radius: 3px;
+          cursor: pointer;
+          aspect-ratio: 3/4;
+        }
 
-<img
-src={img.src}
-alt="trip"
-className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
-/>
+        .gal-item img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+          filter: brightness(0.88) saturate(0.85);
+          transition: transform 0.7s cubic-bezier(0.25,0.46,0.45,0.94), filter 0.5s ease;
+        }
 
-</div>
+        .gal-item:hover img {
+          transform: scale(1.08);
+          filter: brightness(1) saturate(1.05);
+        }
 
-))}
+        .gal-overlay {
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, transparent 55%);
+          opacity: 0;
+          transition: opacity 0.35s ease;
+        }
 
-</div>
+        .gal-item:hover .gal-overlay { opacity: 1; }
 
-{/* VIEW MORE */}
+        .gal-num {
+          position: absolute;
+          bottom: 8px;
+          right: 10px;
+          font-family: 'Cormorant Garamond', serif;
+          font-size: 0.85rem;
+          color: rgba(180,145,70,0.85);
+          opacity: 0;
+          transition: opacity 0.3s ease;
+        }
 
-<div className="flex justify-center mt-8">
+        .gal-item:hover .gal-num { opacity: 1; }
 
-<button
-onClick={()=>setPreviewIndex(0)}
-className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl font-semibold shadow"
->
+        .gal-more-tile {
+          border-radius: 3px;
+          cursor: pointer;
+          aspect-ratio: 3/4;
+          background: rgba(180,145,70,0.05);
+          border: 1px solid rgba(180,145,70,0.18);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 6px;
+          transition: background 0.3s, border-color 0.3s;
+        }
 
-View More
+        .gal-more-tile:hover {
+          background: rgba(180,145,70,0.1);
+          border-color: rgba(180,145,70,0.45);
+        }
 
-</button>
+        .gal-more-label {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 0.58rem;
+          letter-spacing: 0.22em;
+          text-transform: uppercase;
+          color: #b49146;
+        }
 
-</div>
+        .gal-more-count {
+          font-family: 'Cormorant Garamond', serif;
+          font-size: 1.5rem;
+          color: rgba(240,237,230,0.65);
+          line-height: 1;
+        }
 
-</div>
+        .gal-btn {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 0.6rem;
+          font-weight: 500;
+          letter-spacing: 0.22em;
+          text-transform: uppercase;
+          color: #b49146;
+          border: 1px solid rgba(180,145,70,0.3);
+          padding: 9px 26px;
+          background: transparent;
+          cursor: pointer;
+          transition: border-color 0.3s, background 0.3s, color 0.3s;
+        }
 
-{/* FULLSCREEN PREVIEW */}
+        .gal-btn:hover {
+          border-color: rgba(180,145,70,0.65);
+          background: rgba(180,145,70,0.06);
+          color: #d4b96a;
+        }
 
-{previewIndex !== null && (
+        /* LIGHTBOX */
+        .lb-wrap {
+          position: fixed;
+          inset: 0;
+          background: rgba(4,4,4,0.97);
+          backdrop-filter: blur(10px);
+          z-index: 9999;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          animation: lbIn 0.25s ease;
+        }
 
-<div className="fixed inset-0 bg-black/95 z-[9999] flex items-center justify-center">
+        @keyframes lbIn { from { opacity:0 } to { opacity:1 } }
 
-<button
-onClick={()=>setPreviewIndex(null)}
-className="absolute top-6 right-10 text-white text-4xl"
->
-×
-</button>
+        .lb-img {
+          max-height: 84vh;
+          max-width: 90vw;
+          object-fit: contain;
+          border-radius: 2px;
+          box-shadow: 0 24px 64px rgba(0,0,0,0.7);
+          animation: lbZoom 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+        }
 
-{/* LEFT */}
+        @keyframes lbZoom {
+          from { opacity:0; transform:scale(0.96) }
+          to { opacity:1; transform:scale(1) }
+        }
 
-<button
-onClick={prevImage}
-className="absolute left-8 text-white"
->
-<ChevronLeft size={40}/>
-</button>
+        .lb-close {
+          position: absolute;
+          top: 14px;
+          right: 14px;
+          width: 34px;
+          height: 34px;
+          border-radius: 50%;
+          border: 1px solid rgba(255,255,255,0.15);
+          background: none;
+          color: rgba(240,237,230,0.6);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          transition: all 0.2s;
+        }
 
-{/* IMAGE */}
+        .lb-close:hover {
+          color: #f0ede6;
+          border-color: rgba(180,145,70,0.5);
+          background: rgba(180,145,70,0.08);
+        }
 
-<img
-src={realTripGallery[previewIndex].src}
-className="max-h-[85vh] max-w-[90vw] rounded-xl"
-/>
+        .lb-nav {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 36px;
+          height: 36px;
+          border: 1px solid rgba(255,255,255,0.12);
+          border-radius: 2px;
+          background: none;
+          color: rgba(240,237,230,0.5);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          transition: all 0.2s;
+        }
 
-{/* RIGHT */}
+        .lb-nav:hover {
+          color: #b49146;
+          border-color: rgba(180,145,70,0.5);
+          background: rgba(180,145,70,0.06);
+        }
 
-<button
-onClick={nextImage}
-className="absolute right-8 text-white"
->
-<ChevronRight size={40}/>
-</button>
+        .lb-prev { left: clamp(6px, 2vw, 20px); }
+        .lb-next { right: clamp(6px, 2vw, 20px); }
 
-</div>
+        .lb-counter {
+          position: absolute;
+          bottom: 14px;
+          left: 50%;
+          transform: translateX(-50%);
+          font-family: 'Montserrat', sans-serif;
+          font-size: 0.57rem;
+          letter-spacing: 0.28em;
+          color: rgba(240,237,230,0.25);
+          white-space: nowrap;
+        }
 
-)}
+        .lb-counter b { color: #b49146; font-weight: 400; }
+      `}</style>
 
-</section>
+      <section className="gal-section">
+        <div style={{ maxWidth: "960px", margin: "0 auto", padding: "0 14px" }}>
 
-);
+          {/* COMPACT HEADER */}
+          <div style={{ textAlign: "center", marginBottom: "20px" }}>
+            <p className="gal-eyebrow">
+              <span className="gal-rule" />
+              <Camera size={9} color="#b49146" style={{ display: "inline", verticalAlign: "middle" }} />
+              <span className="gal-rule" />
+            </p>
+            <h2 className="gal-heading">
+              Our <em>Community</em> Gallery
+            </h2>
+            <p className="gal-sub">Real moments captured by our travelers</p>
+          </div>
 
+          {/* GRID: 4 images + "+N more" tile */}
+          <div className="gal-grid">
+            {visibleImages.map((img, i) => (
+              <div key={i} className="gal-item" onClick={() => setPreviewIndex(i)}>
+                <img src={img.src} alt={`trip-${i + 1}`} loading="lazy" />
+                <div className="gal-overlay" />
+                <span className="gal-num">0{i + 1}</span>
+              </div>
+            ))}
+
+            {!expanded && realTripGallery.length > INITIAL_COUNT && (
+              <div className="gal-more-tile" onClick={() => setExpanded(true)}>
+                <Plus size={16} color="#b49146" />
+                <span className="gal-more-count">+{realTripGallery.length - INITIAL_COUNT}</span>
+                <span className="gal-more-label">More</span>
+              </div>
+            )}
+          </div>
+
+          {expanded && (
+            <div style={{ display: "flex", justifyContent: "center", marginTop: "14px" }}>
+              <button className="gal-btn" onClick={() => setExpanded(false)}>
+                Show Less
+              </button>
+            </div>
+          )}
+
+        </div>
+      </section>
+
+      {/* LIGHTBOX */}
+      {previewIndex !== null && (
+        <div className="lb-wrap" onClick={() => setPreviewIndex(null)}>
+          <button className="lb-close" onClick={() => setPreviewIndex(null)}>
+            <X size={13} />
+          </button>
+          <button className="lb-nav lb-prev" onClick={(e) => { e.stopPropagation(); prevImage(); }}>
+            <ChevronLeft size={15} />
+          </button>
+          <img
+            key={previewIndex}
+            src={realTripGallery[previewIndex].src}
+            className="lb-img"
+            alt={`preview-${previewIndex + 1}`}
+            onClick={(e) => e.stopPropagation()}
+          />
+          <button className="lb-nav lb-next" onClick={(e) => { e.stopPropagation(); nextImage(); }}>
+            <ChevronRight size={15} />
+          </button>
+          <p className="lb-counter">
+            <b>{String(previewIndex + 1).padStart(2, "0")}</b>
+            {" / "}
+            {String(realTripGallery.length).padStart(2, "0")}
+          </p>
+        </div>
+      )}
+    </>
+  );
 };
 
 export default ImageGallery;

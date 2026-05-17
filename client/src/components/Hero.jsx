@@ -15,7 +15,6 @@ const useCountUp = (target, duration = 1800) => {
     if (!el) return;
 
     const runAnimation = () => {
-      // Cancel any existing animation
       if (animRef.current) cancelAnimationFrame(animRef.current);
       setCount(0);
       const startTime = performance.now();
@@ -31,13 +30,11 @@ const useCountUp = (target, duration = 1800) => {
       animRef.current = requestAnimationFrame(tick);
     };
 
-    // Re-trigger every time it enters the viewport (not just once)
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           runAnimation();
         } else {
-          // Reset to 0 when out of view so it counts up fresh next time
           if (animRef.current) cancelAnimationFrame(animRef.current);
           setCount(0);
         }
@@ -88,7 +85,7 @@ const Stars = ({ rating, size = 12 }) => {
   const full = Math.floor(rating);
   const half = rating % 1 >= 0.5;
   return (
-    <div style={{ display: "flex", alignItems: "center", gap: "2px" }}>
+    <div style={{ display: "flex", alignItems: "center", gap: "1px" }}>
       {Array.from({ length: 5 }).map((_, i) => {
         const color = i < full ? "#F59E0B" : (i === full && half ? "#F59E0B" : "#FDE68A");
         return (
@@ -102,48 +99,67 @@ const Stars = ({ rating, size = 12 }) => {
 };
 
 /* ─────────────────────────────────────────
-   RATING CARD — used in both desktop row & mobile carousel
+   RATING CARD
 ───────────────────────────────────────── */
 const RatingCard = ({ Logo, platform, rating, reviewTarget, delay = 0, mobile = false }) => {
   const { count, ref } = useCountUp(reviewTarget, 1800 + delay);
 
   if (mobile) {
-    /* ── MOBILE: tall card style ── */
+    /* ── MOBILE: compact card ── */
     return (
       <div
         ref={ref}
         style={{
           flex: "0 0 auto",
-          width: "clamp(130px, 38vw, 180px)",
+          width: "clamp(90px,26vw,120px)",
           background: "#fff",
-          borderRadius: "16px",
+          borderRadius: "12px",
           border: "1px solid #e5e7eb",
           boxShadow: "0 2px 8px rgba(0,0,0,0.07)",
-          padding: "16px 14px",
+          padding: "10px 8px",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          gap: "8px",
+          gap: "4px",
           scrollSnapAlign: "start",
           textAlign: "center",
         }}
       >
         {/* Logo circle */}
-        <div style={{ width: "44px", height: "44px", borderRadius: "12px", background: "#f9fafb", border: "1px solid #f0f0f0", display: "flex", alignItems: "center", justifyContent: "center" }}>
-          <Logo size={24} />
+        <div style={{
+          width: "32px",
+          height: "32px",
+          borderRadius: "8px",
+          background: "#f9fafb",
+          border: "1px solid #f0f0f0",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}>
+          <Logo size={18} />
         </div>
+
         {/* Platform name */}
-        <span style={{ fontSize: "10px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", color: "#9CA3AF" }}>
+        <span style={{
+          fontSize: "8px",
+          fontWeight: 700,
+          textTransform: "uppercase",
+          letterSpacing: "0.08em",
+          color: "#9CA3AF",
+        }}>
           {platform}
         </span>
+
         {/* Rating number */}
-        <div style={{ fontSize: "28px", fontWeight: 800, color: "#111827", lineHeight: 1 }}>
+        <div style={{ fontSize: "22px", fontWeight: 800, color: "#111827", lineHeight: 1 }}>
           {rating.toFixed(1)}
         </div>
+
         {/* Stars */}
-        <Stars rating={rating} size={13} />
+        <Stars rating={rating} size={10} />
+
         {/* Count */}
-        <span style={{ fontSize: "11px", color: "#9CA3AF", fontWeight: 500 }}>
+        <span style={{ fontSize: "9px", color: "#9CA3AF", fontWeight: 500 }}>
           {count.toLocaleString()}+ reviews
         </span>
       </div>
@@ -327,7 +343,7 @@ const Hero = () => {
       </div>
 
       {/* ══════════════════════════════════════════
-          RATINGS — desktop row / mobile cards
+          RATINGS — desktop row / mobile compact cards
       ══════════════════════════════════════════ */}
 
       {/* DESKTOP: single bordered row */}
@@ -342,26 +358,42 @@ const Hero = () => {
         ))}
       </div>
 
-      {/* MOBILE: horizontal snap-scroll cards */}
+      {/* MOBILE: horizontal snap-scroll compact cards */}
       <div
         className="ratings-mobile scrollbar-hide"
         style={{
-          display: "none",           /* shown via CSS below */
-          gap: "10px",
+          display: "none",
+          gap: "8px",
           overflowX: "auto",
           scrollSnapType: "x mandatory",
           WebkitOverflowScrolling: "touch",
-          padding: "4px 2px 8px",
+          padding: "4px 2px 6px",
           width: "100%",
           maxWidth: "1400px",
-          margin: "10px auto 0",
+          margin: "8px auto 0",
           boxSizing: "border-box",
         }}
       >
-        {/* Verified badge as first card */}
-        <div style={{ flex: "0 0 auto", width: "clamp(110px,32vw,150px)", background: "linear-gradient(135deg,#ECFDF5,#D1FAE5)", borderRadius: "16px", border: "1px solid #A7F3D0", padding: "16px 12px", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: "6px", scrollSnapAlign: "start", textAlign: "center" }}>
-          <ShieldCheck size={28} color="#059669" />
-          <span style={{ fontSize: "11px", fontWeight: 700, color: "#065F46", lineHeight: 1.3 }}>Verified<br/>Reviews</span>
+        {/* Verified badge — compact */}
+        <div style={{
+          flex: "0 0 auto",
+          width: "clamp(80px,24vw,110px)",
+          background: "linear-gradient(135deg,#ECFDF5,#D1FAE5)",
+          borderRadius: "12px",
+          border: "1px solid #A7F3D0",
+          padding: "10px 8px",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          gap: "4px",
+          scrollSnapAlign: "start",
+          textAlign: "center",
+        }}>
+          <ShieldCheck size={20} color="#059669" />
+          <span style={{ fontSize: "9px", fontWeight: 700, color: "#065F46", lineHeight: 1.3 }}>
+            Verified<br/>Reviews
+          </span>
         </div>
 
         {RATINGS.map((item) => (

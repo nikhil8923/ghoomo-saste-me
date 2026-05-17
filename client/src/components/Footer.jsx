@@ -159,6 +159,11 @@ return ( <footer className="bg-[#111827] text-gray-300 pt-14 font-sans relative"
         <a href="tel:+918265877349" className="hover:text-yellow-400">
           Musafir (24×7 Sales Agent): +91 8265877349
         </a>
+        {/* ADDED ADDRESS LINE */}
+        <p className="text-gray-400 mt-2 font-normal max-w-sm mx-auto leading-relaxed">
+          3rd Floor, Park Back side, A27, Block B, Raghubir Nagar, <br />
+          Tagore Garden Extension, Delhi, 110074
+        </p>
 
       </div>
 

@@ -2,8 +2,8 @@ export const tripsData = [
   
 
  {
-  id: "himachal-backpacking",
-  stateId: 'himachal-pradesh',
+  id: "manali-kasol-backpacking",
+  stateId: 'himachal',
   title: "Manali & Kasol Backpacking",
   itineraryPdf: "/itineraries/GSM Manali.pdf",
   category: "adventure",
@@ -56,13 +56,16 @@ export const tripsData = [
   ],
 
   gallery: [
-    { src: "/kasol1.JPG" },
+    { src: "/kasol1.jpg" },
     { src: "/kasol2.jpg" },
     { src: "/kasol3.jpg" },
     { src: "/kasol4.jpg" },
     { src: "/kasol5.jpg" },
     { src: "/kasol6.JPG" },
-    { src: "/k-s4.jpg" },
+    { src: "/k-s4.jpeg" },
+    { src: "/nks1.jpeg" },
+    { src: "/nks2.jpeg" },
+    { src: "/nks3.jpeg" },
   ],
 
   itineraryBrief: [
@@ -169,7 +172,7 @@ Trip ends with unforgettable Himalayan memories.
   originalPrice: '7,500',
   rating: '4.7',
   reviews: 98,
-  image: '/Mcleod Ganj.jpg',
+  image: '/Mcleod Ganj.webp',
   description: 'Experience the beauty of McLeod Ganj and the famous Triund Trek. Explore Tibetan monasteries, vibrant cafes, Bhagsu waterfalls, and enjoy breathtaking views of the Dhauladhar mountain range. Perfect for adventure lovers and nature seekers.',
   
   occupancy: {
@@ -216,11 +219,14 @@ Trip ends with unforgettable Himalayan memories.
 
   gallery: [
   
-    { src: "/CD28.jpg" },
-    { src: "/k-s4.jpg" },
-    { src: "/k-s5.jpg" },
+    
+    { src: "/k-s2.jpeg" },
+    { src: "/k-s3.jpg" },
+    { src: "/k-s4.jpeg" },
+    { src: "/k-s6.jpeg" },
+    { src: "/k-s5.jpeg" },
     { src: "/CD5.jpg" },
-    { src: "/k-s7.jpg" }  
+    
 
   ],
 
@@ -323,7 +329,7 @@ Trip ends with beautiful Himalayan memories.
   originalPrice: '7,800',
   rating: '4.6',
   reviews: 115,
-  image: '/Shimla.jpg',
+  image: '/shimla5.jpg',
   description: 'A classic Himalayan retreat exploring the "Queen of Hills". Experience the colonial charm of Shimla, the stunning views from the Ridge, and high-altitude adventure activities in the snow-capped mountains of Kufri.',
   
   occupancy: {
@@ -472,7 +478,7 @@ Trip ends with sweet Himalayan memories.
   originalPrice: '8,000',
   rating: '4.9',
   reviews: 210,
-  image: '/Kheer Ganga.jpg',
+  image: '/kheer12.jpeg',
   description: 'Experience the magic of Parvati Valley. Trek through lush green pine forests, soak in the therapeutic natural hot springs of Kheerganga, and camp under a star-studded sky at 2,960 meters.',
   
   occupancy: {
@@ -518,10 +524,10 @@ Trip ends with sweet Himalayan memories.
   ],
 
   gallery: [
-    { src: "/kheer1.jpg" },
-    { src: "/kheer2.jpg" },
-    { src: "/kheer3.jpg" },
-    { src: "/kheer4.jpg" },
+    { src: "/kheer11.jpeg" },
+    { src: "/kheer12.jpeg" },
+    { src: "/kheer13.jpeg" },
+    { src: "/kheer14.jpeg" },
     { src: "/kheer5.jpg" },
   ],
 
@@ -617,7 +623,7 @@ Trip ends with soulful memories of the mountains.
   originalPrice: '8,500',
   rating: '4.8',
   reviews: 134,
-  image: '/Jibhi.jpg',
+  image: '/jibhi8.jpeg',
   description: 'Escape the crowds in this offbeat Himalayan paradise. Crystal clear rivers, cozy wooden homestays, and untouched nature. Experience the serenity of Jibhi and the high-altitude beauty of Jalori Pass.',
   
   occupancy: {
@@ -664,12 +670,14 @@ Trip ends with soulful memories of the mountains.
   ],
 
   gallery: [
-    { src: "/jibhi1.jpg" },
-    { src: "/jibhi2.jpg" },
+    { src: "/jibhi1.jpeg" },
+    { src: "/jibhi2.jpeg" },
     { src: "/jibhi3.jpg" },
     { src: "/jibhi4.jpg" },
-    { src: "/jibhi5.jpg" },
-    { src: "/jibhi6.jpg" },
+    { src: "/jibhi5.jpeg" },
+    { src: "/jibhi6.jpeg" },
+    { src: "/jibhi7.jpeg" },
+    { src: "/jibhi9.jpeg" },
   
   ],
 
@@ -768,7 +776,7 @@ Trip ends with peaceful memories of the mountains.
   originalPrice: '7,500',
   rating: '4.8',
   reviews: 156,
-  image: '/tosh.jpg',
+  image: '/kheer1.jpg',
   description: 'A chill backpacker vibe trip. Explore the famous cafes of Kasol, walk along the Parvati River, and hike up to the beautiful, remote village of Tosh for epic mountain views and traditional wooden architecture.',
   
   occupancy: {
@@ -917,7 +925,7 @@ Trip ends with chill memories of Parvati Valley.
   originalPrice: '9,000',
   rating: '4.9',
   reviews: 312,
-  image: '/billing.jpg',
+  image: '/billing1.jpeg',
   description: 'Fly high in Bir Billing - where the sky becomes your playground! Experience Asia\'s highest paragliding, explore serene Tibetan monasteries, and enjoy the vibrant cafe culture of Bir.',
   
   occupancy: {
@@ -965,8 +973,11 @@ Trip ends with chill memories of Parvati Valley.
     { src: "/billing.jpg" },
     { src: "/CD1.jpg" },
     { src: "/CD2.jpg" },
-    { src: "/CD41.JPG" },
-    { src: "/kedarnath1.jpg" }
+     { src: "/billing1.jpeg" },
+     { src: "/billing2.jpeg" },
+     { src: "/billing3.jpeg" },
+    
+  
   ],
 
   itineraryBrief: [
@@ -1086,7 +1097,7 @@ Trip ends.
   originalPrice: '5,500',
   rating: '4.8',
   reviews: 420,
-  image: '/Rishikesh.jpg',
+  image: '/Rishikesh.jpeg',
   description: 'Experience the ultimate adrenaline rush with white water rafting on the Ganges, followed by riverside adventure camping, bonfires, and cliff jumping. Explore the spiritual and adventurous side of the Yoga Capital.',
   
   occupancy: {
@@ -1140,7 +1151,9 @@ Trip ends.
     { src: "/rishikesh4.jpg" },
     { src: "/rishikesh5.jpg" },
     { src: "/rishikesh6.jpg" },
-    { src: "/rishikesh7.jpg" }   
+    { src: "/rishikesh7.jpg" } ,  
+    { src: "/rishikesh8.jpeg" } ,  
+    { src: "/rishikesh9.jpeg" } ,  
     
   ],
 
@@ -1234,7 +1247,7 @@ Trip ends with high-energy memories of the Ganges.
     originalPrice: '10,500',
     rating: '4.9',
     reviews: 550,
-    image: '/kedarnathyatra.jpg',
+    image: '/kedarnathyatra.jpeg',
     description: 'A deeply spiritual and physically rewarding journey to the majestic Kedarnath Temple. Trek through the breathtaking Garhwal Himalayas to seek the blessings of Lord Shiva.',
      occupancy: {
     quad: 5000,
@@ -1274,12 +1287,16 @@ travelTips: [
 "Avoid littering"
 ],
    gallery: [
-  { src: "/kedarnath1.jpg" },
+  { src: "/kedarnath1.jpeg" },
   { src: "/kedarnath2.jpg" },
   { src: "/kedarnath3.jpg" },
-  { src: "/kedarnath4.jpg" },
-  { src: "/kedarnath5.jpg" },
+  { src: "/kedarnath4.jpeg" },
+  { src: "/kedarnath5.jpeg" },
   { src: "/kedarnath6.jpg" },
+  { src: "/kedarnath7.jpeg" },
+  { src: "/kedarnath8.jpeg" },
+  { src: "/kedarnath9.jpeg" },
+  { src: "/kedarnath10.jpeg" },
   
 ],
 itineraryBrief: [
@@ -1374,7 +1391,7 @@ Breakfast
   originalPrice: '12,000',
   rating: '4.8',
   reviews: 215,
-  image: '/Auli.jpg',
+  image: '/Auli.jpeg',
   description: 'Visit the premier skiing capital of India, also known as the Mini Switzerland of India. Ride Asia\'s longest cable car, walk through frozen landscapes, and witness 360-degree panoramic views of the Nanda Devi peak.',
   
   occupancy: {
@@ -1711,8 +1728,9 @@ Trip ends with divine memories of the Himalayas.
   gallery: [
     { src: "/nainital1.jpg" },
     { src: "/nainital2.jpg" },
-    { src: "/bhimtal1.jpg" },
-    { src: "/nainital3.jpg" }
+    { src: "/nainital3.jpg" },
+    { src: "/nainital4.jpg" },
+    { src: "/nainital5.jpg" },
   ],
 
   itineraryBrief: [
@@ -1793,7 +1811,7 @@ Breakfast
   category: "weekend",
   location: 'Uttarakhand, India',
   duration: '3 Days / 2 Nights',
-  price: '4,999',
+  price: '5,000',
   originalPrice: '6,200',
   rating: '4.8',
   reviews: 425,
@@ -1842,9 +1860,11 @@ Breakfast
 
   gallery: [
     { src: "/mussoorie1.jpg" },
-    { src: "/kempty1.jpg" },
-    { src: "/landour1.jpg" },
-    { src: "/mussoorie2.jpg" }
+    { src: "/mussoorie2.jpg" },
+    { src: "/mussoorie3.jpg" },
+    { src: "/mussoorie4.jpg" },
+    { src: "/mussoorie5.jpg" },
+    { src: "/mussoorie2.jpg" },
   ],
 
   itineraryBrief: [
@@ -1977,9 +1997,12 @@ Breakfast
 
   gallery: [
     { src: "/corbett1.jpg" },
-    { src: "/safari1.jpg" },
-    { src: "/resort1.jpg" },
-    { src: "/tiger1.jpg" }
+    { src: "/corbett2.jpg" },
+    { src: "/corbett3.jpg" },
+    { src: "/corbett4.jpg" },
+    { src: "/corbett5.jpg" },
+    { src: "/corbett6.jpg" },
+  
   ],
 
   itineraryBrief: [
@@ -2112,10 +2135,11 @@ Breakfast & Lunch
 
   gallery: [
     { src: "/kanasar1.jpg" },
-    { src: "/kanasar1.jpg" },
-    { src: "/kanasar1.jpg" },
-    { src: "/kanasar1.jpg" },
-    { src: "/kanasar1.jpg" },
+    { src: "/chakrata1.jpg" },
+    { src: "/chakrata2.jpg" },
+    { src: "/chakrata3.jpg" },
+    { src: "/chakrata4.jpg" },
+    
    
   ],
 
@@ -2210,7 +2234,7 @@ Trip ends with memories of the hidden Himalayan gem.
   originalPrice: '5,200',
   rating: '4.7',
   reviews: 95,
-  image: '/landsdown.jpg',
+  image: '/landsdowne.jpg',
   description: 'Experience one of the quietest hill stations in India. Explore the clean, pine-covered hills of this military cantonment, visit the Tip-in-Top viewpoint, and enjoy the serene Bhulla Lake in a hassle-free weekend getaway.',
   
   occupancy: {
@@ -2255,10 +2279,12 @@ Trip ends with memories of the hidden Himalayan gem.
   ],
 
   gallery: [
-    { src: "/lansdowne1.jpg" },
-    { src: "/bhulla_lake1.jpg" },
-    { src: "/tip_in_top1.jpg" },
-    { src: "/lansdowne_church.jpg" }
+    { src: "/lansdowne1.jpeg" },
+    { src: "/lansdowne2.jpg" },
+    { src: "/lansdowne3.jpg" },
+    { src: "/lansdowne5.jpg" },
+    { src: "/lansdowne6.jpeg" },
+    
   ],
 
   itineraryBrief: [
@@ -2390,9 +2416,13 @@ Breakfast
 
   gallery: [
     { src: "/harsil1.jpg" },
-    { src: "/gartang_gali1.jpg" },
-    { src: "/gangotri1.jpg" },
-    { src: "/bagori_village1.jpg" }
+    { src: "/harsil2.jpeg" },
+    { src: "/harsil3.jpeg" },
+    { src: "/harsil4.jpeg" },
+    { src: "/harsil5.jpeg" },
+    { src: "/harsil6.jpg" },
+    { src: "/harsil7.jpg" },
+    
   ],
 
   itineraryBrief: [
@@ -2496,7 +2526,7 @@ Trip ends with peaceful and holy memories of the Harsil Valley.
   originalPrice: '17,500',
   rating: '5.0',
   reviews: 210,
-  image: '/dham.jpg',
+  image: '/dodham.webp',
   description: 'A complete spiritual circuit covering two of the most significant shrines in the Himalayas. Journey through the high-altitude landscapes of Kedarnath and the divine architecture of Badrinath ji.',
   
   occupancy: {
@@ -2545,8 +2575,14 @@ Trip ends with peaceful and holy memories of the Harsil Valley.
   gallery: [
     { src: "/CD33.jpg" },
     { src: "/CD34.jpg" },
-    { src: "/Chopta.jpg" },
-    { src: "/kedarnath2.jpg" }
+    
+    { src: "/kedarnath2.jpg" },
+    { src: "/kedarnath7.jpeg" },
+  { src: "/kedarnath8.jpeg" },
+  { src: "/kedarnath9.jpeg" },
+  { src: "/kedarnath10.jpeg" },
+  { src: "/kedarnath11.jpeg" },
+  
   ],
 
   itineraryBrief: [
@@ -2638,7 +2674,7 @@ Breakfast
   {
   id: 'char-dham-full',
   stateId: 'uttarakhand',
-  title: 'Ultimate Char Dham Yatra',
+  title: 'Char Dham Yatra',
   itineraryPdf: "/itineraries/GSM Char Dham 2026 .pdf",
   category: "spiritual",
   location: 'Uttarakhand, India',
@@ -2694,12 +2730,19 @@ Breakfast
   ],
 
   gallery: [
-    { src: "/char1.jpg" },
-    { src: "/char2.jpg" },
-    { src: "/char3.jpg" },
-    { src: "/char4.jpg" },
-    { src: "/CD33.jpg" },
-    { src: "/kedarnath2.jpg" },
+  { src: "/char1.jpg" },
+  { src: "/char3.jpg" },
+  { src: "/char4.jpg" },
+  { src: "/CD33.jpg" },
+  { src: "/kedarnath2.jpg" },
+  { src: "/kedarnath12.jpeg" },
+  { src: "/kedarnath13.jpeg" },
+  { src: "/kedarnath2.jpg" },
+  { src: "/kedarnath7.jpeg" },
+  { src: "/kedarnath8.jpeg" },
+  { src: "/kedarnath9.jpeg" },
+  { src: "/kedarnath10.jpeg" },
+  { src: "/kedarnath11.jpeg" },
    
   ],
 
@@ -2897,10 +2940,12 @@ Breakfast
   ],
 
   gallery: [
-    { src: "/udaipur1.jpg" },
-    { src: "/city_palace1.jpg" },
-    { src: "/pichola1.jpg" },
-    { src: "/fatehsagar1.jpg" }
+    { src: "/Udaipur1.jpg" },
+    { src: "/Udaipur2.jpg" },
+    { src: "/Udaipur3.jpg" },
+    { src: "/Udaipur4.jpg" },
+    { src: "/Udaipur5.jpg" },
+
   ],
 
   itineraryBrief: [
@@ -2999,7 +3044,7 @@ Trip ends with royal memories of the City of Lakes.
   originalPrice: '6,500',
   rating: '4.8',
   reviews: 380,
-  image: '/Jaipur.jpg',
+  image: '/Jaipur.jpeg',
   description: 'A journey through the royal history of the Rajputs. From the iconic Hawa Mahal to the majestic Amer Fort, experience the vibrant culture and colors of Jaipur.',
   
   occupancy: {
@@ -3044,10 +3089,14 @@ Trip ends with royal memories of the City of Lakes.
   ],
 
   gallery: [
-    { src: "/patrika_gate1.jpg" },
-    { src: "/hawa_mahal1.jpg" },
-    { src: "/amer_fort1.jpg" },
-    { src: "/nahargarh1.jpg" }
+    { src: "/Jaipur1.jpg" }, 
+    { src: "/Jaipur2.jpeg" },
+    { src: "/Jaipur3.jpeg" },
+    { src: "/Jaipur5.jpeg" },
+    { src: "/Jaipur6.jpeg" },
+    { src: "/Jaipur7.jpeg" },
+   
+    
   ],
 
   itineraryBrief: [
@@ -3141,7 +3190,7 @@ Trip ends with royal memories.
     originalPrice: '8,000',
     rating: '4.9',
     reviews: 290,
-    image: '/The Golden City -Jaisalmer.jpg',
+    image: '/Jaisalmer.jpg',
     description: 'Explore the living fort of Jaisalmer and head deep into the Thar Desert for a night under the stars in traditional luxury camps. Experience the magic of the Golden City.',
     
     occupancy: {
@@ -3186,9 +3235,11 @@ Trip ends with royal memories.
 
     gallery: [
       { src: "/jaisalmer1.jpg" },
-      { src: "/desert_camp1.jpg" },
-      { src: "/fort1.jpg" },
-      { src: "/dunes1.jpg" }
+      { src: "/jaisalmer2.jpg" },
+      { src: "/jaisalmer3.jpg" },
+      { src: "/jaisalmer4.jpg" },
+      { src: "/jaisalmer5.jpg" },
+     
     ],
 
     itineraryBrief: [
@@ -3318,9 +3369,11 @@ Breakfast
 
     gallery: [
       { src: "/jodhpur1.jpg" },
-      { src: "/fort_jodhpur1.jpg" },
-      { src: "/blue_lanes1.jpg" },
-      { src: "/umaid_bhawan1.jpg" }
+      { src: "/jodhpur2.jpg" },
+      { src: "/jodhpur3.jpg" },
+      { src: "/jodhpur4.jpg" },
+      { src: "/jodhpur5.jpg" },
+   
     ],
 
     itineraryBrief: [
@@ -3449,9 +3502,11 @@ Breakfast
 
     gallery: [
       { src: "/pushkar1.jpg" },
-      { src: "/brahma_temple1.jpg" },
-      { src: "/ghat_aarti1.jpg" },
-      { src: "/pushkar_market1.jpg" }
+      { src: "/pushkar2.jpg" },
+      { src: "/pushkar3.jpg" },
+      { src: "/pushkar4.jpg" },
+      { src: "/pushkar5.jpg" },
+    
     ],
 
     itineraryBrief: [
@@ -3564,9 +3619,10 @@ Breakfast
 
     gallery: [
       { src: "/jawai1.jpg" },
-      { src: "/leopard1.jpg" },
-      { src: "/rabari1.jpg" },
-      { src: "/dam1.jpg" }
+      { src: "/jawai2.jpg" },
+      { src: "/jawai3.jpg" },
+      { src: "/jawai4.jpg" },
+     
     ],
 
     itineraryBrief: [
@@ -3649,7 +3705,7 @@ Breakfast
     originalPrice: '9,500',
     rating: '4.8',
     reviews: 310,
-    image: '/download.jpg',
+    image: '/Ranthambore.jpg',
     description: 'A former royal hunting ground, Ranthambore is now one of the best places in India to spot Tigers in the wild amidst ancient ruins.',
     
     occupancy: {
@@ -3694,9 +3750,12 @@ Breakfast
 
     gallery: [
       { src: "/ranthambore1.jpg" },
-      { src: "/tiger_spot1.jpg" },
-      { src: "/fort_ruins1.jpg" },
-      { src: "/resort_pool1.jpg" }
+       { src: "/jawai1.jpg" },
+      { src: "/jawai2.jpg" },
+      { src: "/jawai3.jpg" },
+      { src: "/jawai4.jpg" },
+      
+     
     ],
 
     itineraryBrief: [
@@ -3779,7 +3838,7 @@ Breakfast
   originalPrice: "10,500",
   rating: "4.9",
   reviews: 550,
-  image: "/Kedarkantha.png",
+  image: "/Kedarkantha.webp",
   description: "One of the most popular winter treks in India. Experience the thrill of trekking through dense pine forests, camping by the frozen Juda-ka-Talab lake, and witnessing a 360-degree Himalayan panorama from the summit.",
   
   occupancy: {
@@ -3830,7 +3889,7 @@ Breakfast
     { src: "/kedarkantha3.jpg" },
     { src: "/kedarkantha4.jpg" },
     { src: "/kedarkantha5.jpg" },
-    { src: "/kedarkantha6.jpg" },
+
     
   ],
 
@@ -3919,7 +3978,7 @@ Breakfast
 },
  {
   id: "himachal-backpacking",
-  stateId: "himachal-pradesh",
+  stateId: "himachal",
   category: "backpacking",
   title: "Hampta Pass Trek Expedition",
   itineraryPdf: "/itineraries/Hampta Pass Trek – 3 Nights 4 Days.pdf",
@@ -3929,7 +3988,7 @@ Breakfast
   originalPrice: "9,500",
   rating: "4.9",
   reviews: 420,
-  image: "/himachalbackpacking.jpg",
+  image: "/himachalbackpacking.png",
   description: "Experience the dramatic shift from the lush green Kullu Valley to the cold desert of Lahaul. This high-altitude trek takes you to 14,100 ft, offering snow patches, river crossings, and 360-degree Himalayan views.",
   
   occupancy: {
@@ -4061,7 +4120,7 @@ Meals Included: Breakfast & Lunch.
     location: "Uttarakhand",
     duration: "3 Days / 2 Nights",
     price: "5000",
-    image: "/Rishikesh.jpg",
+    image: "/Rishikesh.jpeg",
     inclusions: [
       "AC Transportation (Delhi to Delhi)",
       "Stay: 3-Star Hotels/Camps (Triple Sharing)",
@@ -4090,7 +4149,7 @@ Meals Included: Breakfast & Lunch.
   category: "weekend",
   location: "Srinagar – Sonmarg – Gulmarg – Pahalgam",
   duration: "5 Days / 4 Nights",
-  price: "5,000",
+  price: "10,000",
   originalPrice: "9,999",
   rating: "4.8",
   reviews: 95,
@@ -4243,6 +4302,161 @@ Breakfast
     "Power bank and camera kit"
   ]
 },
+{
+  id: 'manali-corporate-rohtang',
+  stateId: 'himachal',
+  title: 'Manali Corporate Trip with Rohtang Pass',
+  itineraryPdf: "/itineraries/MANALI STRANGERS TRIP With Party.pdf",
+  category: "corporate",
+  location: 'Himachal Pradesh, India',
+  duration: '3 Days / 2 Nights',
+  price: '5,000',
+  originalPrice: '10,000',
+  rating: '4.8',
+  reviews: 0,
+  image: '/k-s8.jpg',
+  description: 'The perfect corporate weekend escape! Depart Friday evening and return Monday morning. Experience snow adventures at Rohtang Pass, DJ nights, group bonding activities, and stay in a 4-star resort. Meet new people, unwind from office stress, and create unforgettable mountain memories.',
+
+  occupancy: {
+    quad: 5000,
+    triple: 6000,
+    double: 6500
+  },
+
+  inclusions: [
+    "Delhi to Manali & return transportation (Volvo/Tempo Traveller)",
+    "4-Star Resort accommodation on sharing basis",
+    "Welcome drink & snacks on arrival",
+    "1 Breakfast & 1 Dinner",
+    "DJ Night & Group Party",
+    "Manali local sightseeing",
+    "Snow Point excursion (Rohtang Pass/alternate)",
+    "Trip coordinator assistance",
+    "Toll tax, parking charges & driver allowance"
+  ],
+
+  exclusions: [
+    "Personal expenses",
+    "Snow adventure activity charges",
+    "Heater charges in hotel",
+    "Lunch and additional meals",
+    "Entry tickets at sightseeing places",
+    "Rohtang Pass permit charges (if applicable)",
+    "Any expenses due to snowfall, landslides, road blockage, or natural calamities",
+    "GST and additional taxes if applicable"
+  ],
+
+  addons: [
+    "River Rafting in Kullu (charged extra)",
+    "Paragliding in Solang (charged extra)",
+    "Heater charges for hotel stay"
+  ],
+
+  bestTimeToVisit: [
+    "December – February (Peak Snow Season)",
+    "March – June (Pleasant weather)"
+  ],
+
+  travelTips: [
+    "Carry valid Government ID proof",
+    "Motion sickness tablets for mountain roads",
+    "Warm jackets & woolens are must even in summer",
+    "Rohtang Pass access subject to government permissions & weather"
+  ],
+
+  gallery: [
+    { src: "/k-s8.jpg" },
+    { src: "/kasol1.jpg" },
+    { src: "/kasol2.jpg" },
+    { src: "/kasol3.jpg" },
+    { src: "/CD1.jpg" },
+    { src: "/CD2.jpg" },
+  ],
+
+  itineraryBrief: [
+    "Day 1 (Friday): Evening Departure from Delhi (9 PM)",
+    "Day 2 (Saturday): Manali Arrival, Check-in & Local Sightseeing + DJ Night",
+    "Day 3 (Sunday): Rohtang Pass Snow Excursion & Departure",
+    "Day 4 (Monday): Morning Arrival back in Delhi"
+  ],
+
+  itinerary: [
+    {
+      day: 1,
+      title: "Friday Evening – Departure from Delhi",
+      description: `
+6 PM – Office se free.
+8 PM – Reach home, pack your bags.
+9 PM – Departure from Delhi by Volvo / Tempo Traveller.
+
+Meet your fellow travelers and kick off the journey with fun group introductions.
+Enjoy music, games, travel interaction, and night travel vibes.
+
+Overnight journey towards Manali.
+      `
+    },
+    {
+      day: 2,
+      title: "Saturday – Arrival in Manali & Local Sightseeing",
+      description: `
+Morning arrival in Manali. Hotel check-in and freshen up.
+Welcome drinks and snacks on arrival.
+
+After rest, proceed for local sightseeing:
+- Hadimba Devi Temple – Ancient wooden temple in cedar forests.
+- Van Vihar National Park – Peaceful walk through deodar trees.
+- Mall Road – Cafés, shopping, local food, and youth crowd.
+
+Free time for shopping, café hopping, and photography.
+
+Evening: DJ Night & Group Dinner at hotel.
+Enjoy music, dance, fun games, networking, and group bonding activities.
+Overnight stay in Manali hotel.
+
+Meals Included:
+Dinner
+      `
+    },
+    {
+      day: 3,
+      title: "Sunday – Snow Point Excursion & Departure",
+      description: `
+Morning breakfast at hotel.
+Proceed for the snow point excursion:
+
+- Rohtang Pass (~13,050 ft) – Snow experience, stunning Himalayan views,
+  snow activities, photography, and thrilling road trip.
+  
+Note: Subject to government permissions & weather conditions.
+Alternate destinations if Rohtang is closed: Koksar, Atal Tunnel, or Jogini Waterfall.
+
+Evening return to Manali.
+Departure for Delhi by evening/night.
+
+Meals Included:
+Breakfast
+      `
+    },
+    {
+      day: 4,
+      title: "Monday Morning – Arrival in Delhi",
+      description: `
+Morning arrival in Delhi (approx 6:00 AM – 8:00 AM).
+Trip ends with unforgettable memories, snow experiences, and new friendships.
+      `
+    }
+  ],
+
+  thingsToCarry: [
+    "Valid ID Proof & Booking Voucher",
+    "Warm jackets & woolen clothes",
+    "Gloves, muffler & woolen cap",
+    "Sports shoes / trekking shoes",
+    "Sunglasses",
+    "Personal medicines",
+    "Power bank & chargers"
+  ]
+},
 
 {
   id: "kashmir-volvo-special",
@@ -4379,17 +4593,16 @@ export const manaliKasolGallery = [
   { src: "/k-s4.jpg"},
   { src: "/k-s5.jpg"},
 ];
+
+
 export const realTripGallery = [
-  { src: "/backpack.jpg" },
-  { src: "/adventure.jpg" },
-  { src: "/billing.jpg" },
-  { src: "/goa-banner.jpg" }, { src: "/corporate.jpg" }, { src: "/CD1.jpg" },{ src: "/CD2.jpg" },{ src: "/CD3.jpg" },{ src: "/CD4.jpg" },{ src: "/CD5.jpg" },
-  { src: "/CD6.jpg" }, { src: "/CD8.jpg" }, { src: "/CD11.jpg" }, { src: "/CD12.jpg" }, { src: "/CD13.jpg" }, { src: "/CD14.jpg" },
-  { src: "/CD15.jpg" }, { src: "/CD16.jpg" }, { src: "/CD17.jpg" }, { src: "/CD18.jpg" }, { src: "/CD19.jpg" }, { src: "/CD20.jpg" },
-  { src: "/CD21.jpg" }, { src: "/CD22.jpg" }, { src: "/CD23.jpg" }, { src: "/CD24.jpg" }, { src: "/CD25.jpg" }, { src: "/CD26.jpg" },
-  { src: "/CD27.jpg" },{ src: "/CD28.jpg" },{ src: "/CD29.jpg" },{ src: "/CD30.JPG" },{ src: "/CD31.JPG" },{ src: "/CD32.JPG" },
-  { src: "/CD33.JPG" }, { src: "/CD34.JPG" }, { src: "/CD35.JPG" }, { src: "/CD36.jpg" }, { src: "/CD37.jpg" }, { src: "/CD38.jpg" }, { src: "/CD39.jpg" },
-  { src: "/CD40.jpg" }, { src: "/CD41.JPG" }, { src: "/CD43.JPG" }
+   { src: "/CD1.jpg" },{ src: "/CD2.jpg" },{ src: "/CD3.jpg" },{ src: "/CD4.jpg" },{ src: "/CD5.jpg" },
+  { src: "/CD6.jpg" }, { src: "/CD7.jpeg" },{ src: "/CD8.jpg" }, { src: "/CD11.jpg" }, { src: "/CD12.jpg" }, { src: "/CD13.jpg" }, { src: "/CD14.jpeg" },{ src: "/CD21.jpg" },  { src: "/CD23.jpg" }, { src: "/CD25.jpg" }, { src: "/CD26.jpg" },
+{ src: "/CD27.jpg" },{ src: "/CD28.jpg" },{ src: "/CD29.jpg" },{ src: "/CD30.jpg" },{ src: "/CD33.jpg" }, { src: "/CD34.jpg" }, { src: "/CD35.jpg" }, { src: "/CD36.jpg" }, { src: "/CD38.jpg" }, { src: "/CD39.jpg" },
+  { src: "/CD40.jpg" }, { src: "/CD41.jpg" }, { src: "/CD43.jpg" },{ src: "/k1.jpg" },{ src: "/k2.jpg" }, { src: "/jibhi1.jpeg" },
+    { src: "/jibhi2.jpeg" }, { src: "/jibhi3.jpg" },{ src: "/jibhi4.jpg" },  { src: "/jibhi5.jpeg" },{ src: "/jibhi6.jpeg" },{ src: "/jibhi7.jpeg" },
+ { src: "/Auli.jpeg" }, { src: "/kanasar1.jpg" },{ src: "/harsil2.jpeg" },{ src: "/harsil3.jpeg" },{ src: "/harsil4.jpeg" },
+{ src: "/harsil5.jpeg" },
  
   
  

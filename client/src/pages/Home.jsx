@@ -84,7 +84,6 @@ const GlobalStyles = () => (
       }
       .how-steps-mobile   { display: none !important; }
       .how-steps-desktop  { display: flex !important; }
-      /* Fixed card width on desktop — show 4 cards with slight overflow hint */
       .dest-card-wrap     {
         min-width: 260px !important;
         max-width: 280px !important;
@@ -115,10 +114,85 @@ const GlobalStyles = () => (
         -webkit-overflow-scrolling: touch;
       }
       .stats-row .stat-pill { flex: 0 0 auto; min-width: 120px; }
+
+      /* ── Destination cards: compact on mobile ── */
       .dest-card-wrap {
-        min-width: calc(82vw - 40px) !important;
-        max-width: 300px !important;
+        min-width: 72vw !important;
+        max-width: 260px !important;
         flex-shrink: 0 !important;
+        scroll-snap-align: start !important;
+      }
+      .dest-card          { height: 200px !important; }
+      .dest-card h3       { font-size: 16px !important; margin-bottom: 2px !important; }
+      .dest-card p        { font-size: 11px !important; margin-bottom: 8px !important; }
+      .dest-badge         { font-size: 9px !important; padding: 4px 9px !important; top: 10px !important; right: 10px !important; }
+      .dest-pill          { font-size: 10px !important; padding: 5px 10px !important; }
+
+      /* ── TravelerReviews: compact cards on mobile ── */
+      .traveler-reviews-section .review-platform-card,
+      [class*="review"] .platform-card,
+      .reviews-scroll > div,
+      .reviews-scroll > a {
+        min-width: 130px !important;
+        max-width: 150px !important;
+        padding: 12px 10px !important;
+        border-radius: 12px !important;
+      }
+      .traveler-reviews-section img,
+      .traveler-reviews-section svg[width="48"],
+      .traveler-reviews-section svg[width="40"],
+      .traveler-reviews-section svg[height="48"],
+      .traveler-reviews-section svg[height="40"] {
+        width: 28px !important;
+        height: 28px !important;
+      }
+      .traveler-reviews-section img[alt*="Google"],
+      .traveler-reviews-section img[alt*="google"],
+      .traveler-reviews-section img[alt*="Tripadvisor"],
+      .traveler-reviews-section img[alt*="tripadvisor"],
+      .traveler-reviews-section img[src*="google"],
+      .traveler-reviews-section img[src*="tripadvisor"] {
+        width: 26px !important;
+        height: 26px !important;
+        margin-bottom: 6px !important;
+      }
+      .traveler-reviews-section > div > div img,
+      .traveler-reviews-section > div > div > div img {
+        max-width: 30px !important;
+        max-height: 30px !important;
+        object-fit: contain !important;
+      }
+      .traveler-reviews-section .platform-name,
+      .traveler-reviews-section [class*="platform-name"] {
+        font-size: 9px !important;
+        letter-spacing: 0.06em !important;
+      }
+      .traveler-reviews-section .rating-score,
+      .traveler-reviews-section [class*="rating"] {
+        font-size: 22px !important;
+        line-height: 1.1 !important;
+      }
+      .traveler-reviews-section .review-count,
+      .traveler-reviews-section [class*="count"] {
+        font-size: 10px !important;
+      }
+      .traveler-reviews-section svg[class*="star"],
+      .traveler-reviews-section [class*="star"] svg {
+        width: 11px !important;
+        height: 11px !important;
+      }
+      .traveler-reviews-section > div > div:first-child {
+        min-width: 100px !important;
+        max-width: 120px !important;
+        padding: 12px 8px !important;
+      }
+      .traveler-reviews-section > div > div:first-child svg {
+        width: 28px !important;
+        height: 28px !important;
+      }
+      .traveler-reviews-section > div > div:first-child p,
+      .traveler-reviews-section > div > div:first-child span {
+        font-size: 11px !important;
       }
     }
 
@@ -165,7 +239,7 @@ const GlobalStyles = () => (
       display: block; height: 380px;
       transition: transform 0.4s cubic-bezier(0.25,0.46,0.45,0.94);
     }
-    @media (max-width: 767px) { .dest-card { height: 300px; } }
+    @media (max-width: 767px) { .dest-card { height: 200px; } }
     .dest-card:hover { transform: translateY(-6px); }
     .dest-card img   { width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s ease; display: block; }
     .dest-card:hover img { transform: scale(1.07); }
@@ -191,6 +265,16 @@ const GlobalStyles = () => (
       transition: transform 0.35s, opacity 0.35s; text-decoration: none;
     }
     .dest-card:hover .dest-pill { transform: translateY(0); opacity: 1; }
+
+    /* On mobile: always show the pill (no hover) */
+    @media (max-width: 767px) {
+      .dest-pill {
+        transform: translateY(0) !important;
+        opacity: 1 !important;
+        font-size: 10px !important;
+        padding: 5px 10px !important;
+      }
+    }
 
     /* Tag badge */
     .dest-badge {
@@ -394,7 +478,7 @@ const destinations = [
   },
   {
     to:'/state/uttarakhand',
-    img:'/uttarakhand.png',
+    img:'/uttarakhand2.jpg',
     name:'Uttarakhand',
     subtitle:'Temples, treks & rivers',
     trips:'10+ trips',
@@ -410,7 +494,7 @@ const destinations = [
   },
   {
     to:'/state/kashmir',
-    img:'/kashmir.png',
+    img:'/kashmir2.jpg',
     name:'Kashmir',
     subtitle:'Heaven on earth',
     trips:'2 trips',
@@ -464,7 +548,7 @@ const Destinations = () => {
                 Handpicked states for your next unforgettable adventure.
               </p>
             </div>
-            {/* Nav arrows */}
+            {/* Nav arrows — desktop only */}
             <div style={{ display:'flex', gap:'10px' }}>
               {[scrollLeft, scrollRight].map((fn, i) => (
                 <button key={i} onClick={fn}
@@ -479,11 +563,19 @@ const Destinations = () => {
           </div>
         </motion.div>
 
-        {/* Cards */}
+        {/* Cards slider */}
         <div
           ref={sliderRef}
           className="scrollbar-hide"
-          style={{ display:'flex', gap:'16px', overflowX:'auto', scrollSnapType:'x mandatory', padding:'0 20px 8px', WebkitOverflowScrolling:'touch' }}
+          style={{
+            display: 'flex',
+            gap: '12px',
+            overflowX: 'auto',
+            scrollSnapType: 'x mandatory',
+            scrollBehavior: 'smooth',
+            WebkitOverflowScrolling: 'touch',
+            padding: '0 20px 8px',
+          }}
         >
           {destinations.map(({ to, img, name, subtitle, trips, tag }, i) => (
             <motion.div
@@ -506,13 +598,13 @@ const Destinations = () => {
                 <div className="dest-badge">{tag}</div>
 
                 {/* Bottom text */}
-                <div style={{ position:'absolute', bottom:0, left:0, width:'100%', padding:'22px 20px', boxSizing:'border-box' }}>
-                  <div style={{ display:'flex', alignItems:'center', gap:'5px', marginBottom:'5px' }}>
-                    <MapPin size={11} color="var(--gold)" />
+                <div style={{ position:'absolute', bottom:0, left:0, width:'100%', padding:'16px 16px', boxSizing:'border-box' }}>
+                  <div style={{ display:'flex', alignItems:'center', gap:'5px', marginBottom:'4px' }}>
+                    <MapPin size={10} color="var(--gold)" />
                     <span style={{ fontSize:'10px', color:'var(--gold)', fontWeight:600, letterSpacing:'0.1em', textTransform:'uppercase' }}>{trips} available</span>
                   </div>
-                  <h3 style={{ color:'#fff', fontSize:'21px', fontWeight:700, fontFamily:'Georgia,serif', lineHeight:1.2, marginBottom:'4px' }}>{name}</h3>
-                  <p style={{ color:'rgba(255,255,255,0.52)', fontSize:'12px', marginBottom:'14px', lineHeight:1.5 }}>{subtitle}</p>
+                  <h3 style={{ color:'#fff', fontSize:'21px', fontWeight:700, fontFamily:'Georgia,serif', lineHeight:1.2, marginBottom:'3px' }}>{name}</h3>
+                  <p style={{ color:'rgba(255,255,255,0.52)', fontSize:'12px', marginBottom:'10px', lineHeight:1.4 }}>{subtitle}</p>
                   <div className="dest-pill">
                     View Trips <ArrowRight size={11} />
                   </div>
@@ -585,7 +677,9 @@ const Home = () => {
           <Categories />
         </div>
         <UpcomingTrips />
-        <TravelerReviews />
+        <div className="traveler-reviews-section">
+          <TravelerReviews />
+        </div>
         <ImageGallery />
         <Reels />
         <Reviews />

@@ -16,20 +16,20 @@ const TripDetails = () => {
 
   const { id } = useParams();
 
-  const [currentTrip,setCurrentTrip] = useState(null);
-  const [activeTab,setActiveTab] = useState("itinerary");
-  const [isModalOpen,setIsModalOpen] = useState(false);
-  const [galleryOpen,setGalleryOpen] = useState(false);
-  const [selectedPrice,setSelectedPrice] = useState("quad");
+  const [currentTrip, setCurrentTrip] = useState(null);
+  const [activeTab, setActiveTab] = useState("itinerary");
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [galleryOpen, setGalleryOpen] = useState(false);
+  const [selectedPrice, setSelectedPrice] = useState("quad");
 
-  useEffect(()=>{
-    const foundTrip = tripsData.find((t)=> t && t.id === id);
+  useEffect(() => {
+    const foundTrip = tripsData.find((t) => t && t.id === id);
     setCurrentTrip(foundTrip);
-    window.scrollTo(0,0);
-  },[id]);
+    window.scrollTo(0, 0);
+  }, [id]);
 
-  if(!currentTrip){
-    return(
+  if (!currentTrip) {
+    return (
       <div className="h-screen flex items-center justify-center">
         Loading Trip...
       </div>
@@ -47,39 +47,63 @@ const TripDetails = () => {
 
   /* GALLERY IMAGES */
   const images = [
-    {src: currentTrip.image},
+    { src: currentTrip.image },
     ...(currentTrip.gallery || [])
   ];
 
-  return(
+  return (
     <main className="pt-28 pb-32 md:pb-20 bg-[#f4f7f6] min-h-screen">
       <div className="max-w-7xl mx-auto px-4">
 
-        {/* IMAGE GALLERY */}
-        <div className="mt-4 mb-4 grid grid-cols-1 md:grid-cols-12 gap-4">
+        {/* ─── IMAGE GALLERY (FIXED) ─── */}
+        <div className="mt-4 mb-4 grid grid-cols-1 md:grid-cols-12 gap-3 items-start">
 
-          <div className="md:col-span-7 rounded-[28px] overflow-hidden">
-            <img src={images[0]?.src} className="w-full h-auto object-cover rounded-[28px]" alt=""/>
+          {/* MAIN BIG IMAGE — height = (3 rows × 185px) + (2 gaps × 12px) = 579px */}
+          <div className="md:col-span-7 rounded-[28px] overflow-hidden" style={{ height: '579px' }}>
+            <img
+              src={images[0]?.src}
+              className="w-full h-full object-cover"
+              alt={currentTrip.title}
+            />
           </div>
 
-          <div className="md:col-span-5 grid grid-cols-2 gap-4 auto-rows-max">
-            {images.slice(1,5).map((img,i)=>(
-              <div key={i} className="rounded-[18px] overflow-hidden">
-                <img src={img?.src} className="w-full h-auto object-cover rounded-[18px]" alt=""/>
+          {/* RIGHT SIDE GRID — 3 rows of 185px each with 12px gaps = 579px total */}
+          <div className="md:col-span-5 grid grid-cols-2 gap-3">
+
+            {/* THUMBNAILS ROW 1 & 2 — 4 images, each 185px tall */}
+            {images.slice(1, 5).map((img, i) => (
+              <div key={i} className="rounded-[18px] overflow-hidden" style={{ height: '185px' }}>
+                <img
+                  src={img?.src}
+                  className="w-full h-full object-cover"
+                  alt=""
+                />
               </div>
             ))}
 
-            <div className="relative cursor-pointer rounded-[18px] overflow-hidden col-span-2">
-              <img src={images[5]?.src || images[0]?.src} className="w-full h-[180px] object-cover brightness-75" alt=""/>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <button onClick={()=>setGalleryOpen(true)} className="bg-white px-6 py-2 rounded-xl font-semibold shadow-md hover:scale-105 transition">
+            {/* VIEW MORE ROW — col-span-2, same 185px height */}
+            <div
+              className="col-span-2 relative rounded-[18px] overflow-hidden cursor-pointer"
+              style={{ height: '185px' }}
+            >
+              <img
+                src={images[5]?.src || images[1]?.src || images[0]?.src}
+                className="w-full h-full object-cover"
+                alt=""
+              />
+              <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
+                <button
+                  onClick={() => setGalleryOpen(true)}
+                  className="bg-white text-black px-6 py-2 rounded-xl font-semibold shadow-md hover:scale-105 transition"
+                >
                   View More
                 </button>
               </div>
             </div>
-          </div>
 
+          </div>
         </div>
+        {/* ─── END IMAGE GALLERY ─── */}
 
         {/* MAIN CONTENT */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
@@ -109,10 +133,10 @@ const TripDetails = () => {
             {/* LOCATION */}
             <div className="flex gap-6 text-slate-500 mb-8">
               <span className="flex gap-2 items-center">
-                <MapPin size={16}/> {currentTrip.pickup || currentTrip.location}
+                <MapPin size={16} /> {currentTrip.pickup || currentTrip.location}
               </span>
               <span className="flex gap-2 items-center">
-                <Clock size={16}/> {currentTrip.duration}
+                <Clock size={16} /> {currentTrip.duration}
               </span>
             </div>
 
@@ -123,7 +147,7 @@ const TripDetails = () => {
                   Itinerary Overview
                 </h2>
                 <div className="space-y-2 text-sm text-slate-700">
-                  {currentTrip.itineraryBrief.map((item,i)=>(
+                  {currentTrip.itineraryBrief.map((item, i) => (
                     <div key={i} className="flex gap-2">
                       <span className="font-semibold text-blue-600">•</span>
                       <p>{item}</p>
@@ -142,9 +166,11 @@ const TripDetails = () => {
               <div className="flex md:grid md:grid-cols-3 gap-2 overflow-x-auto md:overflow-visible pb-2">
 
                 {/* QUAD */}
-                <div onClick={()=>setSelectedPrice("quad")}
-                className={`min-w-[120px] md:min-w-0 border-2 rounded-lg p-2 md:p-4 text-center cursor-pointer transition
-                ${selectedPrice==="quad" ? "bg-yellow-400 border-black" : "bg-yellow-300 border-black hover:bg-yellow-400"}`}>
+                <div
+                  onClick={() => setSelectedPrice("quad")}
+                  className={`min-w-[120px] md:min-w-0 border-2 rounded-lg p-2 md:p-4 text-center cursor-pointer transition
+                  ${selectedPrice === "quad" ? "bg-yellow-400 border-black" : "bg-yellow-300 border-black hover:bg-yellow-400"}`}
+                >
                   <p className="font-bold text-[10px] md:text-sm">QUAD</p>
                   <div className="bg-gray-200 border border-black rounded-md mt-1 px-2 py-1">
                     <p className="font-bold text-xs md:text-lg">₹{currentTrip.occupancy?.quad}</p>
@@ -152,9 +178,11 @@ const TripDetails = () => {
                 </div>
 
                 {/* TRIPLE */}
-                <div onClick={()=>setSelectedPrice("triple")}
-                className={`min-w-[120px] md:min-w-0 border-2 rounded-lg p-2 md:p-4 text-center cursor-pointer transition
-                ${selectedPrice==="triple" ? "bg-yellow-400 border-black" : "bg-yellow-300 border-black hover:bg-yellow-400"}`}>
+                <div
+                  onClick={() => setSelectedPrice("triple")}
+                  className={`min-w-[120px] md:min-w-0 border-2 rounded-lg p-2 md:p-4 text-center cursor-pointer transition
+                  ${selectedPrice === "triple" ? "bg-yellow-400 border-black" : "bg-yellow-300 border-black hover:bg-yellow-400"}`}
+                >
                   <p className="font-bold text-[10px] md:text-sm">TRIPLE</p>
                   <div className="bg-gray-200 border border-black rounded-md mt-1 px-2 py-1">
                     <p className="font-bold text-xs md:text-lg">₹{currentTrip.occupancy?.triple}</p>
@@ -162,9 +190,11 @@ const TripDetails = () => {
                 </div>
 
                 {/* DOUBLE */}
-                <div onClick={()=>setSelectedPrice("double")}
-                className={`min-w-[120px] md:min-w-0 border-2 rounded-lg p-2 md:p-4 text-center cursor-pointer transition
-                ${selectedPrice==="double" ? "bg-yellow-400 border-black" : "bg-yellow-300 border-black hover:bg-yellow-400"}`}>
+                <div
+                  onClick={() => setSelectedPrice("double")}
+                  className={`min-w-[120px] md:min-w-0 border-2 rounded-lg p-2 md:p-4 text-center cursor-pointer transition
+                  ${selectedPrice === "double" ? "bg-yellow-400 border-black" : "bg-yellow-300 border-black hover:bg-yellow-400"}`}
+                >
                   <p className="font-bold text-[10px] md:text-sm">DOUBLE</p>
                   <div className="bg-gray-200 border border-black rounded-md mt-1 px-2 py-1">
                     <p className="font-bold text-xs md:text-lg">₹{currentTrip.occupancy?.double}</p>
@@ -175,20 +205,41 @@ const TripDetails = () => {
 
               {/* PRICE DETAILS */}
               <div className="mt-3 bg-white border rounded-lg p-4 text-xs md:text-sm text-slate-600">
-                {selectedPrice==="quad" && (<ul className="space-y-1"><li>✔ Quad Sharing Stay</li><li>✔ Dinner+Breakfast</li><li>✔ Transport Support</li><li>✔ Trek Guide</li></ul>)}
-                {selectedPrice==="triple" && (<ul className="space-y-1"><li>✔ Triple Sharing Stay</li><li>✔ Dinner+Breakfast</li><li>✔ Transport Support</li><li>✔ Trek Guide</li></ul>)}
-                {selectedPrice==="double" && (<ul className="space-y-1"><li>✔ Double Sharing Room</li><li>✔ Dinner+Breakfast</li><li>✔ Transport Support</li><li>✔ Trek Guide</li></ul>)}
+                {selectedPrice === "quad" && (
+                  <ul className="space-y-1">
+                    <li>✔ Quad Sharing Stay</li>
+                    <li>✔ Dinner + Breakfast</li>
+                    <li>✔ Transport Support</li>
+                    <li>✔ Trek Guide</li>
+                  </ul>
+                )}
+                {selectedPrice === "triple" && (
+                  <ul className="space-y-1">
+                    <li>✔ Triple Sharing Stay</li>
+                    <li>✔ Dinner + Breakfast</li>
+                    <li>✔ Transport Support</li>
+                    <li>✔ Trek Guide</li>
+                  </ul>
+                )}
+                {selectedPrice === "double" && (
+                  <ul className="space-y-1">
+                    <li>✔ Double Sharing Room</li>
+                    <li>✔ Dinner + Breakfast</li>
+                    <li>✔ Transport Support</li>
+                    <li>✔ Trek Guide</li>
+                  </ul>
+                )}
               </div>
             </div>
 
             {/* TABS */}
             <div className="flex bg-white rounded-xl p-2 mb-8 border">
-              {["itinerary","inclusions","exclusions"].map(tab=>(
+              {["itinerary", "inclusions", "exclusions"].map((tab) => (
                 <button
                   key={tab}
-                  onClick={()=>setActiveTab(tab)}
+                  onClick={() => setActiveTab(tab)}
                   className={`flex-1 py-3 rounded-lg text-sm font-bold uppercase
-                  ${activeTab===tab ? "bg-blue-600 text-white":"text-slate-400"}`}
+                  ${activeTab === tab ? "bg-blue-600 text-white" : "text-slate-400"}`}
                 >
                   {tab}
                 </button>
@@ -198,20 +249,18 @@ const TripDetails = () => {
             {/* TAB CONTENT */}
             <div className="bg-white p-8 rounded-[28px] border">
 
-              {activeTab==="itinerary" &&(
+              {activeTab === "itinerary" && (
                 <div className="space-y-4">
-                  {currentTrip.itinerary?.map((day,i)=>(
-                    <details key={i} open={i===0} className="bg-slate-50 rounded-xl">
+                  {currentTrip.itinerary?.map((day, i) => (
+                    <details key={i} open={i === 0} className="bg-slate-50 rounded-xl">
                       <summary className="flex justify-between p-5 cursor-pointer">
                         <div className="flex gap-4 items-center">
                           <span className="bg-blue-600 text-white w-10 h-10 rounded-xl flex items-center justify-center text-xs font-bold">
                             D{day.day}
                           </span>
-                          <h3 className="font-bold uppercase">
-                            {day.title}
-                          </h3>
+                          <h3 className="font-bold uppercase">{day.title}</h3>
                         </div>
-                        <ChevronRight/>
+                        <ChevronRight />
                       </summary>
                       <div className="px-6 pb-6 text-slate-500 text-sm">
                         {day.desc || day.description}
@@ -221,22 +270,22 @@ const TripDetails = () => {
                 </div>
               )}
 
-              {activeTab==="inclusions" &&(
+              {activeTab === "inclusions" && (
                 <div className="space-y-4">
-                  {currentTrip.inclusions?.map((item,i)=>(
+                  {currentTrip.inclusions?.map((item, i) => (
                     <div key={i} className="flex gap-3 items-start text-slate-700">
-                      <CheckCircle className="text-green-500 mt-1" size={18}/>
+                      <CheckCircle className="text-green-500 mt-1" size={18} />
                       <p>{item}</p>
                     </div>
                   ))}
                 </div>
               )}
 
-              {activeTab==="exclusions" &&(
+              {activeTab === "exclusions" && (
                 <div className="space-y-4">
-                  {currentTrip.exclusions?.map((item,i)=>(
+                  {currentTrip.exclusions?.map((item, i) => (
                     <div key={i} className="flex gap-3 items-start text-slate-700">
-                      <XCircle className="text-red-500 mt-1" size={18}/>
+                      <XCircle className="text-red-500 mt-1" size={18} />
                       <p>{item}</p>
                     </div>
                   ))}
@@ -257,7 +306,9 @@ const TripDetails = () => {
                   <div className="bg-white rounded-2xl border shadow-sm p-6">
                     <h3 className="text-lg font-bold text-blue-600 uppercase mb-4">Addons</h3>
                     <ul className="space-y-2 text-sm text-slate-600">
-                      {currentTrip.addons.map((item,i)=>(<li key={i}>• {item}</li>))}
+                      {currentTrip.addons.map((item, i) => (
+                        <li key={i}>• {item}</li>
+                      ))}
                     </ul>
                   </div>
                 )}
@@ -266,7 +317,9 @@ const TripDetails = () => {
                   <div className="bg-white rounded-2xl border shadow-sm p-6">
                     <h3 className="text-lg font-bold text-green-600 uppercase mb-4">Best Time To Visit</h3>
                     <ul className="space-y-2 text-sm text-slate-600">
-                      {currentTrip.bestTimeToVisit.map((item,i)=>(<li key={i}>• {item}</li>))}
+                      {currentTrip.bestTimeToVisit.map((item, i) => (
+                        <li key={i}>• {item}</li>
+                      ))}
                     </ul>
                   </div>
                 )}
@@ -275,7 +328,9 @@ const TripDetails = () => {
                   <div className="bg-white rounded-2xl border shadow-sm p-6">
                     <h3 className="text-lg font-bold text-orange-500 uppercase mb-4">Travel Tips</h3>
                     <ul className="space-y-2 text-sm text-slate-600">
-                      {currentTrip.travelTips.map((item,i)=>(<li key={i}>• {item}</li>))}
+                      {currentTrip.travelTips.map((item, i) => (
+                        <li key={i}>• {item}</li>
+                      ))}
                     </ul>
                   </div>
                 )}
@@ -291,7 +346,7 @@ const TripDetails = () => {
                 </h2>
                 <div className="bg-white rounded-2xl border shadow-sm p-6">
                   <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm text-slate-700">
-                    {currentTrip.thingsToCarry.map((item,i)=>(
+                    {currentTrip.thingsToCarry.map((item, i) => (
                       <li key={i} className="flex gap-2">
                         <span className="text-blue-600 font-bold">•</span>
                         {item}
@@ -314,7 +369,7 @@ const TripDetails = () => {
                 ₹{getPrice()}
               </h2>
               <button
-                onClick={()=>setIsModalOpen(true)}
+                onClick={() => setIsModalOpen(true)}
                 className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 py-4 rounded-2xl font-bold uppercase tracking-wide text-white shadow-lg hover:scale-[1.02] hover:shadow-xl transition-all duration-200"
               >
                 Book Your Slot
@@ -325,15 +380,23 @@ const TripDetails = () => {
         </div>
       </div>
 
-      {/* GALLERY MODAL */}
+      {/* ─── GALLERY MODAL (unchanged) ─── */}
       {galleryOpen && (
         <div className="fixed inset-0 z-[999999] bg-black/90 flex items-center justify-center p-6">
-          <button onClick={()=>setGalleryOpen(false)} className="absolute top-6 right-6 text-white">
-            <X size={32}/>
+          <button
+            onClick={() => setGalleryOpen(false)}
+            className="absolute top-6 right-6 text-white"
+          >
+            <X size={32} />
           </button>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl overflow-y-auto max-h-[90vh]">
-            {images.map((img,i)=>(
-              <img key={i} src={img.src} className="rounded-xl object-cover"/>
+            {images.map((img, i) => (
+              <img
+                key={i}
+                src={img.src}
+                className="rounded-xl w-full h-[220px] object-cover"
+                alt=""
+              />
             ))}
           </div>
         </div>
@@ -342,7 +405,7 @@ const TripDetails = () => {
       {/* MOBILE BOOK BUTTON */}
       <div className="md:hidden fixed bottom-20 left-0 w-full px-4 z-[999]">
         <button
-          onClick={()=>setIsModalOpen(true)}
+          onClick={() => setIsModalOpen(true)}
           className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-3 rounded-xl font-bold shadow-lg active:scale-95 transition"
         >
           Book Your Slot • ₹{getPrice()}
@@ -352,7 +415,7 @@ const TripDetails = () => {
       {/* BOOKING MODAL */}
       <BookingModal
         isOpen={isModalOpen}
-        onClose={()=>setIsModalOpen(false)}
+        onClose={() => setIsModalOpen(false)}
         tripTitle={currentTrip.title}
         occupancy={currentTrip.occupancy}
         price={getPrice()}

@@ -30,7 +30,7 @@ path: "/category/uttarakhand"
 {
 title: "Corporate Tours",
 image: "/corporate.jpg",
-path: "/corporate"
+path: "/category/corporate"
 }
 ];
 
