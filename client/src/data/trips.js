@@ -1386,7 +1386,7 @@ Breakfast
   itineraryPdf: "/itineraries/GSM Auli .pdf",
   category: "uttarakhand",
   location: 'Uttarakhand, India',
-  duration: '5 Days / 4 Nights',
+  duration: '4 Days / 3 Nights',
   price: '5,000',
   originalPrice: '12,000',
   rating: '4.8',
@@ -1446,41 +1446,33 @@ Breakfast
   ],
 
   itineraryBrief: [
-    "Day 1: Evening Departure from Delhi (Overnight Journey)",
-    "Day 2: Drive to Joshimath via Devprayag & Rudraprayag",
-    "Day 3: Auli Exploration & Skiing Activities",
-    "Day 4: Gorson Bugyal Trek & Return Journey",
-    "Day 5: Arrival in Delhi"
+    "Day 1: Departure from Haridwar",
+    "Day 2: Drive to Joshimath via Devprayag & Rudraprayag, Auli Exploration & Skiing Activities",
+    "Day 3: Gorson Bugyal Trek & Return Journey",
+    "Day 4: Arrival in Haridwar"
   ],
 
   itinerary: [
     {
       day: 1,
-      title: "Delhi to Joshimath (Overnight Journey)",
+      title: "Haridwar to Joshimath ",
       description: `
-Evening departure from Delhi via AC Volvo/Traveller.
+ Departure from Haridwar via AC Volvo/Traveller.
 Overnight journey through the foothills of the Himalayas.
 Briefing by the trip captain about the high-altitude expedition.
       `
+    
+  
     },
     {
       day: 2,
-      title: "Arrival at Joshimath",
+      title: "Arrival at Joshimath and Auli Skiing & Cable Car Experience",
       description: `
-Morning drive through Devprayag (confluence of Alaknanda & Bhagirathi).
+    Morning drive through Devprayag (confluence of Alaknanda & Bhagirathi).
 Pass through Rudraprayag and Karnaprayag.
 Evening arrival at Joshimath, check-in to your hotel/stay.
 Visit the sacred Narsingh Temple.
 Dinner and overnight stay in Joshimath.
-
-Meals Included:
-Dinner
-      `
-    },
-    {
-      day: 3,
-      title: "Auli Skiing & Cable Car Experience",
-      description: `
 After breakfast, head to the Auli Ropeway point.
 Take Asia's longest cable car ride from Joshimath to Auli (own cost).
 Spend the day at the Auli Ski Resort.
@@ -1493,7 +1485,7 @@ Breakfast & Dinner
       `
     },
     {
-      day: 4,
+      day: 3,
       title: "Gorson Bugyal Trek & Departure",
       description: `
 Breakfast and check-out from the hotel.
@@ -1506,10 +1498,10 @@ Breakfast
       `
     },
     {
-      day: 5,
-      title: "Arrival in Delhi",
+      day:4,
+      title: "Arrival in Haridwar",
       description: `
-Early morning arrival in Delhi.
+  Arrival in Haridwar.
 Trip ends with magical memories of the Snow Expedition.
       `
     }
@@ -3040,7 +3032,7 @@ Trip ends with royal memories of the City of Lakes.
   itineraryPdf: "/itineraries/Jaipur Explore Royal Rajasthan With Comfort & Culture.pdf",
   location: 'Rajasthan, India',
   duration: '5 Days / 4 Nights',
-  price: '4,999',
+  price: '5,000',
   originalPrice: '6,500',
   rating: '4.8',
   reviews: 380,
@@ -3048,9 +3040,9 @@ Trip ends with royal memories of the City of Lakes.
   description: 'A journey through the royal history of the Rajputs. From the iconic Hawa Mahal to the majestic Amer Fort, experience the vibrant culture and colors of Jaipur.',
   
   occupancy: {
-    quad: 4999,
-    triple: 5999,
-    double: 6999
+    quad: 5000,
+    triple: 6000,
+    double: 7000
   },
 
   inclusions: [
@@ -3320,7 +3312,7 @@ Breakfast
     itineraryPdf: "/itineraries/GSM jodhpur.pdf",
     location: 'Rajasthan, India',
     duration: '3 Days / 2 Nights',
-    price: '4,999',
+    price: '5,000',
     originalPrice: '6,000',
     rating: '4.8',
     reviews: 195,
@@ -3328,7 +3320,7 @@ Breakfast
     description: 'Dominated by the massive Mehrangarh Fort, explore the sea of blue houses in the old city and the magnificent Umaid Bhawan Palace in the Sun City of India.',
     
     occupancy: {
-      quad: 4999,
+      quad: 5000,
       triple: 6000,
       double: 7000
     },
@@ -4150,16 +4142,16 @@ Meals Included: Breakfast & Lunch.
   location: "Srinagar – Sonmarg – Gulmarg – Pahalgam",
   duration: "5 Days / 4 Nights",
   price: "10,000",
-  originalPrice: "9,999",
+  originalPrice: "10000",
   rating: "4.8",
   reviews: 95,
   image: "/kashmir1.jpg",
   description: "Experience the ultimate beauty of Paradise on Earth. From the golden glaciers of Sonmarg and the snow meadows of Gulmarg to the serene valleys of Pahalgam. A complete Kashmiri experience in a budget-friendly way.",
   
   occupancy: {
-    quad: 5000,
-    triple: 6000,
-    double: 7000
+    quad: 10000,
+    triple: 12000,
+    double: 14000
   },
 
   inclusions: [

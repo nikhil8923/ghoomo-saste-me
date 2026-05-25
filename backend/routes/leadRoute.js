@@ -22,7 +22,7 @@ router.post("/send-lead", async (req, res) => {
         date,
         travelers,
         sharing,
-        budget
+        amount
       })
     });
 
