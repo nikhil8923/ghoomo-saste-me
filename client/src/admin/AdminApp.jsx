@@ -6,6 +6,7 @@ import OverviewPage from './pages/OverviewPage';
 import BlogsPage from './pages/BlogsPage';
 import GalleryPage from './pages/GalleryPage';
 import DestinationsPage from './pages/DestinationsPage';
+import TripsManagerPage from './pages/TripsManagerPage';
 
 const AuthContext = createContext(null);
 export const useAuth = () => useContext(AuthContext);
@@ -69,6 +70,7 @@ function Sidebar() {
     { path: '/admin/blogs', label: '📝 Blogs' },
     { path: '/admin/gallery', label: '🖼️ Gallery' },
     { path: '/admin/destinations', label: '📍 Destinations' },
+    { path: '/admin/trips', label: '🗺️ Trips Manager' },
   ];
 
   const handleLogout = async () => {
@@ -153,6 +155,11 @@ export default function AdminApp() {
         <Route path="/admin/destinations" element={
           <ProtectedRoute>
             <AdminLayout><DestinationsPage /></AdminLayout>
+          </ProtectedRoute>
+        } />
+        <Route path="/admin/trips" element={
+          <ProtectedRoute>
+            <AdminLayout><TripsManagerPage /></AdminLayout>
           </ProtectedRoute>
         } />
         <Route path="*" element={<Navigate to="/admin" replace />} />

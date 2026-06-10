@@ -2,96 +2,89 @@ export const tripsData = [
   
 
  {
-  id: "manali-kasol-backpacking",
-  stateId: 'himachal',
-  title: "Manali & Kasol Backpacking",
-  itineraryPdf: "/itineraries/GSM Manali.pdf",
-  category: "adventure",
-  location: 'Himachal Pradesh, India',
-  duration: "5 Days / 4 Nights",
-  price: '5000',
-  originalPrice: '12,000',
-  rating: '4.8',
-  reviews: 420,
-  image: "/k-s8.jpg",
-  description: 'An action-packed group getaway exploring the best of Himachal. From the snowy landscapes of Sissu and Solang Valley to the spiritual vibes of Manikaran Sahib and the riverside cafes of Kasol.',
-   occupancy: {
-    quad: 5000,
-    triple: 6000,
-    double: 7000
-  },
-  inclusions: [
-    "Transfers Delhi – Manali – Kasol by AC Volvo/Traveller",
-    "2 Nights Stay in Manali (sharing basis)",
-    "MAP Meals: 2 Breakfasts & 2 Dinners",
-    "Local & Upper Himalayan sightseeing",
-    "Bonfire & Music Night",
-    "Tour Captain & 24x7 Support"
-  ],
-  
-  exclusions: [
-    "Personal expenses & adventure activity charges",
-    "Entry fees to monuments or parks",
-    "Meals other than specified",
-    "Extra transport costs due to road blockages",
-    "4x4 Taxi if required for Sissu/Rohtang in heavy snow"
-  ],
-  
-  addons: [
-    "River Rafting in Kullu (charged extra)",
-    "Paragliding in Solang (charged extra)",
-    "Heater charges for hotel stay"
-  ],
-
-  bestTimeToVisit: [
-    "March – June (Pleasant weather)",
-    "December – February (For snow lovers)"
-  ],
-
-  travelTips: [
-    "Carry valid Government ID proof",
-    "Motion sickness tablets for mountain roads",
-    "Respect local cultures and traditions",
-    "Keep the mountains clean - No plastic littering"
-  ],
-
-  gallery: [
-    { src: "/kasol1.jpg" },
-    { src: "/kasol2.jpg" },
-    { src: "/kasol3.jpg" },
-    { src: "/kasol4.jpg" },
-    { src: "/kasol5.jpg" },
-    { src: "/kasol6.JPG" },
-    { src: "/k-s4.jpeg" },
-    { src: "/nks1.jpeg" },
-    { src: "/nks2.jpeg" },
-    { src: "/nks3.jpeg" },
-  ],
-
-  itineraryBrief: [
-    "Day 1: Evening Departure from Delhi (Overnight Journey)",
-    "Day 2: Manali Arrival, Check-in & Local Sightseeing",
-    "Day 3: Solang Valley, Atal Tunnel, Sissu & Koksar Excursion",
-    "Day 4: Kullu Rafting, Kasol Exploration & Manikaran Sahib",
-    "Day 5: Morning Arrival back in Delhi"
-  ],
-
-  itinerary: [
-    {
-      day: 1,
-      title: "Departure from Delhi",
-      description: `
+    id: "manali-kasol-backpacking",
+    stateId: 'himachal',
+    title: "Manali & Kasol Backpacking",
+    itineraryPdf: "/itineraries/GSM Manali.pdf",
+    category: "adventure",
+    location: 'Himachal Pradesh, India',
+    duration: "5 Days / 4 Nights",
+    price: '5000',
+    originalPrice: '12,000',
+    rating: '4.8',
+    reviews: 420,
+    image: "/k-s8.jpg",
+    description: 'An action-packed group getaway exploring the best of Himachal. From the snowy landscapes of Sissu and Solang Valley to the spiritual vibes of Manikaran Sahib and the riverside cafes of Kasol.',
+    occupancy: {
+      quad: 5000,
+      triple: 6000,
+      double: 7000
+    },
+    inclusions: [
+      "Transfers Delhi – Manali – Kasol by AC Volvo/Traveller",
+      "2 Nights Stay in Manali (sharing basis)",
+      "MAP Meals: 2 Breakfasts & 2 Dinners",
+      "Local & Upper Himalayan sightseeing",
+      "Bonfire & Music Night",
+      "Tour Captain & 24x7 Support"
+    ],
+    exclusions: [
+      "Personal expenses & adventure activity charges",
+      "Entry fees to monuments or parks",
+      "Meals other than specified",
+      "Extra transport costs due to road blockages",
+      "4x4 Taxi if required for Sissu/Rohtang in heavy snow"
+    ],
+    addons: [
+      "River Rafting in Kullu (charged extra)",
+      "Paragliding in Solang (charged extra)",
+      "Heater charges for hotel stay"
+    ],
+    bestTimeToVisit: [
+      "March – June (Pleasant weather)",
+      "December – February (For snow lovers)"
+    ],
+    travelTips: [
+      "Carry valid Government ID proof",
+      "Motion sickness tablets for mountain roads",
+      "Respect local cultures and traditions",
+      "Keep the mountains clean - No plastic littering"
+    ],
+    gallery: [
+      { src: "/kasol1.jpg" },
+      { src: "/kasol2.jpg" },
+      { src: "/kasol3.jpg" },
+      { src: "/kasol4.jpg" },
+      { src: "/kasol5.jpg" },
+      { src: "/kasol6.JPG" },
+      { src: "/k-s4.jpeg" },
+      { src: "/nks1.jpeg" },
+      { src: "/nks2.jpeg" },
+      { src: "/nks3.jpeg" },
+    ],
+    itineraryBrief: [
+      "Day 1: Evening Departure from Delhi (Overnight Journey)",
+      "Day 2: Manali Arrival, Check-in & Local Sightseeing",
+      "Day 3: Solang Valley, Atal Tunnel, Sissu & Koksar Excursion",
+      "Day 4: Kullu Rafting, Kasol Exploration & Manikaran Sahib",
+      "Day 5: Morning Arrival back in Delhi"
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: "Departure from Delhi",
+        description: `
 Gather at the meeting point in Delhi by 06:00 PM.
 Board the AC Volvo/Traveller for an overnight journey.
 
 Meet your trip captain and fellow backpackers.
 Briefing session about the upcoming mountain adventure.
       `
-    },
-    {
-      day: 2,
-      title: "Manali Arrival & Local Exploration",
-      description: `
+      },
+      {
+        day: 2,
+        title: "Manali Arrival & Local Exploration",
+        description: `
 Morning arrival in Manali. Check-in to hotel and freshen up.
 
 Local Sightseeing:
@@ -105,11 +98,11 @@ Dinner & overnight stay in hotel.
 Meals Included:
 Dinner
       `
-    },
-    {
-      day: 3,
-      title: "Solang Valley / Atal Tunnel / Sissu",
-      description: `
+      },
+      {
+        day: 3,
+        title: "Solang Valley / Atal Tunnel / Sissu",
+        description: `
 Early morning breakfast.
 Head towards the Upper Himalayas.
 
@@ -123,11 +116,11 @@ Highlights:
 Meals Included:
 Breakfast & Dinner
       `
-    },
-    {
-      day: 4,
-      title: "Kullu, Kasol & Manikaran Sahib",
-      description: `
+      },
+      {
+        day: 4,
+        title: "Kullu, Kasol & Manikaran Sahib",
+        description: `
 Post breakfast, check-out and drive towards Parvati Valley.
 
 Sightseeing:
@@ -140,109 +133,507 @@ Evening departure from Kasol/Bhuntar for Delhi.
 Meals Included:
 Breakfast
       `
-    },
-    {
-      day: 5,
-      title: "Arrival in Delhi",
-      description: `
+      },
+      {
+        day: 5,
+        title: "Arrival in Delhi",
+        description: `
 Morning arrival in Delhi (approx 06:00 AM - 08:00 AM).
 Trip ends with unforgettable Himalayan memories.
       `
-    }
-  ],
-
-  thingsToCarry: [
-    "Valid ID Proof & Booking Voucher",
-    "Warm layers, rain jacket, gloves",
-    "Sturdy walking shoes or sneakers",
-    "Power bank & reusable water bottle",
-    "Personal medicine kit & toiletries"
-  ]
-},
-  
- {
-  id: 'mcleodganj-dharamshala',
-  stateId: 'himachal',
-  title: 'McLeod Ganj & Triund Trek',
-  itineraryPdf: "/itineraries/GSM MCLOADGANJ.pdf",
-  category: "adventure",
-  location: 'Himachal Pradesh, India',
-  duration: '3 Days / 2 Nights',
-  price: '5,000',
-  originalPrice: '7,500',
-  rating: '4.7',
-  reviews: 98,
-  image: '/Mcleod Ganj.webp',
-  description: 'Experience the beauty of McLeod Ganj and the famous Triund Trek. Explore Tibetan monasteries, vibrant cafes, Bhagsu waterfalls, and enjoy breathtaking views of the Dhauladhar mountain range. Perfect for adventure lovers and nature seekers.',
-  
-  occupancy: {
-    quad: 5000,
-    triple: 6000,
-    double: 7000
+      }
+    ],
+    thingsToCarry: [
+      "Valid ID Proof & Booking Voucher",
+      "Warm layers, rain jacket, gloves",
+      "Sturdy walking shoes or sneakers",
+      "Power bank & reusable water bottle",
+      "Personal medicine kit & toiletries"
+    ]
   },
+  {
+    id: 'kasol-kheerganga',
+    stateId: 'himachal',
+    title: 'Kasol & Kheerganga Trek',
+    itineraryPdf: "/itineraries/GSM kheerganga .pdf",
+    category: "adventure",
+    location: 'Himachal Pradesh, India',
+    duration: '3 Days / 2 Nights',
+    price: '5,000',
+    originalPrice: '8,000',
+    rating: '4.9',
+    reviews: 210,
+    image: '/kheer12.jpeg',
+    description: 'Experience the magic of Parvati Valley. Trek through lush green pine forests, soak in the therapeutic natural hot springs of Kheerganga, and camp under a star-studded sky at 2,960 meters.',
+    occupancy: {
+      quad: 5000,
+      triple: 6000,
+      double: 7000
+    },
+    inclusions: [
+      "AC Volvo/Traveller: Delhi-Kasol-Delhi",
+      "1 Night riverside camp stay in Kasol",
+      "1 Night hilltop camp stay in Kheerganga",
+      "2 Breakfasts & 2 Dinners (MAP Plan)",
+      "Guided trek to Kheerganga",
+      "Bonfire & Music (subject to weather)",
+      "Professional Trek Leader & Coordinator"
+    ],
+    exclusions: [
+      "Lunches & any meals during transit",
+      "Porter or mule charges for personal luggage",
+      "Local taxi from Kasol to Barshaini (base point)",
+      "Personal expenses (shopping, café bills)",
+      "Anything not specifically mentioned in inclusions"
+    ],
+    addons: [
+      "Riverside Rafting in Kullu (₹1000)",
+      "Personal Porter for trek (₹1000/day)",
+      "Rent for Trekking Poles/Boots (₹200)"
+    ],
+    bestTimeToVisit: [
+      "April – June (Pleasant trekking)",
+      "September – November (Post-monsoon clarity)"
+    ],
+    travelTips: [
+      "Pack light for the 12km trek",
+      "Carry a valid Government ID proof",
+      "Keep a raincoat handy as mountain weather is unpredictable",
+      "Do not litter – help us keep Parvati Valley clean"
+    ],
+    gallery: [
+      { src: "/kheer12.jpeg" },
+      { src: "/kheer13.jpeg" },
+      { src: "/kheer14.jpeg" },
+      { src: "/kheer5.jpg" },
+    ],
+    itineraryBrief: [
+      "Day 1: Delhi to Kasol (Overnight Journey)",
+      "Day 2: Kasol Arrival & Local Exploration",
+      "Day 3: Trek to Kheerganga & Hot Spring Dip",
+      "Day 4: Descent to Barshaini & Return to Delhi",
+      "Day 5: Arrival in Delhi"
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: "Delhi to Kasol (Overnight Journey)",
+        description: `
+Evening departure from Delhi via AC Volvo/Traveller.
+Overnight journey to the heart of Parvati Valley.
+Briefing session and group introduction by the trip captain.
+      `
+      },
+      {
+        day: 2,
+        title: "Kasol Arrival & Local Exploration",
+        description: `
+Morning arrival in Kasol, check-in to riverside camps & freshen up.
+Local Exploration:
+• Stroll along the Parvati River bank.
+• Visit the famous Manikaran Sahib Gurudwara.
+• Café hopping in Kasol (Evergreen, Moon Dance, etc.).
+• Explore the Chalal village trail.
 
-  inclusions: [
-    "AC Volvo/Traveller: Delhi-McLeod Ganj-Delhi",
-    "1 Night hotel in McLeod Ganj",
-    "1 Night campsite at Triund",
-    "2 Breakfasts, 2 Dinners",
-    "Guided Triund Trek",
-    "Local sightseeing (Bhagsu Nag)",
-    "Trip Captain / Coordinator"
-  ],
-  
-  exclusions: [
-    "Lunches & personal expenses",
-    "Porter/horse charges on trek",
-    "Cafe expenses in McLeod Ganj",
-    "Taxi fare from McLeod Ganj to Dharamkot (trek base)",
-    "Anything not mentioned in the inclusions"
-  ],
-  
-  addons: [
-    "Paragliding at Bir Billing (₹3500)",
-    "Cafe Hopping Tour (₹500)",
-    "Extra night camping (₹1000)"
-  ],
+Dinner & overnight stay in Kasol camps.
 
-  bestTimeToVisit: [
-    "March – June (Pleasant)",
-    "September – November (Clear Skies)"
-  ],
+Meals Included:
+Dinner
+      `
+      },
+      {
+        day: 3,
+        title: "Trek to Kheerganga",
+        description: `
+Post breakfast, drive to Barshaini (Trek base point).
+Start the 12km trek through waterfalls and dense forests.
+Reach Kheerganga Top by late afternoon.
+Key Highlight: Take a dip in the natural hot springs.
+Evening bonfire and stargazing.
 
-  travelTips: [
-    "Start the Triund trek early",
-    "Wear proper trekking shoes with good grip",
-    "McLeod Ganj is best explored on foot",
-    "Carry a valid Government ID for verification"
-  ],
+Meals Included:
+Breakfast & Dinner
+      `
+      },
+      {
+        day: 4,
+        title: "Descent & Return Journey",
+        description: `
+Early morning breakfast with mountain views.
+Trek back down to Barshaini.
+Free time to explore Kasol market for souvenirs.
+Evening departure for Delhi via Volvo/Traveller.
 
-  gallery: [
-  
-    
-    { src: "/k-s2.jpeg" },
-    { src: "/k-s3.jpg" },
-    { src: "/k-s4.jpeg" },
-    { src: "/k-s6.jpeg" },
-    { src: "/k-s5.jpeg" },
-    { src: "/CD5.jpg" },
-    
+Meals Included:
+Breakfast
+      `
+      },
+      {
+        day: 5,
+        title: "Arrival in Delhi",
+        description: `
+Morning arrival in Delhi.
+Trip ends with soulful memories of the mountains.
+      `
+      }
+    ],
+    thingsToCarry: [
+      "Valid ID Proof",
+      "Comfortable trekking shoes",
+      "Warm jacket and rain poncho",
+      "Water bottle and energy snacks",
+      "Personal medication and power bank"
+    ]
+  },
+  {
+    id: 'kasol-tosh',
+    stateId: 'himachal',
+    title: 'Kasol & Tosh Cafe Hopping',
+    itineraryPdf: "/itineraries/GSM kheerganga .pdf",
+    category: "adventure",
+    location: 'Himachal Pradesh, India',
+    duration: '3 Days / 2 Nights',
+    price: '5,000',
+    originalPrice: '7,500',
+    rating: '4.8',
+    reviews: 156,
+    image: '/kheer1.jpg',
+    description: 'A chill backpacker vibe trip. Explore the famous cafes of Kasol, walk along the Parvati River, and hike up to the beautiful, remote village of Tosh for epic mountain views and traditional wooden architecture.',
+    occupancy: {
+      quad: 5000,
+      triple: 6000,
+      double: 7000
+    },
+    inclusions: [
+      "AC Volvo/Traveller: Delhi-Kasol-Delhi",
+      "1 Night riverside camp stay in Kasol",
+      "1 Night stay in Tosh village (Homestay/Hotel)",
+      "2 Breakfasts & 2 Dinners (MAP Plan)",
+      "Hike to Tosh Village",
+      "Local sightseeing in Kasol & Manikaran Sahib",
+      "Trip Captain & 24x7 Support"
+    ],
+    exclusions: [
+      "Lunches & any meals during transit",
+      "Local taxi from Kasol to Barshaini (if not in group transport)",
+      "Personal expenses (shopping, café bills)",
+      "Anything not specifically mentioned in inclusions"
+    ],
+    addons: [
+      "Kheerganga Trek (₹1500)",
+      "Malana Heritage Trek (₹2000)",
+      "Trout Fishing in Parvati River (₹1000)"
+    ],
+    bestTimeToVisit: [
+      "March – June (Pleasant weather)",
+      "September – November (Clear views)"
+    ],
+    travelTips: [
+      "Respect local village customs and traditions, especially in Tosh",
+      "Carry sufficient cash as ATMs in Kasol/Tosh can be unreliable",
+      "Keep the mountains clean - avoid plastic littering",
+      "Carry a valid Government ID for boarding"
+    ],
+    gallery: [
+      { src: "/kasol1.jpg" },
+      { src: "/kasol2.jpg" },
+      { src: "/kasol3.jpg" },
+      { src: "/kasol4.jpg" },
+      { src: "/kasol5.jpg" },
+      { src: "/kasol6.jpg" }
+    ],
+    itineraryBrief: [
+      "Day 1: Evening Departure from Delhi (Overnight Journey)",
+      "Day 2: Kasol Arrival & Manikaran Sahib Visit",
+      "Day 3: Hike to Tosh Village & Glacier Views",
+      "Day 4: Parvati Valley Relaxation & Return to Delhi",
+      "Day 5: Arrival in Delhi"
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: "Delhi to Kasol (Overnight Journey)",
+        description: `
+Evening departure from Delhi via AC Volvo/Traveller.
+Overnight journey to the beautiful Parvati Valley.
+Meet your trip captain and fellow travelers during the journey.
+      `
+      },
+      {
+        day: 2,
+        title: "Kasol Arrival & Manikaran Sahib",
+        description: `
+Morning arrival in Kasol, check-in to riverside camps & freshen up.
+Local Highlights:
+• Visit the holy Manikaran Sahib Gurudwara and Hot Springs.
+• Explore the vibrant Kasol Market.
+• Cafe hopping: Visit famous spots like Evergreen or Moon Dance Cafe.
+• Riverside walk along the gushing Parvati River.
 
-  ],
+Dinner & overnight stay in Kasol.
 
-  itineraryBrief: [
-    "Day 1: Delhi to McLeod Ganj (Overnight Journey)",
-    "Day 2: Arrive McLeod Ganj, Local Sightseeing",
-    "Day 3: Triund Trek, Camp Stay",
-    "Day 4: Trek Down, Depart for Delhi",
-    "Day 5: Arrive Delhi"
-  ],
+Meals Included:
+Dinner
+      `
+      },
+      {
+        day: 3,
+        title: "Hike to Tosh Village",
+        description: `
+Post breakfast, proceed towards Barshaini (base point).
+Start the easy and scenic hike to Tosh village.
+Explore Tosh:
+• Traditional wooden houses and local culture.
+• Stunning glacier views from the top of the village.
+• Relax in local cafes with 360-degree mountain views.
 
-  itinerary: [
-    {
-      day: 1,
-      title: "Delhi to McLeod Ganj (Overnight Journey)",
-      description: `
+Evening bonfire and overnight stay in Tosh.
+
+Meals Included:
+Breakfast & Dinner
+      `
+      },
+      {
+        day: 4,
+        title: "Parvati Valley & Return Journey",
+        description: `
+Breakfast with a peaceful mountain sunrise.
+Hike back down to Barshaini and return to Kasol.
+Free time for last-minute shopping or visiting the Chalal trail.
+Evening departure for Delhi via Volvo/Traveller.
+
+Meals Included:
+Breakfast
+      `
+      },
+      {
+        day: 5,
+        title: "Arrival in Delhi",
+        description: `
+Morning arrival in Delhi.
+Trip ends with chill memories of Parvati Valley.
+      `
+      }
+    ],
+    thingsToCarry: [
+      "Valid ID Proof (Aadhar Card)",
+      "Comfortable walking shoes/sneakers",
+      "Warm jacket & thermal layers",
+      "Water bottle & energy snacks",
+      "Personal medication & power bank"
+    ]
+  },
+  {
+    id: 'jibhi-tirthan',
+    stateId: 'himachal',
+    title: 'Jibhi & Tirthan Valley',
+    itineraryPdf: "/itineraries/GSM jibhi.pdf",
+    category: "leisure",
+    location: 'Himachal Pradesh, India',
+    duration: '3 Days / 2 Nights',
+    price: '5,000',
+    originalPrice: '8,500',
+    rating: '4.8',
+    reviews: 134,
+    image: '/jibhi8.jpeg',
+    description: 'Escape the crowds in this offbeat Himalayan paradise. Crystal clear rivers, cozy wooden homestays, and untouched nature. Experience the serenity of Jibhi and the high-altitude beauty of Jalori Pass.',
+    occupancy: {
+      quad: 5000,
+      triple: 6000,
+      double: 7000
+    },
+    inclusions: [
+      "AC Tempo Traveller: Delhi-Jibhi-Delhi",
+      "2 Nights Stay in cozy wooden homestay/hotel",
+      "2 Breakfasts & 2 Dinners (MAP Plan)",
+      "Guided trek to Serolsar Lake",
+      "Jalori Pass & Jibhi Waterfall sightseeing",
+      "Tirthan Valley & Choie Waterfall exploration",
+      "Bonfire & Music Night",
+      "Trip Captain & 24x7 Support"
+    ],
+    exclusions: [
+      "Lunches & meals during transit",
+      "4x4 Vehicle charges in case of heavy snow (Pay on spot)",
+      "Entry fees to Parks or Museums",
+      "Personal expenses (shopping, café bills)",
+      "Anything not specifically mentioned in inclusions"
+    ],
+    addons: [
+      "Great Himalayan National Park Entry (₹500)",
+      "Traditional Himachali Cooking Class (₹800)",
+      "4x4 Vehicle for Snow (Pay on spot)"
+    ],
+    bestTimeToVisit: [
+      "March – June (Serene & Green)",
+      "December – February (Snow Experience)"
+    ],
+    travelTips: [
+      "Carry valid Government ID for boarding",
+      "Pack a light jacket even in summers",
+      "Carry cash as ATMs are limited in Jibhi",
+      "Respect the local Himachali culture and architecture"
+    ],
+    gallery: [
+      { src: "/jibhi1.jpeg" },
+      { src: "/jibhi3.jpg" },
+      { src: "/jibhi4.jpg" },
+      { src: "/jibhi5.jpeg" },
+      { src: "/jibhi6.jpeg" },
+      { src: "/jibhi7.jpeg" },
+      { src: "/jibhi9.jpeg" },
+    ],
+    itineraryBrief: [
+      "Day 1: Delhi to Jibhi (Overnight Journey)",
+      "Day 2: Jibhi Arrival & Local Exploration",
+      "Day 3: Jalori Pass & Serolsar Lake Trek",
+      "Day 4: Tirthan Valley, Choie Waterfall & Departure",
+      "Day 5: Arrival in Delhi"
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: "Delhi to Jibhi (Overnight Journey)",
+        description: `
+Departure from Delhi via AC Tempo Traveller in the evening.
+Overnight journey through the scenic mountain roads.
+Briefing and group introduction by the trip captain.
+      `
+      },
+      {
+        day: 2,
+        title: "Jibhi Arrival & Local Exploration",
+        description: `
+Morning arrival in Jibhi. Check-in to your wooden homestay & freshen up.
+Local Exploration:
+• Short hike to the pristine Jibhi Waterfall.
+• Walk through the beautiful pine forests.
+• Explore local cafes and the Jibhi market.
+
+Evening bonfire session with music.
+Dinner & overnight stay in Jibhi.
+
+Meals Included:
+Dinner
+      `
+      },
+      {
+        day: 3,
+        title: "Jalori Pass & Serolsar Lake Trek",
+        description: `
+Post breakfast, drive to the high-altitude Jalori Pass (3,120m).
+Highlights:
+• Embark on a 5km trek to the sacred Serolsar Lake.
+• Visit the Budhi Nagin Temple near the lake.
+• Enjoy 360-degree views of the Dhauladhar and Pir Panjal ranges.
+Return to Jibhi by evening.
+
+Meals Included:
+Breakfast & Dinner
+      `
+      },
+      {
+        day: 4,
+        title: "Tirthan Valley & Return Journey",
+        description: `
+Breakfast and check-out from the homestay.
+Drive to Tirthan Valley:
+• Visit the beautiful Choie Waterfall.
+• Relax by the crystal-clear Tirthan River.
+• Optional visit to the Great Himalayan National Park gate.
+Evening departure for Delhi.
+
+Meals Included:
+Breakfast
+      `
+      },
+      {
+        day: 5,
+        title: "Arrival in Delhi",
+        description: `
+Morning arrival in Delhi.
+Trip ends with peaceful memories of the mountains.
+      `
+      }
+    ],
+    thingsToCarry: [
+      "Valid ID Proof",
+      "Comfortable walking/trekking shoes",
+      "Warm layers & rain poncho",
+      "Water bottle & energy snacks",
+      "Personal medicine kit & power bank"
+    ]
+  },
+  {
+    id: 'mcleodganj-dharamshala',
+    stateId: 'himachal',
+    title: 'McLeod Ganj & Triund Trek',
+    itineraryPdf: "/itineraries/GSM MCLOADGANJ.pdf",
+    category: "adventure",
+    location: 'Himachal Pradesh, India',
+    duration: '3 Days / 2 Nights',
+    price: '5,000',
+    originalPrice: '7,500',
+    rating: '4.7',
+    reviews: 98,
+    image: '/Mcleod Ganj.webp',
+    description: 'Experience the beauty of McLeod Ganj and the famous Triund Trek. Explore Tibetan monasteries, vibrant cafes, Bhagsu waterfalls, and enjoy breathtaking views of the Dhauladhar mountain range. Perfect for adventure lovers and nature seekers.',
+    occupancy: {
+      quad: 5000,
+      triple: 6000,
+      double: 7000
+    },
+    inclusions: [
+      "AC Volvo/Traveller: Delhi-McLeod Ganj-Delhi",
+      "1 Night hotel in McLeod Ganj",
+      "1 Night campsite at Triund",
+      "2 Breakfasts, 2 Dinners",
+      "Guided Triund Trek",
+      "Local sightseeing (Bhagsu Nag)",
+      "Trip Captain / Coordinator"
+    ],
+    exclusions: [
+      "Lunches & personal expenses",
+      "Porter/horse charges on trek",
+      "Cafe expenses in McLeod Ganj",
+      "Taxi fare from McLeod Ganj to Dharamkot (trek base)",
+      "Anything not mentioned in the inclusions"
+    ],
+    addons: [
+      "Paragliding at Bir Billing (₹3500)",
+      "Cafe Hopping Tour (₹500)",
+      "Extra night camping (₹1000)"
+    ],
+    bestTimeToVisit: [
+      "March – June (Pleasant)",
+      "September – November (Clear Skies)"
+    ],
+    travelTips: [
+      "Start the Triund trek early",
+      "Wear proper trekking shoes with good grip",
+      "McLeod Ganj is best explored on foot",
+      "Carry a valid Government ID for verification"
+    ],
+    gallery: [
+      { src: "/k-s2.jpeg" },
+      { src: "/k-s3.jpg" },
+      { src: "/jibhi1.jpeg" },
+      { src: "/k-s6.jpeg" },
+      { src: "/k-s5.jpeg" },
+      { src: "/CD5.jpg" },
+    ],
+    itineraryBrief: [
+      "Day 1: Delhi to McLeod Ganj (Overnight Journey)",
+      "Day 2: Arrive McLeod Ganj, Local Sightseeing",
+      "Day 3: Triund Trek, Camp Stay",
+      "Day 4: Trek Down, Depart for Delhi",
+      "Day 5: Arrive Delhi"
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: "Delhi to McLeod Ganj (Overnight Journey)",
+        description: `
 Evening departure from Delhi by Volvo / Traveller.
 Distance: ~500 km | 9-10 hrs.
 Meet your trip captain and group members.
@@ -251,11 +642,11 @@ Overnight journey to McLeod Ganj.
 Meals Included:
 None
       `
-    },
-    {
-      day: 2,
-      title: "Arrival & Local Sightseeing",
-      description: `
+      },
+      {
+        day: 2,
+        title: "Arrival & Local Sightseeing",
+        description: `
 Morning arrival at McLeod Ganj, check-in & freshen up.
 Afternoon sightseeing includes:
 • Bhagsu Waterfall & Temple
@@ -269,11 +660,11 @@ Dinner & overnight stay at McLeod Ganj hotel.
 Meals Included:
 Dinner
       `
-    },
-    {
-      day: 3,
-      title: "Triund Trek & Camping",
-      description: `
+      },
+      {
+        day: 3,
+        title: "Triund Trek & Camping",
+        description: `
 Post breakfast, begin the Triund Trek (9 km moderate trek, 4-5 hrs).
 Enjoy panoramic views of the Dhauladhar Range & Kangra Valley.
 Reach Triund Top (2,850 m).
@@ -283,11 +674,11 @@ Dinner & overnight camping at Triund.
 Meals Included:
 Breakfast & Dinner
       `
-    },
-    {
-      day: 4,
-      title: "Trek Down to Delhi (Overnight Journey)",
-      description: `
+      },
+      {
+        day: 4,
+        title: "Trek Down to Delhi (Overnight Journey)",
+        description: `
 Wake up early to witness a majestic sunrise at Triund.
 Breakfast at the campsite.
 Trek down back to McLeod Ganj.
@@ -297,116 +688,239 @@ Evening departure for Delhi by Volvo/Traveller.
 Meals Included:
 Breakfast
       `
-    },
-    {
-      day: 5,
-      title: "Arrival in Delhi",
-      description: `
+      },
+      {
+        day: 5,
+        title: "Arrival in Delhi",
+        description: `
 Morning arrival in Delhi.
 Trip ends with beautiful Himalayan memories.
       `
-    }
-  ],
-
-  thingsToCarry: [
-    "Valid ID proof",
-    "Trekking shoes with good grip",
-    "Warm jacket & layers",
-    "Water bottle & energy bars",
-    "Sunscreen, sunglasses, & headlamp",
-    "Basic first-aid kit"
-  ]
-},
-  {
-  id: 'shimla-kufri',
-  stateId: 'himachal',
-  title: 'Shimla & Kufri Getaway',
-  itineraryPdf: "/itineraries/GSM Shimla Kufri .pdf",
-  category: "leisure",
-  location: 'Himachal Pradesh, India',
-  duration: '3 Days / 2 Nights',
-  price: '5,000',
-  originalPrice: '7,800',
-  rating: '4.6',
-  reviews: 115,
-  image: '/shimla5.jpg',
-  description: 'A classic Himalayan retreat exploring the "Queen of Hills". Experience the colonial charm of Shimla, the stunning views from the Ridge, and high-altitude adventure activities in the snow-capped mountains of Kufri.',
-  
-  occupancy: {
-    quad: 5000,
-    triple: 6000,
-    double: 7000
+      }
+    ],
+    thingsToCarry: [
+      "Valid ID proof",
+      "Trekking shoes with good grip",
+      "Warm jacket & layers",
+      "Water bottle & energy bars",
+      "Sunscreen, sunglasses, & headlamp",
+      "Basic first-aid kit"
+    ]
   },
+  {
+    id: 'bir-billing',
+    stateId: 'himachal',
+    title: 'Bir Billing Paragliding',
+    itineraryPdf: "/itineraries/Bir Billing – Paragliding Capital of India.pdf",
+    category: "adventure",
+    location: 'Himachal Pradesh, India',
+    duration: '5 Days / 4 Nights',
+    price: '5,000',
+    originalPrice: '9,000',
+    rating: '4.9',
+    reviews: 312,
+    image: '/billing1.jpeg',
+    description: 'Fly high in Bir Billing - where the sky becomes your playground! Experience Asia\'s highest paragliding, explore serene Tibetan monasteries, and enjoy the vibrant cafe culture of Bir.',
+    occupancy: {
+      quad: 5000,
+      triple: 6000,
+      double: 7000
+    },
+    inclusions: [
+      "AC Volvo/Tempo Traveller: Delhi-Bir-Delhi transfers",
+      "2 Nights accommodation in hotel/camps",
+      "2 Breakfasts & 2 Dinners (MAP Plan)",
+      "Local sightseeing (Monasteries & Tibetan Market)",
+      "Bonfire & DJ Night (subject to weather)",
+      "Assistance of trip coordinator"
+    ],
+    exclusions: [
+      "Paragliding charges (approx. ₹3,000 - ₹3,500 per person)",
+      "4x4 vehicle charges (if required)",
+      "Lunches & personal expenses (laundry, tips, extra meals)",
+      "Travel insurance",
+      "Any sightseeing/activity not mentioned in itinerary"
+    ],
+    addons: [
+      "Paragliding with GoPro Video (₹3500)",
+      "Bicycle Rental for Local Exploration (₹500/day)",
+      "Guided Nature Walk (₹300)"
+    ],
+    bestTimeToVisit: [
+      "March – June (Best for flying)",
+      "October – November (Clear skies)"
+    ],
+    travelTips: [
+      "Carry a valid Government ID proof for boarding",
+      "Paragliding is subject to wind and weather conditions",
+      "Bir is famous for its sunsets; don't miss the landing site view",
+      "Carry light woolens even in summer for the nights"
+    ],
+    gallery: [
+      { src: "/billing.jpg" },
+      { src: "/CD1.jpg" },
+      { src: "/CD2.jpg" },
+      { src: "/billing1.jpeg" },
+      { src: "/billing2.jpeg" },
+      { src: "/billing3.jpeg" },
+    ],
+    itineraryBrief: [
+      "Day 1: Evening Departure from Delhi (Overnight Journey)",
+      "Day 2: Arrival at Bir & Local Exploration",
+      "Day 3: Billing Adventure (Paragliding Experience)",
+      "Day 4: Bir Leisure & Return to Delhi",
+      "Day 5: Morning Arrival back in Delhi"
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: "Departure from Delhi",
+        description: `
+Assemble at the boarding point in Delhi in the evening.
+Overnight journey to Bir by comfortable Volvo/Tempo Traveller.
+Get to know your fellow travelers during the trip briefing.
+      `
+      },
+      {
+        day: 2,
+        title: "Arrival at Bir & Local Exploration",
+        description: `
+Morning arrival at Bir; check-in to your hotel/camp.
+Freshen up and relax after the journey.
+Post breakfast (self-expense), explore Bir Local:
+• Visit serene Bir Monasteries.
+• Shop at the Local Tibetan Market.
+• Chill at the famous Bir Roadside Cafés.
+Evening: Enjoy Bonfire & Dinner at the campsite/hotel.
 
-  inclusions: [
-    "AC Volvo/Traveller: Delhi-Shimla-Delhi",
-    "2 Nights Stay in Shimla hotel",
-    "2 Breakfasts & 2 Dinners (MAP Plan)",
-    "Full day Kufri excursion",
-    "Local Shimla Sightseeing (Mall Road, Ridge, Church)",
-    "Guided sightseeing and Trip Coordinator",
-    "All taxes and parking fees"
-  ],
-  
-  exclusions: [
-    "Lunches and any meals not mentioned",
-    "Adventure activities in Kufri (Skiing, Tubing, etc.)",
-    "Pony/Horse rides or 4x4 taxi charges",
-    "Entry fees to museums or parks",
-    "Personal expenses (shopping, tips, laundry)",
-    "Anything not mentioned in inclusions"
-  ],
-  
-  addons: [
-    "Adventure Park Full Access (₹800)",
-    "Pony ride to Mahasu Peak (₹500)",
-    "Heater charges (payable at hotel)"
-  ],
+Meals Included:
+Dinner
+      `
+      },
+      {
+        day: 3,
+        title: "Billing Adventure (Paragliding Experience)",
+        description: `
+Morning Breakfast at the campsite/hotel.
+Proceed towards Billing (Take-off site) for Asia's Highest Paragliding.
+Enjoy the breathtaking flight and land back in Bir.
+Free time to explore nature walks or more cafés.
+Evening: Relax with group activities, DJ/Bonfire.
 
-  bestTimeToVisit: [
-    "March – June (Pleasant)",
-    "December – February (Snowfall)"
-  ],
+Meals Included:
+Breakfast & Dinner
+      `
+      },
+      {
+        day: 4,
+        title: "Bir to Delhi (Departure)",
+        description: `
+Morning Breakfast at the campsite/hotel.
+Free time for leisure or last-minute shopping in Bir.
+Optional visits: Chokling Monastery or Deer Park Institute.
+Evening: Departure from Bir to Delhi by Volvo/Tempo Traveller.
 
-  travelTips: [
-    "Carry a valid Government ID for boarding",
-    "Wear comfortable walking shoes for Mall Road",
-    "Monkeys at Jakhoo can be aggressive, keep food items hidden",
-    "Shimla is a plastic-free zone, avoid littering"
-  ],
-
-  gallery: [
-    { src: "/shimla1.jpg" },
-    { src: "/shimla2.jpg" },
-    { src: "/shimla3.jpg" },
-    { src: "/shimla4.jpg" },
-    { src: "/shimla5.jpg" },
-    { src: "/shimla6.jpg" },
-   
-  ],
-
-  itineraryBrief: [
-    "Day 1: Delhi to Shimla (Overnight Journey)",
-    "Day 2: Shimla Arrival & Local Exploration",
-    "Day 3: Kufri Adventure & Mall Road Stroll",
-    "Day 4: Jakhoo Temple Visit & Departure",
-    "Day 5: Arrival in Delhi"
-  ],
-
-  itinerary: [
-    {
-      day: 1,
-      title: "Delhi to Shimla (Overnight Journey)",
-      description: `
+Meals Included:
+Breakfast
+      `
+      },
+      {
+        day: 5,
+        title: "Arrival in Delhi",
+        description: `
+Morning arrival back in Delhi with sweet memories of your flight.
+Trip ends.
+      `
+      }
+    ],
+    thingsToCarry: [
+      "Valid ID Proof (Aadhar Card)",
+      "Comfortable sneakers for landing/take-off",
+      "Sunscreen & Sunglasses",
+      "Power bank and camera",
+      "Warm layers (jacket/hoodie)"
+    ]
+  },
+  {
+    id: 'shimla-kufri',
+    stateId: 'himachal',
+    title: 'Shimla & Kufri Getaway',
+    itineraryPdf: "/itineraries/GSM Shimla Kufri .pdf",
+    category: "leisure",
+    location: 'Himachal Pradesh, India',
+    duration: '3 Days / 2 Nights',
+    price: '5,000',
+    originalPrice: '7,800',
+    rating: '4.6',
+    reviews: 115,
+    image: '/shimla5.jpg',
+    description: 'A classic Himalayan retreat exploring the "Queen of Hills". Experience the colonial charm of Shimla, the stunning views from the Ridge, and high-altitude adventure activities in the snow-capped mountains of Kufri.',
+    occupancy: {
+      quad: 5000,
+      triple: 6000,
+      double: 7000
+    },
+    inclusions: [
+      "AC Volvo/Traveller: Delhi-Shimla-Delhi",
+      "2 Nights Stay in Shimla hotel",
+      "2 Breakfasts & 2 Dinners (MAP Plan)",
+      "Full day Kufri excursion",
+      "Local Shimla Sightseeing (Mall Road, Ridge, Church)",
+      "Guided sightseeing and Trip Coordinator",
+      "All taxes and parking fees"
+    ],
+    exclusions: [
+      "Lunches and any meals not mentioned",
+      "Adventure activities in Kufri (Skiing, Tubing, etc.)",
+      "Pony/Horse rides or 4x4 taxi charges",
+      "Entry fees to museums or parks",
+      "Personal expenses (shopping, tips, laundry)",
+      "Anything not mentioned in inclusions"
+    ],
+    addons: [
+      "Adventure Park Full Access (₹800)",
+      "Pony ride to Mahasu Peak (₹500)",
+      "Heater charges (payable at hotel)"
+    ],
+    bestTimeToVisit: [
+      "March – June (Pleasant)",
+      "December – February (Snowfall)"
+    ],
+    travelTips: [
+      "Carry a valid Government ID for boarding",
+      "Wear comfortable walking shoes for Mall Road",
+      "Monkeys at Jakhoo can be aggressive, keep food items hidden",
+      "Shimla is a plastic-free zone, avoid littering"
+    ],
+    gallery: [
+      { src: "/shimla1.jpg" },
+      { src: "/shimla2.jpg" },
+      { src: "/shimla3.jpg" },
+      { src: "/shimla4.jpg" },
+      { src: "/shimla5.jpg" },
+      { src: "/shimla6.jpg" },
+    ],
+    itineraryBrief: [
+      "Day 1: Delhi to Shimla (Overnight Journey)",
+      "Day 2: Shimla Arrival & Local Exploration",
+      "Day 3: Kufri Adventure & Mall Road Stroll",
+      "Day 4: Jakhoo Temple Visit & Departure",
+      "Day 5: Arrival in Delhi"
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: "Delhi to Shimla (Overnight Journey)",
+        description: `
 Departure from Delhi by AC Volvo/Traveller in the evening.
 Overnight journey to Shimla (~350 km).
 Briefing by the trip coordinator.
       `
-    },
-    {
-      day: 2,
-      title: "Shimla Arrival & Local Sightseeing",
-      description: `
+      },
+      {
+        day: 2,
+        title: "Shimla Arrival & Local Sightseeing",
+        description: `
 Arrival in Shimla, check-in to the hotel & freshen up.
 Afternoon local sightseeing:
 • The Ridge & Scandal Point
@@ -419,11 +933,11 @@ Dinner and overnight stay in hotel.
 Meals Included:
 Dinner
       `
-    },
-    {
-      day: 3,
-      title: "Kufri Adventure Day",
-      description: `
+      },
+      {
+        day: 3,
+        title: "Kufri Adventure Day",
+        description: `
 Post breakfast, drive to Kufri (2,630m).
 Highlights:
 • Himalayan Nature Park (Zoo)
@@ -434,11 +948,11 @@ Evening return to Shimla for leisure time.
 Meals Included:
 Breakfast & Dinner
       `
-    },
-    {
-      day: 4,
-      title: "Jakhoo Temple & Return Journey",
-      description: `
+      },
+      {
+        day: 4,
+        title: "Jakhoo Temple & Return Journey",
+        description: `
 Breakfast and check-out from hotel.
 Visit Jakhoo Temple (highest point in Shimla) to see the 108ft Hanuman statue.
 Free time for lunch and last-minute shopping at Lower Bazaar.
@@ -447,618 +961,24 @@ Evening departure for Delhi.
 Meals Included:
 Breakfast
       `
-    },
-    {
-      day: 5,
-      title: "Arrival in Delhi",
-      description: `
+      },
+      {
+        day: 5,
+        title: "Arrival in Delhi",
+        description: `
 Morning arrival in Delhi.
 Trip ends with sweet Himalayan memories.
       `
-    }
-  ],
-
-  thingsToCarry: [
-    "Valid ID proof (Aadhar Card)",
-    "Warm woolens (even in summer nights)",
-    "Sunscreen, sunglasses, & lip balm",
-    "Power bank and camera",
-    "Personal medication and toiletries"
-  ]
-},
-{
-  id: 'kasol-kheerganga',
-  stateId: 'himachal',
-  title: 'Kasol & Kheerganga Trek',
-  itineraryPdf: "/itineraries/GSM kheerganga .pdf",
-  category: "adventure",
-  location: 'Himachal Pradesh, India',
-  duration: '3 Days / 2 Nights',
-  price: '5,000',
-  originalPrice: '8,000',
-  rating: '4.9',
-  reviews: 210,
-  image: '/kheer12.jpeg',
-  description: 'Experience the magic of Parvati Valley. Trek through lush green pine forests, soak in the therapeutic natural hot springs of Kheerganga, and camp under a star-studded sky at 2,960 meters.',
-  
-  occupancy: {
-    quad: 5000,
-    triple: 6000,
-    double: 7000
+      }
+    ],
+    thingsToCarry: [
+      "Valid ID proof (Aadhar Card)",
+      "Warm woolens (even in summer nights)",
+      "Sunscreen, sunglasses, & lip balm",
+      "Power bank and camera",
+      "Personal medication and toiletries"
+    ]
   },
-
-  inclusions: [
-    "AC Volvo/Traveller: Delhi-Kasol-Delhi",
-    "1 Night riverside camp stay in Kasol",
-    "1 Night hilltop camp stay in Kheerganga",
-    "2 Breakfasts & 2 Dinners (MAP Plan)",
-    "Guided trek to Kheerganga",
-    "Bonfire & Music (subject to weather)",
-    "Professional Trek Leader & Coordinator"
-  ],
-  
-  exclusions: [
-    "Lunches & any meals during transit",
-    "Porter or mule charges for personal luggage",
-    "Local taxi from Kasol to Barshaini (base point)",
-    "Personal expenses (shopping, café bills)",
-    "Anything not specifically mentioned in inclusions"
-  ],
-  
-  addons: [
-    "Riverside Rafting in Kullu (₹1000)",
-    "Personal Porter for trek (₹1000/day)",
-    "Rent for Trekking Poles/Boots (₹200)"
-  ],
-
-  bestTimeToVisit: [
-    "April – June (Pleasant trekking)",
-    "September – November (Post-monsoon clarity)"
-  ],
-
-  travelTips: [
-    "Pack light for the 12km trek",
-    "Carry a valid Government ID proof",
-    "Keep a raincoat handy as mountain weather is unpredictable",
-    "Do not litter – help us keep Parvati Valley clean"
-  ],
-
-  gallery: [
-    { src: "/kheer11.jpeg" },
-    { src: "/kheer12.jpeg" },
-    { src: "/kheer13.jpeg" },
-    { src: "/kheer14.jpeg" },
-    { src: "/kheer5.jpg" },
-  ],
-
-  itineraryBrief: [
-    "Day 1: Delhi to Kasol (Overnight Journey)",
-    "Day 2: Kasol Arrival & Local Exploration",
-    "Day 3: Trek to Kheerganga & Hot Spring Dip",
-    "Day 4: Descent to Barshaini & Return to Delhi",
-    "Day 5: Arrival in Delhi"
-  ],
-
-  itinerary: [
-    {
-      day: 1,
-      title: "Delhi to Kasol (Overnight Journey)",
-      description: `
-Evening departure from Delhi via AC Volvo/Traveller.
-Overnight journey to the heart of Parvati Valley.
-Briefing session and group introduction by the trip captain.
-      `
-    },
-    {
-      day: 2,
-      title: "Kasol Arrival & Local Exploration",
-      description: `
-Morning arrival in Kasol, check-in to riverside camps & freshen up.
-Local Exploration:
-• Stroll along the Parvati River bank.
-• Visit the famous Manikaran Sahib Gurudwara.
-• Café hopping in Kasol (Evergreen, Moon Dance, etc.).
-• Explore the Chalal village trail.
-
-Dinner & overnight stay in Kasol camps.
-
-Meals Included:
-Dinner
-      `
-    },
-    {
-      day: 3,
-      title: "Trek to Kheerganga",
-      description: `
-Post breakfast, drive to Barshaini (Trek base point).
-Start the 12km trek through waterfalls and dense forests.
-Reach Kheerganga Top by late afternoon.
-Key Highlight: Take a dip in the natural hot springs.
-Evening bonfire and stargazing.
-
-Meals Included:
-Breakfast & Dinner
-      `
-    },
-    {
-      day: 4,
-      title: "Descent & Return Journey",
-      description: `
-Early morning breakfast with mountain views.
-Trek back down to Barshaini.
-Free time to explore Kasol market for souvenirs.
-Evening departure for Delhi via Volvo/Traveller.
-
-Meals Included:
-Breakfast
-      `
-    },
-    {
-      day: 5,
-      title: "Arrival in Delhi",
-      description: `
-Morning arrival in Delhi.
-Trip ends with soulful memories of the mountains.
-      `
-    }
-  ],
-
-  thingsToCarry: [
-    "Valid ID Proof",
-    "Comfortable trekking shoes",
-    "Warm jacket and rain poncho",
-    "Water bottle and energy snacks",
-    "Personal medication and power bank"
-  ]
-},
-  {
-  id: 'jibhi-tirthan',
-  stateId: 'himachal',
-  title: 'Jibhi & Tirthan Valley',
-  itineraryPdf: "/itineraries/GSM jibhi.pdf",
-  category: "leisure",
-  location: 'Himachal Pradesh, India',
-  duration: '3 Days / 2 Nights',
-  price: '5,000',
-  originalPrice: '8,500',
-  rating: '4.8',
-  reviews: 134,
-  image: '/jibhi8.jpeg',
-  description: 'Escape the crowds in this offbeat Himalayan paradise. Crystal clear rivers, cozy wooden homestays, and untouched nature. Experience the serenity of Jibhi and the high-altitude beauty of Jalori Pass.',
-  
-  occupancy: {
-    quad: 5000,
-    triple: 6000,
-    double: 7000
-  },
-
-  inclusions: [
-    "AC Tempo Traveller: Delhi-Jibhi-Delhi",
-    "2 Nights Stay in cozy wooden homestay/hotel",
-    "2 Breakfasts & 2 Dinners (MAP Plan)",
-    "Guided trek to Serolsar Lake",
-    "Jalori Pass & Jibhi Waterfall sightseeing",
-    "Tirthan Valley & Choie Waterfall exploration",
-    "Bonfire & Music Night",
-    "Trip Captain & 24x7 Support"
-  ],
-  
-  exclusions: [
-    "Lunches & meals during transit",
-    "4x4 Vehicle charges in case of heavy snow (Pay on spot)",
-    "Entry fees to Parks or Museums",
-    "Personal expenses (shopping, café bills)",
-    "Anything not specifically mentioned in inclusions"
-  ],
-  
-  addons: [
-    "Great Himalayan National Park Entry (₹500)",
-    "Traditional Himachali Cooking Class (₹800)",
-    "4x4 Vehicle for Snow (Pay on spot)"
-  ],
-
-  bestTimeToVisit: [
-    "March – June (Serene & Green)",
-    "December – February (Snow Experience)"
-  ],
-
-  travelTips: [
-    "Carry valid Government ID for boarding",
-    "Pack a light jacket even in summers",
-    "Carry cash as ATMs are limited in Jibhi",
-    "Respect the local Himachali culture and architecture"
-  ],
-
-  gallery: [
-    { src: "/jibhi1.jpeg" },
-    { src: "/jibhi2.jpeg" },
-    { src: "/jibhi3.jpg" },
-    { src: "/jibhi4.jpg" },
-    { src: "/jibhi5.jpeg" },
-    { src: "/jibhi6.jpeg" },
-    { src: "/jibhi7.jpeg" },
-    { src: "/jibhi9.jpeg" },
-  
-  ],
-
-  itineraryBrief: [
-    "Day 1: Delhi to Jibhi (Overnight Journey)",
-    "Day 2: Jibhi Arrival & Local Exploration",
-    "Day 3: Jalori Pass & Serolsar Lake Trek",
-    "Day 4: Tirthan Valley, Choie Waterfall & Departure",
-    "Day 5: Arrival in Delhi"
-  ],
-
-  itinerary: [
-    {
-      day: 1,
-      title: "Delhi to Jibhi (Overnight Journey)",
-      description: `
-Departure from Delhi via AC Tempo Traveller in the evening.
-Overnight journey through the scenic mountain roads.
-Briefing and group introduction by the trip captain.
-      `
-    },
-    {
-      day: 2,
-      title: "Jibhi Arrival & Local Exploration",
-      description: `
-Morning arrival in Jibhi. Check-in to your wooden homestay & freshen up.
-Local Exploration:
-• Short hike to the pristine Jibhi Waterfall.
-• Walk through the beautiful pine forests.
-• Explore local cafes and the Jibhi market.
-
-Evening bonfire session with music.
-Dinner & overnight stay in Jibhi.
-
-Meals Included:
-Dinner
-      `
-    },
-    {
-      day: 3,
-      title: "Jalori Pass & Serolsar Lake Trek",
-      description: `
-Post breakfast, drive to the high-altitude Jalori Pass (3,120m).
-Highlights:
-• Embark on a 5km trek to the sacred Serolsar Lake.
-• Visit the Budhi Nagin Temple near the lake.
-• Enjoy 360-degree views of the Dhauladhar and Pir Panjal ranges.
-Return to Jibhi by evening.
-
-Meals Included:
-Breakfast & Dinner
-      `
-    },
-    {
-      day: 4,
-      title: "Tirthan Valley & Return Journey",
-      description: `
-Breakfast and check-out from the homestay.
-Drive to Tirthan Valley:
-• Visit the beautiful Choie Waterfall.
-• Relax by the crystal-clear Tirthan River.
-• Optional visit to the Great Himalayan National Park gate.
-Evening departure for Delhi.
-
-Meals Included:
-Breakfast
-      `
-    },
-    {
-      day: 5,
-      title: "Arrival in Delhi",
-      description: `
-Morning arrival in Delhi.
-Trip ends with peaceful memories of the mountains.
-      `
-    }
-  ],
-
-  thingsToCarry: [
-    "Valid ID Proof",
-    "Comfortable walking/trekking shoes",
-    "Warm layers & rain poncho",
-    "Water bottle & energy snacks",
-    "Personal medicine kit & power bank"
-  ]
-},
-{
-  id: 'kasol-tosh',
-  stateId: 'himachal',
-  title: 'Kasol & Tosh Cafe Hopping',
-  itineraryPdf: "/itineraries/GSM kheerganga .pdf",
-  category: "adventure",
-  location: 'Himachal Pradesh, India',
-  duration: '3 Days / 2 Nights',
-  price: '5,000',
-  originalPrice: '7,500',
-  rating: '4.8',
-  reviews: 156,
-  image: '/kheer1.jpg',
-  description: 'A chill backpacker vibe trip. Explore the famous cafes of Kasol, walk along the Parvati River, and hike up to the beautiful, remote village of Tosh for epic mountain views and traditional wooden architecture.',
-  
-  occupancy: {
-    quad: 5000,
-    triple: 6000,
-    double: 7000
-  },
-
-  inclusions: [
-    "AC Volvo/Traveller: Delhi-Kasol-Delhi",
-    "1 Night riverside camp stay in Kasol",
-    "1 Night stay in Tosh village (Homestay/Hotel)",
-    "2 Breakfasts & 2 Dinners (MAP Plan)",
-    "Hike to Tosh Village",
-    "Local sightseeing in Kasol & Manikaran Sahib",
-    "Trip Captain & 24x7 Support"
-  ],
-  
-  exclusions: [
-    "Lunches & any meals during transit",
-    "Local taxi from Kasol to Barshaini (if not in group transport)",
-    "Personal expenses (shopping, café bills)",
-    "Anything not specifically mentioned in inclusions"
-  ],
-  
-  addons: [
-    "Kheerganga Trek (₹1500)",
-    "Malana Heritage Trek (₹2000)",
-    "Trout Fishing in Parvati River (₹1000)"
-  ],
-
-  bestTimeToVisit: [
-    "March – June (Pleasant weather)",
-    "September – November (Clear views)"
-  ],
-
-  travelTips: [
-    "Respect local village customs and traditions, especially in Tosh",
-    "Carry sufficient cash as ATMs in Kasol/Tosh can be unreliable",
-    "Keep the mountains clean - avoid plastic littering",
-    "Carry a valid Government ID for boarding"
-  ],
-
-  gallery: [
-    { src: "/kasol1.jpg" },
-    { src: "/kasol2.jpg" },
-    { src: "/kasol3.jpg" },
-    { src: "/kasol4.jpg" },
-    { src: "/kasol5.jpg" },
-    { src: "/kasol6.jpg" }
-  ],
-
-  itineraryBrief: [
-    "Day 1: Evening Departure from Delhi (Overnight Journey)",
-    "Day 2: Kasol Arrival & Manikaran Sahib Visit",
-    "Day 3: Hike to Tosh Village & Glacier Views",
-    "Day 4: Parvati Valley Relaxation & Return to Delhi",
-    "Day 5: Arrival in Delhi"
-  ],
-
-  itinerary: [
-    {
-      day: 1,
-      title: "Delhi to Kasol (Overnight Journey)",
-      description: `
-Evening departure from Delhi via AC Volvo/Traveller.
-Overnight journey to the beautiful Parvati Valley.
-Meet your trip captain and fellow travelers during the journey.
-      `
-    },
-    {
-      day: 2,
-      title: "Kasol Arrival & Manikaran Sahib",
-      description: `
-Morning arrival in Kasol, check-in to riverside camps & freshen up.
-Local Highlights:
-• Visit the holy Manikaran Sahib Gurudwara and Hot Springs.
-• Explore the vibrant Kasol Market.
-• Cafe hopping: Visit famous spots like Evergreen or Moon Dance Cafe.
-• Riverside walk along the gushing Parvati River.
-
-Dinner & overnight stay in Kasol.
-
-Meals Included:
-Dinner
-      `
-    },
-    {
-      day: 3,
-      title: "Hike to Tosh Village",
-      description: `
-Post breakfast, proceed towards Barshaini (base point).
-Start the easy and scenic hike to Tosh village.
-Explore Tosh:
-• Traditional wooden houses and local culture.
-• Stunning glacier views from the top of the village.
-• Relax in local cafes with 360-degree mountain views.
-
-Evening bonfire and overnight stay in Tosh.
-
-Meals Included:
-Breakfast & Dinner
-      `
-    },
-    {
-      day: 4,
-      title: "Parvati Valley & Return Journey",
-      description: `
-Breakfast with a peaceful mountain sunrise.
-Hike back down to Barshaini and return to Kasol.
-Free time for last-minute shopping or visiting the Chalal trail.
-Evening departure for Delhi via Volvo/Traveller.
-
-Meals Included:
-Breakfast
-      `
-    },
-    {
-      day: 5,
-      title: "Arrival in Delhi",
-      description: `
-Morning arrival in Delhi.
-Trip ends with chill memories of Parvati Valley.
-      `
-    }
-  ],
-
-  thingsToCarry: [
-    "Valid ID Proof (Aadhar Card)",
-    "Comfortable walking shoes/sneakers",
-    "Warm jacket & thermal layers",
-    "Water bottle & energy snacks",
-    "Personal medication & power bank"
-  ]
-},
- 
-  {
-  id: 'bir-billing',
-  stateId: 'himachal',
-  title: 'Bir Billing Paragliding',
-  itineraryPdf: "/itineraries/Bir Billing – Paragliding Capital of India.pdf",
-  category: "adventure",
-  location: 'Himachal Pradesh, India',
-  duration: '5 Days / 4 Nights',
-  price: '5,000',
-  originalPrice: '9,000',
-  rating: '4.9',
-  reviews: 312,
-  image: '/billing1.jpeg',
-  description: 'Fly high in Bir Billing - where the sky becomes your playground! Experience Asia\'s highest paragliding, explore serene Tibetan monasteries, and enjoy the vibrant cafe culture of Bir.',
-  
-  occupancy: {
-    quad: 5000,
-    triple: 6000,
-    double: 7000
-  },
-
-  inclusions: [
-    "AC Volvo/Tempo Traveller: Delhi-Bir-Delhi transfers",
-    "2 Nights accommodation in hotel/camps",
-    "2 Breakfasts & 2 Dinners (MAP Plan)",
-    "Local sightseeing (Monasteries & Tibetan Market)",
-    "Bonfire & DJ Night (subject to weather)",
-    "Assistance of trip coordinator"
-  ],
-  
-  exclusions: [
-    "Paragliding charges (approx. ₹3,000 - ₹3,500 per person)",
-    "4x4 vehicle charges (if required)",
-    "Lunches & personal expenses (laundry, tips, extra meals)",
-    "Travel insurance",
-    "Any sightseeing/activity not mentioned in itinerary"
-  ],
-  
-  addons: [
-    "Paragliding with GoPro Video (₹3500)",
-    "Bicycle Rental for Local Exploration (₹500/day)",
-    "Guided Nature Walk (₹300)"
-  ],
-
-  bestTimeToVisit: [
-    "March – June (Best for flying)",
-    "October – November (Clear skies)"
-  ],
-
-  travelTips: [
-    "Carry a valid Government ID proof for boarding",
-    "Paragliding is subject to wind and weather conditions",
-    "Bir is famous for its sunsets; don't miss the landing site view",
-    "Carry light woolens even in summer for the nights"
-  ],
-
-  gallery: [
-    { src: "/billing.jpg" },
-    { src: "/CD1.jpg" },
-    { src: "/CD2.jpg" },
-     { src: "/billing1.jpeg" },
-     { src: "/billing2.jpeg" },
-     { src: "/billing3.jpeg" },
-    
-  
-  ],
-
-  itineraryBrief: [
-    "Day 1: Evening Departure from Delhi (Overnight Journey)",
-    "Day 2: Arrival at Bir & Local Exploration",
-    "Day 3: Billing Adventure (Paragliding Experience)",
-    "Day 4: Bir Leisure & Return to Delhi",
-    "Day 5: Morning Arrival back in Delhi"
-  ],
-
-  itinerary: [
-    {
-      day: 1,
-      title: "Departure from Delhi",
-      description: `
-Assemble at the boarding point in Delhi in the evening.
-Overnight journey to Bir by comfortable Volvo/Tempo Traveller.
-Get to know your fellow travelers during the trip briefing.
-      `
-    },
-    {
-      day: 2,
-      title: "Arrival at Bir & Local Exploration",
-      description: `
-Morning arrival at Bir; check-in to your hotel/camp.
-Freshen up and relax after the journey.
-Post breakfast (self-expense), explore Bir Local:
-• Visit serene Bir Monasteries.
-• Shop at the Local Tibetan Market.
-• Chill at the famous Bir Roadside Cafés.
-Evening: Enjoy Bonfire & Dinner at the campsite/hotel.
-
-Meals Included:
-Dinner
-      `
-    },
-    {
-      day: 3,
-      title: "Billing Adventure (Paragliding Experience)",
-      description: `
-Morning Breakfast at the campsite/hotel.
-Proceed towards Billing (Take-off site) for Asia's Highest Paragliding.
-Enjoy the breathtaking flight and land back in Bir.
-Free time to explore nature walks or more cafés.
-Evening: Relax with group activities, DJ/Bonfire.
-
-Meals Included:
-Breakfast & Dinner
-      `
-    },
-    {
-      day: 4,
-      title: "Bir to Delhi (Departure)",
-      description: `
-Morning Breakfast at the campsite/hotel.
-Free time for leisure or last-minute shopping in Bir.
-Optional visits: Chokling Monastery or Deer Park Institute.
-Evening: Departure from Bir to Delhi by Volvo/Tempo Traveller.
-
-Meals Included:
-Breakfast
-      `
-    },
-    {
-      day: 5,
-      title: "Arrival in Delhi",
-      description: `
-Morning arrival back in Delhi with sweet memories of your flight.
-Trip ends.
-      `
-    }
-  ],
-
-  thingsToCarry: [
-    "Valid ID Proof (Aadhar Card)",
-    "Comfortable sneakers for landing/take-off",
-    "Sunscreen & Sunglasses",
-    "Power bank and camera",
-    "Warm layers (jacket/hoodie)"
-  ]
-},
   {
     id: 'sethan-valley',
     stateId: 'himachal',
@@ -1073,12 +993,11 @@ Trip ends.
     description: 'An offbeat winter wonderland just above Manali. Experience staying in a snowy paradise away from the crowded tourist spots.',
     inclusions: ['1 Night Stay in Sethan', 'Breakfast & Dinner', 'Snow Activities (Seasonal)'],
     exclusions: ['Travel to Manali', 'Heater charges (if applicable)'],
-     occupancy: {
-    quad: 5000,
-    triple: 6000,
-    double: 7000
-  },
-   
+    occupancy: {
+      quad: 5000,
+      triple: 6000,
+      double: 7000
+    },
     itinerary: [
       { day: 1, title: 'Arrival in Sethan', description: 'Reach Manali and take a specialized 4x4 vehicle up the snowy roads to Sethan Village. Enjoy snowboarding/skiing (seasonal) and a cozy bonfire night.' },
       { day: 2, title: 'Snow Trek & Departure', description: 'Go for a morning snow walk with majestic views of the Kullu valley. Head back down to Manali for your onward journey.' }
@@ -1086,161 +1005,11 @@ Trip ends.
   },
   
   {
-  id: 'rishikesh-camping',
-  stateId: 'uttarakhand',
-  title: 'Rishikesh Rafting & Camping',
-  itineraryPdf: "/itineraries/GSM RISHIKEShh.pdf",
-  category: "weekend",
-  location: 'Uttarakhand, India',
-  duration: '3 Days / 2 Nights',
-  price: '5,000',
-  originalPrice: '5,500',
-  rating: '4.8',
-  reviews: 420,
-  image: '/Rishikesh.jpeg',
-  description: 'Experience the ultimate adrenaline rush with white water rafting on the Ganges, followed by riverside adventure camping, bonfires, and cliff jumping. Explore the spiritual and adventurous side of the Yoga Capital.',
-  
-  occupancy: {
-    quad: 5000,
-    triple: 6000,
-    double: 7000
-  },
-
-  inclusions: [
-    "AC Tempo Traveller: Delhi-Rishikesh-Delhi",
-    "2 Nights Stay in Adventure Camps (Shivpuri)",
-    "6 Meals (2 Breakfasts, 2 Lunches, 2 Dinners)",
-    "16km River Rafting with professional guides",
-    "Cliff Jumping & Body Surfing",
-    "Ganga Aarti at Triveni Ghat",
-    "Local Sightseeing (Laxman Jhula, Ram Jhula)",
-    "Bonfire & Music Night",
-    "Trip Captain & Support"
-  ],
-  
-  exclusions: [
-    "Bungee Jumping, Giant Swing, Zipline (Paid Addons)",
-    "Rafting entry/permit fees (if any)",
-    "Personal expenses (shopping, extra snacks)",
-    "Anything not specifically mentioned in inclusions"
-  ],
-  
-  addons: [
-    "Bungee Jumping (₹3500)",
-    "Giant Swing (₹3500)",
-    "Zipline (₹1800)",
-    "Ganga Aarti VIP Seating (₹800)"
-  ],
-
-  bestTimeToVisit: [
-    "March – May (Best for Rafting)",
-    "September – November (Pleasant weather)"
-  ],
-
-  travelTips: [
-    "Carry a valid Government ID for check-in",
-    "Wear quick-dry clothes for rafting",
-    "Follow the instructions of the rafting guide strictly",
-    "Rishikesh is a holy city; respect local traditions"
-  ],
-
-  gallery: [
-    { src: "/rishikesh1.jpg" },
-    { src: "/rishikesh2.jpg" },
-    { src: "/rishikesh3.jpg" },
-    { src: "/rishikesh4.jpg" },
-    { src: "/rishikesh5.jpg" },
-    { src: "/rishikesh6.jpg" },
-    { src: "/rishikesh7.jpg" } ,  
-    { src: "/rishikesh8.jpeg" } ,  
-    { src: "/rishikesh9.jpeg" } ,  
-    
-  ],
-
-  itineraryBrief: [
-    "Day 1: Delhi to Rishikesh (Overnight Journey)",
-    "Day 2: Arrival, Check-in & Riverside Fun",
-    "Day 3: Thrilling 16km Rafting & Local Exploration",
-    "Day 4: Ganga Aarti & Departure for Delhi",
-    "Day 5: Arrival in Delhi"
-  ],
-
-  itinerary: [
-    {
-      day: 1,
-      title: "Delhi to Rishikesh (Overnight Journey)",
-      description: `
-Evening departure from Delhi via AC Tempo Traveller.
-Pickup points: Rajouri Garden / Akshardham Metro / ISBT.
-Meet your trip captain and group for the journey briefing.
-      `
-    },
-    {
-      day: 2,
-      title: "Arrival & Riverside Camping",
-      description: `
-Morning arrival at Shivpuri, check-in to your adventure camps.
-Enjoy a welcome drink and relax by the river.
-Post lunch, engage in camp activities (Volleyball, Badminton).
-Evening: Bonfire session with snacks, music, and group games.
-
-Meals Included:
-Lunch & Dinner
-      `
-    },
-    {
-      day: 3,
-      title: "River Rafting & Adventure",
-      description: `
-After breakfast, head to the rafting point.
-Experience a 16km thrilling rafting session through major rapids.
-Highlights: Cliff Jumping and Body Surfing in the cold Ganges water.
-Evening: Visit Laxman Jhula and local cafes in Rishikesh.
-
-Meals Included:
-Breakfast, Lunch & Dinner
-      `
-    },
-    {
-      day: 4,
-      title: "Local Sightseeing & Departure",
-      description: `
-Breakfast and check-out from the campsite.
-Sightseeing:
-• Ram Jhula and nearby ashrams.
-• Witness the spiritual Ganga Aarti (VIP seating optional).
-Free time for shopping or local snacks.
-Evening departure for Delhi.
-
-Meals Included:
-Breakfast & Lunch
-      `
-    },
-    {
-      day: 5,
-      title: "Arrival in Delhi",
-      description: `
-Early morning arrival in Delhi.
-Trip ends with high-energy memories of the Ganges.
-      `
-    }
-  ],
-
-  thingsToCarry: [
-    "Valid ID Proof",
-    "Sunscreen & Sunglasses",
-    "Quick-dry t-shirts and shorts",
-    "Towel and personal toiletries",
-    "Waterproof pouch for mobile",
-    "Power bank and camera"
-  ]
-},
-  {
     id: 'kedarnath-yatra',
     stateId: 'uttarakhand',
     title: 'Kedarnath Yatra Trek',
-      itineraryPdf: "/itineraries/GSM kedarnath.pdf",
-     category: "adventure",
+    itineraryPdf: "/itineraries/GSM kedarnath.pdf",
+    category: "adventure",
     location: 'Uttarakhand, India',
     duration: '3 Days / 2 Nights',
     price: '5,000',
@@ -1249,67 +1018,64 @@ Trip ends with high-energy memories of the Ganges.
     reviews: 550,
     image: '/kedarnathyatra.jpeg',
     description: 'A deeply spiritual and physically rewarding journey to the majestic Kedarnath Temple. Trek through the breathtaking Garhwal Himalayas to seek the blessings of Lord Shiva.',
-     occupancy: {
-    quad: 5000,
-    triple: 6000,
-    double: 7000
-  },
+    occupancy: {
+      quad: 5000,
+      triple: 6000,
+      double: 7000
+    },
     inclusions: [
-"Surface transport: Haridwar – Sonprayag – Haridwar",
-"1 Night hotel/homestay at Sonprayag",
-"1 Night tented camp stay near Kedarnath",
-"2 Breakfasts, 1 Dinner",
-"Trekking guidance",
-"Tour captain (for groups 20+)",
-"24x7 emergency support"
-],
-exclusions: [
-"Palki / horse / porter / heli services",
-"Local jeep for Sonprayag – Gaurikund",
-"Meals other than specified",
-"Monument entry and parking fees",
-"Airfare or rail fare"
-],
-addons: [
-"Bonfire (charged extra)",
-"Welcome tea (charged extra)",
-"Additional taxi/stay in case of delay (not included)"
-],
-bestTimeToVisit: [
-"May – June",
-"September – October (Clear skies)"
-],
-
-travelTips: [
-"Carry sufficient cash",
-"Acclimatize before trek",
-"Respect temple timings and dress code",
-"Avoid littering"
-],
-   gallery: [
-  { src: "/kedarnath1.jpeg" },
-  { src: "/kedarnath2.jpg" },
-  { src: "/kedarnath3.jpg" },
-  { src: "/kedarnath4.jpeg" },
-  { src: "/kedarnath5.jpeg" },
-  { src: "/kedarnath6.jpg" },
-  { src: "/kedarnath7.jpeg" },
-  { src: "/kedarnath8.jpeg" },
-  { src: "/kedarnath9.jpeg" },
-  { src: "/kedarnath10.jpeg" },
-  
-],
-itineraryBrief: [
-"Day 1: Haridwar → Rishikesh → Devprayag → Sonprayag",
-"Day 2: Sonprayag → Gaurikund → Kedarnath Trek → Kedarnath Temple",
-"Day 3: Kedarnath → Gaurikund → Sonprayag → Haridwar"
-],
-
+      "Surface transport: Haridwar – Sonprayag – Haridwar",
+      "1 Night hotel/homestay at Sonprayag",
+      "1 Night tented camp stay near Kedarnath",
+      "2 Breakfasts, 1 Dinner",
+      "Trekking guidance",
+      "Tour captain (for groups 20+)",
+      "24x7 emergency support"
+    ],
+    exclusions: [
+      "Palki / horse / porter / heli services",
+      "Local jeep for Sonprayag – Gaurikund",
+      "Meals other than specified",
+      "Monument entry and parking fees",
+      "Airfare or rail fare"
+    ],
+    addons: [
+      "Bonfire (charged extra)",
+      "Welcome tea (charged extra)",
+      "Additional taxi/stay in case of delay (not included)"
+    ],
+    bestTimeToVisit: [
+      "May – June",
+      "September – October (Clear skies)"
+    ],
+    travelTips: [
+      "Carry sufficient cash",
+      "Acclimatize before trek",
+      "Respect temple timings and dress code",
+      "Avoid littering"
+    ],
+    gallery: [
+      { src: "/kedarnath1.jpeg" },
+      { src: "/kedarnath2.jpg" },
+      { src: "/kedarnath3.jpg" },
+      { src: "/kedarnath4.jpeg" },
+      { src: "/kedarnath5.jpeg" },
+      { src: "/kedarnath6.jpg" },
+      { src: "/kedarnath7.jpeg" },
+      { src: "/kedarnath8.jpeg" },
+      { src: "/kedarnath9.jpeg" },
+      { src: "/kedarnath10.jpeg" },
+    ],
+    itineraryBrief: [
+      "Day 1: Haridwar → Rishikesh → Devprayag → Sonprayag",
+      "Day 2: Sonprayag → Gaurikund → Kedarnath Trek → Kedarnath Temple",
+      "Day 3: Kedarnath → Gaurikund → Sonprayag → Haridwar"
+    ],
     itinerary: [
-    {
-day: 1,
-title: "Haridwar to Sonprayag",
-description: `
+      {
+        day: 1,
+        title: "Haridwar to Sonprayag",
+        description: `
 05:00 AM departure from Haridwar.
 Enjoy a scenic Himalayan drive through mountain roads.
 
@@ -1327,11 +1093,11 @@ Hotel check-in and rest.
 Meals Included:
 Dinner
 `
-},
-{
-day: 2,
-title: "Sonprayag to Kedarnath Trek",
-description: `
+      },
+      {
+        day: 2,
+        title: "Sonprayag to Kedarnath Trek",
+        description: `
 Early morning breakfast.
 
 Transfer via local jeep to Gaurikund (own cost).
@@ -1347,11 +1113,11 @@ Attend evening temple darshan and explore the surroundings.
 Meals Included:
 Breakfast
 `
-},
-{
-day: 3,
-title: "Kedarnath to Haridwar",
-description: `
+      },
+      {
+        day: 3,
+        title: "Kedarnath to Haridwar",
+        description: `
 Pre-dawn aarti and darshan at Kedarnath Temple.
 
 Visit Bhairav Temple.
@@ -1367,108 +1133,847 @@ Trip ends with unforgettable Himalayan memories.
 Meals Included:
 Breakfast
 `
-},
-
- ],
+      }
+    ],
     thingsToCarry: [
-"Valid ID proof & voucher",
-"Warm layers, rain jacket, gloves",
-"Trekking boots or sturdy footwear",
-"Water bottle & energy snacks",
-"Sunscreen, sunglasses & headlamp"
-],
-
+      "Valid ID proof & voucher",
+      "Warm layers, rain jacket, gloves",
+      "Trekking boots or sturdy footwear",
+      "Water bottle & energy snacks",
+      "Sunscreen, sunglasses & headlamp"
+    ]
   },
   {
-  id: 'auli-snow',
-  stateId: 'uttarakhand',
-  title: 'Auli Snow Expedition',
-  itineraryPdf: "/itineraries/GSM Auli .pdf",
-  category: "uttarakhand",
-  location: 'Uttarakhand, India',
-  duration: '4 Days / 3 Nights',
-  price: '5,000',
-  originalPrice: '12,000',
-  rating: '4.8',
-  reviews: 215,
-  image: '/Auli.jpeg',
-  description: 'Visit the premier skiing capital of India, also known as the Mini Switzerland of India. Ride Asia\'s longest cable car, walk through frozen landscapes, and witness 360-degree panoramic views of the Nanda Devi peak.',
-  
-  occupancy: {
-    quad: 5000,
-    triple: 6000,
-    double: 7000
+    id: 'do-dham-yatra',
+    stateId: 'uttarakhand',
+    title: 'Do Dham: Kedarnath & Badrinath',
+    itineraryPdf: "/itineraries/GSM DO DHAM 4N5D 2026.pdf",
+    category: "spiritual",
+    location: 'Uttarakhand, India',
+    duration: '5 Days / 4 Nights',
+    price: '10,000',
+    originalPrice: '17,500',
+    rating: '5.0',
+    reviews: 210,
+    image: '/dodham.webp',
+    description: 'A complete spiritual circuit covering two of the most significant shrines in the Himalayas. Journey through the high-altitude landscapes of Kedarnath and the divine architecture of Badrinath ji.',
+    occupancy: {
+      quad: 10000,
+      triple: 12000,
+      double: 14000
+    },
+    inclusions: [
+      "Transport: Haridwar to Haridwar transfers",
+      "4 Nights Accommodation in Hotels/Guesthouses",
+      "MAP Meals: 4 Breakfasts & 4 Dinners",
+      "Kedarnath & Badrinath Sightseeing",
+      "Visit to Mana Village (Last Indian Village)",
+      "Yatra Registration Assistance",
+      "Trip Coordinator & 24x7 Support"
+    ],
+    exclusions: [
+      "Helicopter / Mule / Pony / Palki charges",
+      "VIP Darshan tickets",
+      "Lunches and any meals during transit",
+      "Local vehicle from Sonprayag to Gaurikund",
+      "Personal expenses (laundry, tips, etc.)",
+      "Anything not specifically mentioned in inclusions"
+    ],
+    addons: [
+      "Helicopter Ticket Booking (subject to availability)",
+      "Extra night stay in Haridwar (₹1500)",
+      "Priority Darshan Assistance"
+    ],
+    bestTimeToVisit: [
+      "May – June (Peak Season)",
+      "September – October (Post-monsoon clarity)"
+    ],
+    travelTips: [
+      "Carry a valid Government ID for Yatra registration and boarding",
+      "Keep heavy woolens as temperatures drop significantly at night",
+      "Pace yourself during the 17km Kedarnath trek",
+      "Respect the sanctity of the temples and local traditions"
+    ],
+    gallery: [
+      { src: "/CD33.jpg" },
+      { src: "/CD34.jpg" },
+      { src: "/kedarnath2.jpg" },
+      { src: "/kedarnath7.jpeg" },
+      { src: "/kedarnath8.jpeg" },
+      { src: "/kedarnath9.jpeg" },
+      { src: "/kedarnath10.jpeg" },
+      { src: "/kedarnath11.jpeg" },
+    ],
+    itineraryBrief: [
+      "Day 1: Haridwar to Guptkashi (205 Km Drive)",
+      "Day 2: Guptkashi to Kedarnath Ji (17 Km Trek)",
+      "Day 3: Morning Darshan & Return to Guptkashi",
+      "Day 4: Guptkashi to Badrinath Ji & Mana Village",
+      "Day 5: Badrinath Darshan & Return to Haridwar"
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: "Haridwar to Guptkashi",
+        description: `
+Start your spiritual journey from Haridwar towards Guptkashi.
+The drive (~205 km) takes about 8 hours through scenic mountain roads.
+Enjoy the view of the holy rivers Alaknanda and Mandakini en-route.
+Check-in to the hotel upon arrival.
+
+Meals Included:
+Dinner
+      `
+      },
+      {
+        day: 2,
+        title: "Trek to Kedarnath Ji",
+        description: `
+Early morning drive to Sonprayag/Gaurikund (~30 km).
+Start the 17 km trek on a well-laid trail to Kedarnath Dham.
+Options of Pony or Doli are available (at own cost).
+Reach Kedarnath by evening, witness the divine Aarti.
+Overnight stay near the temple area.
+
+Meals Included:
+Breakfast & Dinner
+      `
+      },
+      {
+        day: 3,
+        title: "Darshan & Return to Guptkashi",
+        description: `
+Wake up early for the morning Darshan of Lord Kedarnath.
+Visit the Bhairav Temple and explore the surrounding peaks.
+Trek back down (~17 km) to Gaurikund.
+Drive back to Guptkashi for a relaxing evening.
+
+Meals Included:
+Breakfast & Dinner
+      `
+      },
+      {
+        day: 4,
+        title: "Guptkashi to Badrinath Ji",
+        description: `
+Post breakfast, drive towards the holy town of Badrinath.
+Sightseeing en-route:
+• Visit Mana Village (The last Indian village before the border).
+• See Vyas Gufa, Ganesh Gufa, and the origin of Saraswati River.
+Check-in to the hotel in Badrinath/Joshimath.
+
+Meals Included:
+Breakfast & Dinner
+      `
+      },
+      {
+        day: 5,
+        title: "Badrinath Darshan & Return to Haridwar",
+        description: `
+Morning bath in the sacred Tapt Kund.
+Darshan of Lord Badrinath (one of the Char Dhams).
+Drive back to Haridwar (~310 km).
+Trip concludes with spiritual memories and divine blessings.
+
+Meals Included:
+Breakfast
+      `
+      }
+    ],
+    thingsToCarry: [
+      "Original Government ID (Aadhar Card)",
+      "Heavy woolens, gloves, and thermal wear",
+      "Raincoat or Poncho (weather is unpredictable)",
+      "Trekking shoes with good grip",
+      "Personal medication and power bank"
+    ]
   },
+  {
+    id: 'char-dham-full',
+    stateId: 'uttarakhand',
+    title: 'Char Dham Yatra',
+    itineraryPdf: "/itineraries/GSM Char Dham 2026 .pdf",
+    category: "spiritual",
+    location: 'Uttarakhand, India',
+    duration: '9 Days / 8 Nights',
+    price: '20,000',
+    originalPrice: '28,500',
+    rating: '5.0',
+    reviews: 430,
+    image: '/chardham.jpg',
+    description: 'The most sacred pilgrimage in India. Visit Yamunotri, Gangotri, Kedarnath, and Badrinath in one life-changing expedition. Experience the divine energy of the Himalayas and the origin of India’s holiest rivers.',
+    occupancy: {
+      quad: 20000,
+      triple: 25000,
+      double: 30000
+    },
+    inclusions: [
+      "Transport: Haridwar to Haridwar transfers",
+      "8 Nights Accommodation in Hotels/Guesthouses",
+      "MAP Meals: 8 Breakfasts & 8 Dinners",
+      "Visit to all 4 Dhams: Yamunotri, Gangotri, Kedarnath & Badrinath",
+      "Sightseeing: Mana Village, Ganesh Gufa, Vyas Gufa",
+      "Yatra Registration Assistance",
+      "Experienced Trip Captain & 24x7 Support"
+    ],
+    exclusions: [
+      "Helicopter / Mule / Pony / Palki charges",
+      "VIP Darshan tickets and Aarti entry fees",
+      "Lunches and any meals during transit",
+      "Local vehicle from Sonprayag to Gaurikund",
+      "Personal expenses (shopping, tips, laundry)",
+      "Anything not specifically mentioned in inclusions"
+    ],
+    addons: [
+      "Helicopter Ticket Booking (subject to availability)",
+      "Extra night stay in Haridwar (₹1500)",
+      "Professional Photography Service"
+    ],
+    bestTimeToVisit: [
+      "May – June (Peak Season)",
+      "September – October (Clear Skies)"
+    ],
+    travelTips: [
+      "Carry original Government ID for registration and boarding",
+      "Pack heavy woolens, thermals, and waterproof jackets",
+      "Maintain high hydration levels during the high-altitude treks",
+      "AC will be turned off in hill areas to ensure vehicle performance"
+    ],
+    gallery: [
+      { src: "/char1.jpg" },
+      { src: "/char3.jpg" },
+      { src: "/char4.jpg" },
+      { src: "/CD33.jpg" },
+      { src: "/kedarnath2.jpg" },
+      { src: "/kedarnath12.jpeg" },
+      { src: "/kedarnath13.jpeg" },
+      { src: "/kedarnath2.jpg" },
+      { src: "/kedarnath7.jpeg" },
+      { src: "/kedarnath8.jpeg" },
+      { src: "/kedarnath9.jpeg" },
+      { src: "/kedarnath10.jpeg" },
+      { src: "/kedarnath11.jpeg" },
+    ],
+    itineraryBrief: [
+      "Day 1: Haridwar to Barkot (215 Km Drive)",
+      "Day 2: Yamunotri Dham Darshan & Return Barkot",
+      "Day 3: Barkot to Uttarkashi (100 Km Drive)",
+      "Day 4: Gangotri Dham Darshan & Return Uttarkashi",
+      "Day 5: Uttarkashi to Guptkashi (220 Km Drive)",
+      "Day 6: Trek to Kedarnath Ji & Darshan",
+      "Day 7: Morning Darshan & Return to Guptkashi",
+      "Day 8: Guptkashi to Badrinath Ji & Sightseeing",
+      "Day 9: Badrinath Darshan & Return to Haridwar"
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: "Haridwar to Barkot",
+        description: `
+Today start your spiritual journey to Barkot from Haridwar.
+The drive (~215 km) takes you through the scenic mountain roads.
+Arrival and check-in to the hotel at Barkot.
+Evening at leisure to acclimatize.
 
-  inclusions: [
-    "AC Volvo/Traveller: Delhi-Joshimath-Delhi transfers",
-    "2 Nights accommodation in Joshimath/Auli",
-    "2 Breakfasts & 2 Dinners (MAP Plan)",
-    "Local sightseeing in Joshimath & Auli",
-    "Guided snow trek to Gorson Bugyal",
-    "Visit to Narsingh Temple",
-    "Trip Coordinator assistance 24x7"
-  ],
-  
-  exclusions: [
-    "Auli Cable Car / Ropeway tickets (approx ₹1000)",
-    "Skiing equipment, lessons, and instructor charges",
-    "Lunches and any meals during transit",
-    "4x4 vehicle charges (if required due to heavy snow)",
-    "Personal expenses and anything not mentioned in inclusions"
-  ],
-  
-  addons: [
-    "Skiing Session with Instructor (₹1500)",
-    "Ropeway Ticket Booking (₹1000)",
-    "4x4 Snow Jeep Experience (₹500)"
-  ],
+Meals Included:
+Dinner
+      `
+      },
+      {
+        day: 2,
+        title: "Yamunotri Dham Darshan",
+        description: `
+Early morning drive to Jankichatti (~45 km).
+Embark on a 6 km trek to reach Yamunotri Dham.
+Visit the Divya Shila and take a holy dip in Jamunabai Kund.
+Perform Darshan at the temple and return to Barkot.
 
-  bestTimeToVisit: [
-    "December – February (Peak Snow & Skiing)",
-    "March – June (Pleasant views)"
-  ],
+Meals Included:
+Breakfast & Dinner
+      `
+      },
+      {
+        day: 3,
+        title: "Barkot to Uttarkashi",
+        description: `
+Post breakfast, drive towards Uttarkashi (~100 km).
+Visit the famous Kashi Vishwanath Temple and Shakti Temple.
+Check-in to the hotel and rest by the banks of Bhagirathi river.
 
-  travelTips: [
-    "Carry heavy woolens and waterproof gloves for the snow",
-    "Ropeway tickets are subject to availability and weather",
-    "Carry a valid Government ID for check-in and permits",
-    "Stay hydrated as Auli is at a high altitude"
-  ],
+Meals Included:
+Breakfast & Dinner
+      `
+      },
+      {
+        day: 4,
+        title: "Gangotri Dham Darshan",
+        description: `
+Full day excursion to Gangotri Dham (~100 km one way).
+Drive through the beautiful Harsil Valley.
+Take a holy dip in the Bhagirathi and perform Darshan at the temple.
+Return to Uttarkashi by evening.
 
-  gallery: [
-    { src: "/auli1.jpg" },
-    { src: "/auli2.jpg" },
-    { src: "/auli3.jpg" },
-    { src: "/auli4.jpg" },
-    { src: "/kedarnath3.jpg" }
-    
-  ],
+Meals Included:
+Breakfast & Dinner
+      `
+      },
+      {
+        day: 5,
+        title: "Uttarkashi to Guptkashi",
+        description: `
+A long but scenic drive (~220 km) to Guptkashi.
+Drive along the banks of the Mandakini and Alaknanda rivers.
+Check-in to the hotel upon arrival and prepare for the Kedarnath trek.
 
-  itineraryBrief: [
-    "Day 1: Departure from Haridwar",
-    "Day 2: Drive to Joshimath via Devprayag & Rudraprayag, Auli Exploration & Skiing Activities",
-    "Day 3: Gorson Bugyal Trek & Return Journey",
-    "Day 4: Arrival in Haridwar"
-  ],
+Meals Included:
+Breakfast & Dinner
+      `
+      },
+      {
+        day: 6,
+        title: "Trek to Kedarnath Ji",
+        description: `
+Drive to Sonprayag/Gaurikund and start the 17 km trek to Kedarnath.
+Experience the spiritual vibes of the mountains.
+Reach the temple area by evening and witness the divine Aarti.
+Overnight stay near the shrine.
 
-  itinerary: [
-    {
-      day: 1,
-      title: "Haridwar to Joshimath ",
-      description: `
+Meals Included:
+Breakfast & Dinner
+      `
+      },
+      {
+        day: 7,
+        title: "Kedarnath Darshan & Return to Guptkashi",
+        description: `
+Wake up early for the morning Darshan of Lord Kedarnath.
+Visit the Bhairav Temple for spectacular views.
+Trek back down (~17 km) to Gaurikund and drive to Guptkashi.
+
+Meals Included:
+Breakfast & Dinner
+      `
+      },
+      {
+        day: 8,
+        title: "Guptkashi to Badrinath Ji",
+        description: `
+Drive to Badrinath Dham (~190 km).
+Explore Mana Village (the last Indian village), Vyas Gufa, and Ganesh Gufa.
+Witness the origin of the Saraswati River.
+Check-in to the hotel in Badrinath/Joshimath.
+
+Meals Included:
+Breakfast & Dinner
+      `
+      },
+      {
+        day: 9,
+        title: "Badrinath Darshan & Return to Haridwar",
+        description: `
+Morning bath in Tapt Kund and Darshan of Lord Badrinath.
+Drive back to Haridwar (~310 km) via Rishikesh.
+The Yatra concludes with spiritual blessings and lifelong memories.
+
+Meals Included:
+Breakfast
+      `
+      }
+    ],
+    thingsToCarry: [
+      "Original Government ID (Aadhar Card)",
+      "Heavy winter jacket, woolen socks, and gloves",
+      "Thermal innerwear and sweaters",
+      "Sturdy trekking shoes and raincoat",
+      "Moisturizer, lip balm, and personal medication"
+    ]
+  },
+  {
+    id: 'chopta-tungnath',
+    stateId: 'uttarakhand',
+    title: 'Chopta & Tungnath Trek',
+    itineraryPdf: "/itineraries/GSM TUNGNATH.pdf",
+    category: "uttarakhand",
+    location: 'Uttarakhand, India',
+    duration: '5 Days / 4 Nights',
+    price: '5,000',
+    originalPrice: '6,800',
+    rating: '4.9',
+    reviews: 180,
+    image: '/Chopta.jpg',
+    description: 'Known as the "Mini Switzerland of India", Chopta offers lush meadows and a spiritual trek to Tungnath, the highest Shiva temple in the world. Experience the breathtaking 360-degree Himalayan panorama from Chandrashila Summit.',
+    occupancy: {
+      quad: 5000,
+      triple: 6000,
+      double: 7000
+    },
+    inclusions: [
+      "AC Tempo Traveller: Delhi-Chopta-Delhi transfers",
+      "2 Nights accommodation in Swiss Camps/Homestay",
+      "2 Breakfasts & 2 Dinners (MAP Plan)",
+      "Guided Trek to Tungnath Temple & Chandrashila Peak",
+      "Visit to Omkareshwar Temple (Ukhimath)",
+      "Bonfire & Music Night",
+      "Professional Trek Leader & Coordinator",
+      "Forest Permits & Taxes"
+    ],
+    exclusions: [
+      "Lunches and any meals during transit",
+      "Personal expenses (shopping, tips, laundry)",
+      "Porter or mule charges for personal luggage",
+      "Anything not specifically mentioned in inclusions"
+    ],
+    addons: [
+      "Deoriatal Trek Extension (₹1000)",
+      "Personal Porter for trek (₹1000/day)",
+      "Rental for Trekking Poles/Gaiters (₹200)"
+    ],
+    bestTimeToVisit: [
+      "April – June (Green meadows & flowers)",
+      "September – November (Clear Himalayan views)",
+      "December – March (Snow Trekking)"
+    ],
+    travelTips: [
+      "Carry a valid Government ID for check-in and permits",
+      "The trek from Chopta to Tungnath is ~4km; pace yourself",
+      "Carry sufficient warm layers as Chopta gets very cold at night",
+      "Pack reusable water bottles to minimize plastic waste"
+    ],
+    gallery: [
+      { src: "/tungnath1.jpg" },
+      { src: "/tungnath2.jpg" },
+      { src: "/tungnath3.jpg" },
+      { src: "/tungnath4.jpg" },
+      { src: "/tungnath5.jpg" },
+      { src: "/tungnath6.jpg" },
+    ],
+    itineraryBrief: [
+      "Day 1: Evening Departure from Delhi (Overnight Journey)",
+      "Day 2: Drive to Chopta via Devprayag & Rudraprayag",
+      "Day 3: The High Altitude Trek: Tungnath & Chandrashila",
+      "Day 4: Ukhimath Exploration & Return to Delhi",
+      "Day 5: Arrival in Delhi"
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: "Delhi to Chopta (Overnight Journey)",
+        description: `
+Departure from Delhi via AC Tempo Traveller in the evening.
+Overnight journey through the winding mountain roads.
+Briefing and group introduction by the trip captain.
+      `
+      },
+      {
+        day: 2,
+        title: "Arrival at Chopta",
+        description: `
+Morning drive through the scenic route of Devprayag and Rudraprayag.
+Arrival at Chopta (The Mini Switzerland of India).
+Check-in to your Swiss Camps/Homestay and freshen up.
+Short acclimatization walk in the lush meadows.
+Evening bonfire with music and dinner.
+
+Meals Included:
+Dinner
+      `
+      },
+      {
+        day: 3,
+        title: "Tungnath & Chandrashila Summit",
+        description: `
+Early morning breakfast.
+Start the 4km trek to Tungnath, the highest Shiva temple in the world.
+After Darshan, push further (1.5km) to the Chandrashila Summit.
+Witness 360-degree views of Nanda Devi, Chaukhamba, and Trishul peaks.
+Trek back down to Chopta by evening.
+
+Meals Included:
+Breakfast & Dinner
+      `
+      },
+      {
+        day: 4,
+        title: "Ukhimath & Return Journey",
+        description: `
+Breakfast and check-out from the stay.
+Drive to Ukhimath to visit the Omkareshwar Temple (Winter seat of Lord Kedarnath).
+Enjoy the peaceful vibes of the Garhwal region.
+Evening departure for Delhi via Volvo/Traveller.
+
+Meals Included:
+Breakfast
+      `
+      },
+      {
+        day: 5,
+        title: "Arrival in Delhi",
+        description: `
+Morning arrival in Delhi.
+Trip ends with divine memories of the Himalayas.
+      `
+      }
+    ],
+    thingsToCarry: [
+      "Valid ID Proof",
+      "Comfortable trekking shoes with good grip",
+      "Warm jacket, gloves, and woolens",
+      "Water bottle and energy snacks",
+      "Personal medication and power bank"
+    ]
+  },
+  {
+    id: 'chakrata-hidden-gem',
+    stateId: 'uttarakhand',
+    title: 'Chakrata Hidden Gem',
+    itineraryPdf: "/itineraries/GSM CHAKRATA.pdf",
+    category: "uttarakhand",
+    location: 'Uttarakhand, India',
+    duration: '4 Days / 3 Nights',
+    price: '5,000',
+    originalPrice: '6,500',
+    rating: '4.8',
+    reviews: 145,
+    image: '/chakrata.jpg',
+    description: 'Tired of crowded hill stations? Escape to the secluded cantonment town of Chakrata. Trek to massive hidden waterfalls, explore ancient caves, and camp in raw, untouched alpine meadows.',
+    occupancy: {
+      quad: 5000,
+      triple: 6000,
+      double: 7000
+    },
+    inclusions: [
+      "AC Volvo/Traveller: Delhi-Dehradun-Chakrata transfers",
+      "2 Nights Stay in cozy camps/homestay",
+      "2 Breakfasts & 2 Dinners (MAP Plan)",
+      "Guided Trek to Tiger Falls",
+      "Visit to Budher Caves & Kanasar Meadows",
+      "Deoban exploration (subject to permission)",
+      "Bonfire & Music Night",
+      "Trip Captain & 24x7 Support"
+    ],
+    exclusions: [
+      "Lunches and any meals during transit",
+      "Entry fees to Parks or Caves",
+      "Guide fee for Budher Caves (approx ₹800 per group)",
+      "Personal expenses (shopping, tips, laundry)",
+      "Anything not specifically mentioned in inclusions"
+    ],
+    addons: [
+      "Kanasar Meadows visit (₹500)",
+      "Budher Caves exploration guide (₹800)",
+      "Extended stay in Dehradun (₹1500)"
+    ],
+    bestTimeToVisit: [
+      "March – June (Pleasant & Green)",
+      "October – February (For winter chills & quiet)"
+    ],
+    travelTips: [
+      "Chakrata is a restricted cantonment area; carry original ID proof",
+      "Foreign nationals require special permits for certain zones",
+      "Carry enough cash as ATMs are limited in the town",
+      "Pack comfortable trekking shoes for the Tiger Falls hike"
+    ],
+    gallery: [
+      { src: "/kanasar1.jpg" },
+      { src: "/chakrata1.jpg" },
+      { src: "/chakrata2.jpg" },
+      { src: "/chakrata3.jpg" },
+      { src: "/chakrata4.jpg" },
+    ],
+    itineraryBrief: [
+      "Day 1: Evening Departure from Delhi (Overnight Journey)",
+      "Day 2: Arrival via Dehradun & Local Exploration",
+      "Day 3: Tiger Falls Expedition & Chilmiri Neck",
+      "Day 4: Budher Caves, Kanasar Meadows & Departure",
+      "Day 5: Arrival in Delhi"
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: "Delhi to Chakrata (Overnight Journey)",
+        description: `
+Departure from Delhi via AC Volvo/Traveller in the evening.
+Overnight journey through the scenic route of Dehradun.
+Briefing and group introduction by the trip captain.
+      `
+      },
+      {
+        day: 2,
+        title: "Arrival & Local Sightseeing",
+        description: `
+Morning arrival in the serene cantonment town of Chakrata.
+Check-in to your camp/homestay and freshen up.
+Local Exploration:
+• Visit Chilmiri Neck for a panoramic view of the Himalayas.
+• Explore the local market and enjoy the absolute silence of the hills.
+Evening bonfire session with music.
+
+Meals Included:
+Dinner
+      `
+      },
+      {
+        day: 3,
+        title: "Tiger Falls Expedition",
+        description: `
+Post breakfast, head out for the highlight of the trip.
+Trek through dense oak and rhododendron forests to reach Tiger Falls.
+Witness one of the highest direct waterfalls in India (~312 ft).
+Enjoy a relaxing time by the pristine water and have a picnic lunch (self-expense).
+Return to the stay by evening.
+
+Meals Included:
+Breakfast & Dinner
+      `
+      },
+      {
+        day: 4,
+        title: "Budher Caves & Kanasar Meadows",
+        description: `
+Breakfast and check-out from the stay.
+Drive to Budher Caves for a thrilling cave exploration experience.
+Visit Kanasar Meadows, famous for its giant Deodar trees and lush greenery.
+If time permits, visit Deoban for bird's eye view of the mountains.
+Evening departure for Delhi.
+
+Meals Included:
+Breakfast
+      `
+      },
+      {
+        day: 5,
+        title: "Arrival in Delhi",
+        description: `
+Early morning arrival in Delhi.
+Trip ends with memories of the hidden Himalayan gem.
+      `
+      }
+    ],
+    thingsToCarry: [
+      "Valid ID Proof (Aadhar Card)",
+      "Comfortable trekking shoes",
+      "Warm layers (jackets/hoodies)",
+      "Water bottle and energy snacks",
+      "Personal medication and power bank"
+    ]
+  },
+  {
+    id: 'rishikesh-camping',
+    stateId: 'uttarakhand',
+    title: 'Rishikesh Rafting & Camping',
+    itineraryPdf: "/itineraries/GSM RISHIKEShh.pdf",
+    category: "weekend",
+    location: 'Uttarakhand, India',
+    duration: '3 Days / 2 Nights',
+    price: '5,000',
+    originalPrice: '5,500',
+    rating: '4.8',
+    reviews: 420,
+    image: '/Rishikesh.jpeg',
+    description: 'Experience the ultimate adrenaline rush with white water rafting on the Ganges, followed by riverside adventure camping, bonfires, and cliff jumping. Explore the spiritual and adventurous side of the Yoga Capital.',
+    occupancy: {
+      quad: 5000,
+      triple: 6000,
+      double: 7000
+    },
+    inclusions: [
+      "AC Tempo Traveller: Delhi-Rishikesh-Delhi",
+      "2 Nights Stay in Adventure Camps (Shivpuri)",
+      "6 Meals (2 Breakfasts, 2 Lunches, 2 Dinners)",
+      "16km River Rafting with professional guides",
+      "Cliff Jumping & Body Surfing",
+      "Ganga Aarti at Triveni Ghat",
+      "Local Sightseeing (Laxman Jhula, Ram Jhula)",
+      "Bonfire & Music Night",
+      "Trip Captain & Support"
+    ],
+    exclusions: [
+      "Bungee Jumping, Giant Swing, Zipline (Paid Addons)",
+      "Rafting entry/permit fees (if any)",
+      "Personal expenses (shopping, extra snacks)",
+      "Anything not specifically mentioned in inclusions"
+    ],
+    addons: [
+      "Bungee Jumping (₹3500)",
+      "Giant Swing (₹3500)",
+      "Zipline (₹1800)",
+      "Ganga Aarti VIP Seating (₹800)"
+    ],
+    bestTimeToVisit: [
+      "March – May (Best for Rafting)",
+      "September – November (Pleasant weather)"
+    ],
+    travelTips: [
+      "Carry a valid Government ID for check-in",
+      "Wear quick-dry clothes for rafting",
+      "Follow the instructions of the rafting guide strictly",
+      "Rishikesh is a holy city; respect local traditions"
+    ],
+    gallery: [
+      { src: "/rishikesh1.jpg" },
+      { src: "/rishikesh2.jpg" },
+      { src: "/rishikesh3.jpg" },
+      { src: "/rishikesh4.jpg" },
+      { src: "/rishikesh5.jpg" },
+      { src: "/rishikesh6.jpg" },
+      { src: "/rishikesh7.jpg" },
+      { src: "/rishikesh8.jpeg" },
+      { src: "/rishikesh9.jpeg" },
+    ],
+    itineraryBrief: [
+      "Day 1: Delhi to Rishikesh (Overnight Journey)",
+      "Day 2: Arrival, Check-in & Riverside Fun",
+      "Day 3: Thrilling 16km Rafting & Local Exploration",
+      "Day 4: Ganga Aarti & Departure for Delhi",
+      "Day 5: Arrival in Delhi"
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: "Delhi to Rishikesh (Overnight Journey)",
+        description: `
+Evening departure from Delhi via AC Tempo Traveller.
+Pickup points: Rajouri Garden / Akshardham Metro / ISBT.
+Meet your trip captain and group for the journey briefing.
+      `
+      },
+      {
+        day: 2,
+        title: "Arrival & Riverside Camping",
+        description: `
+Morning arrival at Shivpuri, check-in to your adventure camps.
+Enjoy a welcome drink and relax by the river.
+Post lunch, engage in camp activities (Volleyball, Badminton).
+Evening: Bonfire session with snacks, music, and group games.
+
+Meals Included:
+Lunch & Dinner
+      `
+      },
+      {
+        day: 3,
+        title: "River Rafting & Adventure",
+        description: `
+After breakfast, head to the rafting point.
+Experience a 16km thrilling rafting session through major rapids.
+Highlights: Cliff Jumping and Body Surfing in the cold Ganges water.
+Evening: Visit Laxman Jhula and local cafes in Rishikesh.
+
+Meals Included:
+Breakfast, Lunch & Dinner
+      `
+      },
+      {
+        day: 4,
+        title: "Local Sightseeing & Departure",
+        description: `
+Breakfast and check-out from the campsite.
+Sightseeing:
+• Ram Jhula and nearby ashrams.
+• Witness the spiritual Ganga Aarti (VIP seating optional).
+Free time for shopping or local snacks.
+Evening departure for Delhi.
+
+Meals Included:
+Breakfast & Lunch
+      `
+      },
+      {
+        day: 5,
+        title: "Arrival in Delhi",
+        description: `
+Early morning arrival in Delhi.
+Trip ends with high-energy memories of the Ganges.
+      `
+      }
+    ],
+    thingsToCarry: [
+      "Valid ID Proof",
+      "Sunscreen & Sunglasses",
+      "Quick-dry t-shirts and shorts",
+      "Towel and personal toiletries",
+      "Waterproof pouch for mobile",
+      "Power bank and camera"
+    ]
+  },
+  {
+    id: 'auli-snow',
+    stateId: 'uttarakhand',
+    title: 'Auli Snow Expedition',
+    itineraryPdf: "/itineraries/GSM Auli .pdf",
+    category: "uttarakhand",
+    location: 'Uttarakhand, India',
+    duration: '4 Days / 3 Nights',
+    price: '5,000',
+    originalPrice: '12,000',
+    rating: '4.8',
+    reviews: 215,
+    image: '/Auli.jpeg',
+    description: 'Visit the premier skiing capital of India, also known as the Mini Switzerland of India. Ride Asia\'s longest cable car, walk through frozen landscapes, and witness 360-degree panoramic views of the Nanda Devi peak.',
+    occupancy: {
+      quad: 5000,
+      triple: 6000,
+      double: 7000
+    },
+    inclusions: [
+      "AC Volvo/Traveller: Delhi-Joshimath-Delhi transfers",
+      "2 Nights accommodation in Joshimath/Auli",
+      "2 Breakfasts & 2 Dinners (MAP Plan)",
+      "Local sightseeing in Joshimath & Auli",
+      "Guided snow trek to Gorson Bugyal",
+      "Visit to Narsingh Temple",
+      "Trip Coordinator assistance 24x7"
+    ],
+    exclusions: [
+      "Auli Cable Car / Ropeway tickets (approx ₹1000)",
+      "Skiing equipment, lessons, and instructor charges",
+      "Lunches and any meals during transit",
+      "4x4 vehicle charges (if required due to heavy snow)",
+      "Personal expenses and anything not mentioned in inclusions"
+    ],
+    addons: [
+      "Skiing Session with Instructor (₹1500)",
+      "Ropeway Ticket Booking (₹1000)",
+      "4x4 Snow Jeep Experience (₹500)"
+    ],
+    bestTimeToVisit: [
+      "December – February (Peak Snow & Skiing)",
+      "March – June (Pleasant views)"
+    ],
+    travelTips: [
+      "Carry heavy woolens and waterproof gloves for the snow",
+      "Ropeway tickets are subject to availability and weather",
+      "Carry a valid Government ID for check-in and permits",
+      "Stay hydrated as Auli is at a high altitude"
+    ],
+    gallery: [
+      { src: "/auli1.jpg" },
+      { src: "/auli2.jpg" },
+      { src: "/auli3.jpg" },
+      { src: "/auli4.jpg" },
+      { src: "/kedarnath3.jpg" },
+    ],
+    itineraryBrief: [
+      "Day 1: Departure from Haridwar",
+      "Day 2: Drive to Joshimath via Devprayag & Rudraprayag, Auli Exploration & Skiing Activities",
+      "Day 3: Gorson Bugyal Trek & Return Journey",
+      "Day 4: Arrival in Haridwar"
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: "Haridwar to Joshimath ",
+        description: `
  Departure from Haridwar via AC Volvo/Traveller.
 Overnight journey through the foothills of the Himalayas.
 Briefing by the trip captain about the high-altitude expedition.
-      `
-    
-  
-    },
-    {
-      day: 2,
-      title: "Arrival at Joshimath and Auli Skiing & Cable Car Experience",
-      description: `
-    Morning drive through Devprayag (confluence of Alaknanda & Bhagirathi).
+       `
+      },
+      {
+        day: 2,
+        title: "Arrival at Joshimath and Auli Skiing & Cable Car Experience",
+        description: `
+ Morning drive through Devprayag (confluence of Alaknanda & Bhagirathi).
 Pass through Rudraprayag and Karnaprayag.
 Evening arrival at Joshimath, check-in to your hotel/stay.
 Visit the sacred Narsingh Temple.
@@ -1482,12 +1987,12 @@ Return to Joshimath by evening.
 
 Meals Included:
 Breakfast & Dinner
-      `
-    },
-    {
-      day: 3,
-      title: "Gorson Bugyal Trek & Departure",
-      description: `
+       `
+      },
+      {
+        day: 3,
+        title: "Gorson Bugyal Trek & Departure",
+        description: `
 Breakfast and check-out from the hotel.
 Guided snow trek to Gorson Bugyal (3km moderate trek).
 Enjoy panoramic 360-degree Himalayan views from the top.
@@ -1495,247 +2000,90 @@ Return to Joshimath and start the return journey towards Delhi.
 
 Meals Included:
 Breakfast
-      `
-    },
-    {
-      day:4,
-      title: "Arrival in Haridwar",
-      description: `
-  Arrival in Haridwar.
+       `
+      },
+      {
+        day: 4,
+        title: "Arrival in Haridwar",
+        description: `
+ Arrival in Haridwar.
 Trip ends with magical memories of the Snow Expedition.
-      `
-    }
-  ],
-
-  thingsToCarry: [
-    "Valid ID Proof",
-    "Heavy jacket, thermals, and waterproof shoes",
-    "Sunscreen & Sunglasses (essential for snow glare)",
-    "Power bank and camera",
-    "Personal medication and toiletries"
-  ]
-},
-  {
-  id: 'chopta-tungnath',
-  stateId: 'uttarakhand',
-  title: 'Chopta & Tungnath Trek',
-  itineraryPdf: "/itineraries/GSM TUNGNATH.pdf",
-  category: "uttarakhand",
-  location: 'Uttarakhand, India',
-  duration: '5 Days / 4 Nights',
-  price: '5,000',
-  originalPrice: '6,800',
-  rating: '4.9',
-  reviews: 180,
-  image: '/Chopta.jpg',
-  description: 'Known as the "Mini Switzerland of India", Chopta offers lush meadows and a spiritual trek to Tungnath, the highest Shiva temple in the world. Experience the breathtaking 360-degree Himalayan panorama from Chandrashila Summit.',
-  
-  occupancy: {
-    quad: 5000,
-    triple: 6000,
-    double: 7000
+       `
+      }
+    ],
+    thingsToCarry: [
+      "Valid ID Proof",
+      "Heavy jacket, thermals, and waterproof shoes",
+      "Sunscreen & Sunglasses (essential for snow glare)",
+      "Power bank and camera",
+      "Personal medication and toiletries"
+    ]
   },
-
-  inclusions: [
-    "AC Tempo Traveller: Delhi-Chopta-Delhi transfers",
-    "2 Nights accommodation in Swiss Camps/Homestay",
-    "2 Breakfasts & 2 Dinners (MAP Plan)",
-    "Guided Trek to Tungnath Temple & Chandrashila Peak",
-    "Visit to Omkareshwar Temple (Ukhimath)",
-    "Bonfire & Music Night",
-    "Professional Trek Leader & Coordinator",
-    "Forest Permits & Taxes"
-  ],
-  
-  exclusions: [
-    "Lunches and any meals during transit",
-    "Personal expenses (shopping, tips, laundry)",
-    "Porter or mule charges for personal luggage",
-    "Anything not specifically mentioned in inclusions"
-  ],
-  
-  addons: [
-    "Deoriatal Trek Extension (₹1000)",
-    "Personal Porter for trek (₹1000/day)",
-    "Rental for Trekking Poles/Gaiters (₹200)"
-  ],
-
-  bestTimeToVisit: [
-    "April – June (Green meadows & flowers)",
-    "September – November (Clear Himalayan views)",
-    "December – March (Snow Trekking)"
-  ],
-
-  travelTips: [
-    "Carry a valid Government ID for check-in and permits",
-    "The trek from Chopta to Tungnath is ~4km; pace yourself",
-    "Carry sufficient warm layers as Chopta gets very cold at night",
-    "Pack reusable water bottles to minimize plastic waste"
-  ],
-
-  gallery: [
-    
-    { src: "/tungnath1.jpg" },
-    { src: "/tungnath2.jpg" },
-    { src: "/tungnath3.jpg" },
-    { src: "/tungnath4.jpg" },
-    { src: "/tungnath5.jpg" },
-    { src: "/tungnath6.jpg" },
-    
-    
-  ],
-
-  itineraryBrief: [
-    "Day 1: Evening Departure from Delhi (Overnight Journey)",
-    "Day 2: Drive to Chopta via Devprayag & Rudraprayag",
-    "Day 3: The High Altitude Trek: Tungnath & Chandrashila",
-    "Day 4: Ukhimath Exploration & Return to Delhi",
-    "Day 5: Arrival in Delhi"
-  ],
-
-  itinerary: [
-    {
-      day: 1,
-      title: "Delhi to Chopta (Overnight Journey)",
-      description: `
-Departure from Delhi via AC Tempo Traveller in the evening.
-Overnight journey through the winding mountain roads.
-Briefing and group introduction by the trip captain.
-      `
-    },
-    {
-      day: 2,
-      title: "Arrival at Chopta",
-      description: `
-Morning drive through the scenic route of Devprayag and Rudraprayag.
-Arrival at Chopta (The Mini Switzerland of India).
-Check-in to your Swiss Camps/Homestay and freshen up.
-Short acclimatization walk in the lush meadows.
-Evening bonfire with music and dinner.
-
-Meals Included:
-Dinner
-      `
-    },
-    {
-      day: 3,
-      title: "Tungnath & Chandrashila Summit",
-      description: `
-Early morning breakfast.
-Start the 4km trek to Tungnath, the highest Shiva temple in the world.
-After Darshan, push further (1.5km) to the Chandrashila Summit.
-Witness 360-degree views of Nanda Devi, Chaukhamba, and Trishul peaks.
-Trek back down to Chopta by evening.
-
-Meals Included:
-Breakfast & Dinner
-      `
-    },
-    {
-      day: 4,
-      title: "Ukhimath & Return Journey",
-      description: `
-Breakfast and check-out from the stay.
-Drive to Ukhimath to visit the Omkareshwar Temple (Winter seat of Lord Kedarnath).
-Enjoy the peaceful vibes of the Garhwal region.
-Evening departure for Delhi via Volvo/Traveller.
-
-Meals Included:
-Breakfast
-      `
-    },
-    {
-      day: 5,
-      title: "Arrival in Delhi",
-      description: `
-Morning arrival in Delhi.
-Trip ends with divine memories of the Himalayas.
-      `
-    }
-  ],
-
-  thingsToCarry: [
-    "Valid ID Proof",
-    "Comfortable trekking shoes with good grip",
-    "Warm jacket, gloves, and woolens",
-    "Water bottle and energy snacks",
-    "Personal medication and power bank"
-  ]
-} ,
   {
-  id: 'nainital-weekend',
-  stateId: 'uttarakhand',
-  title: 'Nainital Lake City Weekend',
-  itineraryPdf: "/itineraries/GSM nainital-weekend.pdf",
-  category: "uttarakhand",
-  location: 'Uttarakhand, India',
-  duration: '3 Days / 2 Nights',
-  price: '5,000',
-  originalPrice: '5,500',
-  rating: '4.7',
-  reviews: 310,
-  image: '/Discover Nainital.jpg',
-  description: 'Escape to the breathtaking "Lake District of India". Enjoy boating on the Naini Lake, explore the vibrant Mall Road, and witness spectacular Himalayan viewpoints from the height of the Kumaon hills.',
-  
-  occupancy: {
-    quad: 5000,
-    triple: 5800,
-    double: 6500
-  },
-
-  inclusions: [
-    "Transport: Delhi – Nainital – Delhi via AC Volvo/Traveller",
-    "2 Nights Stay in a 3-Star Hotel in Nainital",
-    "MAP Meals: 2 Breakfasts & 2 Dinners",
-    "Local Sightseeing as per itinerary",
-    "Visit to Naina Devi Temple & Bhimtal",
-    "Trip Captain & 24x7 Support"
-  ],
-  
-  exclusions: [
-    "Boating, Cable Car & Entry Tickets",
-    "Lunches & personal shopping",
-    "Adventure activities (Paragliding in Bhimtal, etc.)",
-    "Anything not mentioned in inclusions"
-  ],
-  
-  addons: [
-    "Paragliding in Naukuchiatal (₹3000)",
-    "Cable Car Ride to Snow View (₹500)",
-    "Personal Cab for Lake Tour upgrade"
-  ],
-
-  bestTimeToVisit: [
-    "March – June (Pleasant weather)",
-    "October – January (For winter chills)"
-  ],
-
-  travelTips: [
-    "Carry a light jacket even in summers",
-    "Walking is the best way to explore Mall Road",
-    "Keep your surroundings clean - avoid plastic in lakes",
-    "Carry a valid Government ID for hotel check-in"
-  ],
-
-  gallery: [
-    { src: "/nainital1.jpg" },
-    { src: "/nainital2.jpg" },
-    { src: "/nainital3.jpg" },
-    { src: "/nainital4.jpg" },
-    { src: "/nainital5.jpg" },
-  ],
-
-  itineraryBrief: [
-    "Day 1: Delhi to Nainital & Naini Lake Evening",
-    "Day 2: Scenic Viewpoints & Eco Cave Gardens",
-    "Day 3: Bhimtal Excursion & Departure"
-  ],
-
-  itinerary: [
-    {
-      day: 1,
-      title: "Arrival & Lake Tour",
-      description: `
+    id: 'nainital-weekend',
+    stateId: 'uttarakhand',
+    title: 'Nainital Lake City Weekend',
+    itineraryPdf: "/itineraries/GSM nainital-weekend.pdf",
+    category: "uttarakhand",
+    location: 'Uttarakhand, India',
+    duration: '3 Days / 2 Nights',
+    price: '5,000',
+    originalPrice: '5,500',
+    rating: '4.7',
+    reviews: 310,
+    image: '/Discover Nainital.jpg',
+    description: 'Escape to the breathtaking "Lake District of India". Enjoy boating on the Naini Lake, explore the vibrant Mall Road, and witness spectacular Himalayan viewpoints from the height of the Kumaon hills.',
+    occupancy: {
+      quad: 5000,
+      triple: 5800,
+      double: 6500
+    },
+    inclusions: [
+      "Transport: Delhi – Nainital – Delhi via AC Volvo/Traveller",
+      "2 Nights Stay in a 3-Star Hotel in Nainital",
+      "MAP Meals: 2 Breakfasts & 2 Dinners",
+      "Local Sightseeing as per itinerary",
+      "Visit to Naina Devi Temple & Bhimtal",
+      "Trip Captain & 24x7 Support"
+    ],
+    exclusions: [
+      "Boating, Cable Car & Entry Tickets",
+      "Lunches & personal shopping",
+      "Adventure activities (Paragliding in Bhimtal, etc.)",
+      "Anything not mentioned in inclusions"
+    ],
+    addons: [
+      "Paragliding in Naukuchiatal (₹3000)",
+      "Cable Car Ride to Snow View (₹500)",
+      "Personal Cab for Lake Tour upgrade"
+    ],
+    bestTimeToVisit: [
+      "March – June (Pleasant weather)",
+      "October – January (For winter chills)"
+    ],
+    travelTips: [
+      "Carry a light jacket even in summers",
+      "Walking is the best way to explore Mall Road",
+      "Keep your surroundings clean - avoid plastic in lakes",
+      "Carry a valid Government ID for hotel check-in"
+    ],
+    gallery: [
+      { src: "/nainital1.jpg" },
+      { src: "/nainital2.jpg" },
+      { src: "/nainital3.jpg" },
+      { src: "/nainital4.jpg" },
+      { src: "/nainital5.jpg" },
+    ],
+    itineraryBrief: [
+      "Day 1: Delhi to Nainital & Naini Lake Evening",
+      "Day 2: Scenic Viewpoints & Eco Cave Gardens",
+      "Day 3: Bhimtal Excursion & Departure"
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: "Arrival & Lake Tour",
+        description: `
 Morning arrival in Nainital. Check-in to your hotel and freshen up.
 
 Evening exploration:
@@ -1749,11 +2097,11 @@ Dinner and overnight stay at the hotel.
 Meals Included:
 Dinner
       `
-    },
-    {
-      day: 2,
-      title: "Scenic Viewpoints & Lakes",
-      description: `
+      },
+      {
+        day: 2,
+        title: "Scenic Viewpoints & Lakes",
+        description: `
 Post breakfast, head for a full-day sightseeing tour of Nainital.
 
 Highlights:
@@ -1767,11 +2115,11 @@ Return to the hotel in the evening. Dinner and rest.
 Meals Included:
 Breakfast & Dinner
       `
-    },
-    {
-      day: 3,
-      title: "Bhimtal Excursion & Departure",
-      description: `
+      },
+      {
+        day: 3,
+        title: "Bhimtal Excursion & Departure",
+        description: `
 Enjoy breakfast and check-out from the hotel.
 
 Sightseeing:
@@ -1784,92 +2132,82 @@ Evening departure for the return journey to Delhi.
 Meals Included:
 Breakfast
       `
-    }
-  ],
-
-  thingsToCarry: [
-    "Valid ID proof (Aadhar card)",
-    "Comfortable walking shoes",
-    "Light woolens for evenings",
-    "Sunscreen & Sunglasses",
-    "Personal medication and power bank"
-  ]
-},
-{
-  id: 'mussoorie-getaway',
-  stateId: 'uttarakhand',
-  title: 'Mussoorie Queen of Hills',
-  itineraryPdf: "/itineraries/GSM mussoorie-getaway.pdf",
-  category: "weekend",
-  location: 'Uttarakhand, India',
-  duration: '3 Days / 2 Nights',
-  price: '5,000',
-  originalPrice: '6,200',
-  rating: '4.8',
-  reviews: 425,
-  image: '/Mussoorie.jpg',
-  description: 'Experience the colonial charm of Mussoorie, the "Queen of Hills". Walk through misty pine forests, visit cascading waterfalls, and enjoy breathtaking panoramic views of the Doon Valley and the snow-capped Himalayas.',
-  
-  occupancy: {
-    quad: 5000,
-    triple: 6000,
-    double: 7000
+      }
+    ],
+    thingsToCarry: [
+      "Valid ID proof (Aadhar card)",
+      "Comfortable walking shoes",
+      "Light woolens for evenings",
+      "Sunscreen & Sunglasses",
+      "Personal medication and power bank"
+    ]
   },
-
-  inclusions: [
-    "Transport: Delhi – Mussoorie – Delhi via AC Volvo/Traveller",
-    "2 Nights Premium Stay in Mussoorie",
-    "MAP Meals: 2 Breakfasts & 2 Dinners",
-    "Kempty Fall & Company Garden visit",
-    "Local Sightseeing as per itinerary",
-    "Trip Captain & 24x7 Support"
-  ],
-  
-  exclusions: [
-    "Entry fees to tourist spots & Cable Car tickets",
-    "Lunches & personal shopping",
-    "Adventure activities (Zipline, Sky Walk, etc.)",
-    "Anything not mentioned in inclusions"
-  ],
-  
-  addons: [
-    "Gun Hill Ropeway Ticket (₹200)",
-    "Adventure Park Pass (₹800)",
-    "Guided Landour Heritage Walk (₹500)"
-  ],
-
-  bestTimeToVisit: [
-    "March – June (Pleasant weather)",
-    "October – January (For winter mist and snow)"
-  ],
-
-  travelTips: [
-    "Carry a light jacket even in summers",
-    "Explore Mall Road on foot for the best experience",
-    "Be aware of monkeys near Kempty Falls",
-    "Carry a valid Government ID for hotel check-in"
-  ],
-
-  gallery: [
-    { src: "/mussoorie1.jpg" },
-    { src: "/mussoorie2.jpg" },
-    { src: "/mussoorie3.jpg" },
-    { src: "/mussoorie4.jpg" },
-    { src: "/mussoorie5.jpg" },
-    { src: "/mussoorie2.jpg" },
-  ],
-
-  itineraryBrief: [
-    "Day 1: Delhi to Mussoorie & Mall Road Evening",
-    "Day 2: Waterfalls, Viewpoints & Gun Hill",
-    "Day 3: Landour Exploration & Departure"
-  ],
-
-  itinerary: [
-    {
-      day: 1,
-      title: "Arrival & Mall Road Exploration",
-      description: `
+  {
+    id: 'mussoorie-getaway',
+    stateId: 'uttarakhand',
+    title: 'Mussoorie Queen of Hills',
+    itineraryPdf: "/itineraries/GSM mussoorie-getaway.pdf",
+    category: "weekend",
+    location: 'Uttarakhand, India',
+    duration: '3 Days / 2 Nights',
+    price: '5,000',
+    originalPrice: '6,200',
+    rating: '4.8',
+    reviews: 425,
+    image: '/Mussoorie.jpg',
+    description: 'Experience the colonial charm of Mussoorie, the "Queen of Hills". Walk through misty pine forests, visit cascading waterfalls, and enjoy breathtaking panoramic views of the Doon Valley and the snow-capped Himalayas.',
+    occupancy: {
+      quad: 5000,
+      triple: 6000,
+      double: 7000
+    },
+    inclusions: [
+      "Transport: Delhi – Mussoorie – Delhi via AC Volvo/Traveller",
+      "2 Nights Premium Stay in Mussoorie",
+      "MAP Meals: 2 Breakfasts & 2 Dinners",
+      "Kempty Fall & Company Garden visit",
+      "Local Sightseeing as per itinerary",
+      "Trip Captain & 24x7 Support"
+    ],
+    exclusions: [
+      "Entry fees to tourist spots & Cable Car tickets",
+      "Lunches & personal shopping",
+      "Adventure activities (Zipline, Sky Walk, etc.)",
+      "Anything not mentioned in inclusions"
+    ],
+    addons: [
+      "Gun Hill Ropeway Ticket (₹200)",
+      "Adventure Park Pass (₹800)",
+      "Guided Landour Heritage Walk (₹500)"
+    ],
+    bestTimeToVisit: [
+      "March – June (Pleasant weather)",
+      "October – January (For winter mist and snow)"
+    ],
+    travelTips: [
+      "Carry a light jacket even in summers",
+      "Explore Mall Road on foot for the best experience",
+      "Be aware of monkeys near Kempty Falls",
+      "Carry a valid Government ID for hotel check-in"
+    ],
+    gallery: [
+      { src: "/mussoorie1.jpg" },
+      { src: "/mussoorie2.jpg" },
+      { src: "/mussoorie3.jpg" },
+      { src: "/mussoorie4.jpg" },
+      { src: "/mussoorie5.jpg" },
+      { src: "/mussoorie2.jpg" },
+    ],
+    itineraryBrief: [
+      "Day 1: Delhi to Mussoorie & Mall Road Evening",
+      "Day 2: Waterfalls, Viewpoints & Gun Hill",
+      "Day 3: Landour Exploration & Departure"
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: "Arrival & Mall Road Exploration",
+        description: `
 Morning arrival in Mussoorie via the winding scenic roads. Check-in to your hotel and relax.
 
 Evening highlights:
@@ -1883,11 +2221,11 @@ Dinner and overnight stay at the hotel.
 Meals Included:
 Dinner
       `
-    },
-    {
-      day: 2,
-      title: "Waterfalls & Spectacular Viewpoints",
-      description: `
+      },
+      {
+        day: 2,
+        title: "Waterfalls & Spectacular Viewpoints",
+        description: `
 Post breakfast, head out for a full day of sightseeing.
 
 Highlights:
@@ -1901,11 +2239,11 @@ Return to the hotel for dinner and rest.
 Meals Included:
 Breakfast & Dinner
       `
-    },
-    {
-      day: 3,
-      title: "Landour Heritage & Departure",
-      description: `
+      },
+      {
+        day: 3,
+        title: "Landour Heritage & Departure",
+        description: `
 Enjoy breakfast and check-out from the hotel.
 
 Sightseeing:
@@ -1919,95 +2257,84 @@ Evening departure for the return journey to Delhi.
 Meals Included:
 Breakfast
       `
-    }
-  ],
-
-  thingsToCarry: [
-    "Valid ID proof (Aadhar card)",
-    "Comfortable walking shoes",
-    "Light woolens for the evenings",
-    "Sunscreen & Sunglasses",
-    "Personal medication and power bank"
-  ]
-},
-  {
-  id: 'jim-corbett-safari',
-  stateId: 'uttarakhand',
-  title: 'Jim Corbett Wildlife Safari',
-  itineraryPdf: "/itineraries/GSM jim-corbett.pdf",
-  category: "uttarakhand",
-  location: 'Uttarakhand, India',
-  duration: '3 Days / 2 Nights',
-  price: '5,000',
-  originalPrice: '7,000',
-  rating: '4.9',
-  reviews: 280,
-  image: '/JimCorbett.jpg',
-  description: 'Dive deep into the wilderness of India\'s oldest national park. Experience the thrill of staying in jungle resorts and embark on an open jeep safari to spot the majestic Royal Bengal Tiger and diverse wildlife.',
-  
-  occupancy: {
-    quad: 5000,
-    triple: 6000,
-    double: 7000
+      }
+    ],
+    thingsToCarry: [
+      "Valid ID proof (Aadhar card)",
+      "Comfortable walking shoes",
+      "Light woolens for the evenings",
+      "Sunscreen & Sunglasses",
+      "Personal medication and power bank"
+    ]
   },
-
-  inclusions: [
-    "Transport: Delhi – Ramnagar – Delhi via AC Volvo/Traveller",
-    "2 Nights Stay in a Jungle Resort with Pool",
-    "All Meals: 2 Breakfasts, 2 Lunches & 2 Dinners",
-    "1 Open Jeep Safari (Jhirna/Dhela/Garjiya zone)",
-    "Visit to Corbett Museum & Garjiya Devi Temple",
-    "Resort Activities & Indoor Games",
-    "Trip Captain & 24x7 Support"
-  ],
-  
-  exclusions: [
-    "Additional Safari Zones (Can be booked extra)",
-    "Elephant Safari charges",
-    "Personal shopping & snacks",
-    "Tips & laundry services",
-    "Anything not mentioned in inclusions"
-  ],
-  
-  addons: [
-    "Canter Safari Upgrade (₹1500)",
-    "Nature Walk with Naturalist (₹500)",
-    "Riverside Breakfast setup (₹1000)"
-  ],
-
-  bestTimeToVisit: [
-    "November – June (Best for Tiger spotting)",
-    "July – September (Greenery & Buffer zones)"
-  ],
-
-  travelTips: [
-    "Book your safari well in advance as permits are limited",
-    "Wear earthy-toned clothes (khaki, olive) for the safari",
-    "Carry a valid Government ID for forest entry permits",
-    "Maintain silence during the safari to observe wildlife"
-  ],
-
-  gallery: [
-    { src: "/corbett1.jpg" },
-    { src: "/corbett2.jpg" },
-    { src: "/corbett3.jpg" },
-    { src: "/corbett4.jpg" },
-    { src: "/corbett5.jpg" },
-    { src: "/corbett6.jpg" },
-  
-  ],
-
-  itineraryBrief: [
-    "Day 1: Delhi to Ramnagar & Resort Relaxation",
-    "Day 2: Early Morning Jeep Safari & Temple Visit",
-    "Day 3: Corbett Museum & Return to Delhi"
-  ],
-
-  itinerary: [
-    {
-      day: 1,
-      title: "Jungle Resort Arrival",
-      description: `
+  {
+    id: 'jim-corbett-safari',
+    stateId: 'uttarakhand',
+    title: 'Jim Corbett Wildlife Safari',
+    itineraryPdf: "/itineraries/GSM jim-corbett.pdf",
+    category: "uttarakhand",
+    location: 'Uttarakhand, India',
+    duration: '3 Days / 2 Nights',
+    price: '5,000',
+    originalPrice: '7,000',
+    rating: '4.9',
+    reviews: 280,
+    image: '/JimCorbett.jpg',
+    description: 'Dive deep into the wilderness of India\'s oldest national park. Experience the thrill of staying in jungle resorts and embark on an open jeep safari to spot the majestic Royal Bengal Tiger and diverse wildlife.',
+    occupancy: {
+      quad: 5000,
+      triple: 6000,
+      double: 7000
+    },
+    inclusions: [
+      "Transport: Delhi – Ramnagar – Delhi via AC Volvo/Traveller",
+      "2 Nights Stay in a Jungle Resort with Pool",
+      "All Meals: 2 Breakfasts, 2 Lunches & 2 Dinners",
+      "1 Open Jeep Safari (Jhirna/Dhela/Garjiya zone)",
+      "Visit to Corbett Museum & Garjiya Devi Temple",
+      "Resort Activities & Indoor Games",
+      "Trip Captain & 24x7 Support"
+    ],
+    exclusions: [
+      "Additional Safari Zones (Can be booked extra)",
+      "Elephant Safari charges",
+      "Personal shopping & snacks",
+      "Tips & laundry services",
+      "Anything not mentioned in inclusions"
+    ],
+    addons: [
+      "Canter Safari Upgrade (₹1500)",
+      "Nature Walk with Naturalist (₹500)",
+      "Riverside Breakfast setup (₹1000)"
+    ],
+    bestTimeToVisit: [
+      "November – June (Best for Tiger spotting)",
+      "July – September (Greenery & Buffer zones)"
+    ],
+    travelTips: [
+      "Book your safari well in advance as permits are limited",
+      "Wear earthy-toned clothes (khaki, olive) for the safari",
+      "Carry a valid Government ID for forest entry permits",
+      "Maintain silence during the safari to observe wildlife"
+    ],
+    gallery: [
+      { src: "/corbett1.jpg" },
+      { src: "/corbett2.jpg" },
+      { src: "/corbett3.jpg" },
+      { src: "/corbett4.jpg" },
+      { src: "/corbett5.jpg" },
+      { src: "/corbett6.jpg" },
+    ],
+    itineraryBrief: [
+      "Day 1: Delhi to Ramnagar & Resort Relaxation",
+      "Day 2: Early Morning Jeep Safari & Temple Visit",
+      "Day 3: Corbett Museum & Return to Delhi"
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: "Jungle Resort Arrival",
+        description: `
 Morning arrival in Ramnagar. Check-in to your luxury jungle resort and relax.
 
 Afternoon highlights:
@@ -2021,11 +2348,11 @@ Dinner and overnight stay at the resort.
 Meals Included:
 Lunch & Dinner
       `
-    },
-    {
-      day: 2,
-      title: "The Great Safari Adventure",
-      description: `
+      },
+      {
+        day: 2,
+        title: "The Great Safari Adventure",
+        description: `
 Wake up early for an exhilarating open jeep safari deep into the Corbett Tiger Reserve.
 
 Highlights:
@@ -2039,11 +2366,11 @@ Dinner and overnight stay at the resort.
 Meals Included:
 Breakfast, Lunch & Dinner
       `
-    },
-    {
-      day: 3,
-      title: "Corbett Museum & Departure",
-      description: `
+      },
+      {
+        day: 3,
+        title: "Corbett Museum & Departure",
+        description: `
 Enjoy breakfast and check-out from the resort.
 
 Sightseeing:
@@ -2056,389 +2383,96 @@ Evening departure for the return journey to Delhi.
 Meals Included:
 Breakfast & Lunch
       `
-    }
-  ],
-
-  thingsToCarry: [
-    "Valid ID proof (Original Aadhar for Forest Entry)",
-    "Binoculars & Camera with zoom lens",
-    "Sunscreen, hat, and sunglasses",
-    "Comfortable cotton clothes and sneakers",
-    "Personal medication and power bank"
-  ]
-},
- {
-  id: 'chakrata-hidden-gem',
-  stateId: 'uttarakhand',
-  title: 'Chakrata Hidden Gem',
-  itineraryPdf: "/itineraries/GSM CHAKRATA.pdf",
-  category: "uttarakhand",
-  location: 'Uttarakhand, India',
-  duration: '4 Days / 3 Nights',
-  price: '5,000',
-  originalPrice: '6,500',
-  rating: '4.8',
-  reviews: 145,
-  image: '/chakrata.jpg',
-  description: 'Tired of crowded hill stations? Escape to the secluded cantonment town of Chakrata. Trek to massive hidden waterfalls, explore ancient caves, and camp in raw, untouched alpine meadows.',
-  
-  occupancy: {
-    quad: 5000,
-    triple: 6000,
-    double: 7000
+      }
+    ],
+    thingsToCarry: [
+      "Valid ID proof (Original Aadhar for Forest Entry)",
+      "Binoculars & Camera with zoom lens",
+      "Sunscreen, hat, and sunglasses",
+      "Comfortable cotton clothes and sneakers",
+      "Personal medication and power bank"
+    ]
   },
-
-  inclusions: [
-    "AC Volvo/Traveller: Delhi-Dehradun-Chakrata transfers",
-    "2 Nights Stay in cozy camps/homestay",
-    "2 Breakfasts & 2 Dinners (MAP Plan)",
-    "Guided Trek to Tiger Falls",
-    "Visit to Budher Caves & Kanasar Meadows",
-    "Deoban exploration (subject to permission)",
-    "Bonfire & Music Night",
-    "Trip Captain & 24x7 Support"
-  ],
-  
-  exclusions: [
-    "Lunches and any meals during transit",
-    "Entry fees to Parks or Caves",
-    "Guide fee for Budher Caves (approx ₹800 per group)",
-    "Personal expenses (shopping, tips, laundry)",
-    "Anything not specifically mentioned in inclusions"
-  ],
-  
-  addons: [
-    "Kanasar Meadows visit (₹500)",
-    "Budher Caves exploration guide (₹800)",
-    "Extended stay in Dehradun (₹1500)"
-  ],
-
-  bestTimeToVisit: [
-    "March – June (Pleasant & Green)",
-    "October – February (For winter chills & quiet)"
-  ],
-
-  travelTips: [
-    "Chakrata is a restricted cantonment area; carry original ID proof",
-    "Foreign nationals require special permits for certain zones",
-    "Carry enough cash as ATMs are limited in the town",
-    "Pack comfortable trekking shoes for the Tiger Falls hike"
-  ],
-
-  gallery: [
-    { src: "/kanasar1.jpg" },
-    { src: "/chakrata1.jpg" },
-    { src: "/chakrata2.jpg" },
-    { src: "/chakrata3.jpg" },
-    { src: "/chakrata4.jpg" },
-    
-   
-  ],
-
-  itineraryBrief: [
-    "Day 1: Evening Departure from Delhi (Overnight Journey)",
-    "Day 2: Arrival via Dehradun & Local Exploration",
-    "Day 3: Tiger Falls Expedition & Chilmiri Neck",
-    "Day 4: Budher Caves, Kanasar Meadows & Departure",
-    "Day 5: Arrival in Delhi"
-  ],
-
-  itinerary: [
-    {
-      day: 1,
-      title: "Delhi to Chakrata (Overnight Journey)",
-      description: `
-Departure from Delhi via AC Volvo/Traveller in the evening.
-Overnight journey through the scenic route of Dehradun.
-Briefing and group introduction by the trip captain.
-      `
-    },
-    {
-      day: 2,
-      title: "Arrival & Local Sightseeing",
-      description: `
-Morning arrival in the serene cantonment town of Chakrata.
-Check-in to your camp/homestay and freshen up.
-Local Exploration:
-• Visit Chilmiri Neck for a panoramic view of the Himalayas.
-• Explore the local market and enjoy the absolute silence of the hills.
-Evening bonfire session with music.
-
-Meals Included:
-Dinner
-      `
-    },
-    {
-      day: 3,
-      title: "Tiger Falls Expedition",
-      description: `
-Post breakfast, head out for the highlight of the trip.
-Trek through dense oak and rhododendron forests to reach Tiger Falls.
-Witness one of the highest direct waterfalls in India (~312 ft).
-Enjoy a relaxing time by the pristine water and have a picnic lunch (self-expense).
-Return to the stay by evening.
-
-Meals Included:
-Breakfast & Dinner
-      `
-    },
-    {
-      day: 4,
-      title: "Budher Caves & Kanasar Meadows",
-      description: `
-Breakfast and check-out from the stay.
-Drive to Budher Caves for a thrilling cave exploration experience.
-Visit Kanasar Meadows, famous for its giant Deodar trees and lush greenery.
-If time permits, visit Deoban for bird's eye view of the mountains.
-Evening departure for Delhi.
-
-Meals Included:
-Breakfast
-      `
-    },
-    {
-      day: 5,
-      title: "Arrival in Delhi",
-      description: `
-Early morning arrival in Delhi.
-Trip ends with memories of the hidden Himalayan gem.
-      `
-    }
-  ],
-
-  thingsToCarry: [
-    "Valid ID Proof (Aadhar Card)",
-    "Comfortable trekking shoes",
-    "Warm layers (jackets/hoodies)",
-    "Water bottle and energy snacks",
-    "Personal medication and power bank"
-  ]
-},
-{
-  id: 'lansdowne-quiet',
-  stateId: 'uttarakhand',
-  title: 'Lansdowne Cantonment Retreat',
-  itineraryPdf: "/itineraries/GSM lansdowne.pdf",
-  category: "uttarakhand",
-  location: 'Uttarakhand, India',
-  duration: '3 Days / 2 Nights',
-  price: '5,000',
-  originalPrice: '5,200',
-  rating: '4.7',
-  reviews: 95,
-  image: '/landsdowne.jpg',
-  description: 'Experience one of the quietest hill stations in India. Explore the clean, pine-covered hills of this military cantonment, visit the Tip-in-Top viewpoint, and enjoy the serene Bhulla Lake in a hassle-free weekend getaway.',
-  
-  occupancy: {
-    quad: 5000,
-    triple: 6000,
-    double: 7000
-  },
-
-  inclusions: [
-    "Transport: Delhi – Lansdowne – Delhi via AC Volvo/Traveller",
-    "2 Nights Stay in a 3-Star Hotel in Lansdowne",
-    "MAP Meals: 2 Breakfasts & 2 Dinners",
-    "Visit to Army Museum & Tip-in-Top",
-    "Local Sightseeing as per itinerary",
-    "Trip Captain & 24x7 Support"
-  ],
-  
-  exclusions: [
-    "Boating fees at Bhulla Lake",
-    "Entry fees to Museums or Temples",
-    "Lunches & personal shopping",
-    "Adventure activities or guide charges",
-    "Anything not mentioned in inclusions"
-  ],
-  
-  addons: [
-    "Guided Tarkeshwar Mahadev Temple Tour (₹800)",
-    "Nature Photography Walk (₹400)",
-    "Room Upgrade to Valley View (₹1000)"
-  ],
-
-  bestTimeToVisit: [
-    "March – June (Pleasant weather)",
-    "September – November (Clear Himalayan views)"
-  ],
-
-  travelTips: [
-    "Lansdowne is a military cantonment; avoid making loud noise",
-    "Carry a light jacket even in summers",
-    "Respect the decorum of the Army Museum and War Memorial",
-    "Carry a valid Government ID for hotel check-in"
-  ],
-
-  gallery: [
-    { src: "/lansdowne1.jpeg" },
-    { src: "/lansdowne2.jpg" },
-    { src: "/lansdowne3.jpg" },
-    { src: "/lansdowne5.jpg" },
-    { src: "/lansdowne6.jpeg" },
-    
-  ],
-
-  itineraryBrief: [
-    "Day 1: Delhi to Lansdowne & Sunset at Tip-in-Top",
-    "Day 2: Army Museum, Bhulla Lake & Tarkeshwar Temple",
-    "Day 3: Nature Trail & Return to Delhi"
-  ],
-
-  itinerary: [
-    {
-      day: 1,
-      title: "Arrival & Sunset Walk",
-      description: `
-Morning arrival in Lansdowne. Check-in to your hotel and relax.
-
-Evening highlights:
-• Visit the historic St. John's Church (built in 1936).
-• Take a short walk to Tip-in-Top (Tiffin Top) viewpoint.
-• Witness a magnificent sunset over the snow-clad peaks of Nanda Devi.
-• Enjoy a peaceful evening stroll through the pine-covered trails.
-
-Dinner and overnight stay at the hotel.
-
-Meals Included:
-Dinner
-      `
-    },
-    {
-      day: 2,
-      title: "Lakes & Military Heritage",
-      description: `
-Post breakfast, head out for a full day of sightseeing in the cantonment.
-
-Highlights:
-• Visit the Garhwal Rifles Regimental Museum (War Memorial).
-• Spend your morning at the serene Bhulla Lake (man-made lake).
-• Optional: Enjoy a peaceful boating session at the lake.
-• Afternoon visit to the Tarkeshwar Mahadev Temple (situated amidst thick cedar and oak forests).
-
-Return to the hotel for a cozy dinner and rest.
-
-Meals Included:
-Breakfast & Dinner
-      `
-    },
-    {
-      day: 3,
-      title: "Nature Trail & Departure",
-      description: `
-Enjoy a peaceful morning nature walk through the pine trails of Lansdowne.
-
-Sightseeing:
-• Visit the Kaleshwar Mahadev Temple.
-• Last-minute photography session of the Himalayan ranges.
-• Enjoy breakfast and check-out from the hotel.
-
-Afternoon departure for the return journey to Delhi.
-
-Meals Included:
-Breakfast
-      `
-    }
-  ],
-
-  thingsToCarry: [
-    "Valid ID proof (Aadhar card)",
-    "Comfortable walking shoes",
-    "Light woolens for the nights",
-    "Water bottle and energy snacks",
-    "Personal medication and power bank"
-  ]
-},
   {
-  id: 'harsil-valley',
-  stateId: 'uttarakhand',
-  title: 'Harsil: The Mini Switzerland',
-  itineraryPdf: "/itineraries/GSM harsil-valley.pdf",
-  category: "uttarakhand",
-  location: 'Uttarakhand, India',
-  duration: '4 Days / 3 Nights',
-  price: '5,000',
-  originalPrice: '11,000',
-  rating: '4.9',
-  reviews: 64,
-  image: '/Harsil.jpg',
-  description: 'An untouched paradise on the banks of the Bhagirathi river. Famous for its apple orchards, dense deodar forests, and the historic Gartang Gali skywalk, Harsil is the perfect getaway for peace seekers and nature lovers.',
-  
-  occupancy: {
-    quad: 5000,
-    triple: 6000,
-    double: 7000
-  },
-
-  inclusions: [
-    "Transport: Delhi – Harsil – Delhi via AC Volvo/Traveller",
-    "3 Nights Riverside Stay in Harsil/Dharali",
-    "MAP Meals: 3 Breakfasts & 3 Dinners",
-    "Visit to Gangotri Dham & Gartang Gali",
-    "Guided Bagori Village Walk",
-    "Visit to Mukhba Village (Winter seat of Ganga)",
-    "Trip Captain & 24x7 Support"
-  ],
-  
-  exclusions: [
-    "Entry fees to Gartang Gali or National Parks",
-    "Lunches & personal snacks",
-    "Adventure activities or guide tips",
-    "Anything not mentioned in inclusions"
-  ],
-  
-  addons: [
-    "Gartang Gali Permit Assistance (₹500)",
-    "Apple Orchard Picnic Setup (₹1000)",
-    "Local Cultural Folk Music Evening (₹2000 shared)"
-  ],
-
-  bestTimeToVisit: [
-    "April – June (Apple blossoms & greenery)",
-    "September – October (Harvest season & clear skies)",
-    "November – February (For heavy snow experience)"
-  ],
-
-  travelTips: [
-    "Harsil is at a high altitude; keep yourself hydrated",
-    "Carry heavy woolens as nights are very cold even in summer",
-    "Respect the local culture of Bagori and Mukhba villages",
-    "Carry a valid Government ID for inner-line permits if required"
-  ],
-
-  gallery: [
-    { src: "/harsil1.jpg" },
-    { src: "/harsil2.jpeg" },
-    { src: "/harsil3.jpeg" },
-    { src: "/harsil4.jpeg" },
-    { src: "/harsil5.jpeg" },
-    { src: "/harsil6.jpg" },
-    { src: "/harsil7.jpg" },
-    
-  ],
-
-  itineraryBrief: [
-    "Day 1: Delhi to Harsil (Overnight Journey)",
-    "Day 2: Harsil Arrival & Riverside Relaxation",
-    "Day 3: Gartang Gali Skywalk & Gangotri Dham Visit",
-    "Day 4: Bagori Village Exploration & Return Journey",
-    "Day 5: Arrival in Delhi"
-  ],
-
-  itinerary: [
-    {
-      day: 1,
-      title: "Delhi to Harsil (Overnight Journey)",
-      description: `
+    id: 'harsil-valley',
+    stateId: 'uttarakhand',
+    title: 'Harsil: The Mini Switzerland',
+    itineraryPdf: "/itineraries/GSM harsil-valley.pdf",
+    category: "uttarakhand",
+    location: 'Uttarakhand, India',
+    duration: '4 Days / 3 Nights',
+    price: '5,000',
+    originalPrice: '11,000',
+    rating: '4.9',
+    reviews: 64,
+    image: '/Harsil.jpg',
+    description: 'An untouched paradise on the banks of the Bhagirathi river. Famous for its apple orchards, dense deodar forests, and the historic Gartang Gali skywalk, Harsil is the perfect getaway for peace seekers and nature lovers.',
+    occupancy: {
+      quad: 5000,
+      triple: 6000,
+      double: 7000
+    },
+    inclusions: [
+      "Transport: Delhi – Harsil – Delhi via AC Volvo/Traveller",
+      "3 Nights Riverside Stay in Harsil/Dharali",
+      "MAP Meals: 3 Breakfasts & 3 Dinners",
+      "Visit to Gangotri Dham & Gartang Gali",
+      "Guided Bagori Village Walk",
+      "Visit to Mukhba Village (Winter seat of Ganga)",
+      "Trip Captain & 24x7 Support"
+    ],
+    exclusions: [
+      "Entry fees to Gartang Gali or National Parks",
+      "Lunches & personal snacks",
+      "Adventure activities or guide tips",
+      "Anything not mentioned in inclusions"
+    ],
+    addons: [
+      "Gartang Gali Permit Assistance (₹500)",
+      "Apple Orchard Picnic Setup (₹1000)",
+      "Local Cultural Folk Music Evening (₹2000 shared)"
+    ],
+    bestTimeToVisit: [
+      "April – June (Apple blossoms & greenery)",
+      "September – October (Harvest season & clear skies)",
+      "November – February (For heavy snow experience)"
+    ],
+    travelTips: [
+      "Harsil is at a high altitude; keep yourself hydrated",
+      "Carry heavy woolens as nights are very cold even in summer",
+      "Respect the local culture of Bagori and Mukhba villages",
+      "Carry a valid Government ID for inner-line permits if required"
+    ],
+    gallery: [
+      { src: "/harsil1.jpg" },
+      { src: "/harsil2.jpeg" },
+      { src: "/harsil3.jpeg" },
+      { src: "/harsil4.jpeg" },
+      { src: "/harsil5.jpeg" },
+      { src: "/harsil6.jpg" },
+      { src: "/harsil7.jpg" },
+    ],
+    itineraryBrief: [
+      "Day 1: Delhi to Harsil (Overnight Journey)",
+      "Day 2: Harsil Arrival & Riverside Relaxation",
+      "Day 3: Gartang Gali Skywalk & Gangotri Dham Visit",
+      "Day 4: Bagori Village Exploration & Return Journey",
+      "Day 5: Arrival in Delhi"
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: "Delhi to Harsil (Overnight Journey)",
+        description: `
 Evening departure from Delhi via AC Volvo/Traveller.
 Overnight journey through the scenic mountains of Uttarakhand.
 Briefing and group introduction by the trip captain.
       `
-    },
-    {
-      day: 2,
-      title: "Arrival & Riverside Bliss",
-      description: `
+      },
+      {
+        day: 2,
+        title: "Arrival & Riverside Bliss",
+        description: `
 Morning drive along the beautiful Bhagirathi River. 
 Arrival at Harsil, check-in to your riverside stay and freshen up.
 
@@ -2452,11 +2486,11 @@ Dinner and overnight stay in Harsil.
 Meals Included:
 Dinner
       `
-    },
-    {
-      day: 3,
-      title: "Gartang Gali & Gangotri Dham",
-      description: `
+      },
+      {
+        day: 3,
+        title: "Gartang Gali & Gangotri Dham",
+        description: `
 Post breakfast, head towards the historic Gartang Gali.
 
 Highlights:
@@ -2470,11 +2504,11 @@ Return to Harsil for a cozy dinner.
 Meals Included:
 Breakfast & Dinner
       `
-    },
-    {
-      day: 4,
-      title: "Village Exploration & Departure",
-      description: `
+      },
+      {
+        day: 4,
+        title: "Village Exploration & Departure",
+        description: `
 Enjoy breakfast and check-out from the stay.
 
 Sightseeing:
@@ -2487,393 +2521,148 @@ Afternoon departure for the return journey to Delhi.
 Meals Included:
 Breakfast
       `
-    },
-    {
-      day: 5,
-      title: "Arrival in Delhi",
-      description: `
+      },
+      {
+        day: 5,
+        title: "Arrival in Delhi",
+        description: `
 Early morning arrival in Delhi.
 Trip ends with peaceful and holy memories of the Harsil Valley.
       `
-    }
-  ],
-
-  thingsToCarry: [
-    "Valid ID proof (Aadhar card)",
-    "Heavy woolens, gloves, and caps",
-    "Comfortable trekking/walking shoes",
-    "Sunscreen & Sunglasses",
-    "Personal medication and power bank"
-  ]
-},
- {
-  id: 'do-dham-yatra',
-  stateId: 'uttarakhand',
-  title: 'Do Dham: Kedarnath & Badrinath',
-  itineraryPdf: "/itineraries/GSM DO DHAM 4N5D 2026.pdf",
-  category: "spiritual",
-  location: 'Uttarakhand, India',
-  duration: '5 Days / 4 Nights',
-  price: '10,000',
-  originalPrice: '17,500',
-  rating: '5.0',
-  reviews: 210,
-  image: '/dodham.webp',
-  description: 'A complete spiritual circuit covering two of the most significant shrines in the Himalayas. Journey through the high-altitude landscapes of Kedarnath and the divine architecture of Badrinath ji.',
-  
-  occupancy: {
-    quad: 10000,
-    triple: 12000,
-    double: 14000
+      }
+    ],
+    thingsToCarry: [
+      "Valid ID proof (Aadhar card)",
+      "Heavy woolens, gloves, and caps",
+      "Comfortable trekking/walking shoes",
+      "Sunscreen & Sunglasses",
+      "Personal medication and power bank"
+    ]
   },
-
-  inclusions: [
-    "Transport: Haridwar to Haridwar transfers",
-    "4 Nights Accommodation in Hotels/Guesthouses",
-    "MAP Meals: 4 Breakfasts & 4 Dinners",
-    "Kedarnath & Badrinath Sightseeing",
-    "Visit to Mana Village (Last Indian Village)",
-    "Yatra Registration Assistance",
-    "Trip Coordinator & 24x7 Support"
-  ],
-  
-  exclusions: [
-    "Helicopter / Mule / Pony / Palki charges",
-    "VIP Darshan tickets",
-    "Lunches and any meals during transit",
-    "Local vehicle from Sonprayag to Gaurikund",
-    "Personal expenses (laundry, tips, etc.)",
-    "Anything not specifically mentioned in inclusions"
-  ],
-  
-  addons: [
-    "Helicopter Ticket Booking (subject to availability)",
-    "Extra night stay in Haridwar (₹1500)",
-    "Priority Darshan Assistance"
-  ],
-
-  bestTimeToVisit: [
-    "May – June (Peak Season)",
-    "September – October (Post-monsoon clarity)"
-  ],
-
-  travelTips: [
-    "Carry a valid Government ID for Yatra registration and boarding",
-    "Keep heavy woolens as temperatures drop significantly at night",
-    "Pace yourself during the 17km Kedarnath trek",
-    "Respect the sanctity of the temples and local traditions"
-  ],
-
-  gallery: [
-    { src: "/CD33.jpg" },
-    { src: "/CD34.jpg" },
-    
-    { src: "/kedarnath2.jpg" },
-    { src: "/kedarnath7.jpeg" },
-  { src: "/kedarnath8.jpeg" },
-  { src: "/kedarnath9.jpeg" },
-  { src: "/kedarnath10.jpeg" },
-  { src: "/kedarnath11.jpeg" },
-  
-  ],
-
-  itineraryBrief: [
-    "Day 1: Haridwar to Guptkashi (205 Km Drive)",
-    "Day 2: Guptkashi to Kedarnath Ji (17 Km Trek)",
-    "Day 3: Morning Darshan & Return to Guptkashi",
-    "Day 4: Guptkashi to Badrinath Ji & Mana Village",
-    "Day 5: Badrinath Darshan & Return to Haridwar"
-  ],
-
-  itinerary: [
-    {
-      day: 1,
-      title: "Haridwar to Guptkashi",
-      description: `
-Start your spiritual journey from Haridwar towards Guptkashi.
-The drive (~205 km) takes about 8 hours through scenic mountain roads.
-Enjoy the view of the holy rivers Alaknanda and Mandakini en-route.
-Check-in to the hotel upon arrival.
-
-Meals Included:
-Dinner
-      `
-    },
-    {
-      day: 2,
-      title: "Trek to Kedarnath Ji",
-      description: `
-Early morning drive to Sonprayag/Gaurikund (~30 km).
-Start the 17 km trek on a well-laid trail to Kedarnath Dham.
-Options of Pony or Doli are available (at own cost).
-Reach Kedarnath by evening, witness the divine Aarti.
-Overnight stay near the temple area.
-
-Meals Included:
-Breakfast & Dinner
-      `
-    },
-    {
-      day: 3,
-      title: "Darshan & Return to Guptkashi",
-      description: `
-Wake up early for the morning Darshan of Lord Kedarnath.
-Visit the Bhairav Temple and explore the surrounding peaks.
-Trek back down (~17 km) to Gaurikund.
-Drive back to Guptkashi for a relaxing evening.
-
-Meals Included:
-Breakfast & Dinner
-      `
-    },
-    {
-      day: 4,
-      title: "Guptkashi to Badrinath Ji",
-      description: `
-Post breakfast, drive towards the holy town of Badrinath.
-Sightseeing en-route:
-• Visit Mana Village (The last Indian village before the border).
-• See Vyas Gufa, Ganesh Gufa, and the origin of Saraswati River.
-Check-in to the hotel in Badrinath/Joshimath.
-
-Meals Included:
-Breakfast & Dinner
-      `
-    },
-    {
-      day: 5,
-      title: "Badrinath Darshan & Return to Haridwar",
-      description: `
-Morning bath in the sacred Tapt Kund.
-Darshan of Lord Badrinath (one of the Char Dhams).
-Drive back to Haridwar (~310 km).
-Trip concludes with spiritual memories and divine blessings.
-
-Meals Included:
-Breakfast
-      `
-    }
-  ],
-
-  thingsToCarry: [
-    "Original Government ID (Aadhar Card)",
-    "Heavy woolens, gloves, and thermal wear",
-    "Raincoat or Poncho (weather is unpredictable)",
-    "Trekking shoes with good grip",
-    "Personal medication and power bank"
-  ]
-},
   {
-  id: 'char-dham-full',
-  stateId: 'uttarakhand',
-  title: 'Char Dham Yatra',
-  itineraryPdf: "/itineraries/GSM Char Dham 2026 .pdf",
-  category: "spiritual",
-  location: 'Uttarakhand, India',
-  duration: '9 Days / 8 Nights',
-  price: '20,000',
-  originalPrice: '28,500',
-  rating: '5.0',
-  reviews: 430,
-  image: '/chardham.jpg',
-  description: 'The most sacred pilgrimage in India. Visit Yamunotri, Gangotri, Kedarnath, and Badrinath in one life-changing expedition. Experience the divine energy of the Himalayas and the origin of India’s holiest rivers.',
-  
-  occupancy: {
-    quad: 20000,
-    triple: 25000,
-    double: 30000
-  },
+    id: 'lansdowne-quiet',
+    stateId: 'uttarakhand',
+    title: 'Lansdowne Cantonment Retreat',
+    itineraryPdf: "/itineraries/GSM lansdowne.pdf",
+    category: "uttarakhand",
+    location: 'Uttarakhand, India',
+    duration: '3 Days / 2 Nights',
+    price: '5,000',
+    originalPrice: '5,200',
+    rating: '4.7',
+    reviews: 95,
+    image: '/landsdowne.jpg',
+    description: 'Experience one of the quietest hill stations in India. Explore the clean, pine-covered hills of this military cantonment, visit the Tip-in-Top viewpoint, and enjoy the serene Bhulla Lake in a hassle-free weekend getaway.',
+    occupancy: {
+      quad: 5000,
+      triple: 6000,
+      double: 7000
+    },
+    inclusions: [
+      "Transport: Delhi – Lansdowne – Delhi via AC Volvo/Traveller",
+      "2 Nights Stay in a 3-Star Hotel in Lansdowne",
+      "MAP Meals: 2 Breakfasts & 2 Dinners",
+      "Visit to Army Museum & Tip-in-Top",
+      "Local Sightseeing as per itinerary",
+      "Trip Captain & 24x7 Support"
+    ],
+    exclusions: [
+      "Boating fees at Bhulla Lake",
+      "Entry fees to Museums or Temples",
+      "Lunches & personal shopping",
+      "Adventure activities or guide charges",
+      "Anything not mentioned in inclusions"
+    ],
+    addons: [
+      "Guided Tarkeshwar Mahadev Temple Tour (₹800)",
+      "Nature Photography Walk (₹400)",
+      "Room Upgrade to Valley View (₹1000)"
+    ],
+    bestTimeToVisit: [
+      "March – June (Pleasant weather)",
+      "September – November (Clear Himalayan views)"
+    ],
+    travelTips: [
+      "Lansdowne is a military cantonment; avoid making loud noise",
+      "Carry a light jacket even in summers",
+      "Respect the decorum of the Army Museum and War Memorial",
+      "Carry a valid Government ID for hotel check-in"
+    ],
+    gallery: [
+      { src: "/lansdowne1.jpeg" },
+      { src: "/lansdowne2.jpg" },
+      { src: "/lansdowne3.jpg" },
+      { src: "/lansdowne5.jpg" },
+      { src: "/lansdowne6.jpeg" },
+    ],
+    itineraryBrief: [
+      "Day 1: Delhi to Lansdowne & Sunset at Tip-in-Top",
+      "Day 2: Army Museum, Bhulla Lake & Tarkeshwar Temple",
+      "Day 3: Nature Trail & Return to Delhi"
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: "Arrival & Sunset Walk",
+        description: `
+Morning arrival in Lansdowne. Check-in to your hotel and relax.
 
-  inclusions: [
-    "Transport: Haridwar to Haridwar transfers",
-    "8 Nights Accommodation in Hotels/Guesthouses",
-    "MAP Meals: 8 Breakfasts & 8 Dinners",
-    "Visit to all 4 Dhams: Yamunotri, Gangotri, Kedarnath & Badrinath",
-    "Sightseeing: Mana Village, Ganesh Gufa, Vyas Gufa",
-    "Yatra Registration Assistance",
-    "Experienced Trip Captain & 24x7 Support"
-  ],
-  
-  exclusions: [
-    "Helicopter / Mule / Pony / Palki charges",
-    "VIP Darshan tickets and Aarti entry fees",
-    "Lunches and any meals during transit",
-    "Local vehicle from Sonprayag to Gaurikund",
-    "Personal expenses (shopping, tips, laundry)",
-    "Anything not specifically mentioned in inclusions"
-  ],
-  
-  addons: [
-    "Helicopter Ticket Booking (subject to availability)",
-    "Extra night stay in Haridwar (₹1500)",
-    "Professional Photography Service"
-  ],
+Evening highlights:
+• Visit the historic St. John's Church (built in 1936).
+• Take a short walk to Tip-in-Top (Tiffin Top) viewpoint.
+• Witness a magnificent sunset over the snow-clad peaks of Nanda Devi.
+• Enjoy a peaceful evening stroll through the pine-covered trails.
 
-  bestTimeToVisit: [
-    "May – June (Peak Season)",
-    "September – October (Clear Skies)"
-  ],
-
-  travelTips: [
-    "Carry original Government ID for registration and boarding",
-    "Pack heavy woolens, thermals, and waterproof jackets",
-    "Maintain high hydration levels during the high-altitude treks",
-    "AC will be turned off in hill areas to ensure vehicle performance"
-  ],
-
-  gallery: [
-  { src: "/char1.jpg" },
-  { src: "/char3.jpg" },
-  { src: "/char4.jpg" },
-  { src: "/CD33.jpg" },
-  { src: "/kedarnath2.jpg" },
-  { src: "/kedarnath12.jpeg" },
-  { src: "/kedarnath13.jpeg" },
-  { src: "/kedarnath2.jpg" },
-  { src: "/kedarnath7.jpeg" },
-  { src: "/kedarnath8.jpeg" },
-  { src: "/kedarnath9.jpeg" },
-  { src: "/kedarnath10.jpeg" },
-  { src: "/kedarnath11.jpeg" },
-   
-  ],
-
-  itineraryBrief: [
-    "Day 1: Haridwar to Barkot (215 Km Drive)",
-    "Day 2: Yamunotri Dham Darshan & Return Barkot",
-    "Day 3: Barkot to Uttarkashi (100 Km Drive)",
-    "Day 4: Gangotri Dham Darshan & Return Uttarkashi",
-    "Day 5: Uttarkashi to Guptkashi (220 Km Drive)",
-    "Day 6: Trek to Kedarnath Ji & Darshan",
-    "Day 7: Morning Darshan & Return to Guptkashi",
-    "Day 8: Guptkashi to Badrinath Ji & Sightseeing",
-    "Day 9: Badrinath Darshan & Return to Haridwar"
-  ],
-
-  itinerary: [
-    {
-      day: 1,
-      title: "Haridwar to Barkot",
-      description: `
-Today start your spiritual journey to Barkot from Haridwar.
-The drive (~215 km) takes you through the scenic mountain roads.
-Arrival and check-in to the hotel at Barkot.
-Evening at leisure to acclimatize.
+Dinner and overnight stay at the hotel.
 
 Meals Included:
 Dinner
       `
-    },
-    {
-      day: 2,
-      title: "Yamunotri Dham Darshan",
-      description: `
-Early morning drive to Jankichatti (~45 km).
-Embark on a 6 km trek to reach Yamunotri Dham.
-Visit the Divya Shila and take a holy dip in Jamunabai Kund.
-Perform Darshan at the temple and return to Barkot.
+      },
+      {
+        day: 2,
+        title: "Lakes & Military Heritage",
+        description: `
+Post breakfast, head out for a full day of sightseeing in the cantonment.
+
+Highlights:
+• Visit the Garhwal Rifles Regimental Museum (War Memorial).
+• Spend your morning at the serene Bhulla Lake (man-made lake).
+• Optional: Enjoy a peaceful boating session at the lake.
+• Afternoon visit to the Tarkeshwar Mahadev Temple (situated amidst thick cedar and oak forests).
+
+Return to the hotel for a cozy dinner and rest.
 
 Meals Included:
 Breakfast & Dinner
       `
-    },
-    {
-      day: 3,
-      title: "Barkot to Uttarkashi",
-      description: `
-Post breakfast, drive towards Uttarkashi (~100 km).
-Visit the famous Kashi Vishwanath Temple and Shakti Temple.
-Check-in to the hotel and rest by the banks of Bhagirathi river.
+      },
+      {
+        day: 3,
+        title: "Nature Trail & Departure",
+        description: `
+Enjoy a peaceful morning nature walk through the pine trails of Lansdowne.
 
-Meals Included:
-Breakfast & Dinner
-      `
-    },
-    {
-      day: 4,
-      title: "Gangotri Dham Darshan",
-      description: `
-Full day excursion to Gangotri Dham (~100 km one way).
-Drive through the beautiful Harsil Valley.
-Take a holy dip in the Bhagirathi and perform Darshan at the temple.
-Return to Uttarkashi by evening.
+Sightseeing:
+• Visit the Kaleshwar Mahadev Temple.
+• Last-minute photography session of the Himalayan ranges.
+• Enjoy breakfast and check-out from the hotel.
 
-Meals Included:
-Breakfast & Dinner
-      `
-    },
-    {
-      day: 5,
-      title: "Uttarkashi to Guptkashi",
-      description: `
-A long but scenic drive (~220 km) to Guptkashi.
-Drive along the banks of the Mandakini and Alaknanda rivers.
-Check-in to the hotel upon arrival and prepare for the Kedarnath trek.
-
-Meals Included:
-Breakfast & Dinner
-      `
-    },
-    {
-      day: 6,
-      title: "Trek to Kedarnath Ji",
-      description: `
-Drive to Sonprayag/Gaurikund and start the 17 km trek to Kedarnath.
-Experience the spiritual vibes of the mountains.
-Reach the temple area by evening and witness the divine Aarti.
-Overnight stay near the shrine.
-
-Meals Included:
-Breakfast & Dinner
-      `
-    },
-    {
-      day: 7,
-      title: "Kedarnath Darshan & Return to Guptkashi",
-      description: `
-Wake up early for the morning Darshan of Lord Kedarnath.
-Visit the Bhairav Temple for spectacular views.
-Trek back down (~17 km) to Gaurikund and drive to Guptkashi.
-
-Meals Included:
-Breakfast & Dinner
-      `
-    },
-    {
-      day: 8,
-      title: "Guptkashi to Badrinath Ji",
-      description: `
-Drive to Badrinath Dham (~190 km).
-Explore Mana Village (the last Indian village), Vyas Gufa, and Ganesh Gufa.
-Witness the origin of the Saraswati River.
-Check-in to the hotel in Badrinath/Joshimath.
-
-Meals Included:
-Breakfast & Dinner
-      `
-    },
-    {
-      day: 9,
-      title: "Badrinath Darshan & Return to Haridwar",
-      description: `
-Morning bath in Tapt Kund and Darshan of Lord Badrinath.
-Drive back to Haridwar (~310 km) via Rishikesh.
-The Yatra concludes with spiritual blessings and lifelong memories.
+Afternoon departure for the return journey to Delhi.
 
 Meals Included:
 Breakfast
       `
-    }
-  ],
-
-  thingsToCarry: [
-    "Original Government ID (Aadhar Card)",
-    "Heavy winter jacket, woolen socks, and gloves",
-    "Thermal innerwear and sweaters",
-    "Sturdy trekking shoes and raincoat",
-    "Moisturizer, lip balm, and personal medication"
-  ]
-},
+      }
+    ],
+    thingsToCarry: [
+      "Valid ID proof (Aadhar card)",
+      "Comfortable walking shoes",
+      "Light woolens for the nights",
+      "Water bottle and energy snacks",
+      "Personal medication and power bank"
+    ]
+  },
   
  {
   id: 'udaipur-city-lakes',
@@ -4202,7 +3991,7 @@ Meals Included: Breakfast & Lunch.
 
   itineraryBrief: [
     
-    "Day 1: Arrival in Srinagar & Houseboat Stay",
+    "Day 1: Arrival in Srinagar,Pickup from Railway/Airport, Hotel Check in , Srinagar Sightseeing & Dinner at hotel",
     "Day 2: Sonmarg: The Meadow of Gold",
     "Day 3: Gulmarg: The Meadow of Flowers",
     "Day 4: Pahalgam: The Valley of Shepherds",
@@ -4516,7 +4305,7 @@ Trip ends with unforgettable memories, snow experiences, and new friendships.
   ],
 
   itineraryBrief: [
-    "Day 1: Arrival in Srinagar & Hotel Check-in",
+    "Day 1: Arrival in Srinagar,Pickup from Railway/Airport, Hotel Check in , Srinagar Sightseeing & Dinner at hotel",
     "Day 2: Srinagar to Gulmarg Day Trip",
     "Day 3: Srinagar Sightseeing & Return Journey",
    
@@ -4592,7 +4381,7 @@ export const realTripGallery = [
   { src: "/CD6.jpg" }, { src: "/CD7.jpeg" },{ src: "/CD8.jpg" }, { src: "/CD11.jpg" }, { src: "/CD12.jpg" }, { src: "/CD13.jpg" }, { src: "/CD14.jpeg" },{ src: "/CD21.jpg" },  { src: "/CD23.jpg" }, { src: "/CD25.jpg" }, { src: "/CD26.jpg" },
 { src: "/CD27.jpg" },{ src: "/CD28.jpg" },{ src: "/CD29.jpg" },{ src: "/CD30.jpg" },{ src: "/CD33.jpg" }, { src: "/CD34.jpg" }, { src: "/CD35.jpg" }, { src: "/CD36.jpg" }, { src: "/CD38.jpg" }, { src: "/CD39.jpg" },
   { src: "/CD40.jpg" }, { src: "/CD41.jpg" }, { src: "/CD43.jpg" },{ src: "/k1.jpg" },{ src: "/k2.jpg" }, { src: "/jibhi1.jpeg" },
-    { src: "/jibhi2.jpeg" }, { src: "/jibhi3.jpg" },{ src: "/jibhi4.jpg" },  { src: "/jibhi5.jpeg" },{ src: "/jibhi6.jpeg" },{ src: "/jibhi7.jpeg" },
+   { src: "/jibhi3.jpg" },{ src: "/jibhi4.jpg" },  { src: "/jibhi5.jpeg" },{ src: "/jibhi6.jpeg" },{ src: "/jibhi7.jpeg" },
  { src: "/Auli.jpeg" }, { src: "/kanasar1.jpg" },{ src: "/harsil2.jpeg" },{ src: "/harsil3.jpeg" },{ src: "/harsil4.jpeg" },
 { src: "/harsil5.jpeg" },
  

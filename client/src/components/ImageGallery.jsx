@@ -1,24 +1,17 @@
 import React, { useState, useEffect } from "react";
 import { realTripGallery } from "../data/trips";
 import { ChevronLeft, ChevronRight, X, Camera, Plus } from "lucide-react";
-import { createClient } from "@supabase/supabase-js";
-
-const supabase = createClient(
-  "https://iwlfokdsbfrpprxnzvju.supabase.co",
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Iml3bGZva2RzYmZycHByeG56dmp1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk1NjYxMjQsImV4cCI6MjA5NTE0MjEyNH0.TdBJ-z7EUn89W3bsU3-RyG1qUdGg6EQeIxOWaeLX_Mk"
-);
+import { supabase } from "../admin/supabaseClient";
 
 const API = import.meta.env.VITE_API_URL || "http://localhost:5000";
 const INITIAL_COUNT = 4;
 
 const ImageGallery = () => {
-  // Start with static local images immediately (no flicker)
   const [gallery, setGallery] = useState(realTripGallery);
   const [previewIndex, setPreviewIndex] = useState(null);
   const [expanded, setExpanded] = useState(false);
 
   useEffect(() => {
-    // Fetch from BOTH sources in parallel, merge results
     const fetchSupabase = supabase
       .from("gallery")
       .select("*")
@@ -47,15 +40,13 @@ const ImageGallery = () => {
         }
         return [];
       })
-      .catch(() => []); // backend offline → silently skip
+      .catch(() => []);
 
     Promise.all([fetchSupabase, fetchBackend]).then(([supabasePhotos, backendPhotos]) => {
       const allExtra = [...supabasePhotos, ...backendPhotos];
       if (allExtra.length > 0) {
-        // Admin-uploaded photos first, then static gallery
         setGallery([...allExtra, ...realTripGallery]);
       }
-      // If both empty, realTripGallery stays untouched
     });
   }, []);
 

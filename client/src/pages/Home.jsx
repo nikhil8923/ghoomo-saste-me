@@ -8,6 +8,7 @@ import {
 } from 'lucide-react';
 
 import Hero from '../components/Hero';
+import SpinWheel from "../components/SpinWheel";
 import Categories from '../components/Categories';
 import UpcomingTrips from '../components/UpcomingTrips';
 import Reels from '../components/Reels';
@@ -16,9 +17,6 @@ import FAQ from '../components/FAQ';
 import ImageGallery from '../components/ImageGallery';
 import TravelerReviews from "../components/TravelerReviews";
 
-/* ─────────────────────────────────────────
-   GLOBAL STYLES
-───────────────────────────────────────── */
 const GlobalStyles = () => (
   <style>{`
     :root {
@@ -47,7 +45,6 @@ const GlobalStyles = () => (
       color: var(--navy); line-height: 1.15;
     }
 
-    /* ── Feature card ── */
     .feat-card {
       position: relative; background: #fff;
       border: 1px solid #EDE8DC; border-radius: 20px;
@@ -65,7 +62,6 @@ const GlobalStyles = () => (
     .feat-card:hover { box-shadow: 0 20px 60px rgba(201,168,76,0.12); transform: translateY(-4px); }
     .feat-card:hover::before { opacity: 1; }
 
-    /* ── DESKTOP ── */
     @media (min-width: 768px) {
       .feat-cards-mobile  { display: none !important; }
       .feat-cards-desktop {
@@ -92,7 +88,6 @@ const GlobalStyles = () => (
       .dest-dots          { display: none !important; }
     }
 
-    /* ── MOBILE ── */
     @media (max-width: 767px) {
       .feat-cards-desktop { display: none !important; }
       .feat-cards-mobile {
@@ -114,8 +109,6 @@ const GlobalStyles = () => (
         -webkit-overflow-scrolling: touch;
       }
       .stats-row .stat-pill { flex: 0 0 auto; min-width: 120px; }
-
-      /* ── Destination cards: compact on mobile ── */
       .dest-card-wrap {
         min-width: 72vw !important;
         max-width: 260px !important;
@@ -127,82 +120,38 @@ const GlobalStyles = () => (
       .dest-card p        { font-size: 11px !important; margin-bottom: 8px !important; }
       .dest-badge         { font-size: 9px !important; padding: 4px 9px !important; top: 10px !important; right: 10px !important; }
       .dest-pill          { font-size: 10px !important; padding: 5px 10px !important; }
-
-      /* ── TravelerReviews: compact cards on mobile ── */
       .traveler-reviews-section .review-platform-card,
       [class*="review"] .platform-card,
       .reviews-scroll > div,
       .reviews-scroll > a {
-        min-width: 130px !important;
-        max-width: 150px !important;
-        padding: 12px 10px !important;
-        border-radius: 12px !important;
+        min-width: 130px !important; max-width: 150px !important;
+        padding: 12px 10px !important; border-radius: 12px !important;
       }
       .traveler-reviews-section img,
       .traveler-reviews-section svg[width="48"],
       .traveler-reviews-section svg[width="40"],
       .traveler-reviews-section svg[height="48"],
-      .traveler-reviews-section svg[height="40"] {
-        width: 28px !important;
-        height: 28px !important;
-      }
-      .traveler-reviews-section img[alt*="Google"],
-      .traveler-reviews-section img[alt*="google"],
-      .traveler-reviews-section img[alt*="Tripadvisor"],
-      .traveler-reviews-section img[alt*="tripadvisor"],
-      .traveler-reviews-section img[src*="google"],
-      .traveler-reviews-section img[src*="tripadvisor"] {
-        width: 26px !important;
-        height: 26px !important;
-        margin-bottom: 6px !important;
-      }
-      .traveler-reviews-section > div > div img,
-      .traveler-reviews-section > div > div > div img {
-        max-width: 30px !important;
-        max-height: 30px !important;
-        object-fit: contain !important;
-      }
+      .traveler-reviews-section svg[height="40"] { width: 28px !important; height: 28px !important; }
       .traveler-reviews-section .platform-name,
-      .traveler-reviews-section [class*="platform-name"] {
-        font-size: 9px !important;
-        letter-spacing: 0.06em !important;
-      }
+      .traveler-reviews-section [class*="platform-name"] { font-size: 9px !important; letter-spacing: 0.06em !important; }
       .traveler-reviews-section .rating-score,
-      .traveler-reviews-section [class*="rating"] {
-        font-size: 22px !important;
-        line-height: 1.1 !important;
-      }
+      .traveler-reviews-section [class*="rating"] { font-size: 22px !important; line-height: 1.1 !important; }
       .traveler-reviews-section .review-count,
-      .traveler-reviews-section [class*="count"] {
-        font-size: 10px !important;
-      }
+      .traveler-reviews-section [class*="count"] { font-size: 10px !important; }
       .traveler-reviews-section svg[class*="star"],
-      .traveler-reviews-section [class*="star"] svg {
-        width: 11px !important;
-        height: 11px !important;
-      }
+      .traveler-reviews-section [class*="star"] svg { width: 11px !important; height: 11px !important; }
       .traveler-reviews-section > div > div:first-child {
-        min-width: 100px !important;
-        max-width: 120px !important;
-        padding: 12px 8px !important;
+        min-width: 100px !important; max-width: 120px !important; padding: 12px 8px !important;
       }
-      .traveler-reviews-section > div > div:first-child svg {
-        width: 28px !important;
-        height: 28px !important;
-      }
+      .traveler-reviews-section > div > div:first-child svg { width: 28px !important; height: 28px !important; }
       .traveler-reviews-section > div > div:first-child p,
-      .traveler-reviews-section > div > div:first-child span {
-        font-size: 11px !important;
-      }
+      .traveler-reviews-section > div > div:first-child span { font-size: 11px !important; }
     }
 
-    /* ── Stat pill ── */
     .stat-pill {
       background: var(--cream); border: 1px solid #EDE8DC;
       border-radius: 16px; padding: 18px 16px; text-align: center;
     }
-
-    /* ── Step connectors ── */
     .step-line-h {
       flex: 1; height: 1px;
       background: linear-gradient(to right, var(--gold), #EDE8DC);
@@ -213,8 +162,6 @@ const GlobalStyles = () => (
       background: linear-gradient(to bottom, var(--gold), #EDE8DC);
       margin-left: 21px;
     }
-
-    /* ── Scroll dots ── */
     .scroll-dots { display: flex; justify-content: center; gap: 6px; margin-top: 16px; }
     .scroll-dot {
       width: 6px; height: 6px; border-radius: 50%;
@@ -224,16 +171,12 @@ const GlobalStyles = () => (
     .scroll-dot.active       { background: var(--gold); width: 18px; border-radius: 3px; }
     .scroll-dot.dark-bg      { background: #EDE8DC; }
     .scroll-dot.dark-bg.active { background: var(--gold); }
-
-    /* ── Trust marquee ── */
     @keyframes marquee {
       0%   { transform: translateX(0); }
       100% { transform: translateX(-50%); }
     }
     .trust-track { display: flex; gap: 40px; width: max-content; animation: marquee 22s linear infinite; }
     .trust-outer { overflow: hidden; }
-
-    /* ── Luxury destination card ── */
     .dest-card {
       position: relative; border-radius: 20px; overflow: hidden;
       display: block; height: 380px;
@@ -243,8 +186,6 @@ const GlobalStyles = () => (
     .dest-card:hover { transform: translateY(-6px); }
     .dest-card img   { width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s ease; display: block; }
     .dest-card:hover img { transform: scale(1.07); }
-
-    /* Gold shimmer border on hover */
     .dest-card::after {
       content: ''; position: absolute; inset: 0; border-radius: 20px;
       border: 2px solid transparent;
@@ -254,8 +195,6 @@ const GlobalStyles = () => (
       opacity: 0; transition: opacity 0.4s;
     }
     .dest-card:hover::after { opacity: 1; }
-
-    /* CTA pill slides up on hover */
     .dest-pill {
       display: inline-flex; align-items: center; gap: 6px;
       background: var(--gold); color: var(--navy);
@@ -265,18 +204,12 @@ const GlobalStyles = () => (
       transition: transform 0.35s, opacity 0.35s; text-decoration: none;
     }
     .dest-card:hover .dest-pill { transform: translateY(0); opacity: 1; }
-
-    /* On mobile: always show the pill (no hover) */
     @media (max-width: 767px) {
       .dest-pill {
-        transform: translateY(0) !important;
-        opacity: 1 !important;
-        font-size: 10px !important;
-        padding: 5px 10px !important;
+        transform: translateY(0) !important; opacity: 1 !important;
+        font-size: 10px !important; padding: 5px 10px !important;
       }
     }
-
-    /* Tag badge */
     .dest-badge {
       position: absolute; top: 16px; right: 16px;
       background: rgba(13,27,62,0.65); backdrop-filter: blur(8px);
@@ -288,9 +221,6 @@ const GlobalStyles = () => (
   `}</style>
 );
 
-/* ─────────────────────────────────────────
-   EYEBROW
-───────────────────────────────────────── */
 const Eyebrow = ({ children, light }) => (
   <div style={{ display:'flex', alignItems:'center', justifyContent:'center', gap:'10px', marginBottom:'12px' }}>
     <span className="gold-line" />
@@ -301,9 +231,6 @@ const Eyebrow = ({ children, light }) => (
   </div>
 );
 
-/* ─────────────────────────────────────────
-   WHY GHOOMO
-───────────────────────────────────────── */
 const features = [
   { num:'01', Icon:Wallet,      bg:'linear-gradient(135deg,#F6D365,#C9A84C)', title:'Pocket Friendly', desc:'Premium travel without the premium price tag. Budget travel, beautifully reimagined.' },
   { num:'02', Icon:ShieldCheck, bg:'linear-gradient(135deg,#667EEA,#4F5FC9)', title:'Safe & Secure',    desc:'Your safety is our priority. Female-friendly trips and 24/7 comprehensive support.' },
@@ -323,20 +250,17 @@ const howSteps = [
 const WhyGhoomo = () => {
   const mobileRef = React.useRef(null);
   const [activeIdx, setActiveIdx] = React.useState(0);
-
   const handleScroll = React.useCallback(() => {
     const el = mobileRef.current;
     if (!el) return;
     const cardW = (el.firstChild?.offsetWidth || 240) + 12;
     setActiveIdx(Math.round(el.scrollLeft / cardW));
   }, []);
-
   React.useEffect(() => {
     const el = mobileRef.current;
     if (el) el.addEventListener('scroll', handleScroll, { passive: true });
     return () => el?.removeEventListener('scroll', handleScroll);
   }, [handleScroll]);
-
   const CardContent = ({ num, Icon, bg, title, desc }) => (
     <>
       <div style={{ position:'absolute', top:'16px', right:'18px', fontSize:'12px', fontWeight:700, color:'#EDE8DC', letterSpacing:'0.05em' }}>{num}</div>
@@ -347,73 +271,39 @@ const WhyGhoomo = () => {
       <p style={{ fontSize:'13px', color:'var(--text-2)', lineHeight:1.65 }}>{desc}</p>
     </>
   );
-
   return (
     <section style={{ background:'var(--cream)', padding:'72px 0 80px', position:'relative', overflow:'hidden' }}>
       <div style={{ position:'absolute', inset:0, opacity:0.04, pointerEvents:'none' }}>
         <svg width="100%" height="100%"><defs><pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="1.5" cy="1.5" r="1.5" fill="#C9A84C"/></pattern></defs><rect width="100%" height="100%" fill="url(#dots)"/></svg>
       </div>
-
       <div style={{ maxWidth:'1200px', margin:'0 auto', position:'relative', zIndex:1 }}>
-
         <div style={{ padding:'0 20px' }}>
           <Eyebrow>India's most trusted travel squad</Eyebrow>
-          <motion.h2
-            initial={{ opacity:0, y:20 }} whileInView={{ opacity:1, y:0 }}
-            transition={{ duration:0.6 }} viewport={{ once:true }}
-            className="lux-heading"
-            style={{ textAlign:'center', fontSize:'clamp(26px,5vw,48px)', marginBottom:'12px' }}
-          >
+          <motion.h2 initial={{ opacity:0, y:20 }} whileInView={{ opacity:1, y:0 }} transition={{ duration:0.6 }} viewport={{ once:true }} className="lux-heading" style={{ textAlign:'center', fontSize:'clamp(26px,5vw,48px)', marginBottom:'12px' }}>
             Why <span style={{ color:'var(--gold)' }}>Ghoomo</span> Saste Me?
           </motion.h2>
-          <motion.p
-            initial={{ opacity:0, y:20 }} whileInView={{ opacity:1, y:0 }}
-            transition={{ duration:0.6, delay:0.1 }} viewport={{ once:true }}
-            style={{ textAlign:'center', color:'var(--text-2)', fontSize:'clamp(13px,2.5vw,17px)', maxWidth:'540px', margin:'0 auto 48px', lineHeight:1.75 }}
-          >
+          <motion.p initial={{ opacity:0, y:20 }} whileInView={{ opacity:1, y:0 }} transition={{ duration:0.6, delay:0.1 }} viewport={{ once:true }} style={{ textAlign:'center', color:'var(--text-2)', fontSize:'clamp(13px,2.5vw,17px)', maxWidth:'540px', margin:'0 auto 48px', lineHeight:1.75 }}>
             We don't just sell trips — we craft unforgettable, budget-friendly journeys with premium experiences and guaranteed security.
           </motion.p>
         </div>
-
-        {/* DESKTOP: 3-col grid */}
         <div className="feat-cards-desktop">
           {features.map(({ num, Icon, bg, title, desc }, i) => (
-            <motion.div
-              key={num} className="feat-card"
-              initial={{ opacity:0, y:30 }} whileInView={{ opacity:1, y:0 }}
-              transition={{ duration:0.5, delay: i * 0.08 }} viewport={{ once:true }}
-            >
+            <motion.div key={num} className="feat-card" initial={{ opacity:0, y:30 }} whileInView={{ opacity:1, y:0 }} transition={{ duration:0.5, delay: i * 0.08 }} viewport={{ once:true }}>
               <CardContent num={num} Icon={Icon} bg={bg} title={title} desc={desc} />
             </motion.div>
           ))}
         </div>
-
-        {/* MOBILE: horizontal scroll */}
         <div ref={mobileRef} className="feat-cards-mobile scrollbar-hide">
           {features.map(({ num, Icon, bg, title, desc }, i) => (
-            <motion.div
-              key={num} className="feat-card"
-              initial={{ opacity:0, y:20 }} whileInView={{ opacity:1, y:0 }}
-              transition={{ duration:0.4, delay: i * 0.05 }} viewport={{ once:true }}
-            >
+            <motion.div key={num} className="feat-card" initial={{ opacity:0, y:20 }} whileInView={{ opacity:1, y:0 }} transition={{ duration:0.4, delay: i * 0.05 }} viewport={{ once:true }}>
               <CardContent num={num} Icon={Icon} bg={bg} title={title} desc={desc} />
             </motion.div>
           ))}
         </div>
-
-        {/* Mobile dots */}
         <div className="scroll-dots feat-scroll-dots" style={{ marginBottom:'32px' }}>
-          {features.map((_, i) => (
-            <div key={i} className={`scroll-dot dark-bg${i === activeIdx ? ' active' : ''}`} />
-          ))}
+          {features.map((_, i) => (<div key={i} className={`scroll-dot dark-bg${i === activeIdx ? ' active' : ''}`} />))}
         </div>
-
-        {/* Stats */}
-        <motion.div
-          initial={{ opacity:0, y:20 }} whileInView={{ opacity:1, y:0 }}
-          transition={{ duration:0.6 }} viewport={{ once:true }}
-          className="stats-row scrollbar-hide"
-        >
+        <motion.div initial={{ opacity:0, y:20 }} whileInView={{ opacity:1, y:0 }} transition={{ duration:0.6 }} viewport={{ once:true }} className="stats-row scrollbar-hide">
           {[['5,000+','Happy Travellers'],['120+','Destinations'],['4.9 ★','Avg Rating']].map(([val, lbl]) => (
             <div key={lbl} className="stat-pill">
               <div style={{ fontSize:'clamp(18px,4vw,26px)', fontWeight:700, color:'var(--navy)', fontFamily:'Georgia,serif' }}>{val}</div>
@@ -421,13 +311,9 @@ const WhyGhoomo = () => {
             </div>
           ))}
         </motion.div>
-
-        {/* How it works */}
         <div style={{ padding:'0 20px' }}>
           <div style={{ background:'#fff', border:'1px solid #EDE8DC', borderRadius:'20px', padding:'28px 24px' }}>
             <p style={{ fontSize:'11px', fontWeight:600, letterSpacing:'0.1em', textTransform:'uppercase', color:'var(--gold)', marginBottom:'24px', textAlign:'center' }}>How it works</p>
-
-            {/* Desktop horizontal */}
             <div className="how-steps-desktop" style={{ alignItems:'flex-start', gap:0 }}>
               {howSteps.map((s, i, arr) => (
                 <React.Fragment key={s.title}>
@@ -440,8 +326,6 @@ const WhyGhoomo = () => {
                 </React.Fragment>
               ))}
             </div>
-
-            {/* Mobile vertical */}
             <div className="how-steps-mobile" style={{ flexDirection:'column' }}>
               {howSteps.map((s, i) => (
                 <React.Fragment key={s.title}>
@@ -458,146 +342,66 @@ const WhyGhoomo = () => {
             </div>
           </div>
         </div>
-
       </div>
     </section>
   );
 };
 
-/* ─────────────────────────────────────────
-   DESTINATIONS — LUXURY REDESIGN
-───────────────────────────────────────── */
 const destinations = [
-  {
-    to:'/state/himachal',
-    img:'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&q=80',
-    name:'Himachal Pradesh',
-    subtitle:'Snow peaks & pine valleys',
-    trips:'7 trips',
-    tag:'Most Popular',
-  },
-  {
-    to:'/state/uttarakhand',
-    img:'/uttarakhand2.jpg',
-    name:'Uttarakhand',
-    subtitle:'Temples, treks & rivers',
-    trips:'10+ trips',
-    tag:'Adventure',
-  },
-  {
-    to:'/state/rajasthan',
-    img:'https://images.unsplash.com/photo-1477587458883-47145ed94245?w=800&q=80',
-    name:'Rajasthan',
-    subtitle:'Palaces, forts & desert dunes',
-    trips:'6 trips',
-    tag:'Cultural',
-  },
-  {
-    to:'/state/kashmir',
-    img:'/kashmir2.jpg',
-    name:'Kashmir',
-    subtitle:'Heaven on earth',
-    trips:'2 trips',
-    tag:'Premium',
-  },
+  { to:'/state/himachal',   img:'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&q=80', name:'Himachal Pradesh', subtitle:'Snow peaks & pine valleys',    trips:'7 trips',   tag:'Most Popular' },
+  { to:'/state/uttarakhand',img:'/uttarakhand2.jpg',                                                        name:'Uttarakhand',      subtitle:'Temples, treks & rivers',     trips:'10+ trips', tag:'Adventure'    },
+  { to:'/state/rajasthan',  img:'https://images.unsplash.com/photo-1477587458883-47145ed94245?w=800&q=80', name:'Rajasthan',        subtitle:'Palaces, forts & desert dunes',trips:'6 trips',   tag:'Cultural'     },
+  { to:'/state/kashmir',    img:'/kashmir2.jpg',                                                             name:'Kashmir',          subtitle:'Heaven on earth',             trips:'2 trips',   tag:'Premium'      },
 ];
 
 const Destinations = () => {
   const sliderRef = React.useRef(null);
   const [activeIdx, setActiveIdx] = React.useState(0);
-
   const scrollLeft  = () => sliderRef.current?.scrollBy({ left:-300, behavior:'smooth' });
   const scrollRight = () => sliderRef.current?.scrollBy({ left: 300, behavior:'smooth' });
-
   const handleScroll = React.useCallback(() => {
     const el = sliderRef.current;
     if (!el) return;
     const cardW = (el.firstChild?.offsetWidth || 280) + 16;
     setActiveIdx(Math.round(el.scrollLeft / cardW));
   }, []);
-
   React.useEffect(() => {
     const el = sliderRef.current;
     if (el) el.addEventListener('scroll', handleScroll, { passive: true });
     return () => el?.removeEventListener('scroll', handleScroll);
   }, [handleScroll]);
-
   return (
     <section style={{ background:'var(--navy)', padding:'80px 0 88px', position:'relative', overflow:'hidden' }}>
-
-      {/* Subtle grid texture */}
       <div style={{ position:'absolute', inset:0, opacity:0.025, pointerEvents:'none' }}>
         <svg width="100%" height="100%"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="#C9A84C" strokeWidth="1"/></pattern></defs><rect width="100%" height="100%" fill="url(#grid)"/></svg>
       </div>
-
       <div style={{ maxWidth:'1200px', margin:'0 auto', position:'relative', zIndex:1 }}>
-
-        {/* Header */}
-        <motion.div
-          initial={{ opacity:0, y:24 }} whileInView={{ opacity:1, y:0 }}
-          transition={{ duration:0.6 }} viewport={{ once:true }}
-          style={{ padding:'0 20px', marginBottom:'40px' }}
-        >
+        <motion.div initial={{ opacity:0, y:24 }} whileInView={{ opacity:1, y:0 }} transition={{ duration:0.6 }} viewport={{ once:true }} style={{ padding:'0 20px', marginBottom:'40px' }}>
           <Eyebrow light>Explore India</Eyebrow>
           <div style={{ display:'flex', justifyContent:'space-between', alignItems:'flex-end', flexWrap:'wrap', gap:'16px' }}>
             <div>
-              <h2 className="lux-heading" style={{ color:'#fff', fontSize:'clamp(26px,5vw,48px)', marginBottom:'8px' }}>
-                Explore by Destination
-              </h2>
-              <p style={{ color:'rgba(255,255,255,0.5)', fontSize:'15px', lineHeight:1.6 }}>
-                Handpicked states for your next unforgettable adventure.
-              </p>
+              <h2 className="lux-heading" style={{ color:'#fff', fontSize:'clamp(26px,5vw,48px)', marginBottom:'8px' }}>Explore by Destination</h2>
+              <p style={{ color:'rgba(255,255,255,0.5)', fontSize:'15px', lineHeight:1.6 }}>Handpicked states for your next unforgettable adventure.</p>
             </div>
-            {/* Nav arrows — desktop only */}
             <div style={{ display:'flex', gap:'10px' }}>
               {[scrollLeft, scrollRight].map((fn, i) => (
-                <button key={i} onClick={fn}
-                  style={{ width:'44px', height:'44px', borderRadius:'50%', background:'rgba(255,255,255,0.06)', border:'1px solid rgba(201,168,76,0.3)', color:'var(--gold)', display:'flex', alignItems:'center', justifyContent:'center', cursor:'pointer', transition:'all 0.2s' }}
+                <button key={i} onClick={fn} style={{ width:'44px', height:'44px', borderRadius:'50%', background:'rgba(255,255,255,0.06)', border:'1px solid rgba(201,168,76,0.3)', color:'var(--gold)', display:'flex', alignItems:'center', justifyContent:'center', cursor:'pointer', transition:'all 0.2s' }}
                   onMouseEnter={e=>{ e.currentTarget.style.background='rgba(201,168,76,0.15)'; e.currentTarget.style.borderColor='var(--gold)'; }}
-                  onMouseLeave={e=>{ e.currentTarget.style.background='rgba(255,255,255,0.06)'; e.currentTarget.style.borderColor='rgba(201,168,76,0.3)'; }}
-                >
+                  onMouseLeave={e=>{ e.currentTarget.style.background='rgba(255,255,255,0.06)'; e.currentTarget.style.borderColor='rgba(201,168,76,0.3)'; }}>
                   {i===0 ? <ChevronLeft size={18}/> : <ChevronRight size={18}/>}
                 </button>
               ))}
             </div>
           </div>
         </motion.div>
-
-        {/* Cards slider */}
-        <div
-          ref={sliderRef}
-          className="scrollbar-hide"
-          style={{
-            display: 'flex',
-            gap: '12px',
-            overflowX: 'auto',
-            scrollSnapType: 'x mandatory',
-            scrollBehavior: 'smooth',
-            WebkitOverflowScrolling: 'touch',
-            padding: '0 20px 8px',
-          }}
-        >
+        <div ref={sliderRef} className="scrollbar-hide" style={{ display:'flex', gap:'12px', overflowX:'auto', scrollSnapType:'x mandatory', scrollBehavior:'smooth', WebkitOverflowScrolling:'touch', padding:'0 20px 8px' }}>
           {destinations.map(({ to, img, name, subtitle, trips, tag }, i) => (
-            <motion.div
-              key={name}
-              className="dest-card-wrap"
-              initial={{ opacity:0, y:32 }} whileInView={{ opacity:1, y:0 }}
-              transition={{ duration:0.55, delay: i * 0.1 }} viewport={{ once:true }}
-              style={{ scrollSnapAlign:'start' }}
-            >
+            <motion.div key={name} className="dest-card-wrap" initial={{ opacity:0, y:32 }} whileInView={{ opacity:1, y:0 }} transition={{ duration:0.55, delay: i * 0.1 }} viewport={{ once:true }} style={{ scrollSnapAlign:'start' }}>
               <Link to={to} className="dest-card">
                 <img src={img} alt={name} />
-
-                {/* Overlay */}
                 <div style={{ position:'absolute', inset:0, background:'linear-gradient(to top, rgba(4,10,28,0.96) 0%, rgba(4,10,28,0.4) 50%, rgba(4,10,28,0.08) 100%)' }} />
-
-                {/* Gold top line */}
                 <div style={{ position:'absolute', top:0, left:0, right:0, height:'2px', background:'linear-gradient(to right, var(--gold), rgba(201,168,76,0.15) 70%, transparent)' }} />
-
-                {/* Tag */}
                 <div className="dest-badge">{tag}</div>
-
-                {/* Bottom text */}
                 <div style={{ position:'absolute', bottom:0, left:0, width:'100%', padding:'16px 16px', boxSizing:'border-box' }}>
                   <div style={{ display:'flex', alignItems:'center', gap:'5px', marginBottom:'4px' }}>
                     <MapPin size={10} color="var(--gold)" />
@@ -605,48 +409,28 @@ const Destinations = () => {
                   </div>
                   <h3 style={{ color:'#fff', fontSize:'21px', fontWeight:700, fontFamily:'Georgia,serif', lineHeight:1.2, marginBottom:'3px' }}>{name}</h3>
                   <p style={{ color:'rgba(255,255,255,0.52)', fontSize:'12px', marginBottom:'10px', lineHeight:1.4 }}>{subtitle}</p>
-                  <div className="dest-pill">
-                    View Trips <ArrowRight size={11} />
-                  </div>
+                  <div className="dest-pill">View Trips <ArrowRight size={11} /></div>
                 </div>
               </Link>
             </motion.div>
           ))}
         </div>
-
-        {/* Dots — mobile only */}
         <div className="scroll-dots dest-dots" style={{ marginTop:'22px' }}>
-          {destinations.map((_, i) => (
-            <div key={i} className={`scroll-dot${i === activeIdx ? ' active' : ''}`} />
-          ))}
+          {destinations.map((_, i) => (<div key={i} className={`scroll-dot${i === activeIdx ? ' active' : ''}`} />))}
         </div>
-
-        {/* View all CTA */}
-        <motion.div
-          initial={{ opacity:0, y:20 }} whileInView={{ opacity:1, y:0 }}
-          transition={{ duration:0.5, delay:0.3 }} viewport={{ once:true }}
-          style={{ display:'flex', justifyContent:'center', marginTop:'40px', padding:'0 20px' }}
-        >
-          <Link
-            to="/trips"
-            style={{ display:'inline-flex', alignItems:'center', gap:'8px', border:'1px solid rgba(201,168,76,0.4)', color:'var(--gold)', fontSize:'12px', fontWeight:600, letterSpacing:'0.1em', textTransform:'uppercase', padding:'12px 28px', borderRadius:'99px', transition:'all 0.25s', textDecoration:'none', background:'rgba(201,168,76,0.05)' }}
+        <motion.div initial={{ opacity:0, y:20 }} whileInView={{ opacity:1, y:0 }} transition={{ duration:0.5, delay:0.3 }} viewport={{ once:true }} style={{ display:'flex', justifyContent:'center', marginTop:'40px', padding:'0 20px' }}>
+          <Link to="/trips" style={{ display:'inline-flex', alignItems:'center', gap:'8px', border:'1px solid rgba(201,168,76,0.4)', color:'var(--gold)', fontSize:'12px', fontWeight:600, letterSpacing:'0.1em', textTransform:'uppercase', padding:'12px 28px', borderRadius:'99px', transition:'all 0.25s', textDecoration:'none', background:'rgba(201,168,76,0.05)' }}
             onMouseEnter={e=>{ e.currentTarget.style.background='var(--gold)'; e.currentTarget.style.color='var(--navy)'; }}
-            onMouseLeave={e=>{ e.currentTarget.style.background='rgba(201,168,76,0.05)'; e.currentTarget.style.color='var(--gold)'; }}
-          >
+            onMouseLeave={e=>{ e.currentTarget.style.background='rgba(201,168,76,0.05)'; e.currentTarget.style.color='var(--gold)'; }}>
             View All Destinations <ArrowRight size={13} />
           </Link>
         </motion.div>
-
       </div>
     </section>
   );
 };
 
-/* ─────────────────────────────────────────
-   TRUST STRIP
-───────────────────────────────────────── */
 const trustItems = ['✦ 5,000+ Happy Travellers','✦ 100% Verified Stays','✦ 24/7 WhatsApp Support','✦ Female-Friendly Trips','✦ Zero Hidden Charges'];
-
 const TrustStrip = () => (
   <div style={{ background:'var(--gold)', padding:'13px 0', overflow:'hidden' }}>
     <div className="trust-outer" style={{ overflow:'hidden' }}>
@@ -660,7 +444,7 @@ const TrustStrip = () => (
 );
 
 /* ─────────────────────────────────────────
-   HOME
+   HOME — SpinWheel added here
 ───────────────────────────────────────── */
 const Home = () => {
   const navigate = useNavigate();
@@ -684,6 +468,9 @@ const Home = () => {
         <Reels />
         <Reviews />
         <FAQ />
+
+        {/* ✅ SpinWheel — opens on every page load, portal renders over everything */}
+        <SpinWheel />
       </main>
     </>
   );
